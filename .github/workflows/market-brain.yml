@@ -1,5 +1,5 @@
 # ======================================================
-#  시황두뇌 v4 — 뉴스 통합 + AI 해석(GitHub Models 무료) + 규칙 다이제스트 대체
+#  시황두뇌 v5 — 뉴스 통합 + AI 해석(GitHub Models 무료) + 대체 다이제스트
 #  저장 위치: .github/workflows/market-brain.yml
 # ======================================================
 name: 시황두뇌
@@ -36,7 +36,7 @@ jobs:
           MIN_CHANGE_PCT: ${{ vars.MIN_CHANGE_PCT }}
         run: |
           cat > brain.py << 'PYEOF'
-          # 시황두뇌 v4 — 뉴스 통합 + AI 해석(GitHub Models 무료) + 규칙 다이제스트 대체
+          # 시황두뇌 v5
           import json, os, re, statistics, html
           from datetime import datetime, timezone, timedelta
           from pathlib import Path
@@ -150,30 +150,46 @@ jobs:
               if abs(sum(w.values()) - 100) > 3 or set(w) != set(payload["base_weights"]): out["weights"] = payload["base_weights"]
               return out
           
-          GH_ROUTES = [("https://models.github.ai/inference/chat/completions", GH_MODEL),
-                       ("https://models.github.ai/inference/chat/completions", "openai/gpt-4o-mini"),
-                       ("https://models.inference.ai.azure.com/chat/completions", "gpt-4o-mini")]
+          GH_ROUTES = [("https://models.github.ai/inference/chat/completions", GH_MODEL, True),
+                       ("https://models.github.ai/inference/chat/completions", GH_MODEL, False),
+                       ("https://models.github.ai/inference/chat/completions", "openai/gpt-4o-mini", True),
+                       ("https://models.github.ai/inference/chat/completions", "openai/gpt-4o-mini", False)]
+          
+          def extract_content(data):
+              ch = (data.get("choices") or [{}])[0]
+              msg = ch.get("message") or {}
+              c = msg.get("content")
+              if isinstance(c, list): c = "".join(p.get("text", "") for p in c if isinstance(p, dict))
+              return c or ch.get("text") or ""
           
           def call_github_models(payload):
-              """GitHub Models: 경로/모델을 차례로 시도"""
+              """GitHub Models: 경로/모델/형식을 차례로 시도, 실패 시 원문을 남김"""
               errors = []
-              for url, model in GH_ROUTES:
+              user_msg = json.dumps(payload, ensure_ascii=False) + "\n\n반드시 위 형식의 JSON 객체 하나만 출력하세요."
+              for url, model, force_json in GH_ROUTES:
+                  raw = b""
                   try:
-                      body = json.dumps({"model": model, "temperature": 0.3, "max_tokens": 1800,
-                                         "messages": [{"role": "system", "content": SYSTEM},
-                                                      {"role": "user", "content": json.dumps(payload, ensure_ascii=False)}]}).encode()
-                      req = Request(url, data=body, method="POST",
+                      body = {"model": model, "temperature": 0.3, "max_tokens": 1800,
+                              "messages": [{"role": "system", "content": SYSTEM}, {"role": "user", "content": user_msg}]}
+                      if force_json: body["response_format"] = {"type": "json_object"}
+                      req = Request(url, data=json.dumps(body).encode(), method="POST",
                                     headers={"Authorization": f"Bearer {os.environ['GITHUB_TOKEN']}", "Content-Type": "application/json",
-                                             "Accept": "application/vnd.github+json", "X-GitHub-Api-Version": "2022-11-28"})
-                      data = json.loads(urlopen(req, timeout=120).read())
-                      out = parse_out(data["choices"][0]["message"]["content"], payload)
+                                             "Accept": "application/json", "User-Agent": "market-brain"})
+                      raw = urlopen(req, timeout=120).read()
+                      text = raw.decode("utf-8-sig", errors="replace").strip()
+                      data = json.loads(text)
+                      if "error" in data: raise RuntimeError(str(data["error"])[:200])
+                      content = extract_content(data)
+                      if not content.strip(): raise RuntimeError("빈 응답 content")
+                      out = parse_out(content, payload)
                       u = data.get("usage", {}); out["usage"] = {"in": u.get("prompt_tokens"), "out": u.get("completion_tokens"), "model": model}
                       return out
                   except Exception as e:
                       detail = ""
-                      try: detail = e.read().decode()[:150]
+                      try: detail = e.read().decode(errors="replace")[:200]
                       except Exception: pass
-                      errors.append(f"{model}: {type(e).__name__} {str(e)[:60]} {detail}")
+                      if not detail and raw: detail = "raw=" + raw.decode(errors="replace")[:200].replace("\n", " ")
+                      errors.append(f"{model}{'(json)' if force_json else ''}: {type(e).__name__} {str(e)[:80]} {detail}")
               raise RuntimeError(" | ".join(errors))
           
           def call_claude(payload):
@@ -191,6 +207,7 @@ jobs:
           def needs_llm(sig, prev, news):
               if not (os.getenv("ANTHROPIC_API_KEY") or os.getenv("GITHUB_TOKEN")): return False, "사용 가능한 AI 토큰 없음"
               if not prev or "summary" not in prev: return True, "첫 실행"
+              if (prev.get("usage") or {}).get("model") == "rule-digest": return True, "AI 재시도"
               if sig["regime"] != prev.get("regime"): return True, "레짐 변경"
               old = set(n["title"] for n in prev.get("news", [])); new = sum(1 for n in news if n["title"] not in old)
               if new >= 8: return True, f"새 뉴스 {new}건"

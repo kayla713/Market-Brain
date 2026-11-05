@@ -1,5 +1,5 @@
 {
- "as_of": "2026-11-05 20:19 KST",
+ "as_of": "2026-11-05 20:27 KST",
  "regime": "risk_off",
  "score": -3,
  "reasons": [
@@ -34,12 +34,12 @@
    "vs_ma60": -16.93
   },
   "USD/KRW": {
-   "last": 1342.67,
-   "d1": -0.02,
-   "d5": 0.17,
-   "d20": 0.27,
-   "vs_ma20": 0.63,
-   "vs_ma60": -1.01
+   "last": 1343.09,
+   "d1": 0.01,
+   "d5": 0.21,
+   "d20": 0.3,
+   "vs_ma20": 0.66,
+   "vs_ma60": -0.97
   },
   "S&P 500": {
    "last": 7688.62,
@@ -58,12 +58,12 @@
    "vs_ma60": -2.84
   },
   "VIX": {
-   "last": 16.82,
-   "d1": 1.26,
-   "d5": -2.21,
-   "d20": 9.15,
-   "vs_ma20": -5.08,
-   "vs_ma60": 3.42
+   "last": 16.84,
+   "d1": 1.38,
+   "d5": -2.09,
+   "d20": 9.28,
+   "vs_ma20": -4.97,
+   "vs_ma60": 3.54
   },
   "US 10Y": {
    "last": 4.89,
@@ -74,12 +74,12 @@
    "vs_ma60": -1.64
   },
   "WTI 유가": {
-   "last": 88.83,
-   "d1": 0.81,
-   "d5": -12.91,
-   "d20": -2.91,
-   "vs_ma20": -9.34,
-   "vs_ma60": -5.13
+   "last": 88.87,
+   "d1": 0.85,
+   "d5": -12.87,
+   "d20": -2.86,
+   "vs_ma20": -9.3,
+   "vs_ma60": -5.09
   },
   "금": {
    "last": 372.49,
@@ -272,6 +272,11 @@
   },
   {
    "src": "MarketWatch",
+   "title": "Research firm declares ‘end of the AI trade as we know it’ — and Asian tech stocks reflect the shift",
+   "link": "https://www.marketwatch.com/story/research-firm-declares-end-of-the-ai-trade-as-we-know-it-and-asian-tech-stocks-reflect-the-shift-25ac8e8f?mod=mw_rss_topstories"
+  },
+  {
+   "src": "MarketWatch",
    "title": "A prolonged war in Iran is the market’s real ‘black swan,’ says this strategist",
    "link": "https://www.marketwatch.com/story/a-prolonged-war-in-iran-is-the-markets-real-black-swan-says-this-strategist-65d105c7?mod=mw_rss_topstories"
   },
@@ -374,11 +379,6 @@
    "src": "한국경제 증권",
    "title": "조정은 위기인가, 새로운 기회인가 [한경 프리미엄9 TODAY]",
    "link": "https://www.hankyung.com/article/2026110590861"
-  },
-  {
-   "src": "한국경제 증권",
-   "title": "\"미국은 '휴~' 안도했는데\"…한국 개미들에 날아든 '날벼락'",
-   "link": "https://www.hankyung.com/article/2026110591631"
   }
  ],
  "news_status": {

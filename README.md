@@ -1,6 +1,6 @@
 # 🧠 시황두뇌
 
-**2026-11-05 20:19 KST** · 레짐 🔴 위험회피
+**2026-11-05 20:27 KST** · 레짐 🔴 위험회피
 
 > ⚠️ AI 해석이 아직 없습니다. (Actions 로그의 'AI' 항목을 확인하세요)
 
@@ -22,12 +22,12 @@
 |---|---:|---:|---:|---:|
 | KOSPI | 5383.8 | -5.28% | -9.33% | -18.75% |
 | KOSDAQ | 678.41 | -5.11% | -9.93% | -23.97% |
-| USD/KRW | 1342.67 | -0.02% | +0.17% | +0.27% |
+| USD/KRW | 1343.09 | +0.01% | +0.21% | +0.3% |
 | S&P 500 | 7688.62 | 0.0% | -0.41% | -0.99% |
 | NASDAQ | 25736.51 | 0.0% | -1.71% | -5.36% |
-| VIX | 16.82 | +1.26% | -2.21% | +9.15% |
+| VIX | 16.84 | +1.38% | -2.09% | +9.28% |
 | US 10Y | 4.89 | 0.0% | -1.9% | -6.44% |
-| WTI 유가 | 88.83 | +0.81% | -12.91% | -2.91% |
+| WTI 유가 | 88.87 | +0.85% | -12.87% | -2.86% |
 | 금 | 372.49 | 0.0% | +1.06% | -1.62% |
 | 미국 장기채 | 81.76 | 0.0% | +0.33% | +5.0% |
 | KODEX 200 | 84610.0 | -5.69% | -10.43% | -19.8% |
@@ -69,13 +69,13 @@
 - [Australia hikes rates to 18-year high to fight inflation](https://www.cnbc.com/2026/11/03/australia-hikes-rates-18-year-high-finflation.html) · CNBC Markets
 - [European Central Bank keeps key interest rate on hold at 2.5%](https://www.cnbc.com/2026/10/29/european-central-bank-interest-rates.html) · CNBC Markets
 - [Third-quarter U.S. GDP increases a better-than-expected 3.4% as September inflation accelerates](https://www.cnbc.com/2026/10/29/pce-inflation-report-september-2026-.html) · CNBC Markets
+- [Research firm declares ‘end of the AI trade as we know it’ — and Asian tech stocks reflect the shift](https://www.marketwatch.com/story/research-firm-declares-end-of-the-ai-trade-as-we-know-it-and-asian-tech-stocks-reflect-the-shift-25ac8e8f?mod=mw_rss_topstories) · MarketWatch
 - [A prolonged war in Iran is the market’s real ‘black swan,’ says this strategist](https://www.marketwatch.com/story/a-prolonged-war-in-iran-is-the-markets-real-black-swan-says-this-strategist-65d105c7?mod=mw_rss_topstories) · MarketWatch
 - [Toyota stock rallies after company lowered sales guidance. Here’s how rare that is.](https://www.marketwatch.com/story/toyota-stock-rallies-after-company-lowered-sales-guidance-heres-how-rare-that-is-c3d6c9bf?mod=mw_rss_topstories) · MarketWatch
 - [Dow scores its best day in 18 months in a broad relief rally after Democrats sweep to power in Congress](https://www.marketwatch.com/story/dow-scores-its-best-day-in-18-months-in-a-broad-relief-rally-after-democrats-sweep-to-power-in-congress-d7348fc0?mod=mw_rss_topstories) · MarketWatch
 - [Most investors are blind to the possibility of a market crash. Here is the five-part strategy to survive one.](https://www.marketwatch.com/story/most-investors-are-blind-to-the-possibility-of-a-market-crash-here-is-the-five-part-strategy-to-survive-one-a1762911?mod=mw_rss_topstories) · MarketWatch
 - [Qualcomm’s stock falls as twin forces pressure sales](https://www.marketwatch.com/story/qualcomms-stock-falls-as-twin-forces-pressure-sales-fa161159?mod=mw_rss_topstories) · MarketWatch
 - [This year’s worst-performing S&P 500 stock is finally seeing some major relief](https://www.marketwatch.com/story/this-years-worst-performing-s-p-500-stock-is-finally-seeing-some-major-relief-fff3fa85?mod=mw_rss_topstories) · MarketWatch
-- [Figma’s stock dips as investors worry that AI momentum is coming at a high price](https://www.marketwatch.com/story/figmas-stock-falls-as-investors-worry-that-ai-momentum-is-coming-at-a-high-price-1aa2134d?mod=mw_rss_topstories) · MarketWatch
 
 ---
 _뉴스 소스 상태: 연합뉴스 경제 12, 한국경제 증권 12, 매일경제 증권 12, 매일경제 경제 12, Yahoo Finance 실패 HTTPError, Investing.com 10, CNBC Markets 12, MarketWatch 10_

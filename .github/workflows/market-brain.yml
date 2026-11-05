@@ -1,7 +1,7 @@
 # ======================================================
-#  시황두뇌 (Market Brain) — 이 파일 하나면 됩니다.
+#  시황두뇌 v3 — 뉴스 통합 + AI 해석 + 포트폴리오 근거
+#  AI는 GitHub Models(무료, 키 불필요) 사용
 #  저장 위치: .github/workflows/market-brain.yml
-#  평일 08~17시(KST) 매시 자동 실행 → README.md 와 docs/ 갱신
 # ======================================================
 name: 시황두뇌
 
@@ -13,6 +13,7 @@ on:
 
 permissions:
   contents: write
+  models: read              # ← GitHub 내장 AI 사용 권한 (무료)
 
 concurrency:
   group: market-brain
@@ -30,165 +31,216 @@ jobs:
 
       - name: 시황두뇌 실행
         env:
-          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-          CLAUDE_MODEL: ${{ vars.CLAUDE_MODEL }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}   # 있으면 Claude 사용, 없으면 GitHub Models
+          GH_MODEL: ${{ vars.GH_MODEL }}
           MIN_CHANGE_PCT: ${{ vars.MIN_CHANGE_PCT }}
         run: |
           cat > brain.py << 'PYEOF'
-          # 시황두뇌 — 단일 파일 버전 (수집 → 지표 → Claude 요약 → README/웹 갱신)
-          import json, os, statistics
+          # 시황두뇌 v3 — 뉴스 통합 + AI 해석(GitHub Models 무료) + 포트폴리오 근거
+          import json, os, re, statistics, html
           from datetime import datetime, timezone, timedelta
           from pathlib import Path
+          from urllib.request import Request, urlopen
+          from xml.etree import ElementTree as ET
           import pandas as pd, yfinance as yf
           
-          ROOT = Path(".")
-          DATA = ROOT / "docs" / "data"; DATA.mkdir(parents=True, exist_ok=True)
-          KST = timezone(timedelta(hours=9))
+          ROOT = Path("."); DATA = ROOT / "docs" / "data"; DATA.mkdir(parents=True, exist_ok=True)
+          KST = timezone(timedelta(hours=9)); NOW = datetime.now(KST)
           MODEL = os.getenv("CLAUDE_MODEL") or "claude-haiku-5-5"
+          GH_MODEL = os.getenv("GH_MODEL") or "openai/gpt-4.1-mini"   # GitHub Models (무료, 키 불필요)
           MIN_CHANGE = float(os.getenv("MIN_CHANGE_PCT") or 0.3)
+          MAX_HEADLINES = 45
           
-          TICKERS = {
-              "^KS11": ("KOSPI", "kr_index"), "^KQ11": ("KOSDAQ", "kr_index"), "KRW=X": ("USD/KRW", "fx"),
-              "069500.KS": ("KODEX 200", "kr_etf"), "229200.KS": ("KODEX 코스닥150", "kr_etf"),
-              "091160.KS": ("KODEX 반도체", "kr_etf"), "091170.KS": ("KODEX 은행", "kr_etf"),
-              "305720.KS": ("KODEX 2차전지산업", "kr_etf"), "148070.KS": ("KOSEF 국고채10년", "kr_bond"),
-              "^GSPC": ("S&P 500", "us_index"), "^IXIC": ("NASDAQ", "us_index"), "^VIX": ("VIX", "risk"),
-              "^TNX": ("US 10Y", "rate"), "XLK": ("Tech", "us_sector"), "XLF": ("Financials", "us_sector"),
-              "XLE": ("Energy", "us_sector"), "XLV": ("Health", "us_sector"), "TLT": ("미국 장기채", "us_bond"), "GLD": ("금", "alt"),
-          }
+          TICKERS = {"^KS11": "KOSPI", "^KQ11": "KOSDAQ", "KRW=X": "USD/KRW", "^GSPC": "S&P 500", "^IXIC": "NASDAQ",
+                     "^VIX": "VIX", "^TNX": "US 10Y", "CL=F": "WTI 유가", "GLD": "금", "TLT": "미국 장기채",
+                     "069500.KS": "KODEX 200", "229200.KS": "KODEX 코스닥150", "091160.KS": "KODEX 반도체",
+                     "305720.KS": "KODEX 2차전지", "XLK": "美 Tech", "XLF": "美 금융", "XLE": "美 에너지"}
           BASE_WEIGHTS = {
-              "risk_on":  {"KODEX 200": 25, "KODEX 코스닥150": 15, "S&P 500": 25, "NASDAQ": 15, "채권(국고/TLT)": 10, "금": 5, "현금": 5},
-              "neutral":  {"KODEX 200": 20, "KODEX 코스닥150": 5,  "S&P 500": 25, "NASDAQ": 10, "채권(국고/TLT)": 20, "금": 10, "현금": 10},
-              "risk_off": {"KODEX 200": 10, "KODEX 코스닥150": 0,  "S&P 500": 15, "NASDAQ": 5,  "채권(국고/TLT)": 30, "금": 15, "현금": 25},
+              "risk_on":  {"KODEX 200": 25, "KODEX 코스닥150": 15, "S&P 500": 25, "NASDAQ": 15, "채권": 10, "금": 5, "현금": 5},
+              "neutral":  {"KODEX 200": 20, "KODEX 코스닥150": 5,  "S&P 500": 25, "NASDAQ": 10, "채권": 20, "금": 10, "현금": 10},
+              "risk_off": {"KODEX 200": 10, "KODEX 코스닥150": 0,  "S&P 500": 15, "NASDAQ": 5,  "채권": 30, "금": 15, "현금": 25}}
+          # 뉴스 소스 (RSS). 막히는 곳은 자동 건너뜀
+          FEEDS = {
+              "연합뉴스 경제": "https://www.yna.co.kr/rss/economy.xml",
+              "한국경제 증권": "https://www.hankyung.com/feed/finance",
+              "매일경제 증권": "https://www.mk.co.kr/rss/50200011/",
+              "매일경제 경제": "https://www.mk.co.kr/rss/30100041/",
+              "Yahoo Finance": "https://finance.yahoo.com/news/rssindex",
+              "Investing.com": "https://www.investing.com/rss/news.rss",
+              "CNBC Markets": "https://www.cnbc.com/id/20910258/device/rss/rss.html",
+              "MarketWatch": "https://feeds.content.dowjones.io/public/rss/mw_topstories",
           }
-          SYSTEM = ("너는 한국·미국 시장을 보는 간결한 시황 애널리스트다. 주어진 지표 JSON만 근거로 쓰고 없는 수치는 지어내지 않는다. "
-                    "투자 권유가 아닌 참고 정보임을 전제로, 반드시 아래 JSON만 출력한다(마크다운 금지):\n"
-                    '{"summary":"3~4문장 한국어 시황","portfolio_note":"비중 제안 근거 2~3문장","watch":["체크포인트 1","체크포인트 2"]}')
           
-          # ---------- 1. 수집 ----------
+          # ---------- 뉴스 ----------
+          def fetch_news():
+              items, status = [], {}
+              for src, url in FEEDS.items():
+                  try:
+                      req = Request(url, headers={"User-Agent": "Mozilla/5.0 (market-brain rss reader)"})
+                      xml = urlopen(req, timeout=15).read()
+                      root = ET.fromstring(xml)
+                      n = 0
+                      for it in root.iter():
+                          if it.tag.split("}")[-1] not in ("item", "entry"): continue
+                          title = ""; link = ""
+                          for ch in it:
+                              t = ch.tag.split("}")[-1]
+                              if t == "title": title = html.unescape(re.sub(r"<[^>]+>", "", ch.text or "")).strip()
+                              elif t == "link": link = (ch.text or ch.attrib.get("href") or "").strip()
+                          if title and len(title) > 8:
+                              items.append({"src": src, "title": title[:120], "link": link}); n += 1
+                          if n >= 12: break
+                      status[src] = n
+                  except Exception as e:
+                      status[src] = f"실패 {type(e).__name__}"
+              seen, out = set(), []
+              for it in items:
+                  k = re.sub(r"\W", "", it["title"])[:30]
+                  if k not in seen: seen.add(k); out.append(it)
+              # 시장 관련 키워드 우선
+              kw = re.compile(r"코스피|코스닥|증시|주가|금리|연준|Fed|환율|반도체|실적|국채|유가|관세|stocks?|market|rate|inflation|Treasury|earnings|Nasdaq|S&P|Dow|tariff", re.I)
+              out.sort(key=lambda x: 0 if kw.search(x["title"]) else 1)
+              return out[:MAX_HEADLINES], status
+          
+          # ---------- 시세 ----------
           def collect():
               df = yf.download(list(TICKERS), period="6mo", interval="1d", auto_adjust=True, progress=False, group_by="column")["Close"]
               df = df.dropna(how="all").tail(90)
-              series = {}
-              for sym, (name, group) in TICKERS.items():
-                  if sym in df.columns and not df[sym].isna().all():
-                      series[sym] = {"name": name, "group": group, "close": [None if pd.isna(v) else float(v) for v in df[sym].ffill()]}
-              return {"fetched_at": datetime.now(KST).isoformat(timespec="minutes"), "series": series}
+              return {s: [None if pd.isna(v) else float(v) for v in df[s].ffill()] for s in TICKERS if s in df.columns and not df[s].isna().all()}
           
-          # ---------- 2. 지표 ----------
           def pct(a, b): return None if not a or not b else round((a / b - 1) * 100, 2)
           
-          def indicators(closes):
-              c = [v for v in closes if v is not None]
+          def indicators(c):
+              c = [v for v in c if v is not None]
               if len(c) < 25: return {}
-              last, ma20 = c[-1], statistics.fmean(c[-20:])
-              ma60 = statistics.fmean(c[-60:]) if len(c) >= 60 else None
-              rets = [c[i] / c[i-1] - 1 for i in range(1, len(c))]
+              last, ma20 = c[-1], statistics.fmean(c[-20:]); ma60 = statistics.fmean(c[-60:]) if len(c) >= 60 else None
               return {"last": round(last, 2), "d1": pct(last, c[-2]), "d5": pct(last, c[-6]), "d20": pct(last, c[-21]),
-                      "vs_ma20": pct(last, ma20), "vs_ma60": pct(last, ma60) if ma60 else None,
-                      "vol20": round(statistics.pstdev(rets[-20:]) * 252 ** 0.5 * 100, 1)}
+                      "vs_ma20": pct(last, ma20), "vs_ma60": pct(last, ma60) if ma60 else None}
           
           def regime_of(ind):
               score, why = 0, []
               for name, x in (("S&P500", ind.get("^GSPC", {})), ("NASDAQ", ind.get("^IXIC", {})), ("KOSPI", ind.get("^KS11", {}))):
                   if x.get("vs_ma20") is not None:
-                      if x["vs_ma20"] > 0 and (x.get("vs_ma60") or 0) > 0: score += 1; why.append(f"{name} 20/60일선 위")
-                      elif x["vs_ma20"] < 0 and (x.get("vs_ma60") or 0) < 0: score -= 1; why.append(f"{name} 20/60일선 아래")
+                      if x["vs_ma20"] > 0 and (x.get("vs_ma60") or 0) > 0: score += 1; why.append(f"{name} 상승추세(20/60일선 위)")
+                      elif x["vs_ma20"] < 0 and (x.get("vs_ma60") or 0) < 0: score -= 1; why.append(f"{name} 하락추세(20/60일선 아래)")
               vix = ind.get("^VIX", {}).get("last")
               if vix is not None:
                   if vix < 16: score += 1; why.append(f"VIX {vix:.0f} 안정")
-                  elif vix > 25: score -= 2; why.append(f"VIX {vix:.0f} 공포")
+                  elif vix > 25: score -= 2; why.append(f"VIX {vix:.0f} 공포 구간")
               k = ind.get("KRW=X", {}).get("d20")
               if k is not None:
-                  if k > 2: score -= 1; why.append("원화 약세(외인 이탈 우려)")
+                  if k > 2: score -= 1; why.append("원화 약세(외국인 이탈 우려)")
                   elif k < -2: score += 1; why.append("원화 강세")
               return ("risk_on" if score >= 2 else "risk_off" if score <= -2 else "neutral"), score, why
           
-          def analyze(raw):
-              ind = {s: indicators(m["close"]) for s, m in raw["series"].items()}
-              regime, score, why = regime_of(ind)
-              sectors = sorted([{"name": m["name"], "d20": ind[s]["d20"], "d5": ind[s]["d5"]}
-                                for s, m in raw["series"].items() if m["group"] in ("kr_etf", "us_sector") and ind.get(s, {}).get("d20") is not None],
-                               key=lambda r: r["d20"], reverse=True)
-              return {"as_of": raw["fetched_at"], "regime": regime, "score": score, "reasons": why, "weights": BASE_WEIGHTS[regime],
-                      "headline": {raw["series"][s]["name"]: ind[s] for s in ("^KS11", "^KQ11", "^GSPC", "^IXIC", "KRW=X", "^VIX", "^TNX") if ind.get(s)},
-                      "sectors_top": sectors[:3], "sectors_bottom": sectors[-3:]}
+          # ---------- AI ----------
+          SYSTEM = """너는 한국·미국 시장을 함께 보는 시황 애널리스트다. 독자는 숫자 나열이 아니라 '지금 시장에서 무슨 일이 벌어지고 있고, 그래서 왜 이 비중인가'를 알고 싶어한다.
+          입력: 오늘의 뉴스 헤드라인 목록, 주요 지표, 규칙 기반 기본 비중.
+          할 일:
+          1) 헤드라인을 읽고 오늘 시장을 움직이는 핵심 이슈 3~5개를 뽑아 서로 연결해 해석한다. 뻔한 지표 설명 대신 뉴스에 담긴 맥락(원인→영향)을 쓴다.
+          2) 기본 비중을 출발점으로 뉴스 맥락을 반영해 최종 비중을 정한다(각 자산 ±10%p 이내 조정, 합계 100).
+          3) 각 자산별로 '왜 이 비중인지'를 뉴스/지표를 근거로 한 문장씩 설명한다.
+          규칙: 헤드라인과 지표에 없는 사실은 지어내지 않는다. 투자 권유가 아닌 참고 정보다. 한국어, 반드시 아래 JSON만 출력(마크다운 금지):
+          {"headline":"오늘 시황 한 줄 제목","summary":"뉴스 기반 시황 해석 5~7문장","issues":[{"title":"이슈","detail":"왜 중요한지 1~2문장","impact":"긍정|부정|혼재"}],"weights":{"KODEX 200":0,"KODEX 코스닥150":0,"S&P 500":0,"NASDAQ":0,"채권":0,"금":0,"현금":0},"rationale":{"KODEX 200":"...","KODEX 코스닥150":"...","S&P 500":"...","NASDAQ":"...","채권":"...","금":"...","현금":"..."},"watch":["앞으로 지켜볼 것 1","2","3"]}"""
           
-          # ---------- 3. Claude 요약 (스킵 로직) ----------
-          def needs_llm(sig, prev):
-              if not os.getenv("ANTHROPIC_API_KEY"): return False, "API 키 없음"
-              if not prev: return True, "첫 실행"
-              if sig["regime"] != prev.get("regime"): return True, "레짐 변경"
-              moved = max(abs((sig["headline"][k].get("d1") or 0) - (prev.get("headline", {}).get(k, {}).get("d1") or 0)) for k in sig["headline"])
-              if moved >= MIN_CHANGE: return True, f"지수 변동 {moved:.2f}%"
-              if datetime.now(KST).hour == 17: return True, "마감 정기 갱신"
-              return False, f"변동 {moved:.2f}% < {MIN_CHANGE}%"
-          
-          def call_claude(sig):
-              from anthropic import Anthropic
-              msg = Anthropic().messages.create(model=MODEL, max_tokens=700, system=SYSTEM,
-                                                messages=[{"role": "user", "content": json.dumps(sig, ensure_ascii=False)}])
-              text = "".join(b.text for b in msg.content if getattr(b, "type", "") == "text").strip()
-              text = text.removeprefix("```json").removeprefix("```").removesuffix("```").strip()
-              out = json.loads(text); out["usage"] = {"in": msg.usage.input_tokens, "out": msg.usage.output_tokens, "model": MODEL}
+          def parse_out(text, payload):
+              text = text.strip(); text = text[text.find("{"): text.rfind("}") + 1]
+              out = json.loads(text)
+              w = out.get("weights") or {}
+              if abs(sum(w.values()) - 100) > 3 or set(w) != set(payload["base_weights"]): out["weights"] = payload["base_weights"]
               return out
           
-          # ---------- 4. 출력 ----------
-          def write_readme(L):
-              h = L["headline"]; rk = {"risk_on": "🟢 위험선호", "neutral": "🟡 중립", "risk_off": "🔴 위험회피"}[L["regime"]]
-              row = lambda n: f"| {n} | {h[n].get('last','-')} | {h[n].get('d1','-')}% | {h[n].get('d5','-')}% | {h[n].get('d20','-')}% |"
-              lines = ["# 🧠 시황두뇌", "", f"**마지막 갱신:** {L['as_of']} · **레짐:** {rk} (점수 {L['score']})", "",
-                       "## 시황 요약", L.get("summary", "_LLM 요약 없음 (API 키 미설정 또는 스킵)_"), "",
-                       "## 주요 지표", "| 지표 | 현재 | 1일 | 5일 | 20일 |", "|---|---:|---:|---:|---:|", *[row(n) for n in h], "",
-                       "## 제안 포트폴리오 (규칙 기반)", "| 자산 | 비중 |", "|---|---:|", *[f"| {k} | {v}% |" for k, v in L["weights"].items()], "",
-                       L.get("portfolio_note", ""), "", "## 체크포인트", *[f"- {w}" for w in L.get("watch", [])], "",
-                       "## 판단 근거", *[f"- {r}" for r in L["reasons"]], "", "---",
-                       "_평일 08~17시(KST) 매시 자동 갱신. 투자 권유가 아니며 참고용입니다._", f"_LLM: {L.get('llm_reason','-')}_"]
-              (ROOT / "README.md").write_text("\n".join(lines), encoding="utf-8")
+          def call_github_models(payload):
+              """GitHub Models: 워크플로우 permissions에 models: read 만 있으면 GITHUB_TOKEN으로 무료 호출"""
+              body = json.dumps({"model": GH_MODEL, "temperature": 0.3, "max_tokens": 1800,
+                                 "messages": [{"role": "system", "content": SYSTEM},
+                                              {"role": "user", "content": json.dumps(payload, ensure_ascii=False)}]}).encode()
+              req = Request("https://models.github.ai/inference/chat/completions", data=body, method="POST",
+                            headers={"Authorization": f"Bearer {os.environ['GITHUB_TOKEN']}", "Content-Type": "application/json",
+                                     "Accept": "application/vnd.github+json", "X-GitHub-Api-Version": "2022-11-28"})
+              data = json.loads(urlopen(req, timeout=120).read())
+              out = parse_out(data["choices"][0]["message"]["content"], payload)
+              u = data.get("usage", {}); out["usage"] = {"in": u.get("prompt_tokens"), "out": u.get("completion_tokens"), "model": GH_MODEL}
+              return out
           
-          INDEX_HTML = r"""<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>시황두뇌</title>
-          <style>:root{--paper:#F3F5F2;--ink:#17201C;--mute:#5E6A64;--line:#D8DDD9;--up:#C8342B;--down:#2A5CC2;color-scheme:light}
-          @media(prefers-color-scheme:dark){:root{--paper:#121715;--ink:#ECEFEA;--mute:#95A09A;--line:#2B332F;color-scheme:dark}}
-          *{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font-family:"Pretendard Variable",Pretendard,"Apple SD Gothic Neo","Noto Sans KR",system-ui,sans-serif;line-height:1.55}
-          main{max-width:720px;margin:0 auto;padding:32px 20px 64px}header{display:flex;justify-content:space-between;align-items:baseline;border-bottom:2px solid var(--ink);padding-bottom:10px}
-          header h1{font-size:18px;margin:0}header time{font-size:13px;color:var(--mute)}.regime{padding:36px 0 28px;border-bottom:1px solid var(--line)}
-          .word{font-size:clamp(44px,12vw,80px);font-weight:800;letter-spacing:-.03em;line-height:1;margin:0}.word.risk_on{color:var(--up)}.word.risk_off{color:var(--down)}
-          .regime p{margin:12px 0 0;font-size:17px}section{padding:24px 0;border-bottom:1px solid var(--line)}h2{font-size:15px;margin:0 0 12px;color:var(--mute);font-weight:600}
-          table{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums;font-size:15px}td,th{padding:7px 0;text-align:right;border-bottom:1px solid var(--line)}
-          td:first-child,th:first-child{text-align:left}th{font-weight:500;color:var(--mute);font-size:13px}.pos{color:var(--up)}.neg{color:var(--down)}
-          .bars{display:grid;gap:8px}.bar{display:grid;grid-template-columns:9em 1fr 3em;align-items:center;gap:10px;font-size:14px}.bar i{display:block;height:10px;background:var(--ink);border-radius:2px}
-          ul{padding-left:18px;margin:0}li{margin:4px 0}footer{font-size:12px;color:var(--mute);padding-top:16px}</style></head>
-          <body><main id="app"><p>불러오는 중…</p></main><script>
-          const R={risk_on:["위험선호","지수가 추세 위, 변동성 낮음."],neutral:["중립","신호가 엇갈림. 기본 비중 유지."],risk_off:["위험회피","추세 이탈 또는 변동성 급등."]};
-          const f=v=>v==null?"-":(v>0?"+":"")+v.toFixed(2)+"%",c=v=>v==null?"":v>0?"pos":v<0?"neg":"";
-          fetch("data/latest.json",{cache:"no-store"}).then(r=>r.json()).then(d=>{const [w,desc]=R[d.regime],h=d.headline||{},W=d.weights||{},max=Math.max(...Object.values(W));
-          document.getElementById("app").innerHTML=`<header><h1>시황두뇌</h1><time>${d.as_of}</time></header>
-          <div class="regime"><p class="word ${d.regime}">${w}</p><p>${d.summary||desc}</p></div>
-          <section><h2>주요 지표</h2><table><tr><th>지표</th><th>현재</th><th>1일</th><th>5일</th><th>20일</th></tr>${Object.entries(h).map(([k,x])=>`<tr><td>${k}</td><td>${x.last??"-"}</td><td class="${c(x.d1)}">${f(x.d1)}</td><td class="${c(x.d5)}">${f(x.d5)}</td><td class="${c(x.d20)}">${f(x.d20)}</td></tr>`).join("")}</table></section>
-          <section><h2>제안 비중</h2><div class="bars">${Object.entries(W).map(([k,v])=>`<div class="bar"><span>${k}</span><i style="width:${v/max*100}%"></i><b>${v}%</b></div>`).join("")}</div>${d.portfolio_note?`<p>${d.portfolio_note}</p>`:""}</section>
-          ${d.watch?.length?`<section><h2>체크포인트</h2><ul>${d.watch.map(x=>`<li>${x}</li>`).join("")}</ul></section>`:""}
-          <section><h2>판단 근거</h2><ul>${(d.reasons||[]).map(x=>`<li>${x}</li>`).join("")}</ul></section>
-          <footer>평일 08~17시(KST) 매시 자동 갱신 · ${d.llm_reason||""} · 투자 권유가 아닌 참고 정보입니다.</footer>`}).catch(()=>{document.getElementById("app").innerHTML='<p>data/latest.json이 아직 없습니다.</p>'});
-          </script></body></html>"""
+          def call_claude(payload):
+              from anthropic import Anthropic
+              msg = Anthropic().messages.create(model=MODEL, max_tokens=1800, system=SYSTEM,
+                                                messages=[{"role": "user", "content": json.dumps(payload, ensure_ascii=False)}])
+              out = parse_out("".join(b.text for b in msg.content if getattr(b, "type", "") == "text"), payload)
+              out["usage"] = {"in": msg.usage.input_tokens, "out": msg.usage.output_tokens, "model": MODEL}
+              return out
+          
+          def call_llm(payload):
+              if os.getenv("ANTHROPIC_API_KEY"): return call_claude(payload)
+              return call_github_models(payload)
+          
+          def needs_llm(sig, prev, news):
+              if not (os.getenv("ANTHROPIC_API_KEY") or os.getenv("GITHUB_TOKEN")): return False, "사용 가능한 AI 토큰 없음"
+              if not prev or "summary" not in prev: return True, "첫 실행"
+              if sig["regime"] != prev.get("regime"): return True, "레짐 변경"
+              old = set(n["title"] for n in prev.get("news", [])); new = sum(1 for n in news if n["title"] not in old)
+              if new >= 8: return True, f"새 뉴스 {new}건"
+              moved = max(abs((sig["headline_ind"][k].get("d1") or 0) - (prev.get("headline_ind", {}).get(k, {}).get("d1") or 0)) for k in sig["headline_ind"])
+              if moved >= MIN_CHANGE: return True, f"지수 변동 {moved:.2f}%"
+              if NOW.hour in (8, 17): return True, "정기 갱신"
+              return False, f"변동 없음(새 뉴스 {new}건)"
+          
+          # ---------- 출력 ----------
+          def write_readme(L):
+              h = L["headline_ind"]; rk = {"risk_on": "🟢 위험선호", "neutral": "🟡 중립", "risk_off": "🔴 위험회피"}[L["regime"]]
+              s = lambda v: "-" if v is None else f"{'+' if v > 0 else ''}{v}%"
+              o = ["# 🧠 시황두뇌", "", f"**{L['as_of']}** · 레짐 {rk}", ""]
+              if L.get("summary"):
+                  o += [f"## {L.get('headline_title', '오늘의 시황')}", "", L["summary"], ""]
+                  if L.get("issues"):
+                      o += ["## 핵심 이슈", ""]
+                      for i in L["issues"]:
+                          mark = {"긍정": "🟢", "부정": "🔴"}.get(i.get("impact"), "🟡")
+                          o += [f"- {mark} **{i.get('title','')}** — {i.get('detail','')}"]
+                      o += [""]
+                  o += ["## 포트폴리오와 그 이유", "", "| 자산 | 비중 | 왜 이 비중인가 |", "|---|---:|---|"]
+                  o += [f"| {k} | {v}% | {L.get('rationale', {}).get(k, '')} |" for k, v in L["weights"].items()]
+                  o += ["", "## 앞으로 지켜볼 것", ""] + [f"- {w}" for w in L.get("watch", [])] + [""]
+              else:
+                  o += ["> ⚠️ AI 해석이 아직 없습니다. (Actions 로그의 'AI' 항목을 확인하세요)", "",
+                        "## 포트폴리오 (규칙 기반)", "", "| 자산 | 비중 |", "|---|---:|"] + [f"| {k} | {v}% |" for k, v in L["weights"].items()] + [""]
+              o += ["## 주요 지표", "", "| 지표 | 현재 | 1일 | 5일 | 20일 |", "|---|---:|---:|---:|---:|"]
+              o += [f"| {n} | {x.get('last','-')} | {s(x.get('d1'))} | {s(x.get('d5'))} | {s(x.get('d20'))} |" for n, x in h.items()]
+              o += ["", "## 규칙 신호", ""] + [f"- {r}" for r in L["reasons"]]
+              o += ["", f"## 참고한 뉴스 ({len(L['news'])}건)", ""]
+              o += [f"- [{n['title']}]({n['link']}) · {n['src']}" if n.get("link") else f"- {n['title']} · {n['src']}" for n in L["news"][:30]]
+              o += ["", "---", f"_뉴스 소스 상태: {', '.join(f'{k} {v}' for k, v in L['news_status'].items())}_",
+                    f"_평일 08~17시(KST) 매시 자동 갱신 · AI {L.get('llm_reason','-')} · 투자 권유가 아닌 참고 정보입니다._"]
+              (ROOT / "README.md").write_text("\n".join(o), encoding="utf-8")
           
           def main():
-              raw = collect(); sig = analyze(raw)
-              prev_p = DATA / "latest.json"
-              prev = json.loads(prev_p.read_text(encoding="utf-8")) if prev_p.exists() else None
-              use, reason = needs_llm(sig, prev); L = dict(sig)
+              closes = collect(); ind = {s: indicators(c) for s, c in closes.items()}
+              regime, score, why = regime_of(ind)
+              news, status = fetch_news()
+              sig = {"as_of": NOW.strftime("%Y-%m-%d %H:%M KST"), "regime": regime, "score": score, "reasons": why,
+                     "weights": BASE_WEIGHTS[regime], "headline_ind": {TICKERS[s]: ind[s] for s in TICKERS if ind.get(s)},
+                     "news": news, "news_status": status}
+              p = DATA / "latest.json"; prev = json.loads(p.read_text(encoding="utf-8")) if p.exists() else None
+              use, reason = needs_llm(sig, prev, news); L = dict(sig)
               if use:
-                  try: L.update(call_claude(sig)); L["llm_reason"] = f"호출 ({reason})"
-                  except Exception as e: L["llm_reason"] = f"호출 실패: {type(e).__name__}"; use = False
+                  payload = {"as_of": sig["as_of"], "regime": regime, "rule_signals": why, "base_weights": BASE_WEIGHTS[regime],
+                             "indicators": {k: {kk: v[kk] for kk in ("last", "d1", "d5", "d20")} for k, v in sig["headline_ind"].items()},
+                             "news": [f"[{n['src']}] {n['title']}" for n in news]}
+                  try:
+                      out = call_llm(payload); L["llm_reason"] = f"호출 ({reason}, {out['usage']['model']})"
+                      L["headline_title"] = out.get("headline", ""); L["summary"] = out.get("summary", "")
+                      L["issues"] = out.get("issues", []); L["weights"] = out["weights"]
+                      L["rationale"] = out.get("rationale", {}); L["watch"] = out.get("watch", []); L["usage"] = out["usage"]
+                  except Exception as e:
+                      L["llm_reason"] = f"호출 실패: {type(e).__name__}: {str(e)[:80]}"; use = False
               if not use:
                   L.setdefault("llm_reason", f"스킵 ({reason})")
-                  for k in ("summary", "portfolio_note", "watch", "usage"):
+                  for k in ("headline_title", "summary", "issues", "weights", "rationale", "watch", "usage"):
                       if prev and k in prev: L[k] = prev[k]
-              prev_p.write_text(json.dumps(L, ensure_ascii=False, indent=1), encoding="utf-8")
-              hp = DATA / "history.json"; hist = json.loads(hp.read_text()) if hp.exists() else []
-              hist.append({"as_of": L["as_of"], "regime": L["regime"], "score": L["score"]}); hp.write_text(json.dumps(hist[-300:], ensure_ascii=False))
-              idx = ROOT / "docs" / "index.html"
-              if not idx.exists(): idx.write_text(INDEX_HTML, encoding="utf-8")
-              write_readme(L); print(L["regime"], L["llm_reason"])
+              p.write_text(json.dumps(L, ensure_ascii=False, indent=1), encoding="utf-8")
+              write_readme(L); print(regime, L["llm_reason"], status)
           
           if __name__ == "__main__": main()
           PYEOF

@@ -1,0 +1,203 @@
+# ======================================================
+#  시황두뇌 (Market Brain) — 이 파일 하나면 됩니다.
+#  저장 위치: .github/workflows/market-brain.yml
+#  평일 08~17시(KST) 매시 자동 실행 → README.md 와 docs/ 갱신
+# ======================================================
+name: 시황두뇌
+
+on:
+  schedule:
+    - cron: '0 23 * * 0-4'   # KST 08:00
+    - cron: '0 0-8 * * 1-5'  # KST 09:00~17:00
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: market-brain
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install -q "yfinance>=0.2.40" "pandas>=2.0" "anthropic>=0.40"
+
+      - name: 시황두뇌 실행
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          CLAUDE_MODEL: ${{ vars.CLAUDE_MODEL }}
+          MIN_CHANGE_PCT: ${{ vars.MIN_CHANGE_PCT }}
+        run: |
+          cat > brain.py << 'PYEOF'
+          # 시황두뇌 — 단일 파일 버전 (수집 → 지표 → Claude 요약 → README/웹 갱신)
+          import json, os, statistics
+          from datetime import datetime, timezone, timedelta
+          from pathlib import Path
+          import pandas as pd, yfinance as yf
+          
+          ROOT = Path(".")
+          DATA = ROOT / "docs" / "data"; DATA.mkdir(parents=True, exist_ok=True)
+          KST = timezone(timedelta(hours=9))
+          MODEL = os.getenv("CLAUDE_MODEL") or "claude-haiku-5-5"
+          MIN_CHANGE = float(os.getenv("MIN_CHANGE_PCT") or 0.3)
+          
+          TICKERS = {
+              "^KS11": ("KOSPI", "kr_index"), "^KQ11": ("KOSDAQ", "kr_index"), "KRW=X": ("USD/KRW", "fx"),
+              "069500.KS": ("KODEX 200", "kr_etf"), "229200.KS": ("KODEX 코스닥150", "kr_etf"),
+              "091160.KS": ("KODEX 반도체", "kr_etf"), "091170.KS": ("KODEX 은행", "kr_etf"),
+              "305720.KS": ("KODEX 2차전지산업", "kr_etf"), "148070.KS": ("KOSEF 국고채10년", "kr_bond"),
+              "^GSPC": ("S&P 500", "us_index"), "^IXIC": ("NASDAQ", "us_index"), "^VIX": ("VIX", "risk"),
+              "^TNX": ("US 10Y", "rate"), "XLK": ("Tech", "us_sector"), "XLF": ("Financials", "us_sector"),
+              "XLE": ("Energy", "us_sector"), "XLV": ("Health", "us_sector"), "TLT": ("미국 장기채", "us_bond"), "GLD": ("금", "alt"),
+          }
+          BASE_WEIGHTS = {
+              "risk_on":  {"KODEX 200": 25, "KODEX 코스닥150": 15, "S&P 500": 25, "NASDAQ": 15, "채권(국고/TLT)": 10, "금": 5, "현금": 5},
+              "neutral":  {"KODEX 200": 20, "KODEX 코스닥150": 5,  "S&P 500": 25, "NASDAQ": 10, "채권(국고/TLT)": 20, "금": 10, "현금": 10},
+              "risk_off": {"KODEX 200": 10, "KODEX 코스닥150": 0,  "S&P 500": 15, "NASDAQ": 5,  "채권(국고/TLT)": 30, "금": 15, "현금": 25},
+          }
+          SYSTEM = ("너는 한국·미국 시장을 보는 간결한 시황 애널리스트다. 주어진 지표 JSON만 근거로 쓰고 없는 수치는 지어내지 않는다. "
+                    "투자 권유가 아닌 참고 정보임을 전제로, 반드시 아래 JSON만 출력한다(마크다운 금지):\n"
+                    '{"summary":"3~4문장 한국어 시황","portfolio_note":"비중 제안 근거 2~3문장","watch":["체크포인트 1","체크포인트 2"]}')
+          
+          # ---------- 1. 수집 ----------
+          def collect():
+              df = yf.download(list(TICKERS), period="6mo", interval="1d", auto_adjust=True, progress=False, group_by="column")["Close"]
+              df = df.dropna(how="all").tail(90)
+              series = {}
+              for sym, (name, group) in TICKERS.items():
+                  if sym in df.columns and not df[sym].isna().all():
+                      series[sym] = {"name": name, "group": group, "close": [None if pd.isna(v) else float(v) for v in df[sym].ffill()]}
+              return {"fetched_at": datetime.now(KST).isoformat(timespec="minutes"), "series": series}
+          
+          # ---------- 2. 지표 ----------
+          def pct(a, b): return None if not a or not b else round((a / b - 1) * 100, 2)
+          
+          def indicators(closes):
+              c = [v for v in closes if v is not None]
+              if len(c) < 25: return {}
+              last, ma20 = c[-1], statistics.fmean(c[-20:])
+              ma60 = statistics.fmean(c[-60:]) if len(c) >= 60 else None
+              rets = [c[i] / c[i-1] - 1 for i in range(1, len(c))]
+              return {"last": round(last, 2), "d1": pct(last, c[-2]), "d5": pct(last, c[-6]), "d20": pct(last, c[-21]),
+                      "vs_ma20": pct(last, ma20), "vs_ma60": pct(last, ma60) if ma60 else None,
+                      "vol20": round(statistics.pstdev(rets[-20:]) * 252 ** 0.5 * 100, 1)}
+          
+          def regime_of(ind):
+              score, why = 0, []
+              for name, x in (("S&P500", ind.get("^GSPC", {})), ("NASDAQ", ind.get("^IXIC", {})), ("KOSPI", ind.get("^KS11", {}))):
+                  if x.get("vs_ma20") is not None:
+                      if x["vs_ma20"] > 0 and (x.get("vs_ma60") or 0) > 0: score += 1; why.append(f"{name} 20/60일선 위")
+                      elif x["vs_ma20"] < 0 and (x.get("vs_ma60") or 0) < 0: score -= 1; why.append(f"{name} 20/60일선 아래")
+              vix = ind.get("^VIX", {}).get("last")
+              if vix is not None:
+                  if vix < 16: score += 1; why.append(f"VIX {vix:.0f} 안정")
+                  elif vix > 25: score -= 2; why.append(f"VIX {vix:.0f} 공포")
+              k = ind.get("KRW=X", {}).get("d20")
+              if k is not None:
+                  if k > 2: score -= 1; why.append("원화 약세(외인 이탈 우려)")
+                  elif k < -2: score += 1; why.append("원화 강세")
+              return ("risk_on" if score >= 2 else "risk_off" if score <= -2 else "neutral"), score, why
+          
+          def analyze(raw):
+              ind = {s: indicators(m["close"]) for s, m in raw["series"].items()}
+              regime, score, why = regime_of(ind)
+              sectors = sorted([{"name": m["name"], "d20": ind[s]["d20"], "d5": ind[s]["d5"]}
+                                for s, m in raw["series"].items() if m["group"] in ("kr_etf", "us_sector") and ind.get(s, {}).get("d20") is not None],
+                               key=lambda r: r["d20"], reverse=True)
+              return {"as_of": raw["fetched_at"], "regime": regime, "score": score, "reasons": why, "weights": BASE_WEIGHTS[regime],
+                      "headline": {raw["series"][s]["name"]: ind[s] for s in ("^KS11", "^KQ11", "^GSPC", "^IXIC", "KRW=X", "^VIX", "^TNX") if ind.get(s)},
+                      "sectors_top": sectors[:3], "sectors_bottom": sectors[-3:]}
+          
+          # ---------- 3. Claude 요약 (스킵 로직) ----------
+          def needs_llm(sig, prev):
+              if not os.getenv("ANTHROPIC_API_KEY"): return False, "API 키 없음"
+              if not prev: return True, "첫 실행"
+              if sig["regime"] != prev.get("regime"): return True, "레짐 변경"
+              moved = max(abs((sig["headline"][k].get("d1") or 0) - (prev.get("headline", {}).get(k, {}).get("d1") or 0)) for k in sig["headline"])
+              if moved >= MIN_CHANGE: return True, f"지수 변동 {moved:.2f}%"
+              if datetime.now(KST).hour == 17: return True, "마감 정기 갱신"
+              return False, f"변동 {moved:.2f}% < {MIN_CHANGE}%"
+          
+          def call_claude(sig):
+              from anthropic import Anthropic
+              msg = Anthropic().messages.create(model=MODEL, max_tokens=700, system=SYSTEM,
+                                                messages=[{"role": "user", "content": json.dumps(sig, ensure_ascii=False)}])
+              text = "".join(b.text for b in msg.content if getattr(b, "type", "") == "text").strip()
+              text = text.removeprefix("```json").removeprefix("```").removesuffix("```").strip()
+              out = json.loads(text); out["usage"] = {"in": msg.usage.input_tokens, "out": msg.usage.output_tokens, "model": MODEL}
+              return out
+          
+          # ---------- 4. 출력 ----------
+          def write_readme(L):
+              h = L["headline"]; rk = {"risk_on": "🟢 위험선호", "neutral": "🟡 중립", "risk_off": "🔴 위험회피"}[L["regime"]]
+              row = lambda n: f"| {n} | {h[n].get('last','-')} | {h[n].get('d1','-')}% | {h[n].get('d5','-')}% | {h[n].get('d20','-')}% |"
+              lines = ["# 🧠 시황두뇌", "", f"**마지막 갱신:** {L['as_of']} · **레짐:** {rk} (점수 {L['score']})", "",
+                       "## 시황 요약", L.get("summary", "_LLM 요약 없음 (API 키 미설정 또는 스킵)_"), "",
+                       "## 주요 지표", "| 지표 | 현재 | 1일 | 5일 | 20일 |", "|---|---:|---:|---:|---:|", *[row(n) for n in h], "",
+                       "## 제안 포트폴리오 (규칙 기반)", "| 자산 | 비중 |", "|---|---:|", *[f"| {k} | {v}% |" for k, v in L["weights"].items()], "",
+                       L.get("portfolio_note", ""), "", "## 체크포인트", *[f"- {w}" for w in L.get("watch", [])], "",
+                       "## 판단 근거", *[f"- {r}" for r in L["reasons"]], "", "---",
+                       "_평일 08~17시(KST) 매시 자동 갱신. 투자 권유가 아니며 참고용입니다._", f"_LLM: {L.get('llm_reason','-')}_"]
+              (ROOT / "README.md").write_text("\n".join(lines), encoding="utf-8")
+          
+          INDEX_HTML = r"""<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>시황두뇌</title>
+          <style>:root{--paper:#F3F5F2;--ink:#17201C;--mute:#5E6A64;--line:#D8DDD9;--up:#C8342B;--down:#2A5CC2;color-scheme:light}
+          @media(prefers-color-scheme:dark){:root{--paper:#121715;--ink:#ECEFEA;--mute:#95A09A;--line:#2B332F;color-scheme:dark}}
+          *{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font-family:"Pretendard Variable",Pretendard,"Apple SD Gothic Neo","Noto Sans KR",system-ui,sans-serif;line-height:1.55}
+          main{max-width:720px;margin:0 auto;padding:32px 20px 64px}header{display:flex;justify-content:space-between;align-items:baseline;border-bottom:2px solid var(--ink);padding-bottom:10px}
+          header h1{font-size:18px;margin:0}header time{font-size:13px;color:var(--mute)}.regime{padding:36px 0 28px;border-bottom:1px solid var(--line)}
+          .word{font-size:clamp(44px,12vw,80px);font-weight:800;letter-spacing:-.03em;line-height:1;margin:0}.word.risk_on{color:var(--up)}.word.risk_off{color:var(--down)}
+          .regime p{margin:12px 0 0;font-size:17px}section{padding:24px 0;border-bottom:1px solid var(--line)}h2{font-size:15px;margin:0 0 12px;color:var(--mute);font-weight:600}
+          table{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums;font-size:15px}td,th{padding:7px 0;text-align:right;border-bottom:1px solid var(--line)}
+          td:first-child,th:first-child{text-align:left}th{font-weight:500;color:var(--mute);font-size:13px}.pos{color:var(--up)}.neg{color:var(--down)}
+          .bars{display:grid;gap:8px}.bar{display:grid;grid-template-columns:9em 1fr 3em;align-items:center;gap:10px;font-size:14px}.bar i{display:block;height:10px;background:var(--ink);border-radius:2px}
+          ul{padding-left:18px;margin:0}li{margin:4px 0}footer{font-size:12px;color:var(--mute);padding-top:16px}</style></head>
+          <body><main id="app"><p>불러오는 중…</p></main><script>
+          const R={risk_on:["위험선호","지수가 추세 위, 변동성 낮음."],neutral:["중립","신호가 엇갈림. 기본 비중 유지."],risk_off:["위험회피","추세 이탈 또는 변동성 급등."]};
+          const f=v=>v==null?"-":(v>0?"+":"")+v.toFixed(2)+"%",c=v=>v==null?"":v>0?"pos":v<0?"neg":"";
+          fetch("data/latest.json",{cache:"no-store"}).then(r=>r.json()).then(d=>{const [w,desc]=R[d.regime],h=d.headline||{},W=d.weights||{},max=Math.max(...Object.values(W));
+          document.getElementById("app").innerHTML=`<header><h1>시황두뇌</h1><time>${d.as_of}</time></header>
+          <div class="regime"><p class="word ${d.regime}">${w}</p><p>${d.summary||desc}</p></div>
+          <section><h2>주요 지표</h2><table><tr><th>지표</th><th>현재</th><th>1일</th><th>5일</th><th>20일</th></tr>${Object.entries(h).map(([k,x])=>`<tr><td>${k}</td><td>${x.last??"-"}</td><td class="${c(x.d1)}">${f(x.d1)}</td><td class="${c(x.d5)}">${f(x.d5)}</td><td class="${c(x.d20)}">${f(x.d20)}</td></tr>`).join("")}</table></section>
+          <section><h2>제안 비중</h2><div class="bars">${Object.entries(W).map(([k,v])=>`<div class="bar"><span>${k}</span><i style="width:${v/max*100}%"></i><b>${v}%</b></div>`).join("")}</div>${d.portfolio_note?`<p>${d.portfolio_note}</p>`:""}</section>
+          ${d.watch?.length?`<section><h2>체크포인트</h2><ul>${d.watch.map(x=>`<li>${x}</li>`).join("")}</ul></section>`:""}
+          <section><h2>판단 근거</h2><ul>${(d.reasons||[]).map(x=>`<li>${x}</li>`).join("")}</ul></section>
+          <footer>평일 08~17시(KST) 매시 자동 갱신 · ${d.llm_reason||""} · 투자 권유가 아닌 참고 정보입니다.</footer>`}).catch(()=>{document.getElementById("app").innerHTML='<p>data/latest.json이 아직 없습니다.</p>'});
+          </script></body></html>"""
+          
+          def main():
+              raw = collect(); sig = analyze(raw)
+              prev_p = DATA / "latest.json"
+              prev = json.loads(prev_p.read_text(encoding="utf-8")) if prev_p.exists() else None
+              use, reason = needs_llm(sig, prev); L = dict(sig)
+              if use:
+                  try: L.update(call_claude(sig)); L["llm_reason"] = f"호출 ({reason})"
+                  except Exception as e: L["llm_reason"] = f"호출 실패: {type(e).__name__}"; use = False
+              if not use:
+                  L.setdefault("llm_reason", f"스킵 ({reason})")
+                  for k in ("summary", "portfolio_note", "watch", "usage"):
+                      if prev and k in prev: L[k] = prev[k]
+              prev_p.write_text(json.dumps(L, ensure_ascii=False, indent=1), encoding="utf-8")
+              hp = DATA / "history.json"; hist = json.loads(hp.read_text()) if hp.exists() else []
+              hist.append({"as_of": L["as_of"], "regime": L["regime"], "score": L["score"]}); hp.write_text(json.dumps(hist[-300:], ensure_ascii=False))
+              idx = ROOT / "docs" / "index.html"
+              if not idx.exists(): idx.write_text(INDEX_HTML, encoding="utf-8")
+              write_readme(L); print(L["regime"], L["llm_reason"])
+          
+          if __name__ == "__main__": main()
+          PYEOF
+          python brain.py
+
+      - name: 결과 커밋
+        run: |
+          git config user.name "market-brain[bot]"
+          git config user.email "market-brain@users.noreply.github.com"
+          git add README.md docs
+          git diff --cached --quiet && echo "변경 없음" || git commit -m "시황 업데이트 $(TZ=Asia/Seoul date '+%m-%d %H:%M')"
+          git push

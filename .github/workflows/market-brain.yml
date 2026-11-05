@@ -1,6 +1,5 @@
 # ======================================================
-#  시황두뇌 v3 — 뉴스 통합 + AI 해석 + 포트폴리오 근거
-#  AI는 GitHub Models(무료, 키 불필요) 사용
+#  시황두뇌 v4 — 뉴스 통합 + AI 해석(GitHub Models 무료) + 규칙 다이제스트 대체
 #  저장 위치: .github/workflows/market-brain.yml
 # ======================================================
 name: 시황두뇌
@@ -13,7 +12,7 @@ on:
 
 permissions:
   contents: write
-  models: read              # ← GitHub 내장 AI 사용 권한 (무료)
+  models: read
 
 concurrency:
   group: market-brain
@@ -32,12 +31,12 @@ jobs:
       - name: 시황두뇌 실행
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}   # 있으면 Claude 사용, 없으면 GitHub Models
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           GH_MODEL: ${{ vars.GH_MODEL }}
           MIN_CHANGE_PCT: ${{ vars.MIN_CHANGE_PCT }}
         run: |
           cat > brain.py << 'PYEOF'
-          # 시황두뇌 v3 — 뉴스 통합 + AI 해석(GitHub Models 무료) + 포트폴리오 근거
+          # 시황두뇌 v4 — 뉴스 통합 + AI 해석(GitHub Models 무료) + 규칙 다이제스트 대체
           import json, os, re, statistics, html
           from datetime import datetime, timezone, timedelta
           from pathlib import Path
@@ -151,18 +150,31 @@ jobs:
               if abs(sum(w.values()) - 100) > 3 or set(w) != set(payload["base_weights"]): out["weights"] = payload["base_weights"]
               return out
           
+          GH_ROUTES = [("https://models.github.ai/inference/chat/completions", GH_MODEL),
+                       ("https://models.github.ai/inference/chat/completions", "openai/gpt-4o-mini"),
+                       ("https://models.inference.ai.azure.com/chat/completions", "gpt-4o-mini")]
+          
           def call_github_models(payload):
-              """GitHub Models: 워크플로우 permissions에 models: read 만 있으면 GITHUB_TOKEN으로 무료 호출"""
-              body = json.dumps({"model": GH_MODEL, "temperature": 0.3, "max_tokens": 1800,
-                                 "messages": [{"role": "system", "content": SYSTEM},
-                                              {"role": "user", "content": json.dumps(payload, ensure_ascii=False)}]}).encode()
-              req = Request("https://models.github.ai/inference/chat/completions", data=body, method="POST",
-                            headers={"Authorization": f"Bearer {os.environ['GITHUB_TOKEN']}", "Content-Type": "application/json",
-                                     "Accept": "application/vnd.github+json", "X-GitHub-Api-Version": "2022-11-28"})
-              data = json.loads(urlopen(req, timeout=120).read())
-              out = parse_out(data["choices"][0]["message"]["content"], payload)
-              u = data.get("usage", {}); out["usage"] = {"in": u.get("prompt_tokens"), "out": u.get("completion_tokens"), "model": GH_MODEL}
-              return out
+              """GitHub Models: 경로/모델을 차례로 시도"""
+              errors = []
+              for url, model in GH_ROUTES:
+                  try:
+                      body = json.dumps({"model": model, "temperature": 0.3, "max_tokens": 1800,
+                                         "messages": [{"role": "system", "content": SYSTEM},
+                                                      {"role": "user", "content": json.dumps(payload, ensure_ascii=False)}]}).encode()
+                      req = Request(url, data=body, method="POST",
+                                    headers={"Authorization": f"Bearer {os.environ['GITHUB_TOKEN']}", "Content-Type": "application/json",
+                                             "Accept": "application/vnd.github+json", "X-GitHub-Api-Version": "2022-11-28"})
+                      data = json.loads(urlopen(req, timeout=120).read())
+                      out = parse_out(data["choices"][0]["message"]["content"], payload)
+                      u = data.get("usage", {}); out["usage"] = {"in": u.get("prompt_tokens"), "out": u.get("completion_tokens"), "model": model}
+                      return out
+                  except Exception as e:
+                      detail = ""
+                      try: detail = e.read().decode()[:150]
+                      except Exception: pass
+                      errors.append(f"{model}: {type(e).__name__} {str(e)[:60]} {detail}")
+              raise RuntimeError(" | ".join(errors))
           
           def call_claude(payload):
               from anthropic import Anthropic
@@ -187,11 +199,49 @@ jobs:
               if NOW.hour in (8, 17): return True, "정기 갱신"
               return False, f"변동 없음(새 뉴스 {new}건)"
           
+          
+          # ---------- AI 없이도 되는 뉴스 다이제스트 ----------
+          THEMES = [("금리·연준", r"금리|연준|Fed|FOMC|국채|Treasury|yield|rate cut|inflation|물가"),
+                    ("환율·외국인", r"환율|원화|달러|외국인|dollar|KRW|yen|엔화"),
+                    ("반도체·AI", r"반도체|삼성전자|SK하이닉스|엔비디아|Nvidia|AI|chip|semiconductor|TSMC"),
+                    ("실적·기업", r"실적|earnings|guidance|revenue|영업이익|매출"),
+                    ("정치·관세", r"관세|tariff|선거|election|트럼프|Trump|정부|government|규제"),
+                    ("유가·원자재·금", r"유가|oil|WTI|금값|gold|원자재|commodit"),
+                    ("증시 전반", r"코스피|코스닥|증시|주가|stocks?|market|Nasdaq|S&P|Dow|급락|급등|rally|selloff")]
+          
+          def rule_digest(sig):
+              news = sig["news"]; h = sig["headline_ind"]; regime = sig["regime"]
+              groups = {}
+              for n in news:
+                  for name, pat in THEMES:
+                      if re.search(pat, n["title"], re.I): groups.setdefault(name, []).append(n["title"]); break
+              issues = [{"title": k, "detail": " / ".join(t[:60] for t in v[:2]), "impact": "혼재"} for k, v in sorted(groups.items(), key=lambda x: -len(x[1]))[:5]]
+              rk = {"risk_on": "위험선호", "neutral": "중립", "risk_off": "위험회피"}[regime]
+              k, s_, n_ = h.get("KOSPI", {}), h.get("S&P 500", {}), h.get("NASDAQ", {})
+              fx, vix = h.get("USD/KRW", {}), h.get("VIX", {})
+              lead = ", ".join(f"{t}({len(v)}건)" for t, v in sorted(groups.items(), key=lambda x: -len(x[1]))[:3]) or "특이 테마 없음"
+              summary = (f"오늘 뉴스의 중심은 {lead}입니다. 코스피는 하루 {k.get('d1')}%, 5일 {k.get('d5')}%, S&P500은 하루 {s_.get('d1')}%, "
+                         f"나스닥은 {n_.get('d1')}% 움직였고 VIX는 {vix.get('last')}, 원달러는 20일간 {fx.get('d20')}% 변했습니다. "
+                         f"추세·변동성·환율 신호를 합치면 현재 레짐은 '{rk}'이며, 규칙 신호는 {'; '.join(sig['reasons'])}입니다. "
+                         f"(AI 해석이 비활성화되어 규칙 기반으로 작성됨)")
+              why = {"risk_off": {"KODEX 200": "국내 지수가 추세 아래에 있어 비중 축소", "KODEX 코스닥150": "변동성 큰 중소형주는 위험회피 구간에서 제외",
+                                  "S&P 500": "미국 대형주도 추세 이탈, 핵심 비중만 유지", "NASDAQ": "고밸류 성장주는 금리·변동성에 취약해 최소화",
+                                  "채권": "위험회피 국면의 방어 핵심 자산", "금": "달러·지정학 불안 헤지", "현금": "반등 시 재진입 여력 확보"},
+                     "neutral": {"KODEX 200": "신호 혼재, 기본 비중 유지", "KODEX 코스닥150": "소폭만 편입", "S&P 500": "미국 대형주 기본 비중",
+                                 "NASDAQ": "성장주 중립 비중", "채권": "균형용 방어 자산", "금": "분산 목적", "현금": "기회 대기"},
+                     "risk_on": {"KODEX 200": "국내 상승추세 추종", "KODEX 코스닥150": "위험선호 시 중소형주 베타 확보", "S&P 500": "미국 대형주 핵심",
+                                 "NASDAQ": "성장주 확대", "채권": "최소 방어", "금": "소폭 분산", "현금": "최소 유지"}}[regime]
+              watch = [f"가장 많이 언급된 테마 '{issues[0]['title']}'의 후속 뉴스" if issues else "주요 테마 변화",
+                       "VIX 25 상회/16 하회 여부", "코스피·S&P500의 20일선 회복 여부"]
+              return {"headline": f"[{rk}] 뉴스 테마: {lead}", "summary": summary, "issues": issues,
+                      "weights": sig["weights"], "rationale": why, "watch": watch, "usage": {"model": "rule-digest"}}
+          
           # ---------- 출력 ----------
           def write_readme(L):
               h = L["headline_ind"]; rk = {"risk_on": "🟢 위험선호", "neutral": "🟡 중립", "risk_off": "🔴 위험회피"}[L["regime"]]
               s = lambda v: "-" if v is None else f"{'+' if v > 0 else ''}{v}%"
-              o = ["# 🧠 시황두뇌", "", f"**{L['as_of']}** · 레짐 {rk}", ""]
+              o = ["# 🧠 시황두뇌", "", f"**{L['as_of']}** · 레짐 {rk} · 작성: {L.get('usage', {}).get('model', '-')}", ""]
+              if L.get("ai_error"): o += [f"> ⚠️ AI 호출 실패 (규칙 다이제스트로 대체): `{L['ai_error']}`", ""]
               if L.get("summary"):
                   o += [f"## {L.get('headline_title', '오늘의 시황')}", "", L["summary"], ""]
                   if L.get("issues"):
@@ -234,8 +284,15 @@ jobs:
                       L["issues"] = out.get("issues", []); L["weights"] = out["weights"]
                       L["rationale"] = out.get("rationale", {}); L["watch"] = out.get("watch", []); L["usage"] = out["usage"]
                   except Exception as e:
-                      L["llm_reason"] = f"호출 실패: {type(e).__name__}: {str(e)[:80]}"; use = False
-              if not use:
+                      L["ai_error"] = f"{type(e).__name__}: {str(e)[:400]}"
+                      out = rule_digest(sig); L["llm_reason"] = "AI 실패 → 규칙 다이제스트"
+                      L["headline_title"] = out["headline"]; L["summary"] = out["summary"]; L["issues"] = out["issues"]
+                      L["weights"] = out["weights"]; L["rationale"] = out["rationale"]; L["watch"] = out["watch"]; L["usage"] = out["usage"]
+              if not use and not (prev and "summary" in prev):
+                  out = rule_digest(sig); L["llm_reason"] = f"규칙 다이제스트 ({reason})"
+                  L["headline_title"] = out["headline"]; L["summary"] = out["summary"]; L["issues"] = out["issues"]
+                  L["weights"] = out["weights"]; L["rationale"] = out["rationale"]; L["watch"] = out["watch"]; L["usage"] = out["usage"]
+              elif not use:
                   L.setdefault("llm_reason", f"스킵 ({reason})")
                   for k in ("headline_title", "summary", "issues", "weights", "rationale", "watch", "usage"):
                       if prev and k in prev: L[k] = prev[k]

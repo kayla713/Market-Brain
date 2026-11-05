@@ -1,20 +1,38 @@
 # 🧠 시황두뇌
 
-**2026-11-05 20:27 KST** · 레짐 🔴 위험회피
+**2026-11-05 20:38 KST** · 레짐 🔴 위험회피 · 작성: rule-digest
 
-> ⚠️ AI 해석이 아직 없습니다. (Actions 로그의 'AI' 항목을 확인하세요)
+> ⚠️ AI 호출 실패 (규칙 다이제스트로 대체): `RuntimeError: openai/gpt-4.1-mini: JSONDecodeError Expecting value: line 1 column 1 (char 0)  | openai/gpt-4o-mini: JSONDecodeError Expecting value: line 1 column 1 (char 0)  | gpt-4o-mini: URLError <urlopen error [Errno -2] Name or service not known> `
 
-## 포트폴리오 (규칙 기반)
+## [위험회피] 뉴스 테마: 반도체·AI(9건), 증시 전반(7건), 실적·기업(5건)
 
-| 자산 | 비중 |
-|---|---:|
-| KODEX 200 | 10% |
-| KODEX 코스닥150 | 0% |
-| S&P 500 | 15% |
-| NASDAQ | 5% |
-| 채권(국고/TLT) | 30% |
-| 금 | 15% |
-| 현금 | 25% |
+오늘 뉴스의 중심은 반도체·AI(9건), 증시 전반(7건), 실적·기업(5건)입니다. 코스피는 하루 -5.28%, 5일 -9.33%, S&P500은 하루 0.0%, 나스닥은 0.0% 움직였고 VIX는 16.79, 원달러는 20일간 0.3% 변했습니다. 추세·변동성·환율 신호를 합치면 현재 레짐은 '위험회피'이며, 규칙 신호는 S&P500 하락추세(20/60일선 아래); NASDAQ 하락추세(20/60일선 아래); KOSPI 하락추세(20/60일선 아래)입니다. (AI 해석이 비활성화되어 규칙 기반으로 작성됨)
+
+## 핵심 이슈
+
+- 🟡 **반도체·AI** — 이형일, 피치에 "AI·반도체 호황, 잠재성장률 반등 기대" / Six Flags Entertainment earnings missed by $5.57, revenue wa
+- 🟡 **증시 전반** — "주주환원 신뢰 부족한 K증시 … 거수기 이사회 더이상 안돼" / Oppenheimer cuts Trimble Navigation stock price target on AR
+- 🟡 **실적·기업** — 강원 농촌 활력 촉진 지구 지정 실적 저조…이양 권한 4.4% 그쳐 / Six Flags shares jump 5% on upbeat guidance despite earnings
+- 🟡 **정치·관세** — 美중간선거 '블루웨이브'에…한·일 증시 동반 급락 / Evercore ISI cuts Medline stock price target on tariff impac
+- 🟡 **금리·연준** — "동맹국이 국채 사게 하라" 마이런 보고서 현실화? / Euro zone inflation hits 4% for first time in three years as
+
+## 포트폴리오와 그 이유
+
+| 자산 | 비중 | 왜 이 비중인가 |
+|---|---:|---|
+| KODEX 200 | 10% | 국내 지수가 추세 아래에 있어 비중 축소 |
+| KODEX 코스닥150 | 0% | 변동성 큰 중소형주는 위험회피 구간에서 제외 |
+| S&P 500 | 15% | 미국 대형주도 추세 이탈, 핵심 비중만 유지 |
+| NASDAQ | 5% | 고밸류 성장주는 금리·변동성에 취약해 최소화 |
+| 채권 | 30% | 위험회피 국면의 방어 핵심 자산 |
+| 금 | 15% | 달러·지정학 불안 헤지 |
+| 현금 | 25% | 반등 시 재진입 여력 확보 |
+
+## 앞으로 지켜볼 것
+
+- 가장 많이 언급된 테마 '반도체·AI'의 후속 뉴스
+- VIX 25 상회/16 하회 여부
+- 코스피·S&P500의 20일선 회복 여부
 
 ## 주요 지표
 
@@ -22,12 +40,12 @@
 |---|---:|---:|---:|---:|
 | KOSPI | 5383.8 | -5.28% | -9.33% | -18.75% |
 | KOSDAQ | 678.41 | -5.11% | -9.93% | -23.97% |
-| USD/KRW | 1343.09 | +0.01% | +0.21% | +0.3% |
+| USD/KRW | 1343.08 | +0.01% | +0.2% | +0.3% |
 | S&P 500 | 7688.62 | 0.0% | -0.41% | -0.99% |
 | NASDAQ | 25736.51 | 0.0% | -1.71% | -5.36% |
-| VIX | 16.84 | +1.38% | -2.09% | +9.28% |
+| VIX | 16.79 | +1.08% | -2.38% | +8.96% |
 | US 10Y | 4.89 | 0.0% | -1.9% | -6.44% |
-| WTI 유가 | 88.87 | +0.85% | -12.87% | -2.86% |
+| WTI 유가 | 88.97 | +0.96% | -12.77% | -2.75% |
 | 금 | 372.49 | 0.0% | +1.06% | -1.62% |
 | 미국 장기채 | 81.76 | 0.0% | +0.33% | +5.0% |
 | KODEX 200 | 84610.0 | -5.69% | -10.43% | -19.8% |
@@ -71,7 +89,7 @@
 - [Third-quarter U.S. GDP increases a better-than-expected 3.4% as September inflation accelerates](https://www.cnbc.com/2026/10/29/pce-inflation-report-september-2026-.html) · CNBC Markets
 - [Research firm declares ‘end of the AI trade as we know it’ — and Asian tech stocks reflect the shift](https://www.marketwatch.com/story/research-firm-declares-end-of-the-ai-trade-as-we-know-it-and-asian-tech-stocks-reflect-the-shift-25ac8e8f?mod=mw_rss_topstories) · MarketWatch
 - [A prolonged war in Iran is the market’s real ‘black swan,’ says this strategist](https://www.marketwatch.com/story/a-prolonged-war-in-iran-is-the-markets-real-black-swan-says-this-strategist-65d105c7?mod=mw_rss_topstories) · MarketWatch
-- [Toyota stock rallies after company lowered sales guidance. Here’s how rare that is.](https://www.marketwatch.com/story/toyota-stock-rallies-after-company-lowered-sales-guidance-heres-how-rare-that-is-c3d6c9bf?mod=mw_rss_topstories) · MarketWatch
+- [Toyota’s stock rallies after the company lowered sales guidance. Here’s how rare that is.](https://www.marketwatch.com/story/toyota-stock-rallies-after-company-lowered-sales-guidance-heres-how-rare-that-is-c3d6c9bf?mod=mw_rss_topstories) · MarketWatch
 - [Dow scores its best day in 18 months in a broad relief rally after Democrats sweep to power in Congress](https://www.marketwatch.com/story/dow-scores-its-best-day-in-18-months-in-a-broad-relief-rally-after-democrats-sweep-to-power-in-congress-d7348fc0?mod=mw_rss_topstories) · MarketWatch
 - [Most investors are blind to the possibility of a market crash. Here is the five-part strategy to survive one.](https://www.marketwatch.com/story/most-investors-are-blind-to-the-possibility-of-a-market-crash-here-is-the-five-part-strategy-to-survive-one-a1762911?mod=mw_rss_topstories) · MarketWatch
 - [Qualcomm’s stock falls as twin forces pressure sales](https://www.marketwatch.com/story/qualcomms-stock-falls-as-twin-forces-pressure-sales-fa161159?mod=mw_rss_topstories) · MarketWatch
@@ -79,4 +97,4 @@
 
 ---
 _뉴스 소스 상태: 연합뉴스 경제 12, 한국경제 증권 12, 매일경제 증권 12, 매일경제 경제 12, Yahoo Finance 실패 HTTPError, Investing.com 10, CNBC Markets 12, MarketWatch 10_
-_평일 08~17시(KST) 매시 자동 갱신 · AI 호출 실패: JSONDecodeError: Expecting value: line 1 column 1 (char 0) · 투자 권유가 아닌 참고 정보입니다._
+_평일 08~17시(KST) 매시 자동 갱신 · AI AI 실패 → 규칙 다이제스트 · 투자 권유가 아닌 참고 정보입니다._

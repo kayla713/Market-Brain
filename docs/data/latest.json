@@ -1,5 +1,5 @@
 {
- "as_of": "2026-11-05 20:27 KST",
+ "as_of": "2026-11-05 20:38 KST",
  "regime": "risk_off",
  "score": -3,
  "reasons": [
@@ -12,7 +12,7 @@
   "KODEX 코스닥150": 0,
   "S&P 500": 15,
   "NASDAQ": 5,
-  "채권(국고/TLT)": 30,
+  "채권": 30,
   "금": 15,
   "현금": 25
  },
@@ -34,12 +34,12 @@
    "vs_ma60": -16.93
   },
   "USD/KRW": {
-   "last": 1343.09,
+   "last": 1343.08,
    "d1": 0.01,
-   "d5": 0.21,
+   "d5": 0.2,
    "d20": 0.3,
    "vs_ma20": 0.66,
-   "vs_ma60": -0.97
+   "vs_ma60": -0.98
   },
   "S&P 500": {
    "last": 7688.62,
@@ -58,12 +58,12 @@
    "vs_ma60": -2.84
   },
   "VIX": {
-   "last": 16.84,
-   "d1": 1.38,
-   "d5": -2.09,
-   "d20": 9.28,
-   "vs_ma20": -4.97,
-   "vs_ma60": 3.54
+   "last": 16.79,
+   "d1": 1.08,
+   "d5": -2.38,
+   "d20": 8.96,
+   "vs_ma20": -5.24,
+   "vs_ma60": 3.24
   },
   "US 10Y": {
    "last": 4.89,
@@ -74,12 +74,12 @@
    "vs_ma60": -1.64
   },
   "WTI 유가": {
-   "last": 88.87,
-   "d1": 0.85,
-   "d5": -12.87,
-   "d20": -2.86,
-   "vs_ma20": -9.3,
-   "vs_ma60": -5.09
+   "last": 88.97,
+   "d1": 0.96,
+   "d5": -12.77,
+   "d20": -2.75,
+   "vs_ma20": -9.2,
+   "vs_ma60": -4.98
   },
   "금": {
    "last": 372.49,
@@ -282,7 +282,7 @@
   },
   {
    "src": "MarketWatch",
-   "title": "Toyota stock rallies after company lowered sales guidance. Here’s how rare that is.",
+   "title": "Toyota’s stock rallies after the company lowered sales guidance. Here’s how rare that is.",
    "link": "https://www.marketwatch.com/story/toyota-stock-rallies-after-company-lowered-sales-guidance-heres-how-rare-that-is-c3d6c9bf?mod=mw_rss_topstories"
   },
   {
@@ -304,11 +304,6 @@
    "src": "MarketWatch",
    "title": "This year’s worst-performing S&P 500 stock is finally seeing some major relief",
    "link": "https://www.marketwatch.com/story/this-years-worst-performing-s-p-500-stock-is-finally-seeing-some-major-relief-fff3fa85?mod=mw_rss_topstories"
-  },
-  {
-   "src": "MarketWatch",
-   "title": "Figma’s stock dips as investors worry that AI momentum is coming at a high price",
-   "link": "https://www.marketwatch.com/story/figmas-stock-falls-as-investors-worry-that-ai-momentum-is-coming-at-a-high-price-1aa2134d?mod=mw_rss_topstories"
   },
   {
    "src": "연합뉴스 경제",
@@ -379,6 +374,11 @@
    "src": "한국경제 증권",
    "title": "조정은 위기인가, 새로운 기회인가 [한경 프리미엄9 TODAY]",
    "link": "https://www.hankyung.com/article/2026110590861"
+  },
+  {
+   "src": "한국경제 증권",
+   "title": "\"미국은 '휴~' 안도했는데\"…한국 개미들에 날아든 '날벼락'",
+   "link": "https://www.hankyung.com/article/2026110591631"
   }
  ],
  "news_status": {
@@ -391,5 +391,52 @@
   "CNBC Markets": 12,
   "MarketWatch": 10
  },
- "llm_reason": "호출 실패: JSONDecodeError: Expecting value: line 1 column 1 (char 0)"
+ "ai_error": "RuntimeError: openai/gpt-4.1-mini: JSONDecodeError Expecting value: line 1 column 1 (char 0)  | openai/gpt-4o-mini: JSONDecodeError Expecting value: line 1 column 1 (char 0)  | gpt-4o-mini: URLError <urlopen error [Errno -2] Name or service not known> ",
+ "llm_reason": "AI 실패 → 규칙 다이제스트",
+ "headline_title": "[위험회피] 뉴스 테마: 반도체·AI(9건), 증시 전반(7건), 실적·기업(5건)",
+ "summary": "오늘 뉴스의 중심은 반도체·AI(9건), 증시 전반(7건), 실적·기업(5건)입니다. 코스피는 하루 -5.28%, 5일 -9.33%, S&P500은 하루 0.0%, 나스닥은 0.0% 움직였고 VIX는 16.79, 원달러는 20일간 0.3% 변했습니다. 추세·변동성·환율 신호를 합치면 현재 레짐은 '위험회피'이며, 규칙 신호는 S&P500 하락추세(20/60일선 아래); NASDAQ 하락추세(20/60일선 아래); KOSPI 하락추세(20/60일선 아래)입니다. (AI 해석이 비활성화되어 규칙 기반으로 작성됨)",
+ "issues": [
+  {
+   "title": "반도체·AI",
+   "detail": "이형일, 피치에 \"AI·반도체 호황, 잠재성장률 반등 기대\" / Six Flags Entertainment earnings missed by $5.57, revenue wa",
+   "impact": "혼재"
+  },
+  {
+   "title": "증시 전반",
+   "detail": "\"주주환원 신뢰 부족한 K증시 … 거수기 이사회 더이상 안돼\" / Oppenheimer cuts Trimble Navigation stock price target on AR",
+   "impact": "혼재"
+  },
+  {
+   "title": "실적·기업",
+   "detail": "강원 농촌 활력 촉진 지구 지정 실적 저조…이양 권한 4.4% 그쳐 / Six Flags shares jump 5% on upbeat guidance despite earnings",
+   "impact": "혼재"
+  },
+  {
+   "title": "정치·관세",
+   "detail": "美중간선거 '블루웨이브'에…한·일 증시 동반 급락 / Evercore ISI cuts Medline stock price target on tariff impac",
+   "impact": "혼재"
+  },
+  {
+   "title": "금리·연준",
+   "detail": "\"동맹국이 국채 사게 하라\" 마이런 보고서 현실화? / Euro zone inflation hits 4% for first time in three years as",
+   "impact": "혼재"
+  }
+ ],
+ "rationale": {
+  "KODEX 200": "국내 지수가 추세 아래에 있어 비중 축소",
+  "KODEX 코스닥150": "변동성 큰 중소형주는 위험회피 구간에서 제외",
+  "S&P 500": "미국 대형주도 추세 이탈, 핵심 비중만 유지",
+  "NASDAQ": "고밸류 성장주는 금리·변동성에 취약해 최소화",
+  "채권": "위험회피 국면의 방어 핵심 자산",
+  "금": "달러·지정학 불안 헤지",
+  "현금": "반등 시 재진입 여력 확보"
+ },
+ "watch": [
+  "가장 많이 언급된 테마 '반도체·AI'의 후속 뉴스",
+  "VIX 25 상회/16 하회 여부",
+  "코스피·S&P500의 20일선 회복 여부"
+ ],
+ "usage": {
+  "model": "rule-digest"
+ }
 }

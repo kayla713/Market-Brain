@@ -1,20 +1,20 @@
 # 🧠 시황두뇌
 
-**2026-11-05 20:51 KST** · 레짐 🔴 위험회피 · 작성: rule-digest
+**2026-11-06 12:11 KST** · 레짐 🔴 위험회피 · 작성: rule-digest
 
 > ⚠️ AI 호출 실패 (규칙 다이제스트로 대체): `RuntimeError: openai/gpt-4.1-mini(json): JSONDecodeError Expecting value: line 1 column 1 (char 0) raw=OK  | openai/gpt-4.1-mini: JSONDecodeError Expecting value: line 1 column 1 (char 0) raw=OK  | openai/gpt-4o-mini(json): JSONDecodeError Expecting value: line 1 column 1 (char 0) raw=OK  | openai/gpt-4o-mini: JSONDecodeError Expecting value: line 1 column 1 (char 0) raw=OK `
 
-## [위험회피] 뉴스 테마: 증시 전반(9건), 반도체·AI(6건), 실적·기업(4건)
+## [위험회피] 뉴스 테마: 증시 전반(18건), 반도체·AI(9건), 금리·연준(4건)
 
-오늘 뉴스의 중심은 증시 전반(9건), 반도체·AI(6건), 실적·기업(4건)입니다. 코스피는 하루 -5.28%, 5일 -9.33%, S&P500은 하루 0.0%, 나스닥은 0.0% 움직였고 VIX는 16.81, 원달러는 20일간 0.36% 변했습니다. 추세·변동성·환율 신호를 합치면 현재 레짐은 '위험회피'이며, 규칙 신호는 S&P500 하락추세(20/60일선 아래); NASDAQ 하락추세(20/60일선 아래); KOSPI 하락추세(20/60일선 아래)입니다. (AI 해석이 비활성화되어 규칙 기반으로 작성됨)
+오늘 뉴스의 중심은 증시 전반(18건), 반도체·AI(9건), 금리·연준(4건)입니다. 코스피는 하루 -3.26%, 5일 -9.12%, S&P500은 하루 0.0%, 나스닥은 0.0% 움직였고 VIX는 28.18, 원달러는 20일간 1.28% 변했습니다. 추세·변동성·환율 신호를 합치면 현재 레짐은 '위험회피'이며, 규칙 신호는 S&P500 하락추세(20/60일선 아래); NASDAQ 하락추세(20/60일선 아래); KOSPI 하락추세(20/60일선 아래); VIX 28 공포 구간입니다. (AI 해석이 비활성화되어 규칙 기반으로 작성됨)
 
 ## 핵심 이슈
 
-- 🟡 **증시 전반** — "주주환원 신뢰 부족한 K증시 … 거수기 이사회 더이상 안돼" / United Parks stock surges 10% on upbeat 2027 outlook
-- 🟡 **반도체·AI** — 이형일, 피치에 "AI·반도체 호황, 잠재성장률 반등 기대" / Needham maintains Hold on Envista stock after Q3 beat, guida
-- 🟡 **실적·기업** — 강원 농촌 활력 촉진 지구 지정 실적 저조…이양 권한 4.4% 그쳐 / Chatham Lodging earnings beat by $0.06, revenue topped estim
-- 🟡 **금리·연준** — "동맹국이 국채 사게 하라" 마이런 보고서 현실화? / Euro zone inflation hits 4% for first time in three years as
-- 🟡 **정치·관세** — 美중간선거 '블루웨이브'에…한·일 증시 동반 급락 / The economy brought Trump back to power. Now it's his downfa
+- 🟡 **증시 전반** — [속보] F4 "증시 변동성 확대하면 시장안정 추가 조치" / 4214→9385→ 결국 '4천피'…'롤러코스피' 그때 그 장면들
+- 🟡 **반도체·AI** — "AI붕괴 아니다…수급 불안에 낙폭 확대"…증시급락 전문가 긴급진단 / 대범한 고수들…코스피 급락장에서 SK하이닉스 '순매수 1위'
+- 🟡 **금리·연준** — 국고채 금리 일제히 하락…주가 급락 속 위험회피 심리 / Bank of England hikes interest rate for the first time since
+- 🟡 **정치·관세** — 코스피 급락에 F4회의 가동한 정부...증안펀드·공매도 제한 나오나 / Analysis: The Democrats have one chance to extract concessio
+- 🟡 **유가·원자재·금** — 5천이 무너졌는데 아직도 “코스피 1만 간다”…이유가 네 가지나 된다는 노무라
 
 ## 포트폴리오와 그 이유
 
@@ -38,62 +38,62 @@
 
 | 지표 | 현재 | 1일 | 5일 | 20일 |
 |---|---:|---:|---:|---:|
-| KOSPI | 5383.8 | -5.28% | -9.33% | -18.75% |
-| KOSDAQ | 678.41 | -5.11% | -9.93% | -23.97% |
-| USD/KRW | 1343.91 | +0.08% | +0.27% | +0.36% |
-| S&P 500 | 7688.62 | 0.0% | -0.41% | -0.99% |
-| NASDAQ | 25736.51 | 0.0% | -1.71% | -5.36% |
-| VIX | 16.81 | +1.2% | -2.27% | +9.09% |
-| US 10Y | 4.89 | 0.0% | -1.9% | -6.44% |
-| WTI 유가 | 89.01 | +1.01% | -12.74% | -2.71% |
-| 금 | 372.49 | 0.0% | +1.06% | -1.62% |
-| 미국 장기채 | 81.76 | 0.0% | +0.33% | +5.0% |
-| KODEX 200 | 84610.0 | -5.69% | -10.43% | -19.8% |
-| KODEX 코스닥150 | 11090.0 | -5.98% | -10.74% | -26.87% |
-| KODEX 반도체 | 93110.0 | -11.26% | -18.45% | -36.31% |
-| KODEX 2차전지 | 13130.0 | -4.86% | -2.23% | -17.45% |
-| 美 Tech | 176.5 | 0.0% | -6.49% | -10.76% |
-| 美 금융 | 59.2 | 0.0% | +3.97% | +9.16% |
-| 美 에너지 | 63.52 | 0.0% | -7.55% | -2.64% |
+| KOSPI | 5208.2 | -3.26% | -9.12% | -21.4% |
+| KOSDAQ | 656.93 | -3.17% | -9.31% | -26.38% |
+| USD/KRW | 1360.24 | +1.51% | +1.66% | +1.28% |
+| S&P 500 | 7353.73 | 0.0% | -2.99% | -5.86% |
+| NASDAQ | 24315.0 | 0.0% | -4.41% | -11.15% |
+| VIX | 28.18 | 0.0% | +45.11% | +89.89% |
+| US 10Y | 4.84 | 0.0% | -1.87% | -7.76% |
+| WTI 유가 | 91.38 | 0.0% | -12.24% | -0.51% |
+| 금 | 375.49 | 0.0% | +5.54% | -2.36% |
+| 미국 장기채 | 81.93 | 0.0% | +0.11% | +5.07% |
+| KODEX 200 | 81715.0 | -3.42% | -10.01% | -22.54% |
+| KODEX 코스닥150 | 10790.0 | -2.71% | -9.4% | -28.85% |
+| KODEX 반도체 | 89270.0 | -4.12% | -16.38% | -38.94% |
+| 美 Tech | 162.38 | 0.0% | -9.54% | -18.31% |
+| 美 금융 | 57.5 | 0.0% | +1.75% | +5.06% |
+| 美 에너지 | 61.63 | 0.0% | -11.98% | -5.3% |
 
 ## 규칙 신호
 
 - S&P500 하락추세(20/60일선 아래)
 - NASDAQ 하락추세(20/60일선 아래)
 - KOSPI 하락추세(20/60일선 아래)
+- VIX 28 공포 구간
 
 ## 참고한 뉴스 (45건)
 
-- [강원 농촌 활력 촉진 지구 지정 실적 저조…이양 권한 4.4% 그쳐](https://www.yna.co.kr/view/AKR20261105162300062) · 연합뉴스 경제
-- [이형일, 피치에 "AI·반도체 호황, 잠재성장률 반등 기대"](https://www.yna.co.kr/view/AKR20261105158300002) · 연합뉴스 경제
-- [美중간선거 '블루웨이브'에…한·일 증시 동반 급락](https://www.hankyung.com/article/2026110591717) · 한국경제 증권
-- ["동맹국이 국채 사게 하라" 마이런 보고서 현실화?](https://www.hankyung.com/article/2026110591441) · 한국경제 증권
-- [유가 떨어지고 금값은 급등…美 민주당 압승에 금융시장 요동](https://www.hankyung.com/article/2026110590981) · 한국경제 증권
-- ["주주환원 신뢰 부족한 K증시 … 거수기 이사회 더이상 안돼"](https://www.mk.co.kr/news/stock/12198656) · 매일경제 증권
-- [[표] 외국환율고시표](https://www.mk.co.kr/news/economy/12198729) · 매일경제 경제
-- [Chatham Lodging earnings beat by $0.06, revenue topped estimates](https://www.investing.com/news/earnings/chatham-lodging-earnings-beat-by-006-revenue-topped-estimates-5003298) · Investing.com
-- [Americold Realty earnings beat by $2.40, revenue topped estimates](https://www.investing.com/news/earnings/americold-realty-earnings-beat-by-240-revenue-topped-estimates-5003296) · Investing.com
-- [United Parks stock surges 10% on upbeat 2027 outlook](https://www.investing.com/news/earnings/united-parks-stock-surges-10-on-upbeat-2027-outlook-93CH-5003294) · Investing.com
-- [Needham maintains Hold on Envista stock after Q3 beat, guidance raise](https://www.investing.com/news/analyst-ratings/needham-maintains-hold-on-envista-stock-after-q3-beat-guidance-raise-93CH-5003293) · Investing.com
-- [Tennant stock rating upgraded to Buy at Freedom Broker on Q3 results](https://www.investing.com/news/analyst-ratings/tennant-stock-rating-upgraded-to-buy-at-freedom-broker-on-q3-results-93CH-5003292) · Investing.com
-- [Oppenheimer reiterates Perform rating on Figma stock after Q3 beat](https://www.investing.com/news/analyst-ratings/oppenheimer-reiterates-perform-rating-on-figma-stock-after-q3-beat-93CH-5003290) · Investing.com
-- [Needham reiterates Buy on HubSpot stock, keeps $300 target](https://www.investing.com/news/analyst-ratings/needham-reiterates-buy-on-hubspot-stock-keeps-300-target-93CH-5003291) · Investing.com
-- [The economy brought Trump back to power. Now it's his downfall](https://www.cnbc.com/2026/11/04/2026-midterms-trump-economy-iran-war.html) · CNBC Markets
+- [국고채 금리 일제히 하락…주가 급락 속 위험회피 심리](https://www.yna.co.kr/view/AKR20261106090400008) · 연합뉴스 경제
+- [[속보] F4 "증시 변동성 확대하면 시장안정 추가 조치"](https://www.yna.co.kr/view/AKR20261106089800002) · 연합뉴스 경제
+- ["AI붕괴 아니다…수급 불안에 낙폭 확대"…증시급락 전문가 긴급진단](https://www.yna.co.kr/view/AKR20261106085200008) · 연합뉴스 경제
+- [코스피 급락에 F4회의 가동한 정부...증안펀드·공매도 제한 나오나](https://www.hankyung.com/article/202611060422i) · 한국경제 증권
+- [대범한 고수들…코스피 급락장에서 SK하이닉스 '순매수 1위'](https://www.hankyung.com/article/202611060449i) · 한국경제 증권
+- [4214→9385→ 결국 '4천피'…'롤러코스피' 그때 그 장면들](https://www.hankyung.com/article/202611060419i) · 한국경제 증권
+- [코스피 8% 급락에도 음식료·담배는 상승…방어주로 쏠린 눈](https://www.hankyung.com/article/202611060281i) · 한국경제 증권
+- [석 달 전 '코스피 5000 붕괴' 경고 적중… 김영익 교수 재조명](https://www.hankyung.com/article/202611060261i) · 한국경제 증권
+- [어제만 1688억원 매수했는데…내려꽂는 코스피에 전투개미 '비명'](https://www.hankyung.com/article/202611060298i) · 한국경제 증권
+- [[속보] 코스피, 서킷브레이커 이어 매도 사이드카 발동](https://www.hankyung.com/article/2026110601366) · 한국경제 증권
+- [코스피 5000 붕괴에 초고수들이 주운 종목은 [주식 초고수는 지금]](https://www.mk.co.kr/news/stock/12200331) · 매일경제 증권
+- [‘블루 쓰나미’에 5000 붕괴 … 코스피 추가 강제청산 가능성](https://www.mk.co.kr/news/stock/12200303) · 매일경제 증권
+- [5천이 무너졌는데 아직도 “코스피 1만 간다”…이유가 네 가지나 된다는 노무라](https://www.mk.co.kr/news/stock/12200293) · 매일경제 증권
+- [“데이터센터 짓지 마” 외국인, 반도체 3조 던진 이유](https://www.mk.co.kr/news/business/12200206) · 매일경제 증권
+- [[속보] 증시 급락에 코스피 서킷브레이커 발동…5000피 밑으로](https://www.mk.co.kr/news/stock/12200170) · 매일경제 증권
+- [[속보] 코스피, 8%대 급락 출발…코스닥 5~6%대↓](https://www.mk.co.kr/news/stock/12200167) · 매일경제 증권
+- [“노후자금까지 주식에 넣었는데”...코스피 급락하자 다시 예금으로](https://www.mk.co.kr/news/economy/12200227) · 매일경제 경제
+- [Pale Fire Capital SE acquires $31.45m Coursera stock](https://www.investing.com/news/insider-trading-news/pale-fire-capital-se-acquires-3145m-coursera-stock-93CH-5006339) · Investing.com
+- [Liberty Energy CEO Ron Gusek buys $377,335 in company stock](https://www.investing.com/news/insider-trading-news/liberty-energy-ceo-ron-gusek-buys-377335-in-company-stock-93CH-5006338) · Investing.com
+- [Liberty Energy chief accounting officer buys $45,000 in LBRT stock](https://www.investing.com/news/insider-trading-news/liberty-energy-chief-accounting-officer-buys-45000-in-lbrt-stock-93CH-5006337) · Investing.com
+- [Landmark Bancorp director Patrick L. Alexander sells $109,460 stock](https://www.investing.com/news/insider-trading-news/landmark-bancorp-director-patrick-l-alexander-sells-109460-stock-93CH-5006329) · Investing.com
+- [Opaleye Management, a 10% owner, buys $33,019 of Grace Therapeutics stock](https://www.investing.com/news/insider-trading-news/opaleye-management-a-10-owner-buys-33019-of-grace-therapeutics-stock-93CH-5006322) · Investing.com
+- [White Mountains subsidiary sells $76.4 million in MediaAlpha stock](https://www.investing.com/news/insider-trading-news/white-mountains-subsidiary-sells-764-million-in-mediaalpha-stock-93CH-5006319) · Investing.com
+- [Bank of England hikes interest rate for the first time since Iran war, warns inflation will near 5%](https://www.cnbc.com/2026/11/05/interest-rates-inflation-uk.html) · CNBC Markets
 - [Analysis: The Democrats have one chance to extract concessions from Trump. Markets will hate it](https://www.cnbc.com/2026/11/04/democrats-trump-debt-ceiling-fight.html) · CNBC Markets
 - [Euro zone inflation hits 4% for first time in three years as interest rate hike looms](https://www.cnbc.com/2026/11/04/euro-zone-cpi-inflation-october-ecb-rate-hike.html) · CNBC Markets
 - [Job openings posted big September gain in positive sign for labor market ahead of payrolls report](https://www.cnbc.com/2026/11/03/job-openings-posted-big-september-gain-in-positive-sign-for-labor-market-ahead-of-payrolls-report.html) · CNBC Markets
 - [Australia hikes rates to 18-year high to fight inflation](https://www.cnbc.com/2026/11/03/australia-hikes-rates-18-year-high-finflation.html) · CNBC Markets
 - [European Central Bank keeps key interest rate on hold at 2.5%](https://www.cnbc.com/2026/10/29/european-central-bank-interest-rates.html) · CNBC Markets
-- [Third-quarter U.S. GDP increases a better-than-expected 3.4% as September inflation accelerates](https://www.cnbc.com/2026/10/29/pce-inflation-report-september-2026-.html) · CNBC Markets
-- [Research firm declares ‘end of the AI trade as we know it’ — and Asian tech stocks reflect the shift](https://www.marketwatch.com/story/research-firm-declares-end-of-the-ai-trade-as-we-know-it-and-asian-tech-stocks-reflect-the-shift-25ac8e8f?mod=mw_rss_topstories) · MarketWatch
-- [A prolonged war in Iran is the market’s real ‘black swan,’ says this strategist](https://www.marketwatch.com/story/a-prolonged-war-in-iran-is-the-markets-real-black-swan-says-this-strategist-65d105c7?mod=mw_rss_topstories) · MarketWatch
-- [Toyota’s stock rallies after the company lowered sales guidance. Here’s how rare that is.](https://www.marketwatch.com/story/toyota-stock-rallies-after-company-lowered-sales-guidance-heres-how-rare-that-is-c3d6c9bf?mod=mw_rss_topstories) · MarketWatch
-- [Dow scores its best day in 18 months in a broad relief rally after Democrats sweep to power in Congress](https://www.marketwatch.com/story/dow-scores-its-best-day-in-18-months-in-a-broad-relief-rally-after-democrats-sweep-to-power-in-congress-d7348fc0?mod=mw_rss_topstories) · MarketWatch
-- [Most investors are blind to the possibility of a market crash. Here is the five-part strategy to survive one.](https://www.marketwatch.com/story/most-investors-are-blind-to-the-possibility-of-a-market-crash-here-is-the-five-part-strategy-to-survive-one-a1762911?mod=mw_rss_topstories) · MarketWatch
-- [Qualcomm’s stock falls as twin forces pressure sales](https://www.marketwatch.com/story/qualcomms-stock-falls-as-twin-forces-pressure-sales-fa161159?mod=mw_rss_topstories) · MarketWatch
-- [우상호 "원주는 KT와 AI 데이터센터 협의…드론기업 유치 추진"](https://www.yna.co.kr/view/AKR20261105174300062) · 연합뉴스 경제
-- [與서울의원들 "1주택자·실수요자 두텁게 보호…당정협의 추진"](https://www.yna.co.kr/view/AKR20261105171000001) · 연합뉴스 경제
-- [李대통령 "불법 부동산투기로 돈벌던 시대 끝내야…곧 3차 단속"(종합)](https://www.yna.co.kr/view/AKR20261105113551001) · 연합뉴스 경제
+- [Here’s what’s driving Iren’s stock higher after a brutal selloff](https://www.marketwatch.com/story/heres-whats-driving-irens-stock-higher-after-a-brutal-selloff-0ced09b0?mod=mw_rss_topstories) · MarketWatch
 
 ---
 _뉴스 소스 상태: 연합뉴스 경제 12, 한국경제 증권 12, 매일경제 증권 12, 매일경제 경제 12, Yahoo Finance 실패 HTTPError, Investing.com 10, CNBC Markets 12, MarketWatch 10_

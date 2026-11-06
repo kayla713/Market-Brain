@@ -1,20 +1,20 @@
 # 🧠 시황두뇌
 
-**2026-11-06 15:06 KST** · 레짐 🔴 위험회피 · 작성: rule-digest
+**2026-11-06 23:54 KST** · 레짐 🔴 위험회피 · 작성: rule-digest
 
 > ⚠️ AI 호출 실패 (규칙 다이제스트로 대체): `RuntimeError: openai/gpt-4.1-mini(json): JSONDecodeError Expecting value: line 1 column 1 (char 0) raw=OK  | openai/gpt-4.1-mini: JSONDecodeError Expecting value: line 1 column 1 (char 0) raw=OK  | openai/gpt-4o-mini(json): JSONDecodeError Expecting value: line 1 column 1 (char 0) raw=OK  | openai/gpt-4o-mini: JSONDecodeError Expecting value: line 1 column 1 (char 0) raw=OK `
 
-## [위험회피] 뉴스 테마: 증시 전반(15건), 반도체·AI(13건), 금리·연준(3건)
+## [위험회피] 뉴스 테마: 증시 전반(11건), 반도체·AI(7건), 금리·연준(6건)
 
-오늘 뉴스의 중심은 증시 전반(15건), 반도체·AI(13건), 금리·연준(3건)입니다. 코스피는 하루 -4.53%, 5일 -10.31%, S&P500은 하루 0.0%, 나스닥은 0.0% 움직였고 VIX는 28.18, 원달러는 20일간 1.24% 변했습니다. 추세·변동성·환율 신호를 합치면 현재 레짐은 '위험회피'이며, 규칙 신호는 S&P500 하락추세(20/60일선 아래); NASDAQ 하락추세(20/60일선 아래); KOSPI 하락추세(20/60일선 아래); VIX 28 공포 구간입니다. (AI 해석이 비활성화되어 규칙 기반으로 작성됨)
+오늘 뉴스의 중심은 증시 전반(11건), 반도체·AI(7건), 금리·연준(6건)입니다. 코스피는 하루 -6.02%, 5일 -11.71%, S&P500은 하루 1.06%, 나스닥은 1.89% 움직였고 VIX는 25.29, 원달러는 20일간 1.46% 변했습니다. 추세·변동성·환율 신호를 합치면 현재 레짐은 '위험회피'이며, 규칙 신호는 S&P500 하락추세(20/60일선 아래); NASDAQ 하락추세(20/60일선 아래); KOSPI 하락추세(20/60일선 아래); VIX 25 공포 구간입니다. (AI 해석이 비활성화되어 규칙 기반으로 작성됨)
 
 ## 핵심 이슈
 
-- 🟡 **증시 전반** — [포토] 파랗게 질린 코스피 / "코스피, 전고점 회복 어려워…현금 보유 확대 유효" [리서치센터장 긴급진단]
-- 🟡 **반도체·AI** — "AI 성장 스토리 훼손 아냐…코스피 5000선이 바닥" [리서치센터장 긴급 진단] / 반도체 꺾이자 돈 몰렸다…수익률 상위 10개 중 7개가 '이것' [이수의 ETF줌인]
-- 🟡 **금리·연준** — Bank of England hikes interest rate for the first time since / Euro zone inflation hits 4% for first time in three years as
-- 🟡 **유가·원자재·금** — 5천이 무너졌는데 아직도 “코스피 1만 간다”…이유가 네 가지나 된다는 노무라
-- 🟡 **실적·기업** — Centrus Energy stock rating upgraded to Buy at Roth/MKM on r
+- 🟡 **증시 전반** — "코스피 저점권 근접...투매 자제해야" [리서치센터장 긴급 진단] / “1000만원어치 주식 샀어요”…코스피 폭락장에 매수 인증한 박용진
+- 🟡 **반도체·AI** — '반도체 부품 제조' 동원파츠 코스닥 신규상장…10일부터 거래 / 반도체 피난처도 휘청…힘빠진 은행·자동차주
+- 🟡 **금리·연준** — "이례적으로 강한 고용"…미국 금리인상 확률 '매우 높음' / 역대급 낙폭에 10년물 국채금리 최저치까지…‘블루쓰나미’에 중화권 비명
+- 🟡 **정치·관세** — 증시 폭락에 트럼프 “멍청한 민주당 때문…이들에 투표한 스스로를 탓해야” / “트럼프 힘 빠지면 우린 힘 난다”…주가상승률·PER 돋보이는 종목들 [플러스 관심종목]
+- 🟡 **실적·기업** — 섣불리 던지기엔 실적 탄탄 … "공포에 휩쓸려 팔때 아니다" / BofA cuts Dentsply Sirona stock price target on guidance res
 
 ## 포트폴리오와 그 이유
 
@@ -38,63 +38,62 @@
 
 | 지표 | 현재 | 1일 | 5일 | 20일 |
 |---|---:|---:|---:|---:|
-| KOSPI | 5139.86 | -4.53% | -10.31% | -22.43% |
-| KOSDAQ | 654.62 | -3.51% | -9.63% | -26.63% |
-| USD/KRW | 1359.58 | +1.46% | +1.61% | +1.24% |
-| S&P 500 | 7353.73 | 0.0% | -2.99% | -5.86% |
-| NASDAQ | 24315.0 | 0.0% | -4.41% | -11.15% |
-| VIX | 28.18 | 0.0% | +45.11% | +89.89% |
-| US 10Y | 4.84 | 0.0% | -1.87% | -7.76% |
-| WTI 유가 | 91.57 | +1.16% | -12.05% | -0.3% |
-| 금 | 375.49 | 0.0% | +5.54% | -2.36% |
-| 미국 장기채 | 81.93 | 0.0% | +0.11% | +5.07% |
-| KODEX 200 | 80400.0 | -4.98% | -11.45% | -23.79% |
-| KODEX 코스닥150 | 10725.0 | -3.29% | -9.95% | -29.28% |
-| KODEX 반도체 | 87375.0 | -6.16% | -18.15% | -40.23% |
-| KODEX 2차전지 | 12645.0 | -3.69% | -5.85% | -20.5% |
-| 美 Tech | 162.38 | 0.0% | -9.54% | -18.31% |
-| 美 금융 | 57.5 | 0.0% | +1.75% | +5.06% |
-| 美 에너지 | 61.63 | 0.0% | -11.98% | -5.3% |
+| KOSPI | 5059.69 | -6.02% | -11.71% | -23.64% |
+| KOSDAQ | 644.27 | -5.03% | -11.06% | -27.79% |
+| USD/KRW | 1362.58 | +1.68% | +1.84% | +1.46% |
+| S&P 500 | 7431.86 | +1.06% | -1.96% | -4.86% |
+| NASDAQ | 24774.81 | +1.89% | -2.6% | -9.47% |
+| VIX | 25.29 | -10.26% | +30.23% | +70.42% |
+| US 10Y | 4.88 | +0.85% | -1.03% | -6.98% |
+| WTI 유가 | 90.54 | +0.02% | -13.04% | -1.43% |
+| 금 | 370.5 | -1.33% | +4.14% | -3.66% |
+| 미국 장기채 | 81.74 | -0.23% | -0.12% | +4.82% |
+| KODEX 200 | 79005.0 | -6.62% | -12.99% | -25.11% |
+| KODEX 코스닥150 | 10510.0 | -5.23% | -11.75% | -30.7% |
+| KODEX 반도체 | 85400.0 | -8.28% | -20.0% | -41.58% |
+| 美 Tech | 167.27 | +3.01% | -6.82% | -15.85% |
+| 美 금융 | 57.41 | -0.16% | +1.59% | +4.9% |
+| 美 에너지 | 62.12 | +0.79% | -11.29% | -4.56% |
 
 ## 규칙 신호
 
 - S&P500 하락추세(20/60일선 아래)
 - NASDAQ 하락추세(20/60일선 아래)
 - KOSPI 하락추세(20/60일선 아래)
-- VIX 28 공포 구간
+- VIX 25 공포 구간
 
 ## 참고한 뉴스 (45건)
 
-- ["AI 성장 스토리 훼손 아냐…코스피 5000선이 바닥" [리서치센터장 긴급 진단]](https://www.hankyung.com/article/202611060808i) · 한국경제 증권
-- [[포토] 파랗게 질린 코스피](https://www.hankyung.com/article/202611060822i) · 한국경제 증권
-- [반도체 꺾이자 돈 몰렸다…수익률 상위 10개 중 7개가 '이것' [이수의 ETF줌인]](https://www.hankyung.com/article/2026110585586) · 한국경제 증권
-- [앱러빈, AI 모바일 광고 실적 증명에 31% 폭등](https://www.hankyung.com/article/202611060607i) · 한국경제 증권
-- ["코스피, 전고점 회복 어려워…현금 보유 확대 유효" [리서치센터장 긴급진단]](https://www.hankyung.com/article/202611060616i) · 한국경제 증권
-- [“코스피 폭락 와중에 이건 10% 뛰었네”…급락장 거슬러 오른 종목은](https://www.mk.co.kr/news/stock/12200384) · 매일경제 증권
-- [“코스피 폭락, 이제 시작일까 두렵다”…5000선 붕괴에 개미 아우성](https://www.mk.co.kr/news/stock/12200375) · 매일경제 증권
-- [코스피 급락에 증권가 “과도한 반응”…데이터센터 리스크 제한적 판단](https://www.mk.co.kr/news/stock/12200372) · 매일경제 증권
-- [[속보] 증시 급락에 신용융자 담보비율 유지 의무 3개월 면제…9일부터 시행](https://www.mk.co.kr/news/stock/12200359) · 매일경제 증권
-- [코스피 5000 붕괴에 초고수들이 주운 종목은 [주식 초고수는 지금]](https://www.mk.co.kr/news/stock/12200331) · 매일경제 증권
-- [‘블루 쓰나미’에 5000 붕괴 … 코스피 추가 강제청산 가능성](https://www.mk.co.kr/news/stock/12200303) · 매일경제 증권
-- [5천이 무너졌는데 아직도 “코스피 1만 간다”…이유가 네 가지나 된다는 노무라](https://www.mk.co.kr/news/stock/12200293) · 매일경제 증권
-- [“노후자금까지 주식에 넣었는데”...코스피 급락하자 다시 예금으로](https://www.mk.co.kr/news/economy/12200227) · 매일경제 경제
-- [Centrus Energy stock rating upgraded to Buy at Roth/MKM on revenue risk mitigation](https://www.investing.com/news/analyst-ratings/centrus-energy-stock-rating-upgraded-to-buy-at-rothmkm-on-revenue-risk-mitigation-93CH-5006546) · Investing.com
-- [Seaport upgrades SiTime stock rating to buy on AI opportunity](https://www.investing.com/news/analyst-ratings/seaport-upgrades-sitime-stock-rating-to-buy-on-ai-opportunity-93CH-5006547) · Investing.com
-- [JPMorgan upgrades Sociedad Quimica y Minera stock rating on valuation](https://www.investing.com/news/analyst-ratings/jpmorgan-upgrades-sociedad-quimica-y-minera-stock-rating-on-valuation-93CH-5006545) · Investing.com
-- [Why is Hua Hong Grace Semiconductor stock rising today?](https://www.investing.com/news/stock-market-news/why-is-hua-hong-grace-semiconductor-stock-rising-today-93CH-5006544) · Investing.com
-- [Why is HKEX stock falling today?](https://www.investing.com/news/stock-market-news/why-is-hkex-stock-falling-today-93CH-5006543) · Investing.com
-- [North Korea’s army of world-class hackers is secret weapon that took down Binance](https://www.investing.com/news/economy-news/north-koreas-army-of-worldclass-hackers-is-secret-weapon-that-took-down-binance-5006478) · Investing.com
-- [William Blair downgrades CVRx stock rating on reimbursement headwinds](https://www.investing.com/news/analyst-ratings/william-blair-downgrades-cvrx-stock-rating-on-reimbursement-headwinds-93CH-5006531) · Investing.com
-- [KeyBanc downgrades Cogent Communications stock rating on growth concerns](https://www.investing.com/news/analyst-ratings/keybanc-downgrades-cogent-communications-stock-rating-on-growth-concerns-93CH-5006532) · Investing.com
-- [NerdWallet stock rating cut to Market Perform by William Blair](https://www.investing.com/news/analyst-ratings/nerdwallet-stock-rating-cut-to-market-perform-by-william-blair-93CH-5006530) · Investing.com
+- ['반도체 부품 제조' 동원파츠 코스닥 신규상장…10일부터 거래](https://www.yna.co.kr/view/AKR20261106175700008) · 연합뉴스 경제
+- ["이례적으로 강한 고용"…미국 금리인상 확률 '매우 높음'](https://www.hankyung.com/article/202611061820i) · 한국경제 증권
+- [반도체 피난처도 휘청…힘빠진 은행·자동차주](https://www.hankyung.com/article/2026110615111) · 한국경제 증권
+- ["코스피 저점권 근접...투매 자제해야" [리서치센터장 긴급 진단]](https://www.hankyung.com/article/202611060963i) · 한국경제 증권
+- [블루쓰나미에 AI 성장 서사 급제동…글로벌 증시 '패닉셀'](https://www.hankyung.com/article/202611061030i) · 한국경제 증권
+- [증시 폭락에 트럼프 “멍청한 민주당 때문…이들에 투표한 스스로를 탓해야”](https://www.mk.co.kr/news/stock/12200996) · 매일경제 증권
+- [“트럼프 힘 빠지면 우린 힘 난다”…주가상승률·PER 돋보이는 종목들 [플러스 관심종목]](https://www.mk.co.kr/news/stock/12200838) · 매일경제 증권
+- [“1000만원어치 주식 샀어요”…코스피 폭락장에 매수 인증한 박용진](https://www.mk.co.kr/news/stock/12200816) · 매일경제 증권
+- [역대급 낙폭에 10년물 국채금리 최저치까지…‘블루쓰나미’에 중화권 비명](https://www.mk.co.kr/news/stock/12200777) · 매일경제 증권
+- [섣불리 던지기엔 실적 탄탄 … "공포에 휩쓸려 팔때 아니다"](https://www.mk.co.kr/news/stock/12200704) · 매일경제 증권
+- [개장 3분만에 멈춰선 코스피 … 9·11 버금가는 충격](https://www.mk.co.kr/news/stock/12200705) · 매일경제 증권
+- [다카이치 “日銀 ETF 매각 이익으로 반도체·AI 투자”](https://www.mk.co.kr/news/world/12200962) · 매일경제 경제
+- [국내 3대 재정학회 “반도체 호황에 기댄 확장재정 위험…미래대응기금 재검토해야”](https://www.mk.co.kr/news/economy/12200768) · 매일경제 경제
+- [주가조작 조사 지휘 … 탈세 칼 빼든다](https://www.mk.co.kr/news/economy/12200728) · 매일경제 경제
+- [[표] 외국환율고시표](https://www.mk.co.kr/news/economy/12200711) · 매일경제 경제
+- [Nasdaq rebounds at the open after AI rout; yields rise on blockbuster jobs report](https://www.investing.com/news/stock-market-news/us-stock-futures-rise-after-ai-rout-batters-wall-st-payrolls-data-in-focus-5006240) · Investing.com
+- [Rush Street Interactive stock hits 52-week low at 11.33 USD](https://www.investing.com/news/company-news/rush-street-interactive-stock-hits-52week-low-at-1133-usd-93CH-5008622) · Investing.com
+- [SLM stock hits 52-week low at $17.22](https://www.investing.com/news/company-news/slm-stock-hits-52week-low-at-1722-93CH-5008621) · Investing.com
+- [Canada’s unemployment rate reaches six-month high](https://www.investing.com/news/economy-news/canadas-unemployment-rate-edges-up-to-sixmonth-high-in-october-5008181) · Investing.com
+- [Ellington Financial stock hits 52-week low at 11.23 USD](https://www.investing.com/news/company-news/ellington-financial-stock-hits-52week-low-at-1123-usd-93CH-5008619) · Investing.com
+- [AllianceBernstein stock hits 52-week low at $33.88](https://www.investing.com/news/company-news/alliancebernstein-stock-hits-52week-low-at-3388-93CH-5008618) · Investing.com
+- [Raymond James reiterates Humana stock rating on Q3 beat](https://www.investing.com/news/analyst-ratings/raymond-james-reiterates-humana-stock-rating-on-q3-beat-93CH-5008608) · Investing.com
+- [Prestige Consumer Healthcare stock hits 52-week low at 42.5 USD](https://www.investing.com/news/company-news/prestige-consumer-healthcare-stock-hits-52week-low-at-425-usd-93CH-5008607) · Investing.com
+- [BofA cuts Dentsply Sirona stock price target on guidance reset](https://www.investing.com/news/analyst-ratings/bofa-cuts-dentsply-sirona-stock-price-target-on-guidance-reset-93CH-5008606) · Investing.com
+- [U.S. economy added 165,000 jobs in October, way more than expected; unemployment rate slips to 4.1%](https://www.cnbc.com/2026/11/06/jobs-report-october-2026.html) · CNBC Markets
 - [Bank of England hikes interest rate for the first time since Iran war, warns inflation will near 5%](https://www.cnbc.com/2026/11/05/interest-rates-inflation-uk.html) · CNBC Markets
 - [Analysis: The Democrats have one chance to extract concessions from Trump. Markets will hate it](https://www.cnbc.com/2026/11/04/democrats-trump-debt-ceiling-fight.html) · CNBC Markets
 - [Euro zone inflation hits 4% for first time in three years as interest rate hike looms](https://www.cnbc.com/2026/11/04/euro-zone-cpi-inflation-october-ecb-rate-hike.html) · CNBC Markets
 - [Job openings posted big September gain in positive sign for labor market ahead of payrolls report](https://www.cnbc.com/2026/11/03/job-openings-posted-big-september-gain-in-positive-sign-for-labor-market-ahead-of-payrolls-report.html) · CNBC Markets
 - [Australia hikes rates to 18-year high to fight inflation](https://www.cnbc.com/2026/11/03/australia-hikes-rates-18-year-high-finflation.html) · CNBC Markets
-- [European Central Bank keeps key interest rate on hold at 2.5%](https://www.cnbc.com/2026/10/29/european-central-bank-interest-rates.html) · CNBC Markets
-- [Here’s what’s driving Iren’s stock higher after a brutal selloff](https://www.marketwatch.com/story/heres-whats-driving-irens-stock-higher-after-a-brutal-selloff-0ced09b0?mod=mw_rss_topstories) · MarketWatch
-- [Cloudflare’s stock mounts a big comeback after fastest sales surge in nearly 4 years](https://www.marketwatch.com/story/cloudflares-stock-mounts-a-big-comeback-after-fastest-sales-surge-in-nearly-4-years-d80d994d?mod=mw_rss_topstories) · MarketWatch
 
 ---
 _뉴스 소스 상태: 연합뉴스 경제 12, 한국경제 증권 12, 매일경제 증권 12, 매일경제 경제 12, Yahoo Finance 실패 HTTPError, Investing.com 10, CNBC Markets 12, MarketWatch 10_

@@ -1,12 +1,12 @@
 {
- "as_of": "2026-11-06 15:06 KST",
+ "as_of": "2026-11-06 23:54 KST",
  "regime": "risk_off",
  "score": -5,
  "reasons": [
   "S&P500 하락추세(20/60일선 아래)",
   "NASDAQ 하락추세(20/60일선 아래)",
   "KOSPI 하락추세(20/60일선 아래)",
-  "VIX 28 공포 구간"
+  "VIX 25 공포 구간"
  ],
  "weights": {
   "KODEX 200": 10,
@@ -19,252 +19,259 @@
  },
  "headline_ind": {
   "KOSPI": {
-   "last": 5139.86,
-   "d1": -4.53,
-   "d5": -10.31,
-   "d20": -22.43,
-   "vs_ma20": -10.06,
-   "vs_ma60": -20.57
+   "last": 5059.69,
+   "d1": -6.02,
+   "d5": -11.71,
+   "d20": -23.64,
+   "vs_ma20": -11.4,
+   "vs_ma60": -21.79
   },
   "KOSDAQ": {
-   "last": 654.62,
-   "d1": -3.51,
-   "d5": -9.63,
-   "d20": -26.63,
-   "vs_ma20": -13.71,
-   "vs_ma60": -19.5
+   "last": 644.27,
+   "d1": -5.03,
+   "d5": -11.06,
+   "d20": -27.79,
+   "vs_ma20": -15.01,
+   "vs_ma60": -20.76
   },
   "USD/KRW": {
-   "last": 1359.58,
-   "d1": 1.46,
-   "d5": 1.61,
-   "d20": 1.24,
-   "vs_ma20": 1.84,
-   "vs_ma60": 0.32
+   "last": 1362.58,
+   "d1": 1.68,
+   "d5": 1.84,
+   "d20": 1.46,
+   "vs_ma20": 2.06,
+   "vs_ma60": 0.53
   },
   "S&P 500": {
-   "last": 7353.73,
-   "d1": 0.0,
-   "d5": -2.99,
-   "d20": -5.86,
-   "vs_ma20": -3.96,
-   "vs_ma60": -4.26
+   "last": 7431.86,
+   "d1": 1.06,
+   "d5": -1.96,
+   "d20": -4.86,
+   "vs_ma20": -2.99,
+   "vs_ma60": -3.26
   },
   "NASDAQ": {
-   "last": 24315.0,
-   "d1": 0.0,
-   "d5": -4.41,
-   "d20": -11.15,
-   "vs_ma20": -6.7,
-   "vs_ma60": -7.98
+   "last": 24774.81,
+   "d1": 1.89,
+   "d5": -2.6,
+   "d20": -9.47,
+   "vs_ma20": -5.02,
+   "vs_ma60": -6.27
   },
   "VIX": {
-   "last": 28.18,
-   "d1": 0.0,
-   "d5": 45.11,
-   "d20": 89.89,
-   "vs_ma20": 48.67,
-   "vs_ma60": 68.89
+   "last": 25.29,
+   "d1": -10.26,
+   "d5": 30.23,
+   "d20": 70.42,
+   "vs_ma20": 34.45,
+   "vs_ma60": 52.0
   },
   "US 10Y": {
-   "last": 4.84,
-   "d1": 0.0,
-   "d5": -1.87,
-   "d20": -7.76,
-   "vs_ma20": -3.77,
-   "vs_ma60": -2.81
+   "last": 4.88,
+   "d1": 0.85,
+   "d5": -1.03,
+   "d20": -6.98,
+   "vs_ma20": -2.99,
+   "vs_ma60": -2.0
   },
   "WTI 유가": {
-   "last": 91.57,
-   "d1": 1.16,
-   "d5": -12.05,
-   "d20": -0.3,
-   "vs_ma20": -6.61,
-   "vs_ma60": -2.39
+   "last": 90.54,
+   "d1": 0.02,
+   "d5": -13.04,
+   "d20": -1.43,
+   "vs_ma20": -7.61,
+   "vs_ma60": -3.47
   },
   "금": {
-   "last": 375.49,
-   "d1": 0.0,
-   "d5": 5.54,
-   "d20": -2.36,
-   "vs_ma20": 0.68,
-   "vs_ma60": -3.77
+   "last": 370.5,
+   "d1": -1.33,
+   "d5": 4.14,
+   "d20": -3.66,
+   "vs_ma20": -0.59,
+   "vs_ma60": -5.03
   },
   "미국 장기채": {
-   "last": 81.93,
-   "d1": 0.0,
-   "d5": 0.11,
-   "d20": 5.07,
-   "vs_ma20": 1.5,
-   "vs_ma60": 1.55
+   "last": 81.74,
+   "d1": -0.23,
+   "d5": -0.12,
+   "d20": 4.82,
+   "vs_ma20": 1.28,
+   "vs_ma60": 1.32
   },
   "KODEX 200": {
-   "last": 80400.0,
-   "d1": -4.98,
-   "d5": -11.45,
-   "d20": -23.79,
-   "vs_ma20": -10.6,
-   "vs_ma60": -21.44
+   "last": 79005.0,
+   "d1": -6.62,
+   "d5": -12.99,
+   "d20": -25.11,
+   "vs_ma20": -12.08,
+   "vs_ma60": -22.79
   },
   "KODEX 코스닥150": {
-   "last": 10725.0,
-   "d1": -3.29,
-   "d5": -9.95,
-   "d20": -29.28,
-   "vs_ma20": -15.12,
-   "vs_ma60": -21.93
+   "last": 10510.0,
+   "d1": -5.23,
+   "d5": -11.75,
+   "d20": -30.7,
+   "vs_ma20": -16.75,
+   "vs_ma60": -23.47
   },
   "KODEX 반도체": {
-   "last": 87375.0,
-   "d1": -6.16,
-   "d5": -18.15,
-   "d20": -40.23,
-   "vs_ma20": -21.72,
-   "vs_ma60": -30.45
-  },
-  "KODEX 2차전지": {
-   "last": 12645.0,
-   "d1": -3.69,
-   "d5": -5.85,
-   "d20": -20.5,
-   "vs_ma20": -10.85,
-   "vs_ma60": -13.33
+   "last": 85400.0,
+   "d1": -8.28,
+   "d5": -20.0,
+   "d20": -41.58,
+   "vs_ma20": -23.43,
+   "vs_ma60": -32.01
   },
   "美 Tech": {
-   "last": 162.38,
-   "d1": 0.0,
-   "d5": -9.54,
-   "d20": -18.31,
-   "vs_ma20": -11.47,
-   "vs_ma60": -13.48
+   "last": 167.27,
+   "d1": 3.01,
+   "d5": -6.82,
+   "d20": -15.85,
+   "vs_ma20": -8.92,
+   "vs_ma60": -10.92
   },
   "美 금융": {
-   "last": 57.5,
-   "d1": 0.0,
-   "d5": 1.75,
-   "d20": 5.06,
-   "vs_ma20": 2.22,
-   "vs_ma60": 2.4
+   "last": 57.41,
+   "d1": -0.16,
+   "d5": 1.59,
+   "d20": 4.9,
+   "vs_ma20": 2.07,
+   "vs_ma60": 2.24
   },
   "美 에너지": {
-   "last": 61.63,
-   "d1": 0.0,
-   "d5": -11.98,
-   "d20": -5.3,
-   "vs_ma20": -8.17,
-   "vs_ma60": -4.58
+   "last": 62.12,
+   "d1": 0.79,
+   "d5": -11.29,
+   "d20": -4.56,
+   "vs_ma20": -7.48,
+   "vs_ma60": -3.84
   }
  },
  "news": [
   {
-   "src": "한국경제 증권",
-   "title": "\"AI 성장 스토리 훼손 아냐…코스피 5000선이 바닥\" [리서치센터장 긴급 진단]",
-   "link": "https://www.hankyung.com/article/202611060808i"
+   "src": "연합뉴스 경제",
+   "title": "'반도체 부품 제조' 동원파츠 코스닥 신규상장…10일부터 거래",
+   "link": "https://www.yna.co.kr/view/AKR20261106175700008"
   },
   {
    "src": "한국경제 증권",
-   "title": "[포토] 파랗게 질린 코스피",
-   "link": "https://www.hankyung.com/article/202611060822i"
+   "title": "\"이례적으로 강한 고용\"…미국 금리인상 확률 '매우 높음'",
+   "link": "https://www.hankyung.com/article/202611061820i"
   },
   {
    "src": "한국경제 증권",
-   "title": "반도체 꺾이자 돈 몰렸다…수익률 상위 10개 중 7개가 '이것' [이수의 ETF줌인]",
-   "link": "https://www.hankyung.com/article/2026110585586"
+   "title": "반도체 피난처도 휘청…힘빠진 은행·자동차주",
+   "link": "https://www.hankyung.com/article/2026110615111"
   },
   {
    "src": "한국경제 증권",
-   "title": "앱러빈, AI 모바일 광고 실적 증명에 31% 폭등",
-   "link": "https://www.hankyung.com/article/202611060607i"
+   "title": "\"코스피 저점권 근접...투매 자제해야\" [리서치센터장 긴급 진단]",
+   "link": "https://www.hankyung.com/article/202611060963i"
   },
   {
    "src": "한국경제 증권",
-   "title": "\"코스피, 전고점 회복 어려워…현금 보유 확대 유효\" [리서치센터장 긴급진단]",
-   "link": "https://www.hankyung.com/article/202611060616i"
+   "title": "블루쓰나미에 AI 성장 서사 급제동…글로벌 증시 '패닉셀'",
+   "link": "https://www.hankyung.com/article/202611061030i"
   },
   {
    "src": "매일경제 증권",
-   "title": "“코스피 폭락 와중에 이건 10% 뛰었네”…급락장 거슬러 오른 종목은",
-   "link": "https://www.mk.co.kr/news/stock/12200384"
+   "title": "증시 폭락에 트럼프 “멍청한 민주당 때문…이들에 투표한 스스로를 탓해야”",
+   "link": "https://www.mk.co.kr/news/stock/12200996"
   },
   {
    "src": "매일경제 증권",
-   "title": "“코스피 폭락, 이제 시작일까 두렵다”…5000선 붕괴에 개미 아우성",
-   "link": "https://www.mk.co.kr/news/stock/12200375"
+   "title": "“트럼프 힘 빠지면 우린 힘 난다”…주가상승률·PER 돋보이는 종목들 [플러스 관심종목]",
+   "link": "https://www.mk.co.kr/news/stock/12200838"
   },
   {
    "src": "매일경제 증권",
-   "title": "코스피 급락에 증권가 “과도한 반응”…데이터센터 리스크 제한적 판단",
-   "link": "https://www.mk.co.kr/news/stock/12200372"
+   "title": "“1000만원어치 주식 샀어요”…코스피 폭락장에 매수 인증한 박용진",
+   "link": "https://www.mk.co.kr/news/stock/12200816"
   },
   {
    "src": "매일경제 증권",
-   "title": "[속보] 증시 급락에 신용융자 담보비율 유지 의무 3개월 면제…9일부터 시행",
-   "link": "https://www.mk.co.kr/news/stock/12200359"
+   "title": "역대급 낙폭에 10년물 국채금리 최저치까지…‘블루쓰나미’에 중화권 비명",
+   "link": "https://www.mk.co.kr/news/stock/12200777"
   },
   {
    "src": "매일경제 증권",
-   "title": "코스피 5000 붕괴에 초고수들이 주운 종목은 [주식 초고수는 지금]",
-   "link": "https://www.mk.co.kr/news/stock/12200331"
+   "title": "섣불리 던지기엔 실적 탄탄 … \"공포에 휩쓸려 팔때 아니다\"",
+   "link": "https://www.mk.co.kr/news/stock/12200704"
   },
   {
    "src": "매일경제 증권",
-   "title": "‘블루 쓰나미’에 5000 붕괴 … 코스피 추가 강제청산 가능성",
-   "link": "https://www.mk.co.kr/news/stock/12200303"
-  },
-  {
-   "src": "매일경제 증권",
-   "title": "5천이 무너졌는데 아직도 “코스피 1만 간다”…이유가 네 가지나 된다는 노무라",
-   "link": "https://www.mk.co.kr/news/stock/12200293"
+   "title": "개장 3분만에 멈춰선 코스피 … 9·11 버금가는 충격",
+   "link": "https://www.mk.co.kr/news/stock/12200705"
   },
   {
    "src": "매일경제 경제",
-   "title": "“노후자금까지 주식에 넣었는데”...코스피 급락하자 다시 예금으로",
-   "link": "https://www.mk.co.kr/news/economy/12200227"
+   "title": "다카이치 “日銀 ETF 매각 이익으로 반도체·AI 투자”",
+   "link": "https://www.mk.co.kr/news/world/12200962"
+  },
+  {
+   "src": "매일경제 경제",
+   "title": "국내 3대 재정학회 “반도체 호황에 기댄 확장재정 위험…미래대응기금 재검토해야”",
+   "link": "https://www.mk.co.kr/news/economy/12200768"
+  },
+  {
+   "src": "매일경제 경제",
+   "title": "주가조작 조사 지휘 … 탈세 칼 빼든다",
+   "link": "https://www.mk.co.kr/news/economy/12200728"
+  },
+  {
+   "src": "매일경제 경제",
+   "title": "[표] 외국환율고시표",
+   "link": "https://www.mk.co.kr/news/economy/12200711"
   },
   {
    "src": "Investing.com",
-   "title": "Centrus Energy stock rating upgraded to Buy at Roth/MKM on revenue risk mitigation",
-   "link": "https://www.investing.com/news/analyst-ratings/centrus-energy-stock-rating-upgraded-to-buy-at-rothmkm-on-revenue-risk-mitigation-93CH-5006546"
+   "title": "Nasdaq rebounds at the open after AI rout; yields rise on blockbuster jobs report",
+   "link": "https://www.investing.com/news/stock-market-news/us-stock-futures-rise-after-ai-rout-batters-wall-st-payrolls-data-in-focus-5006240"
   },
   {
    "src": "Investing.com",
-   "title": "Seaport upgrades SiTime stock rating to buy on AI opportunity",
-   "link": "https://www.investing.com/news/analyst-ratings/seaport-upgrades-sitime-stock-rating-to-buy-on-ai-opportunity-93CH-5006547"
+   "title": "Rush Street Interactive stock hits 52-week low at 11.33 USD",
+   "link": "https://www.investing.com/news/company-news/rush-street-interactive-stock-hits-52week-low-at-1133-usd-93CH-5008622"
   },
   {
    "src": "Investing.com",
-   "title": "JPMorgan upgrades Sociedad Quimica y Minera stock rating on valuation",
-   "link": "https://www.investing.com/news/analyst-ratings/jpmorgan-upgrades-sociedad-quimica-y-minera-stock-rating-on-valuation-93CH-5006545"
+   "title": "SLM stock hits 52-week low at $17.22",
+   "link": "https://www.investing.com/news/company-news/slm-stock-hits-52week-low-at-1722-93CH-5008621"
   },
   {
    "src": "Investing.com",
-   "title": "Why is Hua Hong Grace Semiconductor stock rising today?",
-   "link": "https://www.investing.com/news/stock-market-news/why-is-hua-hong-grace-semiconductor-stock-rising-today-93CH-5006544"
+   "title": "Canada’s unemployment rate reaches six-month high",
+   "link": "https://www.investing.com/news/economy-news/canadas-unemployment-rate-edges-up-to-sixmonth-high-in-october-5008181"
   },
   {
    "src": "Investing.com",
-   "title": "Why is HKEX stock falling today?",
-   "link": "https://www.investing.com/news/stock-market-news/why-is-hkex-stock-falling-today-93CH-5006543"
+   "title": "Ellington Financial stock hits 52-week low at 11.23 USD",
+   "link": "https://www.investing.com/news/company-news/ellington-financial-stock-hits-52week-low-at-1123-usd-93CH-5008619"
   },
   {
    "src": "Investing.com",
-   "title": "North Korea’s army of world-class hackers is secret weapon that took down Binance",
-   "link": "https://www.investing.com/news/economy-news/north-koreas-army-of-worldclass-hackers-is-secret-weapon-that-took-down-binance-5006478"
+   "title": "AllianceBernstein stock hits 52-week low at $33.88",
+   "link": "https://www.investing.com/news/company-news/alliancebernstein-stock-hits-52week-low-at-3388-93CH-5008618"
   },
   {
    "src": "Investing.com",
-   "title": "William Blair downgrades CVRx stock rating on reimbursement headwinds",
-   "link": "https://www.investing.com/news/analyst-ratings/william-blair-downgrades-cvrx-stock-rating-on-reimbursement-headwinds-93CH-5006531"
+   "title": "Raymond James reiterates Humana stock rating on Q3 beat",
+   "link": "https://www.investing.com/news/analyst-ratings/raymond-james-reiterates-humana-stock-rating-on-q3-beat-93CH-5008608"
   },
   {
    "src": "Investing.com",
-   "title": "KeyBanc downgrades Cogent Communications stock rating on growth concerns",
-   "link": "https://www.investing.com/news/analyst-ratings/keybanc-downgrades-cogent-communications-stock-rating-on-growth-concerns-93CH-5006532"
+   "title": "Prestige Consumer Healthcare stock hits 52-week low at 42.5 USD",
+   "link": "https://www.investing.com/news/company-news/prestige-consumer-healthcare-stock-hits-52week-low-at-425-usd-93CH-5008607"
   },
   {
    "src": "Investing.com",
-   "title": "NerdWallet stock rating cut to Market Perform by William Blair",
-   "link": "https://www.investing.com/news/analyst-ratings/nerdwallet-stock-rating-cut-to-market-perform-by-william-blair-93CH-5006530"
+   "title": "BofA cuts Dentsply Sirona stock price target on guidance reset",
+   "link": "https://www.investing.com/news/analyst-ratings/bofa-cuts-dentsply-sirona-stock-price-target-on-guidance-reset-93CH-5008606"
+  },
+  {
+   "src": "CNBC Markets",
+   "title": "U.S. economy added 165,000 jobs in October, way more than expected; unemployment rate slips to 4.1%",
+   "link": "https://www.cnbc.com/2026/11/06/jobs-report-october-2026.html"
   },
   {
    "src": "CNBC Markets",
@@ -292,94 +299,79 @@
    "link": "https://www.cnbc.com/2026/11/03/australia-hikes-rates-18-year-high-finflation.html"
   },
   {
-   "src": "CNBC Markets",
-   "title": "European Central Bank keeps key interest rate on hold at 2.5%",
-   "link": "https://www.cnbc.com/2026/10/29/european-central-bank-interest-rates.html"
+   "src": "MarketWatch",
+   "title": "The S&P 500 has become a big AI bet. Here are some simple alternatives.",
+   "link": "https://www.marketwatch.com/story/the-s-p-500-has-become-a-big-ai-bet-here-are-some-simple-alternatives-3c7574a4?mod=mw_rss_topstories"
   },
   {
    "src": "MarketWatch",
-   "title": "Here’s what’s driving Iren’s stock higher after a brutal selloff",
-   "link": "https://www.marketwatch.com/story/heres-whats-driving-irens-stock-higher-after-a-brutal-selloff-0ced09b0?mod=mw_rss_topstories"
+   "title": "‘It feels like he’s quietly building a separate life’: My husband inherited $500,000, but he refuses to spend it on our ",
+   "link": "https://www.marketwatch.com/story/it-feels-like-hes-quietly-building-a-separate-life-my-husband-inherited-500-000-but-he-refuses-to-spend-it-on-our-home-06535cff?mod=mw_rss_topstories"
   },
   {
    "src": "MarketWatch",
-   "title": "Cloudflare’s stock mounts a big comeback after fastest sales surge in nearly 4 years",
-   "link": "https://www.marketwatch.com/story/cloudflares-stock-mounts-a-big-comeback-after-fastest-sales-surge-in-nearly-4-years-d80d994d?mod=mw_rss_topstories"
-  },
-  {
-   "src": "MarketWatch",
-   "title": "Here are the 2027 capital-gains tax rates for each income level",
-   "link": "https://www.marketwatch.com/story/here-are-the-2027-capital-gains-tax-rates-for-each-income-level-166fc306?mod=mw_rss_topstories"
-  },
-  {
-   "src": "MarketWatch",
-   "title": "Tech stocks log worst day since 2020 as carnage comes to the AI trade",
-   "link": "https://www.marketwatch.com/story/tech-stocks-log-worst-day-since-2020-as-carnage-comes-to-the-ai-trade-56109845?mod=mw_rss_topstories"
-  },
-  {
-   "src": "MarketWatch",
-   "title": "Buy the dip or wait it out? Young investors react as retail stock selling hits one of its highest levels since COVID cra",
-   "link": "https://www.marketwatch.com/story/buy-the-dip-or-wait-it-out-young-investors-react-as-retail-stock-selling-hits-one-of-its-highest-levels-since-covid-crash-610d8087?mod=mw_rss_topstories"
+   "title": "Why Democrats should use their new power to embrace Trump’s tariffs",
+   "link": "https://www.marketwatch.com/story/why-democrats-should-use-their-new-power-to-embrace-trumps-tariffs-7c467541?mod=mw_rss_topstories"
   },
   {
    "src": "연합뉴스 경제",
-   "title": "평택시, 공공계약 운영계획 시행…업체별 수의계약 연 5회 제한",
-   "link": "https://www.yna.co.kr/view/AKR20261106117700061"
+   "title": "증권사들, 신용융자 담보비율 인하·반대매매 유예…급락장 대응",
+   "link": "https://www.yna.co.kr/view/AKR20261106190300008"
   },
   {
    "src": "연합뉴스 경제",
-   "title": "3천688억원 디스플레이 연구거점 아산에…기업 지원체계도 강화(종합)",
-   "link": "https://www.yna.co.kr/view/AKR20261106038451063"
+   "title": "가상자산 거래소 고팍스, 해킹 위협에 입출금·매매 중단(종합)",
+   "link": "https://www.yna.co.kr/view/AKR20261106174751002"
   },
   {
    "src": "연합뉴스 경제",
-   "title": "전남광주시, 일본 에너지 기업과 투자협력 모색",
-   "link": "https://www.yna.co.kr/view/AKR20261106107100054"
+   "title": "도드람, 8일까지 서울 북촌 휘겸재서 '난로회' 팝업스토어",
+   "link": "https://www.yna.co.kr/view/AKR20261106173700030"
   },
   {
    "src": "연합뉴스 경제",
-   "title": "日손보사 \"가짜 車흠집 잡는다\"…'생성형AI' 보험사기 대응 강화",
-   "link": "https://www.yna.co.kr/view/AKR20261106113900009"
+   "title": "고팍스, 해킹 예고 협박 메일에 출금 차단",
+   "link": "https://www.yna.co.kr/view/AKR20261106174700002"
   },
   {
    "src": "연합뉴스 경제",
-   "title": "대부협회, '명의 대여' 등록 대부업자에 첫 손해배상 청구",
-   "link": "https://www.yna.co.kr/view/AKR20261106113500002"
+   "title": "[인사] 공정거래위원회",
+   "link": "https://www.yna.co.kr/view/AKR20261106172800002"
   },
   {
    "src": "연합뉴스 경제",
-   "title": "공인중개사협회, 등기부 수수료 인상 반대 탄원서 제출",
-   "link": "https://www.yna.co.kr/view/AKR20261106113300003"
+   "title": "국세청장 후보자 \"국민 기대 부응하는 공정세정 구현\"",
+   "link": "https://www.yna.co.kr/view/AKR20261106172500002"
   },
   {
    "src": "연합뉴스 경제",
-   "title": "[연합뉴스 이 시각 헤드라인] - 14:30",
-   "link": "https://www.yna.co.kr/view/AKR20261106108400011"
+   "title": "농식품부, 규제합리화 과제 선정…농지조사 후속 특별법 추진",
+   "link": "https://www.yna.co.kr/view/AKR20261106171100030"
   },
   {
    "src": "연합뉴스 경제",
-   "title": "[게시판] 미래에셋, 中알리바바와 글로벌 대학생 AI 공모전",
-   "link": "https://www.yna.co.kr/view/AKR20261106111800008"
+   "title": "노동부·금감원, 퇴직연금사업자 간담회…\"가입자 이익 최우선\"",
+   "link": "https://www.yna.co.kr/view/AKR20261106124400530"
   },
   {
    "src": "연합뉴스 경제",
-   "title": "티씨머티리얼즈, 100억원 유상증자…바이오스마트 등에 3자 배정",
-   "link": "https://www.yna.co.kr/view/AKR20261106111600008"
+   "title": "[연합뉴스 이 시각 헤드라인] - 18:00",
+   "link": "https://www.yna.co.kr/view/AKR20261106160400011"
   },
   {
    "src": "연합뉴스 경제",
-   "title": "원주 창업기업 16곳 한자리에…제품·서비스 판로 확대",
-   "link": "https://www.yna.co.kr/view/AKR20261106109600062"
+   "title": "[게시판] 농식품부, '2026 글로벌 푸드테크 기술 표준화 심포지엄' 개최",
+   "link": "https://www.yna.co.kr/view/AKR20261106114200030"
   },
   {
    "src": "연합뉴스 경제",
-   "title": "국토장관 \"수도권 주택공급 80%담당 민간 역할 중요…총력 지원\"",
-   "link": "https://www.yna.co.kr/view/AKR20261106106300003"
+   "title": "피노 \"종속회사 주식 510억원어치 추가취득…지분율 100%\"",
+   "link": "https://www.yna.co.kr/view/AKR20261106157200008"
   },
   {
-   "src": "연합뉴스 경제",
-   "title": "HS화성, 부산 범천동 공공지원 민간임대주택 사업 수주",
-   "link": "https://www.yna.co.kr/view/AKR20261106108900053"
+   "src": "한국경제 증권",
+   "title": "'아직도 바닥이 아니다?'…앞으로 48시간이 더 무서운 이유",
+   "link": "https://www.hankyung.com/article/2026110615991"
   }
  ],
  "news_status": {
@@ -394,32 +386,32 @@
  },
  "ai_error": "RuntimeError: openai/gpt-4.1-mini(json): JSONDecodeError Expecting value: line 1 column 1 (char 0) raw=OK\r  | openai/gpt-4.1-mini: JSONDecodeError Expecting value: line 1 column 1 (char 0) raw=OK\r  | openai/gpt-4o-mini(json): JSONDecodeError Expecting value: line 1 column 1 (char 0) raw=OK\r  | openai/gpt-4o-mini: JSONDecodeError Expecting value: line 1 column 1 (char 0) raw=OK\r ",
  "llm_reason": "AI 실패 → 규칙 다이제스트",
- "headline_title": "[위험회피] 뉴스 테마: 증시 전반(15건), 반도체·AI(13건), 금리·연준(3건)",
- "summary": "오늘 뉴스의 중심은 증시 전반(15건), 반도체·AI(13건), 금리·연준(3건)입니다. 코스피는 하루 -4.53%, 5일 -10.31%, S&P500은 하루 0.0%, 나스닥은 0.0% 움직였고 VIX는 28.18, 원달러는 20일간 1.24% 변했습니다. 추세·변동성·환율 신호를 합치면 현재 레짐은 '위험회피'이며, 규칙 신호는 S&P500 하락추세(20/60일선 아래); NASDAQ 하락추세(20/60일선 아래); KOSPI 하락추세(20/60일선 아래); VIX 28 공포 구간입니다. (AI 해석이 비활성화되어 규칙 기반으로 작성됨)",
+ "headline_title": "[위험회피] 뉴스 테마: 증시 전반(11건), 반도체·AI(7건), 금리·연준(6건)",
+ "summary": "오늘 뉴스의 중심은 증시 전반(11건), 반도체·AI(7건), 금리·연준(6건)입니다. 코스피는 하루 -6.02%, 5일 -11.71%, S&P500은 하루 1.06%, 나스닥은 1.89% 움직였고 VIX는 25.29, 원달러는 20일간 1.46% 변했습니다. 추세·변동성·환율 신호를 합치면 현재 레짐은 '위험회피'이며, 규칙 신호는 S&P500 하락추세(20/60일선 아래); NASDAQ 하락추세(20/60일선 아래); KOSPI 하락추세(20/60일선 아래); VIX 25 공포 구간입니다. (AI 해석이 비활성화되어 규칙 기반으로 작성됨)",
  "issues": [
   {
    "title": "증시 전반",
-   "detail": "[포토] 파랗게 질린 코스피 / \"코스피, 전고점 회복 어려워…현금 보유 확대 유효\" [리서치센터장 긴급진단]",
+   "detail": "\"코스피 저점권 근접...투매 자제해야\" [리서치센터장 긴급 진단] / “1000만원어치 주식 샀어요”…코스피 폭락장에 매수 인증한 박용진",
    "impact": "혼재"
   },
   {
    "title": "반도체·AI",
-   "detail": "\"AI 성장 스토리 훼손 아냐…코스피 5000선이 바닥\" [리서치센터장 긴급 진단] / 반도체 꺾이자 돈 몰렸다…수익률 상위 10개 중 7개가 '이것' [이수의 ETF줌인]",
+   "detail": "'반도체 부품 제조' 동원파츠 코스닥 신규상장…10일부터 거래 / 반도체 피난처도 휘청…힘빠진 은행·자동차주",
    "impact": "혼재"
   },
   {
    "title": "금리·연준",
-   "detail": "Bank of England hikes interest rate for the first time since / Euro zone inflation hits 4% for first time in three years as",
+   "detail": "\"이례적으로 강한 고용\"…미국 금리인상 확률 '매우 높음' / 역대급 낙폭에 10년물 국채금리 최저치까지…‘블루쓰나미’에 중화권 비명",
    "impact": "혼재"
   },
   {
-   "title": "유가·원자재·금",
-   "detail": "5천이 무너졌는데 아직도 “코스피 1만 간다”…이유가 네 가지나 된다는 노무라",
+   "title": "정치·관세",
+   "detail": "증시 폭락에 트럼프 “멍청한 민주당 때문…이들에 투표한 스스로를 탓해야” / “트럼프 힘 빠지면 우린 힘 난다”…주가상승률·PER 돋보이는 종목들 [플러스 관심종목]",
    "impact": "혼재"
   },
   {
    "title": "실적·기업",
-   "detail": "Centrus Energy stock rating upgraded to Buy at Roth/MKM on r",
+   "detail": "섣불리 던지기엔 실적 탄탄 … \"공포에 휩쓸려 팔때 아니다\" / BofA cuts Dentsply Sirona stock price target on guidance res",
    "impact": "혼재"
   }
  ],

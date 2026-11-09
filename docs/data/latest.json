@@ -1,5 +1,5 @@
 {
- "as_of": "2026-11-09 11:22 KST",
+ "as_of": "2026-11-09 12:57 KST",
  "regime": "risk_off",
  "score": -5,
  "reasons": [
@@ -11,36 +11,36 @@
  "weights": {
   "KODEX 200": 10,
   "KODEX 코스닥150": 0,
-  "S&P 500": 15,
+  "S&P 500": 10,
   "NASDAQ": 5,
   "채권": 30,
   "금": 15,
-  "현금": 25
+  "현금": 30
  },
  "headline_ind": {
   "KOSPI": {
-   "last": 5118.48,
-   "d1": 1.16,
-   "d5": -9.39,
-   "d20": -15.19,
-   "vs_ma20": -8.58,
-   "vs_ma60": -20.13
+   "last": 5146.27,
+   "d1": 1.71,
+   "d5": -8.9,
+   "d20": -14.73,
+   "vs_ma20": -8.1,
+   "vs_ma60": -19.7
   },
   "KOSDAQ": {
-   "last": 647.34,
-   "d1": 0.48,
-   "d5": -8.1,
-   "d20": -22.66,
-   "vs_ma20": -12.33,
-   "vs_ma60": -19.71
+   "last": 657.76,
+   "d1": 2.09,
+   "d5": -6.62,
+   "d20": -21.42,
+   "vs_ma20": -10.98,
+   "vs_ma60": -18.43
   },
   "USD/KRW": {
-   "last": 1356.58,
-   "d1": 0.02,
-   "d5": 0.88,
-   "d20": 1.68,
-   "vs_ma20": 1.49,
-   "vs_ma60": 0.24
+   "last": 1355.7,
+   "d1": -0.05,
+   "d5": 0.81,
+   "d20": 1.62,
+   "vs_ma20": 1.43,
+   "vs_ma60": 0.18
   },
   "S&P 500": {
    "last": 7376.86,
@@ -75,12 +75,12 @@
    "vs_ma60": -2.47
   },
   "WTI 유가": {
-   "last": 90.79,
+   "last": 91.16,
    "d1": 0.0,
-   "d5": -5.52,
-   "d20": -3.56,
-   "vs_ma20": -7.07,
-   "vs_ma60": -3.42
+   "d5": -5.13,
+   "d20": -3.17,
+   "vs_ma20": -6.73,
+   "vs_ma60": -3.04
   },
   "금": {
    "last": 372.52,
@@ -99,36 +99,36 @@
    "vs_ma60": 1.72
   },
   "KODEX 200": {
-   "last": 80280.0,
-   "d1": 1.61,
-   "d5": -10.13,
-   "d20": -15.6,
-   "vs_ma20": -8.77,
-   "vs_ma60": -20.78
+   "last": 80650.0,
+   "d1": 2.08,
+   "d5": -9.71,
+   "d20": -15.21,
+   "vs_ma20": -8.37,
+   "vs_ma60": -20.42
   },
   "KODEX 코스닥150": {
-   "last": 10480.0,
-   "d1": -0.29,
-   "d5": -9.42,
-   "d20": -26.33,
-   "vs_ma20": -14.41,
-   "vs_ma60": -22.94
+   "last": 10695.0,
+   "d1": 1.76,
+   "d5": -7.56,
+   "d20": -24.82,
+   "vs_ma20": -12.73,
+   "vs_ma60": -21.38
   },
   "KODEX 반도체": {
-   "last": 88510.0,
-   "d1": 3.64,
-   "d5": -13.98,
-   "d20": -33.63,
-   "vs_ma20": -16.98,
-   "vs_ma60": -28.8
+   "last": 90120.0,
+   "d1": 5.53,
+   "d5": -12.42,
+   "d20": -32.42,
+   "vs_ma20": -15.53,
+   "vs_ma60": -27.52
   },
   "KODEX 2차전지": {
-   "last": 12105.0,
-   "d1": -2.18,
-   "d5": -5.43,
-   "d20": -21.27,
-   "vs_ma20": -12.71,
-   "vs_ma60": -16.56
+   "last": 12195.0,
+   "d1": -1.45,
+   "d5": -4.73,
+   "d20": -20.68,
+   "vs_ma20": -12.09,
+   "vs_ma60": -15.95
   },
   "美 Tech": {
    "last": 164.74,
@@ -158,8 +158,23 @@
  "news": [
   {
    "src": "연합뉴스 경제",
-   "title": "코스피, '5천피' 공방 후 1%대 상승세…코스닥도 상승전환",
-   "link": "https://www.yna.co.kr/view/AKR20261109066300008"
+   "title": "KDI \"AI투자 중심 양호한 성장…반도체 소득효과 가계엔 아직\"",
+   "link": "https://www.yna.co.kr/view/AKR20261109067700002"
+  },
+  {
+   "src": "연합뉴스 경제",
+   "title": "국고채 금리 일제히 상승…3년물 장중 연 3.652%",
+   "link": "https://www.yna.co.kr/view/AKR20261109076200008"
+  },
+  {
+   "src": "한국경제 증권",
+   "title": "日제조업 절반 실적 전망 상향…가격 인상·AI 투자·엔저 '3박자'",
+   "link": "https://www.hankyung.com/article/202611094464i"
+  },
+  {
+   "src": "한국경제 증권",
+   "title": "日 여행객 사상 최대에 유가까지 하락...날아오르는 LCC주",
+   "link": "https://www.hankyung.com/article/202611094700i"
   },
   {
    "src": "한국경제 증권",
@@ -178,18 +193,8 @@
   },
   {
    "src": "한국경제 증권",
-   "title": "[마켓라이브]코스피 5100선 회복…알테오젠 15%·씨젠 17%↓",
+   "title": "[마켓라이브] 코스피 5100선 회복…알테오젠 15%·씨젠 17%↓",
    "link": "https://www.hankyung.com/article/202611093880i"
-  },
-  {
-   "src": "한국경제 증권",
-   "title": "LIG D&A, 실적 부진에 주가 '급락'",
-   "link": "https://www.hankyung.com/article/2026110940506"
-  },
-  {
-   "src": "한국경제 증권",
-   "title": "한국콜마, 3분기 실적 실망에 장 초반 7%대 '급락'",
-   "link": "https://www.hankyung.com/article/2026110939936"
   },
   {
    "src": "매일경제 증권",
@@ -212,9 +217,19 @@
    "link": "https://www.mk.co.kr/news/stock/12202096"
   },
   {
-   "src": "매일경제 증권",
-   "title": "美 반도체 반등에도 코스피 ‘흔들’…장중 다시 5000선 밑으로",
-   "link": "https://www.mk.co.kr/news/stock/12202067"
+   "src": "Investing.com",
+   "title": "Mitsui O.S.K Q2 profit flat as higher shipping rates, weak yen boost revenue",
+   "link": "https://www.investing.com/news/earnings/mitsui-osk-q2-profit-flat-as-higher-shipping-rates-weak-yen-boost-revenue-5010430"
+  },
+  {
+   "src": "Investing.com",
+   "title": "China extends suspension of 24% tariff on US imports for two months",
+   "link": "https://www.investing.com/news/commodities-news/china-extends-suspension-of-24-tariff-on-us-imports-for-two-months-5010427"
+  },
+  {
+   "src": "Investing.com",
+   "title": "China CPI inflation misses forecasts in Oct; factory-gate prices accelerate",
+   "link": "https://www.investing.com/news/economic-indicators/china-cpi-inflation-misses-forecasts-in-oct-factorygate-prices-accelerate-5010405"
   },
   {
    "src": "Investing.com",
@@ -227,23 +242,8 @@
    "link": "https://www.investing.com/news/economy-news/chinas-october-producer-inflation-quickens-further-consumer-prices-edge-down-5010403"
   },
   {
-   "src": "Investing.com",
-   "title": "Asian stocks steady as AI, Mideast jitters recede; dollar firm on Fed bets",
-   "link": "https://www.investing.com/news/economy-news/asian-stocks-steady-as-ai-mideast-jitters-recede-dollar-firm-on-fed-bets-5010407"
-  },
-  {
-   "src": "Investing.com",
-   "title": "China CPI inflation misses forecasts in Oct; factory-gate prices accelerate",
-   "link": "https://www.investing.com/news/economic-indicators/china-cpi-inflation-misses-forecasts-in-oct-factorygate-prices-accelerate-5010405"
-  },
-  {
-   "src": "Investing.com",
-   "title": "Gold rebounds above $4,100 as traders await U.S. inflation data after jobs beat",
-   "link": "https://www.investing.com/news/commodities-news/gold-rebounds-above-4100-as-traders-await-us-inflation-data-after-jobs-beat-5010397"
-  },
-  {
    "src": "CNBC Markets",
-   "title": "China wholesale inflation hits over four-year high as consumer measure slows",
+   "title": "China wholesale inflation hits highest in more than four years as consumer measure slows",
    "link": "https://www.cnbc.com/2026/11/09/china-wholesale-inflation-rises-consumer.html"
   },
   {
@@ -298,58 +298,63 @@
   },
   {
    "src": "연합뉴스 경제",
-   "title": "서울배달+땡겨요, 상품권 결제하면 25% 혜택…쿠폰중복할인",
-   "link": "https://www.yna.co.kr/view/AKR20261109046700004"
+   "title": "외국인 관광객 급증에 3분기 서울 주요 상권 공실률 개선",
+   "link": "https://www.yna.co.kr/view/AKR20261109081200003"
   },
   {
    "src": "연합뉴스 경제",
-   "title": "안산시 경제사절단, '우호도시' 독일 아헨특구 대표단과 간담회",
-   "link": "https://www.yna.co.kr/view/AKR20261109063800061"
+   "title": "배민·쿠팡이츠, 6천억원대 과징금 부과에 \"위법성 없어\" 반발",
+   "link": "https://www.yna.co.kr/view/AKR20261109079800030"
   },
   {
    "src": "연합뉴스 경제",
-   "title": "해수부, 국내 기업 베트남 해양플랜트 서비스 시장 진출 지원",
-   "link": "https://www.yna.co.kr/view/AKR20261109018700051"
+   "title": "[인터뷰] 대표실도 지정석도 없다…'89년생 CEO' 토스증권 김규빈 대표",
+   "link": "https://www.yna.co.kr/view/AKR20261030173000008"
   },
   {
    "src": "연합뉴스 경제",
-   "title": "해수부, 중소선사 CEO 콘퍼런스…친환경·저탄소 전환 논의",
-   "link": "https://www.yna.co.kr/view/AKR20261109023400051"
+   "title": "노동자 2명 숨진 아워홈, 안전조치 미흡·불법파견 등 92건 적발",
+   "link": "https://www.yna.co.kr/view/AKR20261109045400530"
   },
   {
    "src": "연합뉴스 경제",
-   "title": "해양 정보 디지털 전환 'IHO 인프라센터', 부산에 문 연다",
-   "link": "https://www.yna.co.kr/view/AKR20261109029100051"
+   "title": "\"적발시 형사처벌·제재\"…금감원, 상장사 불공정거래 예방교육",
+   "link": "https://www.yna.co.kr/view/AKR20261109061200002"
   },
   {
    "src": "연합뉴스 경제",
-   "title": "[게시판] 재경부, 아시아 11개국 고위공무원 초청연수",
-   "link": "https://www.yna.co.kr/view/AKR20261109041800002"
+   "title": "29세 이하 고용보험 가입자 50개월째 감소…역대 최장",
+   "link": "https://www.yna.co.kr/view/AKR20261109072300530"
   },
   {
    "src": "연합뉴스 경제",
-   "title": "해수부, '어촌뉴딜 3.0' 사업지 40곳 선정…사업 구조도 개편",
-   "link": "https://www.yna.co.kr/view/AKR20261109054800030"
+   "title": "배민·쿠팡 과징금 6천억대 '역대 최대'…최혜대우 요구 등 갑질",
+   "link": "https://www.yna.co.kr/view/AKR20261109070200002"
   },
   {
    "src": "연합뉴스 경제",
-   "title": "전세사기 피해자 보증금 3분의 1 보장…10일부터 사전 신청",
-   "link": "https://www.yna.co.kr/view/AKR20261109055800003"
+   "title": "\"한강 투신자, AI로 감지·드론 구조\"…서울시 창의발표회 대상(종합)",
+   "link": "https://www.yna.co.kr/view/AKR20261108041951004"
   },
   {
    "src": "연합뉴스 경제",
-   "title": "국내 곤충산업 591억원 규모로 성장…동애등에 판매 65% 증가",
-   "link": "https://www.yna.co.kr/view/AKR20261109058100030"
+   "title": "용산구, '용산공원 특별법' 개정 추진에 \"분명한 반대\" 강조",
+   "link": "https://www.yna.co.kr/view/AKR20261109078000004"
   },
   {
    "src": "연합뉴스 경제",
-   "title": "광주은행, 취업준비청년·대학생 장학금 등 자립 지원",
-   "link": "https://www.yna.co.kr/view/AKR20261109062700054"
+   "title": "[게시판] 우리금융, 순직·부상 군인에 '우리히어로 기금' 5억원 전달",
+   "link": "https://www.yna.co.kr/view/AKR20261109074700002"
   },
   {
-   "src": "연합뉴스 경제",
-   "title": "[게시판] 우리은행 여자농구단, 홈 개막전에서 '굿윌 팝업스토어' 운영",
-   "link": "https://www.yna.co.kr/view/AKR20261109063500002"
+   "src": "한국경제 증권",
+   "title": "\"제니·장원영도 즐겨 마신다더니\"…한국 기업들 '돈방석'",
+   "link": "https://www.hankyung.com/article/2026110946816"
+  },
+  {
+   "src": "한국경제 증권",
+   "title": "\"개미들 손절했는데\"…월가 큰손들이 내놓은 엇갈린 전망 [빈난새의 빈틈없이마켓]",
+   "link": "https://www.hankyung.com/article/202611094448i"
   },
   {
    "src": "한국경제 증권",
@@ -372,14 +377,9 @@
    "link": "https://www.hankyung.com/article/202611094298i"
   },
   {
-   "src": "한국경제 증권",
-   "title": "신약 상업화·기술수출 확대 기대감…한미사이언스 7% 급등",
-   "link": "https://www.hankyung.com/article/2026110940556"
-  },
-  {
-   "src": "한국경제 증권",
-   "title": "씨젠, 3분기 당기순손익 적자 전환에 17.26% 급락",
-   "link": "https://www.hankyung.com/article/2026110940766"
+   "src": "매일경제 증권",
+   "title": "[단독] 北 해킹 장물에 개미들 ‘830억 돈잔치’… “공포장 속 황당 횡재”",
+   "link": "https://www.mk.co.kr/news/stock/12202311"
   }
  ],
  "news_status": {
@@ -392,43 +392,43 @@
   "CNBC Markets": 12,
   "MarketWatch": 10
  },
- "headline_title": "코스피 5천피 공방 속 VIX 26 공포 구간, 리스크 오프 기조 속 채권·금 안전자산 선호",
- "summary": "미국 고용 지표가 예상치를 상회하며 연준의 금리 경로에 대한 경계감이 이어지는 가운데, VIX가 25를 웃도는 공포 구간에 진입하며 글로벌 증시의 하락 추세가 심화되고 있습니다. 국내 증시는 삼성전자와 하이닉스 등 반도체 대형주 중심으로 기관 매수가 유입되며 장중 5100선을 회복하려 시도했으나, 외국인의 매도세와 코스닥 바이오주의 급락 여파로 변동성이 커진 상태입니다. 엔비디아를 둘러싼 AI 낙관론 경계감과 중국의 생산자물가 상승 등 복합적인 글로벌 매크로 불확실성이 증시에 하방 압력을 가하고 있습니다. 이에 따라 주식 비중을 규칙 기반 대비 축소하고, 안전자산인 채권과 금, 그리고 현금 비중을 높여 방어적인 포트폴리오를 구축했습니다.",
+ "headline_title": "글로벌 긴축 장기화와 반도체 반등 속 공포 장세… 현금·방어자산 중심 방어적 대응",
+ "summary": "글로벌 증시는 VIX 지수가 25선을 웃돌며 위험회피(Risk-Off) 국면이 깊어지고 있습니다. 미국 비농업 고용 서프라이즈와 호주·영국·유로존의 인플레이션 재점화 및 금리 인상 움직임으로 통화 긴축 완화 기대감이 후퇴했습니다. 국내 증시는 삼성전자와 SK하이닉스 등 대형 반도체주를 중심으로 단기 기술적 반등이 나타나며 코스피 5100선을 회복했으나, 외국인 매도세가 이어지고 주요 바이오 종목이 급락하는 등 변동성이 극심합니다. AI 관련주 고평가 논란과 글로벌 유동성 축소 압력 속에서 기술주 중심의 추세적 하락세가 여전히 유효합니다. 따라서 주식 비중을 보수적으로 유지하고 채권, 금, 현금 등 안전자산 중심의 방어 포트폴리오를 유지하는 것이 적절합니다.",
  "issues": [
   {
-   "title": "미국 고용 서프라이즈와 연준 금리 경계감",
-   "detail": "10월 비농업 고용이 예상치를 크게 웃돌며 노동시장 강세가 확인되었으나, 인플레이션 압력과 고금리 장기화 우려를 자극해 증시에 부담으로 작용하고 있습니다.",
+   "title": "글로벌 인플레이션 재점화 및 금리 인상 확산",
+   "detail": "영국과 호주 중앙은행의 기준금리 인상, 유로존 4% 인플레이션 도달 및 미국의 견고한 10월 고용지표로 인해 글로벌 고금리 장기화 우려가 고조되고 있습니다.",
    "impact": "부정"
   },
   {
-   "title": "국내 증시 반도체 대형주 등락과 외국인 이탈",
-   "detail": "삼전과 하이닉스 중심으로 기관 매수가 유입되며 지수 방어에 나섰으나, 외국인의 매도 지속과 일부 제약·바이오 및 실적 쇼크 종목들의 급락으로 투자 심리가 위축되었습니다.",
+   "title": "국내 대형 반도체주 중심의 기술적 반등과 외인 매도세 지속",
+   "detail": "코스피 200과 반도체 섹터가 낙폭 과대 인식 및 기관 매수로 단기 반등했으나, 외국인의 순매도세와 씨젠·알테오젠 등 개별 성장주의 급락으로 시장 전반의 체력은 취약합니다.",
    "impact": "혼재"
   },
   {
-   "title": "변동성 지수(VIX) 급등과 안전자산 선호",
-   "detail": "VIX가 25를 상회하는 공포 구간에 진입하고 글로벌 AI 및 중동발 리스크가 겹치면서 금과 채권 등 안전자산으로 자금이 쏠리고 있습니다.",
+   "title": "AI 밸류에이션 피로감 및 변동성 확대",
+   "detail": "S&P 500 내 AI 집중 노출에 대한 경고와 엔비디아 매도 압력 등 빅테크 중심의 상승 동력이 약화되며 기술주 지수의 변동성이 확대되고 있습니다.",
    "impact": "부정"
   }
  ],
  "rationale": {
-  "KODEX 200": "코스피 5000선 공방과 외국인 매도세 속에서 하락 추세를 반영해 기본 비중에서 축소했습니다.",
-  "KODEX 코스닥150": "바이오주 급락과 20/60일선 아래의 완연한 하락 추세를 고려해 비중을 0으로 유지합니다.",
-  "S&P 500": "미국 증시의 하락 추세와 고용 지표에 따른 변동성 확대 우려로 기본 비중을 소폭 낮췄습니다.",
-  "NASDAQ": "기술주 전반의 낙관론 약화 및 하락 추세 진입을 반영하여 비중을 0으로 조정했습니다.",
-  "채권": "금리 불확실성과 리스크 오프 국면에서 포트폴리오 방어를 위해 기본 비중보다 확대했습니다.",
-  "금": "VIX 26의 공포 구간과 인플레이션 경계감 속에서 헤지 수단으로 매력도가 높아져 비중을 늘렸습니다.",
-  "현금": "시장 변동성이 극심한 국면에서 유동성을 확보하고 저가 매수 기회를 대기하기 위해 비중을 상향했습니다."
+  "KODEX 200": "반도체 대형주 중심의 기술적 반등이 나타났으나 외국인 순매도 지속과 추세적 하락 국면을 감안해 10%의 최소 수준을 유지합니다.",
+  "KODEX 코스닥150": "20일 수익률(-21.4%) 극심한 부진과 주요 제약·바이오주 급락 등 중소형 성장주에 대한 투심 위축으로 편입하지 않습니다.",
+  "S&P 500": "미국 고용 호조에 따른 금리 부담과 AI 섹터 노출 위험 경고를 감안해 기본 비중 대비 5%p 축소한 10%로 대응합니다.",
+  "NASDAQ": "VIX 25 상회 및 빅테크 밸류에이션 부담, 글로벌 긴축 장기화 압력으로 인해 5%의 최소 비중만 가져갑니다.",
+  "채권": "글로벌 국채 금리 변동성 속에서도 미국 10년물 금리가 4.86% 수준으로 장기적 인컴 매력이 유효해 30%를 유지합니다.",
+  "금": "글로벌 긴축과 지정학적 불안 요인 속 안전자산 수요가 견조하여 15% 비중을 유지합니다.",
+  "현금": "시장 전반의 하락 추세와 위험회피 심리에 대응하기 위해 기본 비중보다 5%p 확대한 30%를 유지해 유동성을 확보합니다."
  },
  "watch": [
-  "미국 추가 인플레이션 지표 발표 결과",
-  "외국인 투자자의 국내 증시 순매수 전환 여부",
-  "VIX 지수의 25선 안착 또는 추가 급등 여부"
+  "미국 10년물 국채 금리 4.9% 돌파 여부",
+  "외국인의 국내 반도체 대형주 수급 전환 여부",
+  "글로벌 주요국 추가 금리 인상 발언 및 CPI 발표"
  ],
  "usage": {
-  "in": 2755,
-  "out": 1030,
-  "model": "gemini-3.5-flash-lite"
+  "in": 2788,
+  "out": 960,
+  "model": "gemini-3.7-flash"
  },
- "llm_reason": "호출 (새 뉴스 34건, Gemini gemini-3.5-flash-lite)"
+ "llm_reason": "호출 (새 뉴스 21건, Gemini gemini-3.7-flash)"
 }

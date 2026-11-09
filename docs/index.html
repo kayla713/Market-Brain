@@ -5,7 +5,10 @@
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<title>시황두뇌</title>
+<title>Kayla</title>
+<meta name="apple-mobile-web-app-title" content="Kayla">
+<link rel="apple-touch-icon" sizes="180x180" href="icon.png">
+<link rel="icon" type="image/png" href="icon.png">
 <style>
 :root{--paper:#F4F5F2;--card:#FFFFFF;--ink:#171D1A;--mute:#6A746F;--line:#E1E5E2;--up:#C8342B;--down:#2A5CC2;--accent:#17201C;color-scheme:light}
 @media(prefers-color-scheme:dark){:root{--paper:#111513;--card:#1A1F1C;--ink:#ECEFEA;--mute:#93A09A;--line:#2A312D;--accent:#ECEFEA;color-scheme:dark}}
@@ -50,7 +53,7 @@ fetch("data/latest.json?t="+Date.now()).then(r=>r.json()).then(d=>{
   const h=d.headline_ind||{},W=d.weights||{},R=d.rationale||{},max=Math.max(1,...Object.values(W));
   const imp={"긍정":"pos","부정":"neg"};
   document.getElementById("app").innerHTML=`
-  <div class="top"><b>🧠 시황두뇌</b><span>${esc(d.as_of)}</span></div>
+  <div class="top"><b>Kayla · 시황두뇌</b><span>${esc(d.as_of)}</span></div>
   <div class="hero"><span class="pill ${d.regime}">${RK[d.regime]||d.regime}</span>
     <h1>${esc(d.headline_title||"오늘의 시황")}</h1><p>${esc(d.summary||"")}</p>
     ${d.ai_error?`<div class="warn">AI 해석이 실패해 규칙 요약으로 대체됨</div>`:""}</div>

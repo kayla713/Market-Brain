@@ -1,68 +1,63 @@
 # 🧠 시황두뇌
 
-**2026-11-09 09:43 KST** · 레짐 🔴 위험회피 · 작성: rule-digest
+**2026-11-09 09:50 KST** · 레짐 🔴 위험회피 · 작성: gemini-3.5-flash-lite
 
-> ⚠️ AI 해석 실패 (규칙 요약으로 대체): `Gemini 실패: RuntimeError gemini-2.5-flash: HTTPError HTTP Error 404: Not Found {
-  "error": {
-    "code": 404,
-    "message": "This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/ge | gemini-2.0-flash: HTTPError HTTP`
+## 글로벌 금리 인상 압박과 5천선 공방 속 안전자산 선호 심화
 
-## [위험회피] 뉴스 테마: 증시 전반(9건), 반도체·AI(8건), 금리·연준(4건)
-
-오늘 뉴스의 중심은 증시 전반(9건), 반도체·AI(8건), 금리·연준(4건)입니다. 코스피는 하루 -0.63%, 5일 -11.0%, S&P500은 하루 0.0%, 나스닥은 0.0% 움직였고 VIX는 None, 원달러는 20일간 1.98% 변했습니다. 추세·변동성·환율 신호를 합치면 현재 레짐은 '위험회피'이며, 규칙 신호는 S&P500 하락추세(20/60일선 아래); NASDAQ 하락추세(20/60일선 아래); KOSPI 하락추세(20/60일선 아래)입니다. (AI 해석이 비활성화되어 규칙 기반으로 작성됨)
+미국 10월 고용 호조와 영국의 금리 인상 등 글로벌 인플레이션 압박이 지속되면서 주요국 증시가 하락세를 보이고 있다. 코스피는 장 초반 5,000선을 두고 공방을 벌이고 있으나, VIX가 25를 웃도는 등 공포 심리가 확산된 상태다. 원화 약세와 외국인 이탈 우려가 겹치며 국내 증시의 변동성이 확대되었다. 이에 따라 위험자산 비중을 축소하고 채권과 현금 중심의 방어적인 포트폴리오 유지가 요구된다.
 
 ## 핵심 이슈
 
-- 🟡 **증시 전반** — 코스피, 장초반 보합세로 '5천선' 사수전…코스닥 하락(종합) / "롯데쇼핑, 증시 하락發 자산효과 약화 우려…목표가↓"-키움
-- 🟡 **반도체·AI** — 美 반도체 반등에도 코스피 ‘흔들’…장중 다시 5000선 밑으로 / 美 중간선거후 투자자가 봐야할 것 ... AI기업, 주가 좌우할 한가지 기준
-- 🟡 **금리·연준** — 씨티 "반도체 꺾이면 금리인상 조기종료…내년 하반기 인하" / Bank of England hikes interest rate for the first time since
-- 🟡 **실적·기업** — Earnings call transcript: Dyno Nobel shares fall 7.3% after  / RadNet earnings beat by $0.08, revenue fell short of estimat
-- 🟡 **정치·관세** — Analysis: The Democrats have one chance to extract concessio / "씨에스윈드, 美 풍력 프로젝트 규제 완화 기대"-하나
+- 🔴 **미국 고용지표 호조와 글로벌 금리 인상** — 예상을 웃돈 미 고용 지표와 영국의 금리 인상으로 글로벌 통화 긴축 우려가 커지며 증시 하방 압력으로 작용하고 있다.
+- 🔴 **국내 증시 5천선 사수 공방과 환율 불안** — 코스피가 5,000선 근처에서 흔들리는 가운데 원화 약세가 겹쳐 외국인 수급에 부정적인 영향을 미치고 있다.
+- 🟡 **변동성 장세 속 안전자산 선호** — VIX 공포 지수가 급등하고 글로벌 증시가 하락 추세를 보이면서 채권과 금 등 안전자산으로의 자금 이동이 뚜렷하다.
 
 ## 포트폴리오와 그 이유
 
 | 자산 | 비중 | 왜 이 비중인가 |
 |---|---:|---|
-| KODEX 200 | 10% | 국내 지수가 추세 아래에 있어 비중 축소 |
-| KODEX 코스닥150 | 0% | 변동성 큰 중소형주는 위험회피 구간에서 제외 |
-| S&P 500 | 15% | 미국 대형주도 추세 이탈, 핵심 비중만 유지 |
-| NASDAQ | 5% | 고밸류 성장주는 금리·변동성에 취약해 최소화 |
-| 채권 | 30% | 위험회피 국면의 방어 핵심 자산 |
-| 금 | 15% | 달러·지정학 불안 헤지 |
-| 현금 | 25% | 반등 시 재진입 여력 확보 |
+| KODEX 200 | 5% | 코스피 5,000선 공방과 하락 추세를 반영해 기본 비중에서 축소했습니다. |
+| KODEX 코스닥150 | 0% | 변동성이 극심하고 하락폭이 큰 코스닥 시장은 리스크 관리를 위해 완전히 배제했습니다. |
+| S&P 500 | 10% | 미국 증시의 하락 추세와 20/60일선 이탈을 고려하여 비중을 낮췄습니다. |
+| NASDAQ | 0% | 기술주 중심의 낙폭이 커짐에 따라 리스크 회피를 위해 보유 비중을 없애기로 했습니다. |
+| 채권 | 35% | 글로벌 금리 인상 환경 속에서 안전자산 선호 및 포트폴리오 방어를 위해 비중을 상향했습니다. |
+| 금 | 20% | 공포 구간(VIX 26) 진입과 헤지 수요 증가에 대응하기 위해 금 비중을 늘렸습니다. |
+| 현금 | 30% | 시장 변동성에 유연하게 대응하고 추가 하락에 대비하기 위해 현금 보유를 확대했습니다. |
 
 ## 앞으로 지켜볼 것
 
-- 가장 많이 언급된 테마 '증시 전반'의 후속 뉴스
-- VIX 25 상회/16 하회 여부
-- 코스피·S&P500의 20일선 회복 여부
+- 원/달러 환율 추가 상승 및 외국인 순매도 추이
+- 미국 국채 금리(US 10Y)의 방향성
+- 코스피 5,000선 지지 여부
 
 ## 주요 지표
 
 | 지표 | 현재 | 1일 | 5일 | 20일 |
 |---|---:|---:|---:|---:|
-| KOSPI | 5027.7 | -0.63% | -11.0% | -16.7% |
-| KOSDAQ | 635.33 | -1.39% | -9.8% | -24.1% |
-| USD/KRW | 1360.58 | +0.31% | +1.17% | +1.98% |
+| KOSPI | 5047.43 | -0.24% | -10.65% | -16.37% |
+| KOSDAQ | 637.27 | -1.09% | -9.53% | -23.87% |
+| USD/KRW | 1361.03 | +0.35% | +1.21% | +2.02% |
 | S&P 500 | 7376.86 | 0.0% | -2.54% | -5.49% |
 | NASDAQ | 24579.43 | 0.0% | -3.12% | -9.65% |
+| VIX | 25.64 | 0.0% | +23.09% | +67.91% |
 | US 10Y | 4.86 | 0.0% | -1.88% | -6.86% |
-| WTI 유가 | 90.46 | 0.0% | -5.86% | -3.91% |
+| WTI 유가 | 90.54 | 0.0% | -5.78% | -3.82% |
 | 금 | 372.52 | 0.0% | +3.69% | -2.4% |
 | 미국 장기채 | 81.92 | 0.0% | +1.0% | +4.53% |
-| KODEX 200 | 78825.0 | -0.23% | -11.75% | -17.13% |
-| KODEX 코스닥150 | 10260.0 | -2.38% | -11.32% | -27.87% |
-| KODEX 반도체 | 85450.0 | +0.06% | -16.96% | -35.92% |
-| KODEX 2차전지 | 12020.0 | -2.87% | -6.09% | -21.82% |
+| KODEX 200 | 79110.0 | +0.13% | -11.44% | -16.83% |
+| KODEX 코스닥150 | 10300.0 | -2.0% | -10.98% | -27.59% |
+| KODEX 반도체 | 86400.0 | +1.17% | -16.03% | -35.21% |
+| KODEX 2차전지 | 12090.0 | -2.3% | -5.55% | -21.37% |
 | 美 Tech | 164.74 | 0.0% | -6.67% | -16.07% |
 | 美 금융 | 57.16 | 0.0% | -0.05% | +4.27% |
-| 美 에너지 | 61.62 | 0.0% | -7.59% | -8.3% |
 
 ## 규칙 신호
 
 - S&P500 하락추세(20/60일선 아래)
 - NASDAQ 하락추세(20/60일선 아래)
 - KOSPI 하락추세(20/60일선 아래)
+- VIX 26 공포 구간
+- 원화 약세(외국인 이탈 우려)
 
 ## 참고한 뉴스 (45건)
 
@@ -74,7 +69,6 @@
 - [美 반도체 반등에도 코스피 ‘흔들’…장중 다시 5000선 밑으로](https://www.mk.co.kr/news/stock/12202067) · 매일경제 증권
 - [“코스피, 작은 호재에도 반등 가능”…SK증권이 꼽은 회복 조건](https://www.mk.co.kr/news/stock/12202043) · 매일경제 증권
 - [[MK시그널] 현대바이오, 핵심 파이프라인 가치 부각 등에 주가 상승률 9.36% 기록](https://www.mk.co.kr/news/stock/12202042) · 매일경제 증권
-- [美 중간선거후 투자자가 봐야할 것 ... AI기업, 주가 좌우할 한가지 기준](https://www.mk.co.kr/news/stock/12201699) · 매일경제 증권
 - [Brazil’s Lula, worried about high interest rates, pledges budget discipline](https://www.investing.com/news/economy-news/brazils-lula-worried-about-high-interest-rates-pledges-budget-discipline-5010375) · Investing.com
 - [Earnings call transcript: Dyno Nobel shares fall 7.3% after strong H2 2026](https://www.investing.com/news/transcripts/earnings-call-transcript-dyno-nobel-shares-fall-73-after-strong-h2-2026-93CH-5010371) · Investing.com
 - [RadNet earnings beat by $0.08, revenue fell short of estimates](https://www.investing.com/news/earnings/radnet-earnings-beat-by-008-revenue-fell-short-of-estimates-5010369) · Investing.com
@@ -89,6 +83,7 @@
 - [I’m second-guessing my adviser: Is an annuity the right move in this market?](https://www.marketwatch.com/story/my-adviser-recommended-an-annuity-is-it-the-right-move-in-this-market-environment-00edbbf6?mod=mw_rss_topstories) · MarketWatch
 - [‘It feels like he’s quietly building a separate life’: My husband inherited $500,000, but he refuses to spend it on our ](https://www.marketwatch.com/story/it-feels-like-hes-quietly-building-a-separate-life-my-husband-inherited-500-000-but-he-refuses-to-spend-it-on-our-home-06535cff?mod=mw_rss_topstories) · MarketWatch
 - [You follow the rules for smart stock trading. But are they the right rules?](https://www.marketwatch.com/story/you-follow-the-rules-for-smart-stock-trading-but-are-they-the-right-rules-9bfe5846?mod=mw_rss_topstories) · MarketWatch
+- [[바이오스냅] 알테오젠·리가켐·제일약품, 바이오유럽 참가](https://www.yna.co.kr/view/AKR20261109024900017) · 연합뉴스 경제
 - [한샘, 23일까지 '쌤위크'…소파·식탁 등 최대 50% 특가](https://www.yna.co.kr/view/AKR20261109040300030) · 연합뉴스 경제
 - [하이트진로, 17일 소맥 '테라&참이슬' 캔 한정 출시](https://www.yna.co.kr/view/AKR20261109040200030) · 연합뉴스 경제
 - [[게시판] 신한은행, 최고 연 4% 정기예금 2차 특판](https://www.yna.co.kr/view/AKR20261109038200002) · 연합뉴스 경제
@@ -99,4 +94,4 @@
 
 ---
 _뉴스 소스 상태: 연합뉴스 경제 12, 한국경제 증권 12, 매일경제 증권 12, 매일경제 경제 12, Yahoo Finance 실패 HTTPError, Investing.com 10, CNBC Markets 12, MarketWatch 10_
-_평일 08~17시(KST) 매시 자동 갱신 · AI AI 실패 → 규칙 다이제스트 · 투자 권유가 아닌 참고 정보입니다._
+_평일 08~17시(KST) 매시 자동 갱신 · AI 호출 (AI 재시도, Gemini gemini-3.5-flash-lite) · 투자 권유가 아닌 참고 정보입니다._

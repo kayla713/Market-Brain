@@ -1,5 +1,5 @@
 # ======================================================
-#  시황두뇌 v8 — 뉴스 통합 + AI 해석(Gemini, 모델 자동 선택) + 대체 요약
+#  시황두뇌 v9 — 뉴스 통합 + Gemini 해석 + 웹페이지(GitHub Pages)
 #  저장 위치: .github/workflows/market-brain.yml
 #  필요: GitHub Secret  GEMINI_API_KEY
 # ======================================================
@@ -31,7 +31,7 @@ jobs:
       - name: 코드 준비
         run: |
           cat > brain.py << 'PYEOF'
-          # 시황두뇌 v8 — Gemini 모델 자동 선택
+          # 시황두뇌 v9 — Gemini 자동 선택 + GitHub Pages 페이지 생성
           import json, os, re, statistics, html
           from datetime import datetime, timezone, timedelta
           from pathlib import Path
@@ -279,6 +279,73 @@ jobs:
                     f"_평일 08~17시(KST) 매시 자동 갱신 · AI {L.get('llm_reason','-')} · 투자 권유가 아닌 참고 정보입니다._"]
               (ROOT / "README.md").write_text("\n".join(o), encoding="utf-8")
           
+          INDEX_HTML = r"""<!doctype html>
+          <html lang="ko">
+          <head>
+          <meta charset="utf-8">
+          <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+          <meta name="apple-mobile-web-app-capable" content="yes">
+          <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+          <title>시황두뇌</title>
+          <style>
+          :root{--paper:#F4F5F2;--card:#FFFFFF;--ink:#171D1A;--mute:#6A746F;--line:#E1E5E2;--up:#C8342B;--down:#2A5CC2;--accent:#17201C;color-scheme:light}
+          @media(prefers-color-scheme:dark){:root{--paper:#111513;--card:#1A1F1C;--ink:#ECEFEA;--mute:#93A09A;--line:#2A312D;--accent:#ECEFEA;color-scheme:dark}}
+          *{box-sizing:border-box}html,body{margin:0;background:var(--paper);color:var(--ink);font-family:"Pretendard Variable",Pretendard,"Apple SD Gothic Neo","Noto Sans KR",system-ui,sans-serif;line-height:1.6;-webkit-text-size-adjust:100%}
+          body{padding:env(safe-area-inset-top) 0 env(safe-area-inset-bottom)}
+          main{max-width:680px;margin:0 auto;padding:20px 18px 60px}
+          .top{display:flex;justify-content:space-between;align-items:baseline;font-size:13px;color:var(--mute);margin-bottom:14px}
+          .top b{color:var(--ink);font-size:16px;letter-spacing:-.01em}
+          .hero{padding:22px 0 18px;border-bottom:1px solid var(--line)}
+          .pill{display:inline-block;font-size:13px;font-weight:700;padding:4px 10px;border-radius:999px;color:#fff;background:#8a8f8c}
+          .pill.risk_on{background:var(--up)}.pill.risk_off{background:var(--down)}
+          .hero h1{font-size:clamp(24px,6.5vw,34px);line-height:1.25;letter-spacing:-.02em;margin:12px 0 10px;font-weight:800}
+          .hero p{margin:0;font-size:16px}
+          section{padding:22px 0;border-bottom:1px solid var(--line)}
+          h2{font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:var(--mute);margin:0 0 12px;font-weight:600}
+          .cards{display:grid;gap:10px}
+          .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 16px}
+          .card .t{font-weight:700;margin-bottom:4px}.card .d{font-size:14.5px;color:var(--mute)}
+          .card.pos .t::before{content:"● ";color:var(--up)}.card.neg .t::before{content:"● ";color:var(--down)}.card.mix .t::before{content:"● ";color:#C9A227}
+          .w{display:grid;gap:14px}
+          .wrow{display:grid;grid-template-columns:1fr auto;gap:4px 12px;align-items:baseline}
+          .wrow .n{font-weight:700}.wrow .p{font-variant-numeric:tabular-nums;font-weight:800;font-size:18px}
+          .wrow .bar{grid-column:1/-1;height:8px;background:var(--line);border-radius:4px;overflow:hidden}
+          .wrow .bar i{display:block;height:100%;background:var(--accent)}
+          .wrow .why{grid-column:1/-1;font-size:14px;color:var(--mute)}
+          table{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums;font-size:14.5px}
+          td,th{padding:8px 0;border-bottom:1px solid var(--line);text-align:right}td:first-child,th:first-child{text-align:left}
+          th{font-weight:500;color:var(--mute);font-size:12.5px}.pos{color:var(--up)}.neg{color:var(--down)}
+          ul{padding-left:18px;margin:0}li{margin:6px 0}
+          .news a{color:inherit;text-decoration:none;border-bottom:1px solid var(--line)}.news small{color:var(--mute)}
+          footer{font-size:12px;color:var(--mute);padding-top:18px;line-height:1.7}
+          .warn{background:#fff6d6;color:#6b5300;border-radius:10px;padding:10px 12px;font-size:13px;margin-top:12px}
+          @media(prefers-color-scheme:dark){.warn{background:#3a3010;color:#f1d98a}}
+          </style>
+          </head>
+          <body><main id="app"><p style="color:var(--mute)">불러오는 중…</p></main>
+          <script>
+          const RK={risk_on:"위험선호",neutral:"중립",risk_off:"위험회피"};
+          const f=v=>v==null?"-":(v>0?"+":"")+v.toFixed(2)+"%",c=v=>v==null?"":v>0?"pos":v<0?"neg":"";
+          const esc=s=>String(s??"").replace(/[&<>"]/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[m]));
+          fetch("data/latest.json?t="+Date.now()).then(r=>r.json()).then(d=>{
+            const h=d.headline_ind||{},W=d.weights||{},R=d.rationale||{},max=Math.max(1,...Object.values(W));
+            const imp={"긍정":"pos","부정":"neg"};
+            document.getElementById("app").innerHTML=`
+            <div class="top"><b>🧠 시황두뇌</b><span>${esc(d.as_of)}</span></div>
+            <div class="hero"><span class="pill ${d.regime}">${RK[d.regime]||d.regime}</span>
+              <h1>${esc(d.headline_title||"오늘의 시황")}</h1><p>${esc(d.summary||"")}</p>
+              ${d.ai_error?`<div class="warn">AI 해석이 실패해 규칙 요약으로 대체됨</div>`:""}</div>
+            ${(d.issues||[]).length?`<section><h2>핵심 이슈</h2><div class="cards">${d.issues.map(i=>`<div class="card ${imp[i.impact]||"mix"}"><div class="t">${esc(i.title)}</div><div class="d">${esc(i.detail)}</div></div>`).join("")}</div></section>`:""}
+            <section><h2>포트폴리오와 그 이유</h2><div class="w">${Object.entries(W).map(([k,v])=>`<div class="wrow"><span class="n">${esc(k)}</span><span class="p">${v}%</span><span class="bar"><i style="width:${v/max*100}%"></i></span>${R[k]?`<span class="why">${esc(R[k])}</span>`:""}</div>`).join("")}</div></section>
+            ${(d.watch||[]).length?`<section><h2>앞으로 지켜볼 것</h2><ul>${d.watch.map(w=>`<li>${esc(w)}</li>`).join("")}</ul></section>`:""}
+            <section><h2>주요 지표</h2><table><tr><th>지표</th><th>현재</th><th>1일</th><th>5일</th><th>20일</th></tr>${Object.entries(h).map(([k,x])=>`<tr><td>${esc(k)}</td><td>${x.last??"-"}</td><td class="${c(x.d1)}">${f(x.d1)}</td><td class="${c(x.d5)}">${f(x.d5)}</td><td class="${c(x.d20)}">${f(x.d20)}</td></tr>`).join("")}</table>
+              <p style="font-size:13px;color:var(--mute);margin:12px 0 0">규칙 신호: ${(d.reasons||[]).map(esc).join(" · ")}</p></section>
+            <section class="news"><h2>참고한 뉴스 ${(d.news||[]).length}건</h2><ul>${(d.news||[]).slice(0,25).map(n=>`<li>${n.link?`<a href="${esc(n.link)}" target="_blank" rel="noopener">${esc(n.title)}</a>`:esc(n.title)} <small>· ${esc(n.src)}</small></li>`).join("")}</ul></section>
+            <footer>작성: ${esc((d.usage||{}).model||"-")} · ${esc(d.llm_reason||"")}<br>평일 08~17시(KST) 매시 자동 갱신 · 투자 권유가 아닌 참고 정보입니다.</footer>`;
+          }).catch(()=>{document.getElementById("app").innerHTML='<p>데이터(data/latest.json)가 아직 없어요. Actions를 한 번 실행해 주세요.</p>'});
+          </script></body></html>
+          """
+          
           PEND = DATA / "pending.json"
           
           def apply(L, out, reason):
@@ -326,7 +393,8 @@ jobs:
               else:
                   apply(L, rule_digest(sig), f"규칙 다이제스트 ({reason})")
               p.write_text(json.dumps(L, ensure_ascii=False, indent=1), encoding="utf-8")
-              write_readme(L); print("finish:", L["regime"], L["llm_reason"])
+              write_readme(L); (ROOT / "docs" / "index.html").write_text(INDEX_HTML, encoding="utf-8")
+              print("finish:", L["regime"], L["llm_reason"])
               PEND.unlink(missing_ok=True)
           
           if __name__ == "__main__":

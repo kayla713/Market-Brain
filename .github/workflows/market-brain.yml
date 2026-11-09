@@ -1,6 +1,7 @@
 # ======================================================
-#  시황두뇌 v6 — 뉴스 통합 + AI 해석(GitHub 공식 ai-inference, 무료) + 대체 다이제스트
+#  시황두뇌 v7 — 뉴스 통합 + AI 해석(Google Gemini 무료 키) + 대체 요약
 #  저장 위치: .github/workflows/market-brain.yml
+#  필요: GitHub Secret  GEMINI_API_KEY
 # ======================================================
 name: 시황두뇌
 
@@ -12,7 +13,6 @@ on:
 
 permissions:
   contents: write
-  models: read
 
 concurrency:
   group: market-brain
@@ -31,7 +31,7 @@ jobs:
       - name: 코드 준비
         run: |
           cat > brain.py << 'PYEOF'
-          # 시황두뇌 v6 — AI는 actions/ai-inference 단계가 담당
+          # 시황두뇌 v7 — AI는 Google Gemini(무료 키) 사용, 없으면 Claude, 없으면 규칙 다이제스트
           import json, os, re, statistics, html
           from datetime import datetime, timezone, timedelta
           from pathlib import Path
@@ -42,7 +42,7 @@ jobs:
           ROOT = Path("."); DATA = ROOT / "docs" / "data"; DATA.mkdir(parents=True, exist_ok=True)
           KST = timezone(timedelta(hours=9)); NOW = datetime.now(KST)
           MODEL = os.getenv("CLAUDE_MODEL") or "claude-haiku-5-5"
-          GH_MODEL = os.getenv("GH_MODEL") or "openai/gpt-4.1-mini"   # GitHub Models (무료, 키 불필요)
+          GEMINI_MODELS = [os.getenv("GEMINI_MODEL") or "gemini-2.5-flash", "gemini-2.0-flash", "gemini-1.5-flash"]
           MIN_CHANGE = float(os.getenv("MIN_CHANGE_PCT") or 0.3)
           MAX_HEADLINES = 45
           
@@ -145,6 +145,27 @@ jobs:
               if abs(sum(w.values()) - 100) > 3 or set(w) != set(payload["base_weights"]): out["weights"] = payload["base_weights"]
               return out
           
+          def call_gemini(payload):
+              key = os.environ["GEMINI_API_KEY"]; errors = []
+              body = json.dumps({"systemInstruction": {"parts": [{"text": SYSTEM}]},
+                                 "contents": [{"role": "user", "parts": [{"text": json.dumps(payload, ensure_ascii=False)}]}],
+                                 "generationConfig": {"temperature": 0.3, "maxOutputTokens": 2000, "responseMimeType": "application/json"}}).encode()
+              for model in GEMINI_MODELS:
+                  try:
+                      url = f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent?key={key}"
+                      req = Request(url, data=body, method="POST", headers={"Content-Type": "application/json"})
+                      data = json.loads(urlopen(req, timeout=120).read().decode("utf-8"))
+                      text = "".join(p.get("text", "") for p in data["candidates"][0]["content"]["parts"])
+                      out = parse_out(text, payload)
+                      u = data.get("usageMetadata", {}); out["usage"] = {"in": u.get("promptTokenCount"), "out": u.get("candidatesTokenCount"), "model": model}
+                      return out
+                  except Exception as e:
+                      detail = ""
+                      try: detail = e.read().decode(errors="replace")[:160]
+                      except Exception: pass
+                      errors.append(f"{model}: {type(e).__name__} {str(e)[:60]} {detail}")
+              raise RuntimeError(" | ".join(errors))
+          
           def call_claude(payload):
               from anthropic import Anthropic
               msg = Anthropic().messages.create(model=MODEL, max_tokens=1800, system=SYSTEM,
@@ -207,7 +228,7 @@ jobs:
               h = L["headline_ind"]; rk = {"risk_on": "🟢 위험선호", "neutral": "🟡 중립", "risk_off": "🔴 위험회피"}[L["regime"]]
               s = lambda v: "-" if v is None else f"{'+' if v > 0 else ''}{v}%"
               o = ["# 🧠 시황두뇌", "", f"**{L['as_of']}** · 레짐 {rk} · 작성: {L.get('usage', {}).get('model', '-')}", ""]
-              if L.get("ai_error"): o += [f"> ⚠️ AI 호출 실패 (규칙 다이제스트로 대체): `{L['ai_error']}`", ""]
+              if L.get("ai_error"): o += [f"> ⚠️ AI 해석 실패 (규칙 요약으로 대체): `{L['ai_error']}`", ""]
               if L.get("summary"):
                   o += [f"## {L.get('headline_title', '오늘의 시황')}", "", L["summary"], ""]
                   if L.get("issues"):
@@ -252,11 +273,7 @@ jobs:
               payload = {"as_of": sig["as_of"], "regime": regime, "rule_signals": why, "base_weights": BASE_WEIGHTS[regime],
                          "indicators": {k: {kk: v[kk] for kk in ("last", "d1", "d5", "d20")} for k, v in sig["headline_ind"].items()},
                          "news": [f"[{n['src']}] {n['title']}" for n in news]}
-              Path("ai_system.txt").write_text(SYSTEM, encoding="utf-8")
-              Path("ai_prompt.txt").write_text(json.dumps(payload, ensure_ascii=False) + "\n\n반드시 위 형식의 JSON 객체 하나만 출력하세요.", encoding="utf-8")
               Path("ai_payload.json").write_text(json.dumps(payload, ensure_ascii=False), encoding="utf-8")
-              go = os.getenv("GITHUB_OUTPUT")
-              if go: open(go, "a").write(f"need_ai={'true' if use else 'false'}\n")
               print("prepare:", regime, reason, "need_ai=", use, status)
           
           def finish():
@@ -267,19 +284,13 @@ jobs:
               payload = json.loads(Path("ai_payload.json").read_text(encoding="utf-8"))
               done = False
               if use:
-                  rf = Path("ai_response.txt")
-                  if rf.exists() and rf.read_text(encoding="utf-8").strip():
-                      try:
-                          out = parse_out(rf.read_text(encoding="utf-8"), payload); out["usage"] = {"model": os.getenv("GH_MODEL") or "github-models"}
-                          apply(L, out, f"호출 ({reason}, GitHub Models)"); done = True
-                      except Exception as e:
-                          L["ai_error"] = f"응답 해석 실패: {type(e).__name__} {str(e)[:120]} / 응답 앞부분: {rf.read_text(encoding='utf-8')[:200]!r}"
-                  else:
-                      L["ai_error"] = "GitHub Models 단계가 응답 파일을 만들지 못함 (Actions 로그의 'AI 해석' 단계 확인)"
-                  if not done and os.getenv("ANTHROPIC_API_KEY"):
-                      try: out = call_claude(payload); apply(L, out, f"호출 ({reason}, Claude)"); done = True; L.pop("ai_error", None)
-                      except Exception as e: L["ai_error"] = (L.get("ai_error", "") + f" | Claude 실패: {type(e).__name__}")[:400]
+                  for name, env, fn in (("Gemini", "GEMINI_API_KEY", call_gemini), ("Claude", "ANTHROPIC_API_KEY", call_claude)):
+                      if done or not os.getenv(env): continue
+                      try: out = fn(payload); apply(L, out, f"호출 ({reason}, {name} {out['usage'].get('model','')})"); done = True; L.pop("ai_error", None)
+                      except Exception as e: L["ai_error"] = (L.get("ai_error", "") + f" {name} 실패: {type(e).__name__} {str(e)[:250]}").strip()[:500]
                   if not done:
+                      if not (os.getenv("GEMINI_API_KEY") or os.getenv("ANTHROPIC_API_KEY")):
+                          L["ai_error"] = "AI 키가 없습니다. GitHub Secret에 GEMINI_API_KEY를 추가하세요."
                       apply(L, rule_digest(sig), "AI 실패 → 규칙 다이제스트")
               elif prev and "summary" in prev:
                   for k in ("headline_title", "summary", "issues", "weights", "rationale", "watch", "usage"):
@@ -297,31 +308,20 @@ jobs:
           PYEOF
 
       - name: 1) 수집·지표·뉴스
-        id: prep
         env:
           MIN_CHANGE_PCT: ${{ vars.MIN_CHANGE_PCT }}
         run: python brain.py prepare
 
-      - name: 2) AI 해석 (GitHub Models)
-        if: steps.prep.outputs.need_ai == 'true'
-        continue-on-error: true
-        uses: actions/ai-inference@v1
-        with:
-          model: ${{ vars.GH_MODEL || 'openai/gpt-4.1-mini' }}
-          system-prompt-file: ./ai_system.txt
-          prompt-file: ./ai_prompt.txt
-          max-tokens: 1800
-          response-file: ./ai_response.txt
-
-      - name: 3) README 작성
+      - name: 2) AI 해석 + README 작성
         env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_MODEL: ${{ vars.GEMINI_MODEL }}
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-          GH_MODEL: ${{ vars.GH_MODEL || 'openai/gpt-4.1-mini' }}
         run: python brain.py finish
 
-      - name: 4) 결과 커밋
+      - name: 3) 결과 커밋
         run: |
-          rm -f brain.py ai_system.txt ai_prompt.txt ai_payload.json ai_response.txt
+          rm -f brain.py ai_payload.json
           git config user.name "market-brain[bot]"
           git config user.email "market-brain@users.noreply.github.com"
           git add README.md docs

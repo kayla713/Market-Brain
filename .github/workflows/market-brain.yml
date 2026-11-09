@@ -1,5 +1,5 @@
 # ======================================================
-#  시황두뇌 v7 — 뉴스 통합 + AI 해석(Google Gemini 무료 키) + 대체 요약
+#  시황두뇌 v8 — 뉴스 통합 + AI 해석(Gemini, 모델 자동 선택) + 대체 요약
 #  저장 위치: .github/workflows/market-brain.yml
 #  필요: GitHub Secret  GEMINI_API_KEY
 # ======================================================
@@ -31,7 +31,7 @@ jobs:
       - name: 코드 준비
         run: |
           cat > brain.py << 'PYEOF'
-          # 시황두뇌 v7 — AI는 Google Gemini(무료 키) 사용, 없으면 Claude, 없으면 규칙 다이제스트
+          # 시황두뇌 v8 — Gemini 모델 자동 선택
           import json, os, re, statistics, html
           from datetime import datetime, timezone, timedelta
           from pathlib import Path
@@ -42,7 +42,7 @@ jobs:
           ROOT = Path("."); DATA = ROOT / "docs" / "data"; DATA.mkdir(parents=True, exist_ok=True)
           KST = timezone(timedelta(hours=9)); NOW = datetime.now(KST)
           MODEL = os.getenv("CLAUDE_MODEL") or "claude-haiku-5-5"
-          GEMINI_MODELS = [os.getenv("GEMINI_MODEL") or "gemini-2.5-flash", "gemini-2.0-flash", "gemini-1.5-flash"]
+          GEMINI_MODELS = [m for m in [os.getenv("GEMINI_MODEL"), "gemini-flash-latest", "gemini-3-flash", "gemini-2.5-flash-lite"] if m]
           MIN_CHANGE = float(os.getenv("MIN_CHANGE_PCT") or 0.3)
           MAX_HEADLINES = 45
           
@@ -145,12 +145,39 @@ jobs:
               if abs(sum(w.values()) - 100) > 3 or set(w) != set(payload["base_weights"]): out["weights"] = payload["base_weights"]
               return out
           
+          def gemini_candidates(key):
+              """Google에 현재 사용 가능한 모델 목록을 물어 flash 계열을 새 버전 순으로 정렬"""
+              cands = []
+              try:
+                  url = f"https://generativelanguage.googleapis.com/v1beta/models?key={key}&pageSize=200"
+                  data = json.loads(urlopen(Request(url), timeout=60).read().decode("utf-8"))
+                  for m in data.get("models", []):
+                      name = m.get("name", "").split("/")[-1]
+                      if "generateContent" not in m.get("supportedGenerationMethods", []): continue
+                      if not name.startswith("gemini-"): continue
+                      if re.search(r"image|tts|live|audio|embedding|native|thinking|robotics|computer", name): continue
+                      mv = re.search(r"gemini-(\d+(?:\.\d+)?)", name); ver = float(mv.group(1)) if mv else 0
+                      score = ver * 100
+                      if "flash" in name: score += 10
+                      if "lite" in name: score -= 3
+                      if "pro" in name: score -= 5          # 무료 한도가 낮아 flash 우선
+                      if "preview" in name or "exp" in name: score -= 1
+                      if re.search(r"-\d{3}$|-\d{2}-\d{2}$", name): score -= 0.5   # 날짜/번호 붙은 변형은 뒤로
+                      cands.append((score, name))
+              except Exception:
+                  pass
+              cands.sort(reverse=True)
+              names = [n for _, n in cands]
+              for fallback in GEMINI_MODELS:
+                  if fallback not in names: names.append(fallback)
+              return names[:6]
+          
           def call_gemini(payload):
               key = os.environ["GEMINI_API_KEY"]; errors = []
               body = json.dumps({"systemInstruction": {"parts": [{"text": SYSTEM}]},
                                  "contents": [{"role": "user", "parts": [{"text": json.dumps(payload, ensure_ascii=False)}]}],
                                  "generationConfig": {"temperature": 0.3, "maxOutputTokens": 2000, "responseMimeType": "application/json"}}).encode()
-              for model in GEMINI_MODELS:
+              for model in gemini_candidates(key):
                   try:
                       url = f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent?key={key}"
                       req = Request(url, data=body, method="POST", headers={"Content-Type": "application/json"})
@@ -161,9 +188,9 @@ jobs:
                       return out
                   except Exception as e:
                       detail = ""
-                      try: detail = e.read().decode(errors="replace")[:160]
+                      try: detail = re.sub(r"\s+", " ", e.read().decode(errors="replace"))[:140]
                       except Exception: pass
-                      errors.append(f"{model}: {type(e).__name__} {str(e)[:60]} {detail}")
+                      errors.append(f"{model}: {type(e).__name__} {str(e)[:40]} {detail}")
               raise RuntimeError(" | ".join(errors))
           
           def call_claude(payload):

@@ -1,5 +1,5 @@
 # ======================================================
-#  시황두뇌 v9 — 뉴스 통합 + Gemini 해석 + 웹페이지(GitHub Pages)
+#  시황두뇌 v10 — Gemini 해석 + 웹페이지 + 홈화면 아이콘(Kayla)
 #  저장 위치: .github/workflows/market-brain.yml
 #  필요: GitHub Secret  GEMINI_API_KEY
 # ======================================================
@@ -31,7 +31,7 @@ jobs:
       - name: 코드 준비
         run: |
           cat > brain.py << 'PYEOF'
-          # 시황두뇌 v9 — Gemini 자동 선택 + GitHub Pages 페이지 생성
+          # 시황두뇌 v10 — Pages 페이지 + 홈화면 아이콘(Kayla)
           import json, os, re, statistics, html
           from datetime import datetime, timezone, timedelta
           from pathlib import Path
@@ -286,7 +286,10 @@ jobs:
           <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
           <meta name="apple-mobile-web-app-capable" content="yes">
           <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-          <title>시황두뇌</title>
+          <title>Kayla</title>
+          <meta name="apple-mobile-web-app-title" content="Kayla">
+          <link rel="apple-touch-icon" sizes="180x180" href="icon.png">
+          <link rel="icon" type="image/png" href="icon.png">
           <style>
           :root{--paper:#F4F5F2;--card:#FFFFFF;--ink:#171D1A;--mute:#6A746F;--line:#E1E5E2;--up:#C8342B;--down:#2A5CC2;--accent:#17201C;color-scheme:light}
           @media(prefers-color-scheme:dark){:root{--paper:#111513;--card:#1A1F1C;--ink:#ECEFEA;--mute:#93A09A;--line:#2A312D;--accent:#ECEFEA;color-scheme:dark}}
@@ -331,7 +334,7 @@ jobs:
             const h=d.headline_ind||{},W=d.weights||{},R=d.rationale||{},max=Math.max(1,...Object.values(W));
             const imp={"긍정":"pos","부정":"neg"};
             document.getElementById("app").innerHTML=`
-            <div class="top"><b>🧠 시황두뇌</b><span>${esc(d.as_of)}</span></div>
+            <div class="top"><b>Kayla · 시황두뇌</b><span>${esc(d.as_of)}</span></div>
             <div class="hero"><span class="pill ${d.regime}">${RK[d.regime]||d.regime}</span>
               <h1>${esc(d.headline_title||"오늘의 시황")}</h1><p>${esc(d.summary||"")}</p>
               ${d.ai_error?`<div class="warn">AI 해석이 실패해 규칙 요약으로 대체됨</div>`:""}</div>
@@ -345,6 +348,7 @@ jobs:
           }).catch(()=>{document.getElementById("app").innerHTML='<p>데이터(data/latest.json)가 아직 없어요. Actions를 한 번 실행해 주세요.</p>'});
           </script></body></html>
           """
+          ICON_B64 = "iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAIAAACyr5FlAAAGvElEQVR42u2dT1MURxiHm9nZNReB5Y+UpbEsEMTFIIeUFZIYqvIBoilzEHPJzc/kLZckHJKKfIFUpaIx5ckYIEQ015RhWUAvEVk2B6hlnJ3d+dcz3dP9PMWBcoeZ2e7H3/v2DDv0jZ0/K7LnxDuuAHm8/m8/h6NkOGeVE6X2961WixnNaGz3XjcLI4f3vCFPUaRb4uIElmQoB1roaUl6RVy0QJFuOJhhT+uaR3KghSUR4mAGESJHDsywyg8XLSgxqZIDM+yMEAcz8COhHJhhsx8OYwRJ5CA2LA+PrquVSqUkuM1ugx+V0t5eM0ZyVCpkhl1+0HNAPALKSrlSop7YRrlSetNRXJzOjRgpa/2grECipSyxQXj06DloNiAoOcoVSgy8pQFCQLSeAyBADmoKdFYWnADKCiSTg5oCgZXFFYKrG0BZgZjwTBWVfD9wsv39F7uvtEuOcpnwgKC2o+xgBtBzQIKeg5WKJmg4ESQHIAfkvJQ9OTTECKai+SaHwXzVaCiQI/FR4QjPdQ4NB5OyAsgByAES6TszeY5RyIcfPB1GKDc1uNXSd+bCu0xbHmYM9sf9kZs7LykrQM8ByAHIAcgBSvnr91WFR+fXBBVw+eeHkczw+HHxygzJYQUrC/OUFZDmh5L64rSE4CuHr5R+TF2Zyf+cSQ7qC2UFP1it5MngB9+0v9/57cs0fkRcv5AcgBygPS4fsZdDimGMVFNUTBPJoRg9uw3k0NQMfdYvqVYr/SPDTHDUofB8RCXUjM71S5qhflnfUiBH4qMaspSdjDMU1f5YmeHzQ8lQU1b0rSZTszNqzxM5tO4z1Prh8ri4PNeyMTvQlhBiarb29MmakmkiOQqwNpmarRVvtWJX+zn/bfRXdx7eLtaqleTIyozQ7Z8+WSucGciRBwU1Q/BMsKwb1I0UZiifGpIjQzYKmxnIgRmhqxVb68qPQwPt7z9v7Mrd+aO7cxLMUD01JEdOFCszkCMrOmNj8r1a3HCSHmaJygpkb0a3+c60tJEcuptRaJAjWzPasYEcmGGOGcp6juqHx7cetn+9jRnIYVGTcfXOYwPeHXLI7z3NMIOeAzNIjrwWqyaZkVaOgdGR9GcgZSehfN3xsREv3otRQoivSuW4WnSaEel9ec4qu3HY3awrkCPxUauTEnYSHd/cRzHJd71y46e5TAbHc2I5jANlRTIbf6yFbmNYNTmWo9VSfGNY+Qn0OKtnK38mNiPK+7qxtUNDWjzSaEFDqph7w4MZ/f+L8kwE47U4hOscmKE0OYY++i76q40Hi2hhixy9zQjcPmc/0IKyktyMC5cv2Tk4LlpE0aLxYDFWBKoqjsihJjA659urixk22C5HFC1WFuY1vzyFHArMKOKnS5Ajp8BACOvkIDCQI5ged0lwwgQ5vHdSQl9t95K9b55hRgQ5NLxh/vYp3RsZjGvSjfrOs9V0gdFKdc5mYOYV0rRmgJE9R+/eEzPiyaF9VZFjRlwtqCrmJAeBgRyxzZiYuSSEWI7Z0kZk6/4icnSlOjaaxTn5d9vzIyc9zHj/00+OdtVzD3m+NSVsv9hMLEcrxVH/Dd1meDL1bkeqCUrJxMx06B5SvjXKSvFKycrC/PX6NlNroxz0nrnhYAYUPjnQAjn8PF9dD90m1Izr9e3lOD0pLYvuckjRosd8e3XBBjVybN2/NfzxUvTtH92dE2I9ypaUkuzlyP6uwNYvt3z/Mnxtyffq87V1mYfk1ogBZSV6ThAYtsiR4DHQOGG+HAnKB1oYLkcCJyZqRzdHlkerzJOBcqRxAtTLoUmfPi7VCRYrUnDUTvnVO4/Ha9PjpAUNqU8LRt92OcZr0397Oo/DkBi5tsTQI0cmLYUUPtvkforSnkNbM0DfnqPecbcFLE0OQA5dmgOaCVn0nTp3OvEPD50eU3Xe3r+fEvjnUaBN458XCnqOxEeVwKkhLU6DsgLIAYAcgByAHIAcgBygD64BvwTF73FllRyOU2IUIMiMEmUFutI3dv7swUGTgQCSA2KuVmg7oDM2xPFdWTp+CEwOgF5yOCUqCwifDCQHUFYgjRxUFvBpQHJAV1yfNQfNfQbF4thw6TkgUUPqcwesjY3g5MAPzKCsQJyG1OtRk87UGkpdaoUT9wfAEjNCygp+2GyGCP8gNbfyWcp2NcslPMyNjbDJddLvAow0I+pSFj8sNENEf3jL4e6a+6xvrdAiRnIQIRaaIRJcIcUPS8wQyZ4JRokxXouEyUGEWGKGSPk0QSLEVC0kyIEipmohTQ7fCWFJ0Z2QLweWGONEhnIEnjSiFEUIL/8DMvGzx/MxlwoAAAAASUVORK5CYII="
           
           PEND = DATA / "pending.json"
           
@@ -394,6 +398,7 @@ jobs:
                   apply(L, rule_digest(sig), f"규칙 다이제스트 ({reason})")
               p.write_text(json.dumps(L, ensure_ascii=False, indent=1), encoding="utf-8")
               write_readme(L); (ROOT / "docs" / "index.html").write_text(INDEX_HTML, encoding="utf-8")
+              import base64; (ROOT / "docs" / "icon.png").write_bytes(base64.b64decode(ICON_B64))
               print("finish:", L["regime"], L["llm_reason"])
               PEND.unlink(missing_ok=True)
           

@@ -1,5 +1,5 @@
 # ======================================================
-#  시황두뇌 v5 — 뉴스 통합 + AI 해석(GitHub Models 무료) + 대체 다이제스트
+#  시황두뇌 v6 — 뉴스 통합 + AI 해석(GitHub 공식 ai-inference, 무료) + 대체 다이제스트
 #  저장 위치: .github/workflows/market-brain.yml
 # ======================================================
 name: 시황두뇌
@@ -20,7 +20,7 @@ concurrency:
 jobs:
   run:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 12
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -28,15 +28,10 @@ jobs:
           python-version: '3.12'
       - run: pip install -q "yfinance>=0.2.40" "pandas>=2.0" "anthropic>=0.40"
 
-      - name: 시황두뇌 실행
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-          GH_MODEL: ${{ vars.GH_MODEL }}
-          MIN_CHANGE_PCT: ${{ vars.MIN_CHANGE_PCT }}
+      - name: 코드 준비
         run: |
           cat > brain.py << 'PYEOF'
-          # 시황두뇌 v5
+          # 시황두뇌 v6 — AI는 actions/ai-inference 단계가 담당
           import json, os, re, statistics, html
           from datetime import datetime, timezone, timedelta
           from pathlib import Path
@@ -150,48 +145,6 @@ jobs:
               if abs(sum(w.values()) - 100) > 3 or set(w) != set(payload["base_weights"]): out["weights"] = payload["base_weights"]
               return out
           
-          GH_ROUTES = [("https://models.github.ai/inference/chat/completions", GH_MODEL, True),
-                       ("https://models.github.ai/inference/chat/completions", GH_MODEL, False),
-                       ("https://models.github.ai/inference/chat/completions", "openai/gpt-4o-mini", True),
-                       ("https://models.github.ai/inference/chat/completions", "openai/gpt-4o-mini", False)]
-          
-          def extract_content(data):
-              ch = (data.get("choices") or [{}])[0]
-              msg = ch.get("message") or {}
-              c = msg.get("content")
-              if isinstance(c, list): c = "".join(p.get("text", "") for p in c if isinstance(p, dict))
-              return c or ch.get("text") or ""
-          
-          def call_github_models(payload):
-              """GitHub Models: 경로/모델/형식을 차례로 시도, 실패 시 원문을 남김"""
-              errors = []
-              user_msg = json.dumps(payload, ensure_ascii=False) + "\n\n반드시 위 형식의 JSON 객체 하나만 출력하세요."
-              for url, model, force_json in GH_ROUTES:
-                  raw = b""
-                  try:
-                      body = {"model": model, "temperature": 0.3, "max_tokens": 1800,
-                              "messages": [{"role": "system", "content": SYSTEM}, {"role": "user", "content": user_msg}]}
-                      if force_json: body["response_format"] = {"type": "json_object"}
-                      req = Request(url, data=json.dumps(body).encode(), method="POST",
-                                    headers={"Authorization": f"Bearer {os.environ['GITHUB_TOKEN']}", "Content-Type": "application/json",
-                                             "Accept": "application/json", "User-Agent": "market-brain"})
-                      raw = urlopen(req, timeout=120).read()
-                      text = raw.decode("utf-8-sig", errors="replace").strip()
-                      data = json.loads(text)
-                      if "error" in data: raise RuntimeError(str(data["error"])[:200])
-                      content = extract_content(data)
-                      if not content.strip(): raise RuntimeError("빈 응답 content")
-                      out = parse_out(content, payload)
-                      u = data.get("usage", {}); out["usage"] = {"in": u.get("prompt_tokens"), "out": u.get("completion_tokens"), "model": model}
-                      return out
-                  except Exception as e:
-                      detail = ""
-                      try: detail = e.read().decode(errors="replace")[:200]
-                      except Exception: pass
-                      if not detail and raw: detail = "raw=" + raw.decode(errors="replace")[:200].replace("\n", " ")
-                      errors.append(f"{model}{'(json)' if force_json else ''}: {type(e).__name__} {str(e)[:80]} {detail}")
-              raise RuntimeError(" | ".join(errors))
-          
           def call_claude(payload):
               from anthropic import Anthropic
               msg = Anthropic().messages.create(model=MODEL, max_tokens=1800, system=SYSTEM,
@@ -200,12 +153,8 @@ jobs:
               out["usage"] = {"in": msg.usage.input_tokens, "out": msg.usage.output_tokens, "model": MODEL}
               return out
           
-          def call_llm(payload):
-              if os.getenv("ANTHROPIC_API_KEY"): return call_claude(payload)
-              return call_github_models(payload)
           
           def needs_llm(sig, prev, news):
-              if not (os.getenv("ANTHROPIC_API_KEY") or os.getenv("GITHUB_TOKEN")): return False, "사용 가능한 AI 토큰 없음"
               if not prev or "summary" not in prev: return True, "첫 실행"
               if (prev.get("usage") or {}).get("model") == "rule-digest": return True, "AI 재시도"
               if sig["regime"] != prev.get("regime"): return True, "레짐 변경"
@@ -282,7 +231,15 @@ jobs:
                     f"_평일 08~17시(KST) 매시 자동 갱신 · AI {L.get('llm_reason','-')} · 투자 권유가 아닌 참고 정보입니다._"]
               (ROOT / "README.md").write_text("\n".join(o), encoding="utf-8")
           
-          def main():
+          PEND = DATA / "pending.json"
+          
+          def apply(L, out, reason):
+              L["headline_title"] = out.get("headline", ""); L["summary"] = out.get("summary", ""); L["issues"] = out.get("issues", [])
+              L["weights"] = out.get("weights", L["weights"]); L["rationale"] = out.get("rationale", {}); L["watch"] = out.get("watch", [])
+              L["usage"] = out.get("usage", {}); L["llm_reason"] = reason
+          
+          def prepare():
+              """1단계: 수집·지표·뉴스 → pending.json + AI 프롬프트 파일. GITHUB_OUTPUT에 need_ai 기록"""
               closes = collect(); ind = {s: indicators(c) for s, c in closes.items()}
               regime, score, why = regime_of(ind)
               news, status = fetch_news()
@@ -290,38 +247,81 @@ jobs:
                      "weights": BASE_WEIGHTS[regime], "headline_ind": {TICKERS[s]: ind[s] for s in TICKERS if ind.get(s)},
                      "news": news, "news_status": status}
               p = DATA / "latest.json"; prev = json.loads(p.read_text(encoding="utf-8")) if p.exists() else None
-              use, reason = needs_llm(sig, prev, news); L = dict(sig)
-              if use:
-                  payload = {"as_of": sig["as_of"], "regime": regime, "rule_signals": why, "base_weights": BASE_WEIGHTS[regime],
-                             "indicators": {k: {kk: v[kk] for kk in ("last", "d1", "d5", "d20")} for k, v in sig["headline_ind"].items()},
-                             "news": [f"[{n['src']}] {n['title']}" for n in news]}
-                  try:
-                      out = call_llm(payload); L["llm_reason"] = f"호출 ({reason}, {out['usage']['model']})"
-                      L["headline_title"] = out.get("headline", ""); L["summary"] = out.get("summary", "")
-                      L["issues"] = out.get("issues", []); L["weights"] = out["weights"]
-                      L["rationale"] = out.get("rationale", {}); L["watch"] = out.get("watch", []); L["usage"] = out["usage"]
-                  except Exception as e:
-                      L["ai_error"] = f"{type(e).__name__}: {str(e)[:400]}"
-                      out = rule_digest(sig); L["llm_reason"] = "AI 실패 → 규칙 다이제스트"
-                      L["headline_title"] = out["headline"]; L["summary"] = out["summary"]; L["issues"] = out["issues"]
-                      L["weights"] = out["weights"]; L["rationale"] = out["rationale"]; L["watch"] = out["watch"]; L["usage"] = out["usage"]
-              if not use and not (prev and "summary" in prev):
-                  out = rule_digest(sig); L["llm_reason"] = f"규칙 다이제스트 ({reason})"
-                  L["headline_title"] = out["headline"]; L["summary"] = out["summary"]; L["issues"] = out["issues"]
-                  L["weights"] = out["weights"]; L["rationale"] = out["rationale"]; L["watch"] = out["watch"]; L["usage"] = out["usage"]
-              elif not use:
-                  L.setdefault("llm_reason", f"스킵 ({reason})")
-                  for k in ("headline_title", "summary", "issues", "weights", "rationale", "watch", "usage"):
-                      if prev and k in prev: L[k] = prev[k]
-              p.write_text(json.dumps(L, ensure_ascii=False, indent=1), encoding="utf-8")
-              write_readme(L); print(regime, L["llm_reason"], status)
+              use, reason = needs_llm(sig, prev, news); sig["ai_reason"] = reason; sig["need_ai"] = use
+              PEND.write_text(json.dumps(sig, ensure_ascii=False), encoding="utf-8")
+              payload = {"as_of": sig["as_of"], "regime": regime, "rule_signals": why, "base_weights": BASE_WEIGHTS[regime],
+                         "indicators": {k: {kk: v[kk] for kk in ("last", "d1", "d5", "d20")} for k, v in sig["headline_ind"].items()},
+                         "news": [f"[{n['src']}] {n['title']}" for n in news]}
+              Path("ai_system.txt").write_text(SYSTEM, encoding="utf-8")
+              Path("ai_prompt.txt").write_text(json.dumps(payload, ensure_ascii=False) + "\n\n반드시 위 형식의 JSON 객체 하나만 출력하세요.", encoding="utf-8")
+              Path("ai_payload.json").write_text(json.dumps(payload, ensure_ascii=False), encoding="utf-8")
+              go = os.getenv("GITHUB_OUTPUT")
+              if go: open(go, "a").write(f"need_ai={'true' if use else 'false'}\n")
+              print("prepare:", regime, reason, "need_ai=", use, status)
           
-          if __name__ == "__main__": main()
+          def finish():
+              """2단계: AI 응답 파일 → 없으면 Claude 키 → 없으면 규칙 다이제스트. README 작성"""
+              sig = json.loads(PEND.read_text(encoding="utf-8")); L = dict(sig)
+              use, reason = sig.pop("need_ai"), sig.pop("ai_reason"); L.pop("need_ai"); L.pop("ai_reason")
+              p = DATA / "latest.json"; prev = json.loads(p.read_text(encoding="utf-8")) if p.exists() else None
+              payload = json.loads(Path("ai_payload.json").read_text(encoding="utf-8"))
+              done = False
+              if use:
+                  rf = Path("ai_response.txt")
+                  if rf.exists() and rf.read_text(encoding="utf-8").strip():
+                      try:
+                          out = parse_out(rf.read_text(encoding="utf-8"), payload); out["usage"] = {"model": os.getenv("GH_MODEL") or "github-models"}
+                          apply(L, out, f"호출 ({reason}, GitHub Models)"); done = True
+                      except Exception as e:
+                          L["ai_error"] = f"응답 해석 실패: {type(e).__name__} {str(e)[:120]} / 응답 앞부분: {rf.read_text(encoding='utf-8')[:200]!r}"
+                  else:
+                      L["ai_error"] = "GitHub Models 단계가 응답 파일을 만들지 못함 (Actions 로그의 'AI 해석' 단계 확인)"
+                  if not done and os.getenv("ANTHROPIC_API_KEY"):
+                      try: out = call_claude(payload); apply(L, out, f"호출 ({reason}, Claude)"); done = True; L.pop("ai_error", None)
+                      except Exception as e: L["ai_error"] = (L.get("ai_error", "") + f" | Claude 실패: {type(e).__name__}")[:400]
+                  if not done:
+                      apply(L, rule_digest(sig), "AI 실패 → 규칙 다이제스트")
+              elif prev and "summary" in prev:
+                  for k in ("headline_title", "summary", "issues", "weights", "rationale", "watch", "usage"):
+                      if k in prev: L[k] = prev[k]
+                  L["llm_reason"] = f"스킵 ({reason})"
+              else:
+                  apply(L, rule_digest(sig), f"규칙 다이제스트 ({reason})")
+              p.write_text(json.dumps(L, ensure_ascii=False, indent=1), encoding="utf-8")
+              write_readme(L); print("finish:", L["regime"], L["llm_reason"])
+              PEND.unlink(missing_ok=True)
+          
+          if __name__ == "__main__":
+              import sys
+              prepare() if sys.argv[1:] == ["prepare"] else finish()
           PYEOF
-          python brain.py
 
-      - name: 결과 커밋
+      - name: 1) 수집·지표·뉴스
+        id: prep
+        env:
+          MIN_CHANGE_PCT: ${{ vars.MIN_CHANGE_PCT }}
+        run: python brain.py prepare
+
+      - name: 2) AI 해석 (GitHub Models)
+        if: steps.prep.outputs.need_ai == 'true'
+        continue-on-error: true
+        uses: actions/ai-inference@v1
+        with:
+          model: ${{ vars.GH_MODEL || 'openai/gpt-4.1-mini' }}
+          system-prompt-file: ./ai_system.txt
+          prompt-file: ./ai_prompt.txt
+          max-tokens: 1800
+          response-file: ./ai_response.txt
+
+      - name: 3) README 작성
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          GH_MODEL: ${{ vars.GH_MODEL || 'openai/gpt-4.1-mini' }}
+        run: python brain.py finish
+
+      - name: 4) 결과 커밋
         run: |
+          rm -f brain.py ai_system.txt ai_prompt.txt ai_payload.json ai_response.txt
           git config user.name "market-brain[bot]"
           git config user.email "market-brain@users.noreply.github.com"
           git add README.md docs

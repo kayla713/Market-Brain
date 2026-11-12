@@ -1,8 +1,9 @@
 {
- "as_of": "2026-11-12 15:52 KST",
+ "as_of": "2026-11-13 00:54 KST",
  "regime": "risk_off",
- "score": -2,
+ "score": -3,
  "reasons": [
+  "S&P500 하락추세(20/60일선 아래)",
   "NASDAQ 하락추세(20/60일선 아래)",
   "KOSPI 하락추세(20/60일선 아래)"
  ],
@@ -17,84 +18,84 @@
  },
  "headline_ind": {
   "KOSPI": {
-   "last": 5342.95,
-   "d1": -0.6,
-   "d5": -0.76,
-   "d20": -3.8,
-   "vs_ma20": -3.91,
-   "vs_ma60": -16.07
+   "last": 5375.36,
+   "d1": 0.0,
+   "d5": -0.16,
+   "d20": -3.22,
+   "vs_ma20": -3.36,
+   "vs_ma60": -15.57
   },
   "KOSDAQ": {
-   "last": 696.77,
-   "d1": -1.18,
-   "d5": 2.71,
-   "d20": -8.42,
-   "vs_ma20": -4.55,
-   "vs_ma60": -13.13
+   "last": 705.1,
+   "d1": 0.0,
+   "d5": 3.93,
+   "d20": -7.32,
+   "vs_ma20": -3.46,
+   "vs_ma60": -12.11
   },
   "USD/KRW": {
-   "last": 1332.28,
-   "d1": -0.72,
-   "d5": -0.58,
-   "d20": -0.53,
-   "vs_ma20": -0.29,
-   "vs_ma60": -1.39
+   "last": 1334.76,
+   "d1": -0.53,
+   "d5": -0.4,
+   "d20": -0.34,
+   "vs_ma20": -0.11,
+   "vs_ma60": -1.21
   },
   "S&P 500": {
-   "last": 7619.38,
-   "d1": 0.0,
-   "d5": 3.61,
-   "d20": -1.61,
-   "vs_ma20": -0.0,
-   "vs_ma60": -0.71
+   "last": 7615.08,
+   "d1": -0.06,
+   "d5": 3.55,
+   "d20": -1.67,
+   "vs_ma20": -0.06,
+   "vs_ma60": -0.76
   },
   "NASDAQ": {
-   "last": 25466.19,
-   "d1": 0.0,
-   "d5": 4.73,
-   "d20": -4.67,
-   "vs_ma20": -1.08,
-   "vs_ma60": -3.39
+   "last": 25417.44,
+   "d1": -0.19,
+   "d5": 4.53,
+   "d20": -4.85,
+   "vs_ma20": -1.26,
+   "vs_ma60": -3.57
   },
   "VIX": {
-   "last": 17.49,
-   "d1": 0.0,
-   "d5": -37.93,
-   "d20": 6.26,
-   "vs_ma20": -9.64,
-   "vs_ma60": 3.79
+   "last": 18.08,
+   "d1": 3.37,
+   "d5": -35.84,
+   "d20": 9.84,
+   "vs_ma20": -6.73,
+   "vs_ma60": 7.23
   },
   "US 10Y": {
-   "last": 5.0,
-   "d1": 0.0,
-   "d5": 3.33,
-   "d20": -1.79,
-   "vs_ma20": 0.3,
-   "vs_ma60": 0.06
+   "last": 5.06,
+   "d1": 1.24,
+   "d5": 4.61,
+   "d20": -0.57,
+   "vs_ma20": 1.48,
+   "vs_ma60": 1.28
   },
   "WTI 유가": {
-   "last": 86.33,
-   "d1": -0.23,
-   "d5": -4.63,
-   "d20": -11.88,
-   "vs_ma20": -10.31,
-   "vs_ma60": -8.01
+   "last": 86.29,
+   "d1": -0.28,
+   "d5": -4.67,
+   "d20": -11.92,
+   "vs_ma20": -10.35,
+   "vs_ma60": -8.05
   },
   "금": {
-   "last": 365.17,
-   "d1": 0.0,
-   "d5": -2.75,
-   "d20": -4.58,
-   "vs_ma20": -1.47,
-   "vs_ma60": -5.79
+   "last": 354.56,
+   "d1": -2.91,
+   "d5": -5.57,
+   "d20": -7.36,
+   "vs_ma20": -4.2,
+   "vs_ma60": -8.48
   },
   "미국 장기채": {
-   "last": 80.92,
-   "d1": 0.0,
-   "d5": -1.23,
-   "d20": 1.61,
-   "vs_ma20": -0.1,
-   "vs_ma60": 0.91
+   "last": 80.32,
+   "d1": -0.75,
+   "d5": -1.97,
+   "d20": 0.85,
+   "vs_ma20": -0.81,
+   "vs_ma60": 0.17
   },
   "KODEX 200": {
    "last": 84240.0,
@@ -129,100 +130,105 @@
    "vs_ma60": -11.06
   },
   "美 Tech": {
-   "last": 174.36,
-   "d1": 0.0,
-   "d5": 7.38,
-   "d20": -7.84,
-   "vs_ma20": -2.78,
-   "vs_ma60": -6.68
+   "last": 173.77,
+   "d1": -0.34,
+   "d5": 7.01,
+   "d20": -8.15,
+   "vs_ma20": -3.09,
+   "vs_ma60": -6.99
   },
   "美 금융": {
-   "last": 58.63,
-   "d1": 0.0,
-   "d5": 1.97,
-   "d20": 6.08,
-   "vs_ma20": 2.99,
-   "vs_ma60": 4.28
+   "last": 58.6,
+   "d1": -0.06,
+   "d5": 1.9,
+   "d20": 6.02,
+   "vs_ma20": 2.94,
+   "vs_ma60": 4.22
   },
   "美 에너지": {
-   "last": 63.37,
-   "d1": 0.0,
-   "d5": 2.82,
-   "d20": -4.79,
-   "vs_ma20": -4.4,
-   "vs_ma60": -1.86
+   "last": 63.97,
+   "d1": 0.95,
+   "d5": 3.8,
+   "d20": -3.89,
+   "vs_ma20": -3.53,
+   "vs_ma60": -0.94
   }
  },
  "news": [
   {
-   "src": "연합뉴스 경제",
-   "title": "코스피, 오락가락 등락하다 0.6% 하락 마감…코스닥 1.2%↓",
-   "link": "https://www.yna.co.kr/view/AKR20261112138000008"
-  },
-  {
-   "src": "연합뉴스 경제",
-   "title": "내포 임대아파트 보증금 대출상품 이달 출시…금리 1.7∼2.6%",
-   "link": "https://www.yna.co.kr/view/AKR20261112136900063"
-  },
-  {
-   "src": "연합뉴스 경제",
-   "title": "[외환] 원/달러 환율 2.9원 내린 1,330.7원(15:30 기준가)",
-   "link": "https://www.yna.co.kr/view/AKR20261112136000002"
+   "src": "한국경제 증권",
+   "title": "젠슨 황 퇴진 확정…월가 목표주가 줄줄이 하향 [월가 업&다운]",
+   "link": "https://www.hankyung.com/article/202611123918i"
   },
   {
    "src": "한국경제 증권",
-   "title": "'반도체 초호황' 맞아?…올해 소비 기여도 고작 '0.003%P'",
-   "link": "https://www.hankyung.com/article/202611122559i"
+   "title": "[단독] 나스닥은 분기마다 IR…코스닥 상장사는 투자만 받고 설명 뒷전",
+   "link": "https://www.hankyung.com/article/2026111236381"
   },
   {
    "src": "한국경제 증권",
-   "title": "젠슨 황 해임 위기에 K반도체도 긴장…삼전닉스에 악재일까",
-   "link": "https://www.hankyung.com/article/202611122331i"
+   "title": "[단독] 코스닥 우량기업 '年 2회 IR' 의무화",
+   "link": "https://www.hankyung.com/article/2026111236641"
   },
   {
    "src": "한국경제 증권",
-   "title": "코스피, 개인 매수세 속 5400선 공방…삼성전자 2%대 강세",
-   "link": "https://www.hankyung.com/article/2026111223646"
+   "title": "JYP '깜짝 실적'에 K엔터주 동반 상승",
+   "link": "https://www.hankyung.com/article/2026111236111"
+  },
+  {
+   "src": "한국경제 증권",
+   "title": "증시 하락 직격탄…증권사 3분기 '순이익 쇼크'",
+   "link": "https://www.hankyung.com/article/2026111236131"
+  },
+  {
+   "src": "한국경제 증권",
+   "title": "금리 방향 안갯속…연 4%대 현대제철채로 단기 투자 [채권투자 길라잡이]",
+   "link": "https://www.hankyung.com/article/202611122384i"
   },
   {
    "src": "매일경제 증권",
-   "title": "‘오락가락’ 코스피, 결국 0.6% 하락 마감…코스닥도 1.2%내려",
-   "link": "https://www.mk.co.kr/news/stock/12206455"
+   "title": "[속보] 엔비디아, 젠슨황 사임에 뉴욕증시서 13% 급락 출발",
+   "link": "https://www.mk.co.kr/news/stock/12207212"
   },
   {
    "src": "매일경제 증권",
-   "title": "실적 부진 네이버 ‘사자’…15% 급락 DB하이텍도 담았다 [주식 초고수는 지금]",
-   "link": "https://www.mk.co.kr/news/stock/12206180"
+   "title": "“물려있는데 뭘 할 수 있죠?”...코스피 거래대금, 6개월새 60% 증발",
+   "link": "https://www.mk.co.kr/news/stock/12206924"
+  },
+  {
+   "src": "매일경제 증권",
+   "title": "주식 거래대금 62% 줄었다 … K증시 '썰물'",
+   "link": "https://www.mk.co.kr/news/stock/12206702"
+  },
+  {
+   "src": "매일경제 증권",
+   "title": "“외국인 선물 샀는데 왜 빠졌지?”…옵션 만기일 코스피 막판 ‘출렁’",
+   "link": "https://www.mk.co.kr/news/stock/12206541"
   },
   {
    "src": "매일경제 경제",
-   "title": "KDI “반도체 호황, 올해 소비 개선 영향 미미…고유가 충격이 더 커”",
-   "link": "https://www.mk.co.kr/news/economy/12206382"
-  },
-  {
-   "src": "매일경제 경제",
-   "title": "LH, 광명시흥·용인반도체에 총 2조원 추가 투입...사업 속도전",
-   "link": "https://www.mk.co.kr/news/economy/12206345"
-  },
-  {
-   "src": "매일경제 경제",
-   "title": "금융지주 사외이사 주주가 추천…회장 3연임땐 주총 75% 찬성 얻어야",
-   "link": "https://www.mk.co.kr/news/economy/12205964"
+   "title": "[표] 외국환율고시표",
+   "link": "https://www.mk.co.kr/news/economy/12206723"
   },
   {
    "src": "Investing.com",
-   "title": "Wacker Neuson narrows margin guidance after Q3 slowdown",
-   "link": "https://www.investing.com/news/stock-market-news/wacker-neuson-narrows-margin-guidance-after-q3-slowdown-93CH-5020452"
+   "title": "Why is Super Micro Computer stock sliding today?",
+   "link": "https://www.investing.com/news/stock-market-news/why-is-super-micro-computer-stock-sliding-today-93CH-5022542"
   },
   {
    "src": "Investing.com",
-   "title": "CrowdStrike chose Akamai for security, yet the stock plunged 46%",
-   "link": "https://www.investing.com/news/stock-market-news/crowdstrike-chose-akamai-for-security-yet-the-stock-plunged-46-5018820"
+   "title": "Earnings call transcript: ERock posts first profit in Q3 2026 as stock falls",
+   "link": "https://www.investing.com/news/transcripts/earnings-call-transcript-erock-posts-first-profit-in-q3-2026-as-stock-falls-93CH-5022539"
   },
   {
    "src": "Investing.com",
-   "title": "Bitcoin slips to $73.6k; Strategy drops on MSCI index removal",
-   "link": "https://www.investing.com/news/cryptocurrency-news/bitcoin-slips-to-736k-strategy-drops-on-msci-index-removal-5020451"
+   "title": "Earnings call transcript: Americanas posts stronger sales in Q3 2026 as shares fall",
+   "link": "https://www.investing.com/news/transcripts/earnings-call-transcript-americanas-posts-stronger-sales-in-q3-2026-as-shares-fall-93CH-5022537"
+  },
+  {
+   "src": "Investing.com",
+   "title": "Earnings call transcript: MediPharm Labs posts stronger Q3 2026 revenue",
+   "link": "https://www.investing.com/news/transcripts/earnings-call-transcript-medipharm-labs-posts-stronger-q3-2026-revenue-93CH-5022533"
   },
   {
    "src": "CNBC Markets",
@@ -245,139 +251,134 @@
    "link": "https://www.cnbc.com/2026/11/06/jobs-report-october-2026.html"
   },
   {
-   "src": "CNBC Markets",
-   "title": "Bank of England hikes interest rate for the first time since Iran war, warns inflation will near 5%",
-   "link": "https://www.cnbc.com/2026/11/05/interest-rates-inflation-uk.html"
-  },
-  {
    "src": "MarketWatch",
-   "title": "Nasdaq futures fall as Nvidia sinks 8% after hours on report board may oust Huang",
-   "link": "https://www.marketwatch.com/story/nasdaq-futures-fall-as-nvidia-sinks-8-after-hours-on-report-board-may-oust-huang-e99b898d?mod=mw_rss_topstories"
-  },
-  {
-   "src": "MarketWatch",
-   "title": "Nvidia’s stock drops as the board reportedly prepares to remove CEO Jensen Huang",
-   "link": "https://www.marketwatch.com/story/nvidias-stock-drops-as-the-board-reportedly-prepares-to-remove-ceo-jensen-huang-9edee58d?mod=mw_rss_topstories"
-  },
-  {
-   "src": "MarketWatch",
-   "title": "Opening trading-card packs has become a $2 billion market. New apps are trying to cash in.",
+   "title": "Opening trading-card packs has become a $2 billion market",
    "link": "https://www.marketwatch.com/story/opening-trading-card-packs-has-become-a-2-billion-market-new-apps-are-trying-to-cash-in-b7ba11f5?mod=mw_rss_topstories"
   },
   {
-   "src": "MarketWatch",
-   "title": "Falling oil prices are no longer enough to bring down borrowing costs in the world’s most important bond market",
-   "link": "https://www.marketwatch.com/story/falling-oil-prices-are-no-longer-enough-to-bring-down-borrowing-costs-in-the-worlds-most-important-bond-market-3176d25a?mod=mw_rss_topstories"
+   "src": "연합뉴스 경제",
+   "title": "경북 예천 소 농장서 구제역 발생…19일까지 전국 집중 소독",
+   "link": "https://www.yna.co.kr/view/AKR20261112181800030"
   },
   {
    "src": "연합뉴스 경제",
-   "title": "경북 동부 공사장 추락 사망사고 증가…고용노동부, 단속 강화",
-   "link": "https://www.yna.co.kr/view/AKR20261112139200053"
+   "title": "인천 강화 산란계 농장서 고병원성 AI 발생…이달 들어 네 번째(종합)",
+   "link": "https://www.yna.co.kr/view/AKR20261112110051030"
   },
   {
    "src": "연합뉴스 경제",
-   "title": "오세훈, 청년 월세·관리비 지원 약속…\"정부 주택정책 참사\"(종합)",
-   "link": "https://www.yna.co.kr/view/AKR20261112082951004"
+   "title": "은행지주CEO 연임할수록 의결 까다롭게…임추위 전원 독립이사로(종합)",
+   "link": "https://www.yna.co.kr/view/AKR20261111175651002"
   },
   {
    "src": "연합뉴스 경제",
-   "title": "[특징주] 코스맥스, 3분기 역대 최대 매출에 5%대 상승(종합)",
-   "link": "https://www.yna.co.kr/view/AKR20261112045451008"
+   "title": "세무사시험 160문제중 1개만 틀린 수석…'스마트안경' 의혹 제기",
+   "link": "https://www.yna.co.kr/view/AKR20261112172800530"
   },
   {
    "src": "연합뉴스 경제",
-   "title": "[특징주] 삼양식품, 베트남 공장 설립 기대에 3%대 상승(종합)",
-   "link": "https://www.yna.co.kr/view/AKR20261112040351008"
+   "title": "[연합뉴스 이 시각 헤드라인] - 18:00",
+   "link": "https://www.yna.co.kr/view/AKR20261112160700011"
   },
   {
    "src": "연합뉴스 경제",
-   "title": "외국환시세(11월12일·15:30 기준가)",
-   "link": "https://www.yna.co.kr/view/AKR20261112137100002"
+   "title": "[동정] 남재헌 해수부 차관, 가리비 양식업계와 간담회",
+   "link": "https://www.yna.co.kr/view/AKR20261112169200030"
   },
   {
    "src": "연합뉴스 경제",
-   "title": "당국 \"신용공여 140%룰 면제, 빚투 안 늘게 관리\"…업계 당부",
-   "link": "https://www.yna.co.kr/view/AKR20261112116400002"
+   "title": "코인마켓 거래소 '플라이빗'도 해킹…\"고객 40명 정보 유출\"",
+   "link": "https://www.yna.co.kr/view/AKR20261112168500002"
   },
   {
    "src": "연합뉴스 경제",
-   "title": "고삼석 교수 \"AI가 산업 재편…기술·인간 연결 기업이 승자\"",
-   "link": "https://www.yna.co.kr/view/AKR20261112134500017"
+   "title": "전남광주시, 대규모 사업에 지역 중소기업 참여 확대 모색",
+   "link": "https://www.yna.co.kr/view/AKR20261112164900054"
   },
   {
    "src": "연합뉴스 경제",
-   "title": "추경호, 대구 금융기관장들 만나 \"금융 지원 확대 필요\"",
-   "link": "https://www.yna.co.kr/view/AKR20261112126800053"
+   "title": "황종우 해수부 장관, 포르투갈과 해양수산 협력 양해각서",
+   "link": "https://www.yna.co.kr/view/AKR20261112165300051"
   },
   {
    "src": "연합뉴스 경제",
-   "title": "[게시판] SK증권, ESG 평가 2년 연속 '통합 A등급' 획득",
-   "link": "https://www.yna.co.kr/view/AKR20261112134300008"
+   "title": "바이브컴퍼니, 29억9천만원 제3자배정 유상증자",
+   "link": "https://www.yna.co.kr/view/AKR20261112164200008"
+  },
+  {
+   "src": "연합뉴스 경제",
+   "title": "바이브컴퍼니, 50억원 유상증자…에이아이블레이저에 제3자배정",
+   "link": "https://www.yna.co.kr/view/AKR20261112164100008"
+  },
+  {
+   "src": "연합뉴스 경제",
+   "title": "SC제일은행, 한국ESG기준원 평가 8년째 A+…카뱅 3년 연속 A등급",
+   "link": "https://www.yna.co.kr/view/AKR20261112148500002"
   },
   {
    "src": "한국경제 증권",
-   "title": "“불편할 만큼 가까웠다”…젠슨 황 불륜 예고한 공매도 보고서 살펴보니",
-   "link": "https://www.hankyung.com/article/202611122993i"
+   "title": "AMD '시장수익률 상회'…엔비디아 혼란 수혜 기대[월가 업&다운]",
+   "link": "https://www.hankyung.com/article/202611123926i"
   },
   {
    "src": "한국경제 증권",
-   "title": "\"모두가 떠날 때 사라\"…전문가가 꼽은 반등 시그널",
-   "link": "https://www.hankyung.com/article/202611119617i"
+   "title": "\"외국인 놀이터 됐다\"…한국 주식 산 개미들 분통 터진 이유 [분석+]",
+   "link": "https://www.hankyung.com/article/2026111232876"
   },
   {
    "src": "한국경제 증권",
-   "title": "초고수들, '젠슨 황 해임설' 틈타 엔비디아 저가 매수…테슬라·SK하이닉스 ADR은 팔아",
-   "link": "https://www.hankyung.com/article/202611122652i"
+   "title": "'젠슨 황 리스크' 직격탄 맞았다…줄줄이 비명 쏟아진 종목",
+   "link": "https://www.hankyung.com/article/2026111236161"
   },
   {
    "src": "한국경제 증권",
-   "title": "\"올 들어 '반토막' 났는데\"…하루만에 17% 반등한 '이 종목'",
-   "link": "https://www.hankyung.com/article/202611122639i"
+   "title": "[단독] 셀렉트 '연 2회 IR' 의무화 된다…86% 기업이 기준미달",
+   "link": "https://www.hankyung.com/article/202611123042i"
   },
   {
    "src": "한국경제 증권",
-   "title": "'3분기 적자' 미래에셋...\"향후 스페이스X 실현이익으로 주주환원\"",
-   "link": "https://www.hankyung.com/article/202611122232i"
+   "title": "삼성증권, 3분기 순익 3528억원…전년비 14.1% 증가",
+   "link": "https://www.hankyung.com/article/2026111234306"
   },
   {
    "src": "한국경제 증권",
-   "title": "\"일반주주도 대주주 가격에 판다\"...VIP운용이 롯데렌탈 공개매수 반긴 이유",
-   "link": "https://www.hankyung.com/article/202611122378i"
-  },
-  {
-   "src": "한국경제 증권",
-   "title": "젠슨 황 사태에 엔비디아 급락…'부적절한 관계→해임' 사례 분석해보니",
-   "link": "https://www.hankyung.com/article/202611122412i"
-  },
-  {
-   "src": "한국경제 증권",
-   "title": "서울옥션, 3분기 영업이익 2억원…전년 동기 대비 흑자전환",
-   "link": "https://www.hankyung.com/article/2026111224596"
-  },
-  {
-   "src": "한국경제 증권",
-   "title": "초고수들, 네이버·DB하이텍 등 급락 종목들 왜 담았을까",
-   "link": "https://www.hankyung.com/article/202611122332i"
+   "title": "젠슨 황 쇼크에 흔들리는 AI밸류체인…희비 엇갈린 삼전닉스",
+   "link": "https://www.hankyung.com/article/202611123011i"
   },
   {
    "src": "매일경제 증권",
-   "title": "우진플라임, 3분기 매출 602억원·영업이익 37억원… 전년比 흑자전환",
-   "link": "https://www.mk.co.kr/news/stock/12206432"
+   "title": "주식 손실 나도 못 파는 개인투자자…3명 중 2명 ‘보유·물타기’",
+   "link": "https://www.mk.co.kr/news/stock/12207149"
   },
   {
    "src": "매일경제 증권",
-   "title": "오전엔 팔던 삼성전기, 오후엔 담았다 [주식 초고수는 지금]",
-   "link": "https://www.mk.co.kr/news/stock/12206424"
+   "title": "주식 투자 선수들이라더니…액티브 ETF, 지수도 못 이겼다 [이슈플러스]",
+   "link": "https://www.mk.co.kr/news/business/12206773"
   },
   {
    "src": "매일경제 증권",
-   "title": "옵트론텍, 3분기 누적 영업이익 100억원 돌파…전년比 4.3배 급증",
-   "link": "https://www.mk.co.kr/news/stock/12206418"
+   "title": "하락장·과징금·스페이스X … '악재 쓰나미' 휩쓸린 증권사",
+   "link": "https://www.mk.co.kr/news/stock/12206705"
   },
   {
    "src": "매일경제 증권",
-   "title": "“텀블러 사용 인증 606건”…KB증권, 환경단체에 1000만원 기부",
-   "link": "https://www.mk.co.kr/news/stock/12206394"
+   "title": "스트레이키즈가 다했네, JYP",
+   "link": "https://www.mk.co.kr/news/stock/12206704"
+  },
+  {
+   "src": "매일경제 증권",
+   "title": "월가선 엔비디아 목표가 '반토막' … 서학개미 평가액 한달새 7조 증발",
+   "link": "https://www.mk.co.kr/news/stock/12206648"
+  },
+  {
+   "src": "매일경제 증권",
+   "title": "\"亞 사모대출 커진다…韓기업도 활용 늘 것\"",
+   "link": "https://www.mk.co.kr/news/stock/12206645"
+  },
+  {
+   "src": "매일경제 증권",
+   "title": "정부가 맡긴 업무 했는데 과징금 부메랑…업계 ‘부글부글’",
+   "link": "https://www.mk.co.kr/news/stock/12206532"
   }
  ],
  "news_status": {
@@ -391,32 +392,32 @@
   "MarketWatch": 10
  },
  "ai_error": "Gemini 실패: RuntimeError gemini-4-carbon: HTTPError HTTP Error 429: Too Many Requests { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on t | gemini-4-argon: HTTPError HTTP Error 429: Too",
- "headline_title": "[위험회피] 뉴스 테마: 반도체·AI(11건), 실적·기업(6건), 증시 전반(5건)",
- "summary": "오늘 뉴스의 중심은 반도체·AI(11건), 실적·기업(6건), 증시 전반(5건)입니다. 코스피는 하루 -0.6%, 5일 -0.76%, S&P500은 하루 0.0%, 나스닥은 0.0% 움직였고 VIX는 17.49, 원달러는 20일간 -0.53% 변했습니다. 추세·변동성·환율 신호를 합치면 현재 레짐은 '위험회피'이며, 규칙 신호는 NASDAQ 하락추세(20/60일선 아래); KOSPI 하락추세(20/60일선 아래)입니다. (AI 해석이 비활성화되어 규칙 기반으로 작성됨)",
+ "headline_title": "[위험회피] 뉴스 테마: 증시 전반(8건), 반도체·AI(5건), 실적·기업(4건)",
+ "summary": "오늘 뉴스의 중심은 증시 전반(8건), 반도체·AI(5건), 실적·기업(4건)입니다. 코스피는 하루 0.0%, 5일 -0.16%, S&P500은 하루 -0.06%, 나스닥은 -0.19% 움직였고 VIX는 18.08, 원달러는 20일간 -0.34% 변했습니다. 추세·변동성·환율 신호를 합치면 현재 레짐은 '위험회피'이며, 규칙 신호는 S&P500 하락추세(20/60일선 아래); NASDAQ 하락추세(20/60일선 아래); KOSPI 하락추세(20/60일선 아래)입니다. (AI 해석이 비활성화되어 규칙 기반으로 작성됨)",
  "issues": [
   {
+   "title": "증시 전반",
+   "detail": "젠슨 황 퇴진 확정…월가 목표주가 줄줄이 하향 [월가 업&다운] / [단독] 나스닥은 분기마다 IR…코스닥 상장사는 투자만 받고 설명 뒷전",
+   "impact": "혼재"
+  },
+  {
    "title": "반도체·AI",
-   "detail": "'반도체 초호황' 맞아?…올해 소비 기여도 고작 '0.003%P' / 젠슨 황 해임 위기에 K반도체도 긴장…삼전닉스에 악재일까",
+   "detail": "[속보] 엔비디아, 젠슨황 사임에 뉴욕증시서 13% 급락 출발 / 인천 강화 산란계 농장서 고병원성 AI 발생…이달 들어 네 번째(종합)",
    "impact": "혼재"
   },
   {
    "title": "실적·기업",
-   "detail": "실적 부진 네이버 ‘사자’…15% 급락 DB하이텍도 담았다 [주식 초고수는 지금] / Wacker Neuson narrows margin guidance after Q3 slowdown",
-   "impact": "혼재"
-  },
-  {
-   "title": "증시 전반",
-   "detail": "코스피, 오락가락 등락하다 0.6% 하락 마감…코스닥 1.2%↓ / ‘오락가락’ 코스피, 결국 0.6% 하락 마감…코스닥도 1.2%내려",
+   "detail": "JYP '깜짝 실적'에 K엔터주 동반 상승 / Earnings call transcript: ERock posts first profit in Q3 202",
    "impact": "혼재"
   },
   {
    "title": "금리·연준",
-   "detail": "내포 임대아파트 보증금 대출상품 이달 출시…금리 1.7∼2.6% / Consumer prices rose 0.4% in October, more than expected, co",
+   "detail": "금리 방향 안갯속…연 4%대 현대제철채로 단기 투자 [채권투자 길라잡이] / Consumer prices rose 0.4% in October, more than expected, co",
    "impact": "혼재"
   },
   {
    "title": "환율·외국인",
-   "detail": "[외환] 원/달러 환율 2.9원 내린 1,330.7원(15:30 기준가)",
+   "detail": "“외국인 선물 샀는데 왜 빠졌지?”…옵션 만기일 코스피 막판 ‘출렁’ / [표] 외국환율고시표",
    "impact": "혼재"
   }
  ],
@@ -430,7 +431,7 @@
   "현금": "반등 시 재진입 여력 확보"
  },
  "watch": [
-  "가장 많이 언급된 테마 '반도체·AI'의 후속 뉴스",
+  "가장 많이 언급된 테마 '증시 전반'의 후속 뉴스",
   "VIX 25 상회/16 하회 여부",
   "코스피·S&P500의 20일선 회복 여부"
  ],

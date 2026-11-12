@@ -1,20 +1,20 @@
 # 🧠 시황두뇌
 
-**2026-11-12 15:52 KST** · 레짐 🔴 위험회피 · 작성: rule-digest
+**2026-11-13 00:54 KST** · 레짐 🔴 위험회피 · 작성: rule-digest
 
 > ⚠️ AI 해석 실패 (규칙 요약으로 대체): `Gemini 실패: RuntimeError gemini-4-carbon: HTTPError HTTP Error 429: Too Many Requests { "error": { "code": 429, "message": "You exceeded your current quota, please check your plan and billing details. For more information on t | gemini-4-argon: HTTPError HTTP Error 429: Too`
 
-## [위험회피] 뉴스 테마: 반도체·AI(11건), 실적·기업(6건), 증시 전반(5건)
+## [위험회피] 뉴스 테마: 증시 전반(8건), 반도체·AI(5건), 실적·기업(4건)
 
-오늘 뉴스의 중심은 반도체·AI(11건), 실적·기업(6건), 증시 전반(5건)입니다. 코스피는 하루 -0.6%, 5일 -0.76%, S&P500은 하루 0.0%, 나스닥은 0.0% 움직였고 VIX는 17.49, 원달러는 20일간 -0.53% 변했습니다. 추세·변동성·환율 신호를 합치면 현재 레짐은 '위험회피'이며, 규칙 신호는 NASDAQ 하락추세(20/60일선 아래); KOSPI 하락추세(20/60일선 아래)입니다. (AI 해석이 비활성화되어 규칙 기반으로 작성됨)
+오늘 뉴스의 중심은 증시 전반(8건), 반도체·AI(5건), 실적·기업(4건)입니다. 코스피는 하루 0.0%, 5일 -0.16%, S&P500은 하루 -0.06%, 나스닥은 -0.19% 움직였고 VIX는 18.08, 원달러는 20일간 -0.34% 변했습니다. 추세·변동성·환율 신호를 합치면 현재 레짐은 '위험회피'이며, 규칙 신호는 S&P500 하락추세(20/60일선 아래); NASDAQ 하락추세(20/60일선 아래); KOSPI 하락추세(20/60일선 아래)입니다. (AI 해석이 비활성화되어 규칙 기반으로 작성됨)
 
 ## 핵심 이슈
 
-- 🟡 **반도체·AI** — '반도체 초호황' 맞아?…올해 소비 기여도 고작 '0.003%P' / 젠슨 황 해임 위기에 K반도체도 긴장…삼전닉스에 악재일까
-- 🟡 **실적·기업** — 실적 부진 네이버 ‘사자’…15% 급락 DB하이텍도 담았다 [주식 초고수는 지금] / Wacker Neuson narrows margin guidance after Q3 slowdown
-- 🟡 **증시 전반** — 코스피, 오락가락 등락하다 0.6% 하락 마감…코스닥 1.2%↓ / ‘오락가락’ 코스피, 결국 0.6% 하락 마감…코스닥도 1.2%내려
-- 🟡 **금리·연준** — 내포 임대아파트 보증금 대출상품 이달 출시…금리 1.7∼2.6% / Consumer prices rose 0.4% in October, more than expected, co
-- 🟡 **환율·외국인** — [외환] 원/달러 환율 2.9원 내린 1,330.7원(15:30 기준가)
+- 🟡 **증시 전반** — 젠슨 황 퇴진 확정…월가 목표주가 줄줄이 하향 [월가 업&다운] / [단독] 나스닥은 분기마다 IR…코스닥 상장사는 투자만 받고 설명 뒷전
+- 🟡 **반도체·AI** — [속보] 엔비디아, 젠슨황 사임에 뉴욕증시서 13% 급락 출발 / 인천 강화 산란계 농장서 고병원성 AI 발생…이달 들어 네 번째(종합)
+- 🟡 **실적·기업** — JYP '깜짝 실적'에 K엔터주 동반 상승 / Earnings call transcript: ERock posts first profit in Q3 202
+- 🟡 **금리·연준** — 금리 방향 안갯속…연 4%대 현대제철채로 단기 투자 [채권투자 길라잡이] / Consumer prices rose 0.4% in October, more than expected, co
+- 🟡 **환율·외국인** — “외국인 선물 샀는데 왜 빠졌지?”…옵션 만기일 코스피 막판 ‘출렁’ / [표] 외국환율고시표
 
 ## 포트폴리오와 그 이유
 
@@ -30,7 +30,7 @@
 
 ## 앞으로 지켜볼 것
 
-- 가장 많이 언급된 테마 '반도체·AI'의 후속 뉴스
+- 가장 많이 언급된 테마 '증시 전반'의 후속 뉴스
 - VIX 25 상회/16 하회 여부
 - 코스피·S&P500의 20일선 회복 여부
 
@@ -38,61 +38,62 @@
 
 | 지표 | 현재 | 1일 | 5일 | 20일 |
 |---|---:|---:|---:|---:|
-| KOSPI | 5342.95 | -0.6% | -0.76% | -3.8% |
-| KOSDAQ | 696.77 | -1.18% | +2.71% | -8.42% |
-| USD/KRW | 1332.28 | -0.72% | -0.58% | -0.53% |
-| S&P 500 | 7619.38 | 0.0% | +3.61% | -1.61% |
-| NASDAQ | 25466.19 | 0.0% | +4.73% | -4.67% |
-| VIX | 17.49 | 0.0% | -37.93% | +6.26% |
-| US 10Y | 5.0 | 0.0% | +3.33% | -1.79% |
-| WTI 유가 | 86.33 | -0.23% | -4.63% | -11.88% |
-| 금 | 365.17 | 0.0% | -2.75% | -4.58% |
-| 미국 장기채 | 80.92 | 0.0% | -1.23% | +1.61% |
+| KOSPI | 5375.36 | 0.0% | -0.16% | -3.22% |
+| KOSDAQ | 705.1 | 0.0% | +3.93% | -7.32% |
+| USD/KRW | 1334.76 | -0.53% | -0.4% | -0.34% |
+| S&P 500 | 7615.08 | -0.06% | +3.55% | -1.67% |
+| NASDAQ | 25417.44 | -0.19% | +4.53% | -4.85% |
+| VIX | 18.08 | +3.37% | -35.84% | +9.84% |
+| US 10Y | 5.06 | +1.24% | +4.61% | -0.57% |
+| WTI 유가 | 86.29 | -0.28% | -4.67% | -11.92% |
+| 금 | 354.56 | -2.91% | -5.57% | -7.36% |
+| 미국 장기채 | 80.32 | -0.75% | -1.97% | +0.85% |
 | KODEX 200 | 84240.0 | -0.35% | -0.44% | -3.06% |
 | KODEX 코스닥150 | 11420.0 | -1.51% | +2.98% | -10.5% |
 | KODEX 반도체 | 99355.0 | -0.75% | +6.71% | -11.53% |
 | KODEX 2차전지 | 12860.0 | -1.46% | -2.06% | -13.49% |
-| 美 Tech | 174.36 | 0.0% | +7.38% | -7.84% |
-| 美 금융 | 58.63 | 0.0% | +1.97% | +6.08% |
-| 美 에너지 | 63.37 | 0.0% | +2.82% | -4.79% |
+| 美 Tech | 173.77 | -0.34% | +7.01% | -8.15% |
+| 美 금융 | 58.6 | -0.06% | +1.9% | +6.02% |
+| 美 에너지 | 63.97 | +0.95% | +3.8% | -3.89% |
 
 ## 규칙 신호
 
+- S&P500 하락추세(20/60일선 아래)
 - NASDAQ 하락추세(20/60일선 아래)
 - KOSPI 하락추세(20/60일선 아래)
 
 ## 참고한 뉴스 (45건)
 
-- [코스피, 오락가락 등락하다 0.6% 하락 마감…코스닥 1.2%↓](https://www.yna.co.kr/view/AKR20261112138000008) · 연합뉴스 경제
-- [내포 임대아파트 보증금 대출상품 이달 출시…금리 1.7∼2.6%](https://www.yna.co.kr/view/AKR20261112136900063) · 연합뉴스 경제
-- [[외환] 원/달러 환율 2.9원 내린 1,330.7원(15:30 기준가)](https://www.yna.co.kr/view/AKR20261112136000002) · 연합뉴스 경제
-- ['반도체 초호황' 맞아?…올해 소비 기여도 고작 '0.003%P'](https://www.hankyung.com/article/202611122559i) · 한국경제 증권
-- [젠슨 황 해임 위기에 K반도체도 긴장…삼전닉스에 악재일까](https://www.hankyung.com/article/202611122331i) · 한국경제 증권
-- [코스피, 개인 매수세 속 5400선 공방…삼성전자 2%대 강세](https://www.hankyung.com/article/2026111223646) · 한국경제 증권
-- [‘오락가락’ 코스피, 결국 0.6% 하락 마감…코스닥도 1.2%내려](https://www.mk.co.kr/news/stock/12206455) · 매일경제 증권
-- [실적 부진 네이버 ‘사자’…15% 급락 DB하이텍도 담았다 [주식 초고수는 지금]](https://www.mk.co.kr/news/stock/12206180) · 매일경제 증권
-- [KDI “반도체 호황, 올해 소비 개선 영향 미미…고유가 충격이 더 커”](https://www.mk.co.kr/news/economy/12206382) · 매일경제 경제
-- [LH, 광명시흥·용인반도체에 총 2조원 추가 투입...사업 속도전](https://www.mk.co.kr/news/economy/12206345) · 매일경제 경제
-- [금융지주 사외이사 주주가 추천…회장 3연임땐 주총 75% 찬성 얻어야](https://www.mk.co.kr/news/economy/12205964) · 매일경제 경제
-- [Wacker Neuson narrows margin guidance after Q3 slowdown](https://www.investing.com/news/stock-market-news/wacker-neuson-narrows-margin-guidance-after-q3-slowdown-93CH-5020452) · Investing.com
-- [CrowdStrike chose Akamai for security, yet the stock plunged 46%](https://www.investing.com/news/stock-market-news/crowdstrike-chose-akamai-for-security-yet-the-stock-plunged-46-5018820) · Investing.com
-- [Bitcoin slips to $73.6k; Strategy drops on MSCI index removal](https://www.investing.com/news/cryptocurrency-news/bitcoin-slips-to-736k-strategy-drops-on-msci-index-removal-5020451) · Investing.com
+- [젠슨 황 퇴진 확정…월가 목표주가 줄줄이 하향 [월가 업&다운]](https://www.hankyung.com/article/202611123918i) · 한국경제 증권
+- [[단독] 나스닥은 분기마다 IR…코스닥 상장사는 투자만 받고 설명 뒷전](https://www.hankyung.com/article/2026111236381) · 한국경제 증권
+- [[단독] 코스닥 우량기업 '年 2회 IR' 의무화](https://www.hankyung.com/article/2026111236641) · 한국경제 증권
+- [JYP '깜짝 실적'에 K엔터주 동반 상승](https://www.hankyung.com/article/2026111236111) · 한국경제 증권
+- [증시 하락 직격탄…증권사 3분기 '순이익 쇼크'](https://www.hankyung.com/article/2026111236131) · 한국경제 증권
+- [금리 방향 안갯속…연 4%대 현대제철채로 단기 투자 [채권투자 길라잡이]](https://www.hankyung.com/article/202611122384i) · 한국경제 증권
+- [[속보] 엔비디아, 젠슨황 사임에 뉴욕증시서 13% 급락 출발](https://www.mk.co.kr/news/stock/12207212) · 매일경제 증권
+- [“물려있는데 뭘 할 수 있죠?”...코스피 거래대금, 6개월새 60% 증발](https://www.mk.co.kr/news/stock/12206924) · 매일경제 증권
+- [주식 거래대금 62% 줄었다 … K증시 '썰물'](https://www.mk.co.kr/news/stock/12206702) · 매일경제 증권
+- [“외국인 선물 샀는데 왜 빠졌지?”…옵션 만기일 코스피 막판 ‘출렁’](https://www.mk.co.kr/news/stock/12206541) · 매일경제 증권
+- [[표] 외국환율고시표](https://www.mk.co.kr/news/economy/12206723) · 매일경제 경제
+- [Why is Super Micro Computer stock sliding today?](https://www.investing.com/news/stock-market-news/why-is-super-micro-computer-stock-sliding-today-93CH-5022542) · Investing.com
+- [Earnings call transcript: ERock posts first profit in Q3 2026 as stock falls](https://www.investing.com/news/transcripts/earnings-call-transcript-erock-posts-first-profit-in-q3-2026-as-stock-falls-93CH-5022539) · Investing.com
+- [Earnings call transcript: Americanas posts stronger sales in Q3 2026 as shares fall](https://www.investing.com/news/transcripts/earnings-call-transcript-americanas-posts-stronger-sales-in-q3-2026-as-shares-fall-93CH-5022537) · Investing.com
+- [Earnings call transcript: MediPharm Labs posts stronger Q3 2026 revenue](https://www.investing.com/news/transcripts/earnings-call-transcript-medipharm-labs-posts-stronger-q3-2026-revenue-93CH-5022533) · Investing.com
 - [Consumer prices rose 0.4% in October, more than expected, complicating Fed's inflation fight](https://www.cnbc.com/2026/11/10/cpi-inflation-report-october-2026.html) · CNBC Markets
 - [A key report for where inflation stood in October comes out Tuesday. Here's what to expect](https://www.cnbc.com/2026/11/09/october-cpi-report-2026-inflation.html) · CNBC Markets
 - [China wholesale inflation hits highest in more than four years as consumer measure slows](https://www.cnbc.com/2026/11/09/china-wholesale-inflation-rises-consumer.html) · CNBC Markets
 - [U.S. economy added 165,000 jobs in October, way more than expected; unemployment rate slips to 4.1%](https://www.cnbc.com/2026/11/06/jobs-report-october-2026.html) · CNBC Markets
-- [Bank of England hikes interest rate for the first time since Iran war, warns inflation will near 5%](https://www.cnbc.com/2026/11/05/interest-rates-inflation-uk.html) · CNBC Markets
-- [Nasdaq futures fall as Nvidia sinks 8% after hours on report board may oust Huang](https://www.marketwatch.com/story/nasdaq-futures-fall-as-nvidia-sinks-8-after-hours-on-report-board-may-oust-huang-e99b898d?mod=mw_rss_topstories) · MarketWatch
-- [Nvidia’s stock drops as the board reportedly prepares to remove CEO Jensen Huang](https://www.marketwatch.com/story/nvidias-stock-drops-as-the-board-reportedly-prepares-to-remove-ceo-jensen-huang-9edee58d?mod=mw_rss_topstories) · MarketWatch
-- [Opening trading-card packs has become a $2 billion market. New apps are trying to cash in.](https://www.marketwatch.com/story/opening-trading-card-packs-has-become-a-2-billion-market-new-apps-are-trying-to-cash-in-b7ba11f5?mod=mw_rss_topstories) · MarketWatch
-- [Falling oil prices are no longer enough to bring down borrowing costs in the world’s most important bond market](https://www.marketwatch.com/story/falling-oil-prices-are-no-longer-enough-to-bring-down-borrowing-costs-in-the-worlds-most-important-bond-market-3176d25a?mod=mw_rss_topstories) · MarketWatch
-- [경북 동부 공사장 추락 사망사고 증가…고용노동부, 단속 강화](https://www.yna.co.kr/view/AKR20261112139200053) · 연합뉴스 경제
-- [오세훈, 청년 월세·관리비 지원 약속…"정부 주택정책 참사"(종합)](https://www.yna.co.kr/view/AKR20261112082951004) · 연합뉴스 경제
-- [[특징주] 코스맥스, 3분기 역대 최대 매출에 5%대 상승(종합)](https://www.yna.co.kr/view/AKR20261112045451008) · 연합뉴스 경제
-- [[특징주] 삼양식품, 베트남 공장 설립 기대에 3%대 상승(종합)](https://www.yna.co.kr/view/AKR20261112040351008) · 연합뉴스 경제
-- [외국환시세(11월12일·15:30 기준가)](https://www.yna.co.kr/view/AKR20261112137100002) · 연합뉴스 경제
-- [당국 "신용공여 140%룰 면제, 빚투 안 늘게 관리"…업계 당부](https://www.yna.co.kr/view/AKR20261112116400002) · 연합뉴스 경제
-- [고삼석 교수 "AI가 산업 재편…기술·인간 연결 기업이 승자"](https://www.yna.co.kr/view/AKR20261112134500017) · 연합뉴스 경제
+- [Opening trading-card packs has become a $2 billion market](https://www.marketwatch.com/story/opening-trading-card-packs-has-become-a-2-billion-market-new-apps-are-trying-to-cash-in-b7ba11f5?mod=mw_rss_topstories) · MarketWatch
+- [경북 예천 소 농장서 구제역 발생…19일까지 전국 집중 소독](https://www.yna.co.kr/view/AKR20261112181800030) · 연합뉴스 경제
+- [인천 강화 산란계 농장서 고병원성 AI 발생…이달 들어 네 번째(종합)](https://www.yna.co.kr/view/AKR20261112110051030) · 연합뉴스 경제
+- [은행지주CEO 연임할수록 의결 까다롭게…임추위 전원 독립이사로(종합)](https://www.yna.co.kr/view/AKR20261111175651002) · 연합뉴스 경제
+- [세무사시험 160문제중 1개만 틀린 수석…'스마트안경' 의혹 제기](https://www.yna.co.kr/view/AKR20261112172800530) · 연합뉴스 경제
+- [[연합뉴스 이 시각 헤드라인] - 18:00](https://www.yna.co.kr/view/AKR20261112160700011) · 연합뉴스 경제
+- [[동정] 남재헌 해수부 차관, 가리비 양식업계와 간담회](https://www.yna.co.kr/view/AKR20261112169200030) · 연합뉴스 경제
+- [코인마켓 거래소 '플라이빗'도 해킹…"고객 40명 정보 유출"](https://www.yna.co.kr/view/AKR20261112168500002) · 연합뉴스 경제
+- [전남광주시, 대규모 사업에 지역 중소기업 참여 확대 모색](https://www.yna.co.kr/view/AKR20261112164900054) · 연합뉴스 경제
+- [황종우 해수부 장관, 포르투갈과 해양수산 협력 양해각서](https://www.yna.co.kr/view/AKR20261112165300051) · 연합뉴스 경제
+- [바이브컴퍼니, 29억9천만원 제3자배정 유상증자](https://www.yna.co.kr/view/AKR20261112164200008) · 연합뉴스 경제
 
 ---
 _뉴스 소스 상태: 연합뉴스 경제 12, 한국경제 증권 12, 매일경제 증권 12, 매일경제 경제 12, Yahoo Finance 실패 HTTPError, Investing.com 10, CNBC Markets 12, MarketWatch 10_

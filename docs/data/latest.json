@@ -1,5 +1,5 @@
 {
- "as_of": "2026-11-13 12:08 KST",
+ "as_of": "2026-11-13 15:10 KST",
  "regime": "risk_off",
  "score": -3,
  "reasons": [
@@ -18,28 +18,28 @@
  },
  "headline_ind": {
   "KOSPI": {
-   "last": 5401.42,
-   "d1": 1.1,
-   "d5": 6.75,
-   "d20": -4.7,
-   "vs_ma20": -2.63,
-   "vs_ma60": -14.82
+   "last": 5293.86,
+   "d1": -0.91,
+   "d5": 4.63,
+   "d20": -6.6,
+   "vs_ma20": -4.47,
+   "vs_ma60": -16.49
   },
   "KOSDAQ": {
-   "last": 716.59,
-   "d1": 2.88,
-   "d5": 11.23,
-   "d20": -9.84,
-   "vs_ma20": -1.3,
-   "vs_ma60": -10.5
+   "last": 701.98,
+   "d1": 0.78,
+   "d5": 8.96,
+   "d20": -11.68,
+   "vs_ma20": -3.21,
+   "vs_ma60": -12.3
   },
   "USD/KRW": {
-   "last": 1331.96,
-   "d1": -0.32,
-   "d5": -1.8,
-   "d20": -0.67,
-   "vs_ma20": -0.29,
-   "vs_ma60": -1.35
+   "last": 1334.88,
+   "d1": -0.1,
+   "d5": -1.58,
+   "d20": -0.45,
+   "vs_ma20": -0.08,
+   "vs_ma60": -1.13
   },
   "S&P 500": {
    "last": 7592.4,
@@ -74,12 +74,12 @@
    "vs_ma60": 2.0
   },
   "WTI 유가": {
-   "last": 88.17,
-   "d1": 0.0,
-   "d5": -2.93,
-   "d20": -13.06,
-   "vs_ma20": -7.85,
-   "vs_ma60": -6.1
+   "last": 88.48,
+   "d1": -0.29,
+   "d5": -2.59,
+   "d20": -12.75,
+   "vs_ma20": -7.57,
+   "vs_ma60": -5.78
   },
   "금": {
    "last": 354.89,
@@ -98,36 +98,36 @@
    "vs_ma60": -0.54
   },
   "KODEX 200": {
-   "last": 85100.0,
-   "d1": 1.02,
-   "d5": 7.71,
-   "d20": -3.98,
-   "vs_ma20": -2.45,
-   "vs_ma60": -15.12
+   "last": 83255.0,
+   "d1": -1.17,
+   "d5": 5.38,
+   "d20": -6.06,
+   "vs_ma20": -4.47,
+   "vs_ma60": -16.94
   },
   "KODEX 코스닥150": {
-   "last": 11785.0,
-   "d1": 3.2,
-   "d5": 12.13,
-   "d20": -11.85,
-   "vs_ma20": -1.68,
-   "vs_ma60": -12.51
+   "last": 11490.0,
+   "d1": 0.61,
+   "d5": 9.32,
+   "d20": -14.06,
+   "vs_ma20": -4.03,
+   "vs_ma60": -14.67
   },
   "KODEX 반도체": {
-   "last": 101360.0,
-   "d1": 2.02,
-   "d5": 18.69,
-   "d20": -12.78,
-   "vs_ma20": -2.66,
-   "vs_ma60": -17.74
+   "last": 99165.0,
+   "d1": -0.19,
+   "d5": 16.12,
+   "d20": -14.67,
+   "vs_ma20": -4.67,
+   "vs_ma60": -19.49
   },
   "KODEX 2차전지": {
-   "last": 12990.0,
-   "d1": 1.01,
-   "d5": 4.97,
-   "d20": -11.99,
-   "vs_ma20": -3.96,
-   "vs_ma60": -10.09
+   "last": 12810.0,
+   "d1": -0.39,
+   "d5": 3.52,
+   "d20": -13.21,
+   "vs_ma20": -5.23,
+   "vs_ma60": -11.32
   },
   "美 Tech": {
    "last": 173.77,
@@ -136,14 +136,6 @@
    "d20": -5.29,
    "vs_ma20": -2.83,
    "vs_ma60": -6.91
-  },
-  "美 금융": {
-   "last": 58.21,
-   "d1": 0.0,
-   "d5": 1.84,
-   "d20": 4.85,
-   "vs_ma20": 2.05,
-   "vs_ma60": 3.52
   },
   "美 에너지": {
    "last": 64.33,
@@ -156,9 +148,9 @@
  },
  "news": [
   {
-   "src": "연합뉴스 경제",
-   "title": "국고채 금리 일제히 상승…3년물 장중 연 3.756%",
-   "link": "https://www.yna.co.kr/view/AKR20261113084400008"
+   "src": "한국경제 증권",
+   "title": "대통령 앞에 선 증시 전문가들 \"오래 투자해도 돈 버는 시장 만들어야\"",
+   "link": "https://www.hankyung.com/article/202611134912i"
   },
   {
    "src": "한국경제 증권",
@@ -166,79 +158,59 @@
    "link": "https://www.hankyung.com/article/202611134741i"
   },
   {
-   "src": "한국경제 증권",
-   "title": "'엔비디아 쇼크'에도 코스피 2.5% 상승…삼전닉스 매수세 유입",
-   "link": "https://www.hankyung.com/article/2026111344556"
-  },
-  {
-   "src": "한국경제 증권",
-   "title": "[마켓라이브] 젠슨 황 사임에도 반도체 반등…한전은 실적 충격에 급락",
-   "link": "https://www.hankyung.com/article/202611134438i"
-  },
-  {
-   "src": "한국경제 증권",
-   "title": "코스피, '젠슨황 쇼크'에도 장 초반 2% 상승…코스닥도 1%대↑",
-   "link": "https://www.hankyung.com/article/2026111343836"
-  },
-  {
-   "src": "한국경제 증권",
-   "title": "'주가 하락 기다렸다'…초고수들, NC·한미약품 등 사들여",
-   "link": "https://www.hankyung.com/article/202611134277i"
-  },
-  {
    "src": "매일경제 증권",
-   "title": "[MK시그널] 슈프리마, AI 보안 플랫폼社 진화로 주가 상승세... MK시그널 추천 후 상승률 9.13% 기록",
-   "link": "https://www.mk.co.kr/news/stock/12207766"
-  },
-  {
-   "src": "매일경제 증권",
-   "title": "코스피, ‘젠슨황 퇴임’에도 2%대 강세 출발…코스닥도 1%대 올라",
-   "link": "https://www.mk.co.kr/news/stock/12207669"
+   "title": "“증여 앞둔 기업 주가수익률, 유사기업보다 20~30% 낮아”",
+   "link": "https://www.mk.co.kr/news/stock/12207954"
   },
   {
    "src": "매일경제 경제",
-   "title": "유가 하락에 수입물가 1.8%↓…수출물량 증가율은 역대 최고",
-   "link": "https://www.mk.co.kr/news/economy/12207612"
-  },
-  {
-   "src": "매일경제 경제",
-   "title": "젠슨황 쇼크에 美증시 하락...엔비디아 급락, AMD는 반사이익 [월가월부]",
-   "link": "https://www.mk.co.kr/news/economy/12207457"
+   "title": "이소영 “반도체 대기업-中企 영업이익 격차 10배…해결해야”",
+   "link": "https://www.mk.co.kr/news/business/12208033"
   },
   {
    "src": "Investing.com",
-   "title": "Larimar Therapeutics president and CEO Carole Ben-Maimon acquires $49,953 in stock",
-   "link": "https://www.investing.com/news/insider-trading-news/larimar-therapeutics-president-and-ceo-carole-benmaimon-acquires-49953-in-stock-93CH-5023982"
+   "title": "Earnings call transcript: Automotive Axles posts record Q2 2027 revenue, shares jump",
+   "link": "https://www.investing.com/news/transcripts/earnings-call-transcript-automotive-axles-posts-record-q2-2027-revenue-shares-jump-93CH-5024198"
   },
   {
    "src": "Investing.com",
-   "title": "Brookdale Senior Living director Winkle buys $358,068 in stock",
-   "link": "https://www.investing.com/news/insider-trading-news/brookdale-senior-living-director-winkle-buys-358068-in-stock-93CH-5023981"
+   "title": "BlackRock senior managing director Rachel Lord sells $8.5 million in stock",
+   "link": "https://www.investing.com/news/insider-trading-news/blackrock-senior-managing-director-rachel-lord-sells-85-million-in-stock-93CH-5024196"
   },
   {
    "src": "Investing.com",
-   "title": "Hinge Health CFO James Budge sells $4.37M in stock, prices $119.52-$123.34",
-   "link": "https://www.investing.com/news/insider-trading-news/hinge-health-cfo-james-budge-sells-437m-in-stock-prices-1195212334-93CH-5023980"
+   "title": "EquipmentShare director W Bryan Hill buys $554,116 in company stock",
+   "link": "https://www.investing.com/news/insider-trading-news/equipmentshare-director-w-bryan-hill-buys-554116-in-company-stock-93CH-5024195"
   },
   {
    "src": "Investing.com",
-   "title": "Cryoport director Daniel Hancock sells $1.5M of stock",
-   "link": "https://www.investing.com/news/insider-trading-news/cryoport-director-daniel-hancock-sells-15m-of-stock-93CH-5023971"
+   "title": "Visa chief risk officer Fabara sells $1.44 million in stock",
+   "link": "https://www.investing.com/news/insider-trading-news/visa-chief-risk-officer-fabara-sells-144-million-in-stock-93CH-5024194"
   },
   {
    "src": "Investing.com",
-   "title": "Garrett Ferencz, TrueBlue evp, sells $170,010 in company stock",
-   "link": "https://www.investing.com/news/insider-trading-news/garrett-ferencz-trueblue-evp-sells-170010-in-company-stock-93CH-5023969"
+   "title": "Darling Ingredients director Charles Adair acquires $25,595 in stock",
+   "link": "https://www.investing.com/news/insider-trading-news/darling-ingredients-director-charles-adair-acquires-25595-in-stock-93CH-5024193"
   },
   {
    "src": "Investing.com",
-   "title": "Richard Campbell, South Plains Financial director, sells $1.07M in stock",
-   "link": "https://www.investing.com/news/insider-trading-news/richard-campbell-south-plains-financial-director-sells-107m-in-stock-93CH-5023970"
+   "title": "Taiwan stocks higher at close of trade; Taiwan Weighted up 1.55%",
+   "link": "https://www.investing.com/news/stock-market-news/taiwan-stocks-higher-at-close-of-trade-taiwan-weighted-up-155-5024189"
   },
   {
    "src": "Investing.com",
-   "title": "Jefferies sees 107% upside in this AI-focused semiconductor stock",
-   "link": "https://www.investing.com/news/stock-market-news/jefferies-sees-107-upside-in-this-aifocused-semiconductor-stock-5023959"
+   "title": "Dollar set for best week in two months on rate hike wagers, yen tests 160",
+   "link": "https://www.investing.com/news/economy-news/dollar-near-19month-high-on-fed-hike-bets-yen-tests-160-5023930"
+  },
+  {
+   "src": "Investing.com",
+   "title": "Snap-on CEO Pinchuk sells $8.7M in company stock after option exercise",
+   "link": "https://www.investing.com/news/insider-trading-news/snapon-ceo-pinchuk-sells-87m-in-company-stock-after-option-exercise-93CH-5024185"
+  },
+  {
+   "src": "Investing.com",
+   "title": "Sally Beauty svp & president sells $1 million in stock",
+   "link": "https://www.investing.com/news/insider-trading-news/sally-beauty-svp--president-sells-1-million-in-stock-93CH-5024184"
   },
   {
    "src": "CNBC Markets",
@@ -287,58 +259,93 @@
   },
   {
    "src": "연합뉴스 경제",
-   "title": "공인중개사협 \"등기부 수수료 인상 철회하라\"…국회서 결의대회",
-   "link": "https://www.yna.co.kr/view/AKR20261112119800003"
+   "title": "[게시판] 신진창 금융위 부위원장, 씨티그룹 국제부문 총책임자 면담",
+   "link": "https://www.yna.co.kr/view/AKR20261113119200002"
   },
   {
    "src": "연합뉴스 경제",
-   "title": "올해 쌀 생산량 예상보다 1만t 감소…\"가뭄·고온 영향\"",
-   "link": "https://www.yna.co.kr/view/AKR20261113064700030"
+   "title": "NH농협금융, 기금형 퇴직연금 대비 그룹 TF 가동",
+   "link": "https://www.yna.co.kr/view/AKR20261113118100002"
   },
   {
    "src": "연합뉴스 경제",
-   "title": "연기금투자풀 대체투자 1.2조원…작년 말보다 7천억원 넘게 늘어",
-   "link": "https://www.yna.co.kr/view/AKR20261113076000002"
+   "title": "미래에셋증권, LSEG와 AI 자산관리 경쟁력 강화 업무협약",
+   "link": "https://www.yna.co.kr/view/AKR20261113117600008"
   },
   {
    "src": "연합뉴스 경제",
-   "title": "9월 통화량 17.1조원 늘어…기업은 11개월 만에 감소",
-   "link": "https://www.yna.co.kr/view/AKR20261113066900002"
+   "title": "공정위, 기업 임직원 200여명 담합 예방 교육",
+   "link": "https://www.yna.co.kr/view/AKR20261113045900002"
   },
   {
    "src": "연합뉴스 경제",
-   "title": "올해 10월까지 마약류 1.4t 적발…국제우편 2차 저지선서 6.9㎏",
-   "link": "https://www.yna.co.kr/view/AKR20261113081900002"
+   "title": "李대통령 \"자본시장개혁 시험대…중수청에 불공정행위 단속지시\"(종합)",
+   "link": "https://www.yna.co.kr/view/AKR20261113058551001"
   },
   {
    "src": "연합뉴스 경제",
-   "title": "대구 수성못 주변 개발제한 취소 판결…지자체 \"난개발 우려\"",
-   "link": "https://www.yna.co.kr/view/AKR20261113080300053"
+   "title": "'복합 악재'에 비트코인 6만8천달러대로 급락…2조원 청산",
+   "link": "https://www.yna.co.kr/view/AKR20261113113100002"
   },
   {
    "src": "연합뉴스 경제",
-   "title": "\"변동성 줄일 증안기금 가동\" \"IR 독려\"…자본시장 활성화 제언",
-   "link": "https://www.yna.co.kr/view/AKR20261113083300008"
+   "title": "NH농협은행, 주한 인도대사와 인도 금융시장 협력방안 논의",
+   "link": "https://www.yna.co.kr/view/AKR20261113112400002"
   },
   {
    "src": "연합뉴스 경제",
-   "title": "서울 중구, '일반경비원 신임교육' 중장년 참여자 모집",
-   "link": "https://www.yna.co.kr/view/AKR20261113084800004"
+   "title": "현대해상, 3분기 누적 순익 7천808억…전년比 23%↑",
+   "link": "https://www.yna.co.kr/view/AKR20261113112500002"
   },
   {
    "src": "연합뉴스 경제",
-   "title": "하나금융그룹, MSCI ESG 평가서 3년 연속 'AAA' 획득",
-   "link": "https://www.yna.co.kr/view/AKR20261113083600002"
+   "title": "KAI, 인도네시아와 KF-21 후속 양산 맞손…민항기도 협력",
+   "link": "https://www.yna.co.kr/view/AKR20261113109000003"
   },
   {
    "src": "연합뉴스 경제",
-   "title": "이억원 \"증안펀드, 굉장히 긴급할 때 한시·예외적 사용\"",
-   "link": "https://www.yna.co.kr/view/AKR20261113080800002"
+   "title": "정진완 우리은행장 1년 연임…5대 은행장 인선 신호탄(종합)",
+   "link": "https://www.yna.co.kr/view/AKR20261113105752002"
   },
   {
    "src": "연합뉴스 경제",
-   "title": "국민연금 3분기 美주식 평가액, 전분기 대비 36억弗 증가",
-   "link": "https://www.yna.co.kr/view/AKR20261113078200008"
+   "title": "국민연금 3분기 美주식 평가액, 전분기 대비 36억弗 증가(종합)",
+   "link": "https://www.yna.co.kr/view/AKR20261113078251008"
+  },
+  {
+   "src": "연합뉴스 경제",
+   "title": "[연합뉴스 이 시각 헤드라인] - 14:30",
+   "link": "https://www.yna.co.kr/view/AKR20261113104300011"
+  },
+  {
+   "src": "한국경제 증권",
+   "title": "한국예탁결제원 \"미수령 주식·대금 1425억원 주주에 교부\"",
+   "link": "https://www.hankyung.com/article/2026111351246"
+  },
+  {
+   "src": "한국경제 증권",
+   "title": "윤창현 코스콤 사장, 불법사금융 예방 캠페인 참여",
+   "link": "https://www.hankyung.com/article/2026111351186"
+  },
+  {
+   "src": "한국경제 증권",
+   "title": "비에이치아이, 3분기 영업익 403억원…전년 동기 대비 120%↑",
+   "link": "https://www.hankyung.com/article/2026111351136"
+  },
+  {
+   "src": "한국경제 증권",
+   "title": "제이엔비, 3분기 영업이익 5.8억 흑자전환…매출 48% 증가",
+   "link": "https://www.hankyung.com/article/2026111351086"
+  },
+  {
+   "src": "한국경제 증권",
+   "title": "테슬라 '팔자'에서 '사자'로…초고수들, 하루 만에 돌변한 까닭",
+   "link": "https://www.hankyung.com/article/202611135047i"
+  },
+  {
+   "src": "한국경제 증권",
+   "title": "하나증권, 신규 계좌 개설 시 매수쿠폰 최대 5만원·주식 지급 이벤트",
+   "link": "https://www.hankyung.com/article/2026111351026"
   },
   {
    "src": "한국경제 증권",
@@ -352,7 +359,7 @@
   },
   {
    "src": "한국경제 증권",
-   "title": "젠슨 황 떠난 엔비디아의 빈틈, 삼전닉스엔 '뜻밖의 호재'?",
+   "title": "젠슨 황 떠난 엔비디아의 빈틈…삼전닉스엔 '뜻밖의 호재'?",
    "link": "https://www.hankyung.com/article/202611134784i"
   },
   {
@@ -361,24 +368,9 @@
    "link": "https://www.hankyung.com/article/202611134462i"
   },
   {
-   "src": "한국경제 증권",
-   "title": "한국전력 '어닝 쇼크'에 장중 최저가…증권가 목표가 줄하향",
-   "link": "https://www.hankyung.com/article/2026111344966"
-  },
-  {
-   "src": "한국경제 증권",
-   "title": "'깐부' 젠슨 황 사임에도…삼전닉스, 장 초반 3~4%대 '강세'",
-   "link": "https://www.hankyung.com/article/2026111344286"
-  },
-  {
-   "src": "한국경제 증권",
-   "title": "'젠슨 황 프리미엄' 사라졌다…엔비디아 목표가 60% '뚝'",
-   "link": "https://www.hankyung.com/article/202611134321i"
-  },
-  {
    "src": "매일경제 증권",
-   "title": "씨티씨바이오, 3분기 누적 영업익 125억원… 전년比 182%↑ “수익성 성장 본격화”",
-   "link": "https://www.mk.co.kr/news/stock/12207881"
+   "title": "李 대통령 “욕 먹더라도 파이 키워야”…적대적 인수·합병 활성화 강조",
+   "link": "https://www.mk.co.kr/news/stock/12208043"
   }
  ],
  "news_status": {
@@ -392,32 +384,32 @@
   "MarketWatch": 10
  },
  "ai_error": "Gemini 실패: RuntimeError gemini-4-hydrogen: JSONDecodeError Expecting value: line 1 column 1 (char 0  | gemini-4-carbon: HTTPError HTTP Error 429: Too Many Requests { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing deta",
- "headline_title": "[위험회피] 뉴스 테마: 반도체·AI(11건), 증시 전반(9건), 금리·연준(6건)",
- "summary": "오늘 뉴스의 중심은 반도체·AI(11건), 증시 전반(9건), 금리·연준(6건)입니다. 코스피는 하루 1.1%, 5일 6.75%, S&P500은 하루 0.0%, 나스닥은 0.0% 움직였고 VIX는 18.7, 원달러는 20일간 -0.67% 변했습니다. 추세·변동성·환율 신호를 합치면 현재 레짐은 '위험회피'이며, 규칙 신호는 S&P500 하락추세(20/60일선 아래); NASDAQ 하락추세(20/60일선 아래); KOSPI 하락추세(20/60일선 아래)입니다. (AI 해석이 비활성화되어 규칙 기반으로 작성됨)",
+ "headline_title": "[위험회피] 뉴스 테마: 증시 전반(9건), 반도체·AI(8건), 금리·연준(4건)",
+ "summary": "오늘 뉴스의 중심은 증시 전반(9건), 반도체·AI(8건), 금리·연준(4건)입니다. 코스피는 하루 -0.91%, 5일 4.63%, S&P500은 하루 0.0%, 나스닥은 0.0% 움직였고 VIX는 18.7, 원달러는 20일간 -0.45% 변했습니다. 추세·변동성·환율 신호를 합치면 현재 레짐은 '위험회피'이며, 규칙 신호는 S&P500 하락추세(20/60일선 아래); NASDAQ 하락추세(20/60일선 아래); KOSPI 하락추세(20/60일선 아래)입니다. (AI 해석이 비활성화되어 규칙 기반으로 작성됨)",
  "issues": [
   {
-   "title": "반도체·AI",
-   "detail": "'엔비디아 쇼크'에도 코스피 2.5% 상승…삼전닉스 매수세 유입 / [마켓라이브] 젠슨 황 사임에도 반도체 반등…한전은 실적 충격에 급락",
+   "title": "증시 전반",
+   "detail": "대통령 앞에 선 증시 전문가들 \"오래 투자해도 돈 버는 시장 만들어야\" / “증여 앞둔 기업 주가수익률, 유사기업보다 20~30% 낮아”",
    "impact": "혼재"
   },
   {
-   "title": "증시 전반",
-   "detail": "코스피, '젠슨황 쇼크'에도 장 초반 2% 상승…코스닥도 1%대↑ / '주가 하락 기다렸다'…초고수들, NC·한미약품 등 사들여",
+   "title": "반도체·AI",
+   "detail": "이소영 “반도체 대기업-中企 영업이익 격차 10배…해결해야” / Darling Ingredients director Charles Adair acquires $25,595 ",
    "impact": "혼재"
   },
   {
    "title": "금리·연준",
-   "detail": "국고채 금리 일제히 상승…3년물 장중 연 3.756% / 유가 하락에 수입물가 1.8%↓…수출물량 증가율은 역대 최고",
+   "detail": "Consumer prices rose 0.4% in October, more than expected, co / A key report for where inflation stood in October comes out ",
    "impact": "혼재"
   },
   {
    "title": "실적·기업",
-   "detail": "실적 부진에 급락했는데…초고수들이 대거 사들인 종목",
+   "detail": "실적 부진에 급락했는데…초고수들이 대거 사들인 종목 / Earnings call transcript: Automotive Axles posts record Q2 2",
    "impact": "혼재"
   },
   {
    "title": "환율·외국인",
-   "detail": "\"기술주 대신 이곳 담아라\"…외국인 9조원 몰려간 시장",
+   "detail": "Dollar set for best week in two months on rate hike wagers,  / '복합 악재'에 비트코인 6만8천달러대로 급락…2조원 청산",
    "impact": "혼재"
   }
  ],
@@ -431,7 +423,7 @@
   "현금": "반등 시 재진입 여력 확보"
  },
  "watch": [
-  "가장 많이 언급된 테마 '반도체·AI'의 후속 뉴스",
+  "가장 많이 언급된 테마 '증시 전반'의 후속 뉴스",
   "VIX 25 상회/16 하회 여부",
   "코스피·S&P500의 20일선 회복 여부"
  ],

@@ -1,97 +1,99 @@
 # 🧠 시황두뇌
 
-**2026-11-18 15:58 KST** · 레짐 🔴 위험회피 · 작성: gemini-3.7-flash
+**2026-11-19 01:22 KST** · 레짐 🔴 위험회피 · 작성: rule-digest
 
-## 인플레·금리 압박 속 기술주 변동성 확대, 방어적 포지션 유지 속 반등 탐색
+> ⚠️ AI 해석 실패 (규칙 요약으로 대체): `Gemini 실패: RuntimeError gemini-4-hydrogen: HTTPError HTTP Error 503: Service Unavailable { "error": { "code": 503, "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try a | gemini-4-carbon: HTTPError HTTP Error 429:`
 
-미국 10월 생산자 및 소비자물가지수가 예상을 웃돌며 연준 위원의 추가 금리 인상 가능성 발언까지 이어져 고금리 장기화 우려가 재점화되었습니다. AI 밸류체인과 소프트웨어 전반에 대한 먹통 사태 및 공급망 우려가 제기되는 한편, 엔비디아의 실적 발표와 CEO 전환 이슈를 둘러싼 시장의 심리가 엇갈리며 변동성 지수(VIX)는 25선을 웃도는 공포 국면에 머물러 있습니다. 국내 시장은 삼성전자와 SK하이닉스의 저가 매수세 유입으로 코스피 5,000선을 하루 만에 탈환했으나, 반도체를 제외한 전반적 상장사 3분기 실적 부진이 확인되며 추세적 반등에는 제약이 따르고 있습니다. 이에 따라 미국과 국내 주식 비중을 제한적으로 유지하며 고금리 매력이 부각된 초단기 및 단기 채권, 안전자산 중심의 방어적 배분을 유지합니다. 주식 시장의 20/60일선 하회 등 기술적 하락 추세가 지속되는 만큼, 현금성 자산을 충분히 확보해 추가 변동성에 대비하는 전략이 유효합니다.
+## [위험회피] 뉴스 테마: 반도체·AI(10건), 증시 전반(9건), 금리·연준(5건)
+
+오늘 뉴스의 중심은 반도체·AI(10건), 증시 전반(9건), 금리·연준(5건)입니다. 코스피는 하루 0.0%, 5일 -7.57%, S&P500은 하루 -0.58%, 나스닥은 -0.17% 움직였고 VIX는 None, 원달러는 20일간 0.65% 변했습니다. 추세·변동성·환율 신호를 합치면 현재 레짐은 '위험회피'이며, 규칙 신호는 S&P500 하락추세(20/60일선 아래); NASDAQ 하락추세(20/60일선 아래); KOSPI 하락추세(20/60일선 아래)입니다. (AI 해석이 비활성화되어 규칙 기반으로 작성됨)
 
 ## 핵심 이슈
 
-- 🔴 **미국 물가 지표 반등 및 추가 금리 인상 우려** — 10월 CPI와 PPI가 모두 시장 예상을 웃돌고 연준 내에서 추가 4회 금리 인상 가능성까지 거론되며 미국 10년물 국채금리가 5.1%로 고공행진 중입니다.
-- 🟡 **엔비디아 및 AI 밸류체인의 심리적 혼조세** — 실적 호조와 수주 기대감이 유지되는 반면, 공급망 이슈와 CEO 전환 우려, 소프트웨어 먹통 사태 등으로 기술주 전반의 변동성이 확대되었습니다.
-- 🟡 **국내 반도체 대형주 반등과 3분기 실적 차별화** — 삼성전자·SK하이닉스 반등으로 코스피 5,000선을 회복했으나, 두 종목을 제외한 코스피 3분기 영업이익이 역성장하며 실적 양극화가 심화되고 있습니다.
+- 🟡 **반도체·AI** — 씨티, 내년 성장률 전망치 4.1%로 상향…"반도체 호황 지속" / 반도체 끝물이라는데 1만피 간다?…개미들 혼란 빠뜨린 전망 [분석+]
+- 🟡 **증시 전반** — 하나에어로다이내믹스, 코스닥 신규 상장…오는 20일 거래 개시 / 코리아써키트, 기판 수주 잭팟…한달 새 주가 43% '뜀박질'
+- 🟡 **금리·연준** — Record diesel prices drive UK inflation to 1-year high of 3. / St. Louis Fed's Musalem says four more rate hikes may be nee
+- 🟡 **환율·외국인** — [표] 외국환율고시표 / 목표가 280달러 불렀다…월가가 다시 쓸어담는 '이곳' [월가 업&다운]
+- 🟡 **유가·원자재·금** — 1년 만에 최저 찍은 국제 금값 [한경 프리미엄9 TODAY]
 
 ## 포트폴리오와 그 이유
 
 | 자산 | 비중 | 왜 이 비중인가 |
 |---|---:|---|
-| KODEX 200 | 10% | 5,000선 회복 및 반도체 대형주 중심의 기술적 반등이 나타났으나, 20/60일선 하회 추세와 3분기 이익 둔화를 고려해 기본 비중인 10%를 유지합니다. |
-| KODEX 코스닥150 | 0% | 중소형주의 3분기 실적 부담과 고금리 장기화 환경 속에서 20일 기준 -16%가 넘는 하락세가 이어져 비중 0%를 유지합니다. |
-| S&P 500 | 15% | 예상치를 상회한 물가 지표와 금리 부담이 상단을 제약하고 있어 보수적인 15% 비중을 유지합니다. |
-| NASDAQ | 5% | AI 인프라 기대에도 불구하고 빅테크 소프트웨어 장애 이슈와 VIX 공포 구간 진입으로 인해 비중을 5%로 최소화합니다. |
-| 채권 | 35% | 미국 10년물 금리가 5.1%에 달하고 초단기 국채 수요가 몰리는 뉴스 흐름을 반영해 기본 비중에서 5%p 확대한 35%로 설정합니다. |
-| 금 | 10% | 최근 20일간 약세를 보이고 초단기 고금리 채권으로의 자금 이동이 나타나고 있어 기본 비중에서 5%p 축소한 10%로 조정합니다. |
-| 현금 | 25% | VIX 25 이상의 높은 변동성과 주요 지수의 추세적 하락 국면을 방어하기 위해 25%의 높은 현금 비중을 유지합니다. |
+| KODEX 200 | 10% | 국내 지수가 추세 아래에 있어 비중 축소 |
+| KODEX 코스닥150 | 0% | 변동성 큰 중소형주는 위험회피 구간에서 제외 |
+| S&P 500 | 15% | 미국 대형주도 추세 이탈, 핵심 비중만 유지 |
+| NASDAQ | 5% | 고밸류 성장주는 금리·변동성에 취약해 최소화 |
+| 채권 | 30% | 위험회피 국면의 방어 핵심 자산 |
+| 금 | 15% | 달러·지정학 불안 헤지 |
+| 현금 | 25% | 반등 시 재진입 여력 확보 |
 
 ## 앞으로 지켜볼 것
 
-- 연준 위원들의 매파적 발언 지속 여부 및 단기 국채 금리 추이
-- 엔비디아 CEO 승계 및 AI 밸류체인 실적 가이던스 안정화
-- 코스피 5,000선 안착 여부 및 반도체 외 업종의 이익 턴어라운드 신호
+- 가장 많이 언급된 테마 '반도체·AI'의 후속 뉴스
+- VIX 25 상회/16 하회 여부
+- 코스피·S&P500의 20일선 회복 여부
 
 ## 주요 지표
 
 | 지표 | 현재 | 1일 | 5일 | 20일 |
 |---|---:|---:|---:|---:|
-| KOSPI | 5067.44 | +1.99% | -5.73% | -11.65% |
-| KOSDAQ | 662.81 | +1.96% | -6.0% | -16.39% |
-| USD/KRW | 1332.47 | -0.24% | -0.7% | +0.64% |
-| S&P 500 | 7340.53 | 0.0% | -3.66% | -5.37% |
-| NASDAQ | 24328.38 | 0.0% | -4.47% | -8.89% |
-| VIX | 25.46 | 0.0% | +45.57% | +52.64% |
-| US 10Y | 5.1 | 0.0% | +2.1% | -0.84% |
-| WTI 유가 | 84.21 | -2.09% | -2.68% | -13.32% |
-| 금 | 352.48 | 0.0% | -3.48% | -6.99% |
-| 미국 장기채 | 79.55 | 0.0% | -1.69% | -0.44% |
+| KOSPI | 4968.48 | 0.0% | -7.57% | -13.38% |
+| KOSDAQ | 650.06 | 0.0% | -7.81% | -18.0% |
+| USD/KRW | 1332.52 | -0.24% | -0.7% | +0.65% |
+| S&P 500 | 7298.07 | -0.58% | -4.22% | -5.92% |
+| NASDAQ | 24286.33 | -0.17% | -4.63% | -9.05% |
+| US 10Y | 5.07 | -0.73% | +1.36% | -1.55% |
+| WTI 유가 | 83.0 | -3.5% | -4.08% | -14.57% |
+| 금 | 342.83 | -2.74% | -6.12% | -9.53% |
+| 미국 장기채 | 80.08 | +0.67% | -1.03% | +0.23% |
 | KODEX 200 | 79400.0 | +2.08% | -6.08% | -11.38% |
 | KODEX 코스닥150 | 10825.0 | +2.51% | -6.64% | -18.73% |
 | KODEX 반도체 | 89755.0 | +2.46% | -10.34% | -21.48% |
 | KODEX 2차전지 | 12000.0 | +0.33% | -8.05% | -20.32% |
-| 美 Tech | 163.26 | 0.0% | -6.37% | -13.41% |
-| 美 금융 | 57.07 | 0.0% | -2.66% | +1.84% |
-| 美 에너지 | 63.36 | 0.0% | -0.02% | -7.04% |
+| 美 Tech | 162.39 | -0.53% | -6.87% | -13.87% |
+| 美 금융 | 56.47 | -1.04% | -3.68% | +0.78% |
+| 美 에너지 | 61.71 | -2.61% | -2.63% | -9.47% |
 
 ## 규칙 신호
 
 - S&P500 하락추세(20/60일선 아래)
 - NASDAQ 하락추세(20/60일선 아래)
 - KOSPI 하락추세(20/60일선 아래)
-- VIX 25 공포 구간
 
 ## 참고한 뉴스 (45건)
 
-- [삼전닉스 급락했지만…목표주가는 여전히 2배이상 수준(종합)](https://www.yna.co.kr/view/AKR20261118078051008) · 연합뉴스 경제
-- [코스피, 2% 오른 5,067 마감…하루만에 '5천피' 탈환](https://www.yna.co.kr/view/AKR20261118135700008) · 연합뉴스 경제
-- [[외환] 원/달러 환율 5.2원 내린 1,333.0원(15:30 기준가)](https://www.yna.co.kr/view/AKR20261118134300002) · 연합뉴스 경제
-- [[속보] 코스피, 2% 오른 5,067 마감…하루만에 '5천피' 탈환](https://www.yna.co.kr/view/AKR20261118134700008) · 연합뉴스 경제
-- [[오후 시황]코스피 4943 찍고 5000선 회복…삼성전기 6.6%·레인보우로보틱스 19.8%↑](https://www.hankyung.com/article/202611184885i) · 한국경제 증권
-- [삼전·닉스 제외하니…3분기 코스피 영업이익 '뒷걸음질'](https://www.hankyung.com/article/2026111847626) · 한국경제 증권
-- [상반기엔 잘 벌었는데…3분기 VC 실적은 '제각각'](https://www.hankyung.com/article/202611184711i) · 한국경제 증권
-- [美 초단기 국채 ETF 담은 초고수들…엔비디아는 팔자](https://www.hankyung.com/article/202611184575i) · 한국경제 증권
-- [실적 대박에도 주가 폭락…개미들 울린 '숨은 악재' 있었다 [분석+]](https://www.hankyung.com/article/2026111729896) · 한국경제 증권
-- [“젠슨 황 때문에 밤잠 설칩니다”…내 반도체 ETF, 안전할까?](https://www.mk.co.kr/news/stock/12212527) · 매일경제 증권
-- [초고수, 삼전닉스 팔고 반도체 소부장 담았다[주식 초고수는 지금]](https://www.mk.co.kr/news/stock/12212502) · 매일경제 증권
-- [2026년 3분기 코스닥 상장사 결산실적 2/2](https://www.mk.co.kr/news/stock/12212479) · 매일경제 증권
-- [2026년 3분기 코스닥 상장사 결산실적 1/2](https://www.mk.co.kr/news/stock/12212478) · 매일경제 증권
-- [2026년 3분기 코스피 상장사 결산실적](https://www.mk.co.kr/news/stock/12212475) · 매일경제 증권
-- [역대 최대 실적 찍었는데 주가는 바닥…“엔터·레저株 저평가 매력 부각”](https://www.mk.co.kr/news/stock/12212373) · 매일경제 증권
-- [반도체 호황에 충북 광공업생산 30%↑…전국 소매판매는 뒷걸음](https://www.mk.co.kr/news/economy/12212415) · 매일경제 경제
-- [Medical costs are crushing insurers—and lifting LivaNova stock](https://www.investing.com/news/stock-market-news/medical-costs-are-crushing-insurersand-lifting-livanova-stock-5032950) · Investing.com
-- [Down 36% in a month at 48x P/E: Is Marvell a dip or a trap?](https://www.investing.com/news/stock-market-news/down-36-in-a-month-at-48x-pe-is-marvell-a-dip-or-a-trap-5032827) · Investing.com
-- [Soquimich B ADR earnings missed by $0.12, revenue fell short of estimates](https://www.investing.com/news/earnings/soquimich-b-adr-earnings-missed-by-012-revenue-fell-short-of-estimates-5034890) · Investing.com
-- [Wells Fargo cuts Nvidia stock price target on supply chain focus](https://www.investing.com/news/analyst-ratings/wells-fargo-cuts-nvidia-stock-price-target-on-supply-chain-focus-93CH-5034889) · Investing.com
+- [씨티, 내년 성장률 전망치 4.1%로 상향…"반도체 호황 지속"](https://www.yna.co.kr/view/AKR20261118175200002) · 연합뉴스 경제
+- [하나에어로다이내믹스, 코스닥 신규 상장…오는 20일 거래 개시](https://www.yna.co.kr/view/AKR20261118173400008) · 연합뉴스 경제
+- [반도체 끝물이라는데 1만피 간다?…개미들 혼란 빠뜨린 전망 [분석+]](https://www.hankyung.com/article/2026111852966) · 한국경제 증권
+- [반도체가 다했다…코스피 상장사 영업익 10% 증가](https://www.hankyung.com/article/2026111855111) · 한국경제 증권
+- [코리아써키트, 기판 수주 잭팟…한달 새 주가 43% '뜀박질'](https://www.hankyung.com/article/2026111855091) · 한국경제 증권
+- [반도체·정유, 4분기도 맑음 … 車·배터리는 먹구름 몰려와](https://www.mk.co.kr/news/stock/12212799) · 매일경제 증권
+- [코스피200 선수 교체 … OCI 빼고 대덕전자 넣고](https://www.mk.co.kr/news/stock/12212796) · 매일경제 증권
+- [[표] 외국환율고시표](https://www.mk.co.kr/news/economy/12212772) · 매일경제 경제
+- ["반도체 호조 지속땐 내년 4%대 성장도 가능"](https://www.mk.co.kr/news/economy/12212768) · 매일경제 경제
+- [Barrick Mining Corp stock hits 52-week low at 34.01 USD](https://www.investing.com/news/company-news/barrick-mining-corp-stock-hits-52week-low-at-3401-usd-93CH-5036624) · Investing.com
+- [Record diesel prices drive UK inflation to 1-year high of 3.6%](https://www.cnbc.com/2026/11/18/uk-inflation-cpi-fuel-prices.html) · CNBC Markets
 - [St. Louis Fed's Musalem says four more rate hikes may be needed in coming months](https://www.cnbc.com/2026/11/17/alberto-musalem-fed-interest-rates.html) · CNBC Markets
 - [Analysis: The Fed's chairman sees an AI revolution coming. Now he has to figure out what it means](https://www.cnbc.com/2026/11/16/kevin-warsh-fed-ai-jobs-productivity-interest-rateshtml.html) · CNBC Markets
 - [AI risks are the biggest threat to the financial system, Fed survey finds](https://www.cnbc.com/2026/11/13/ai-risks-financial-system-federal-reserve.html) · CNBC Markets
 - [Wholesale prices rose 0.3% in October, putting annual rate at 6.5%, the highest in nearly four years](https://www.cnbc.com/2026/11/13/ppi-inflation-report-october-2026.html) · CNBC Markets
-- [Consumer prices rose 0.4% in October, more than expected, complicating Fed's inflation fight](https://www.cnbc.com/2026/11/10/cpi-inflation-report-october-2026.html) · CNBC Markets
-- [CoreWeave’s stock pops — even as Nvidia talks up a ‘disciplined’ approach to financing](https://www.marketwatch.com/story/coreweaves-stock-pops-even-as-nvidia-talks-up-a-disciplined-approach-to-financing-e7f00876?mod=mw_rss_topstories) · MarketWatch
-- [Nvidia’s stock rises as blowout numbers help ease CEO transition fears](https://www.marketwatch.com/story/nvidias-stock-rises-as-blowout-numbers-help-ease-ceo-transition-fears-2f20d38a?mod=mw_rss_topstories) · MarketWatch
+- [Worried investors are paying up for these stocks — some with up to 49% upside, analysts say](https://www.marketwatch.com/story/worried-investors-are-paying-up-for-these-stocks-some-with-up-to-49-upside-analysts-say-ea8f2c6f?mod=mw_rss_topstories) · MarketWatch
+- [Oracle’s stock is ridiculously cheap even under the most gloomy scenarios, analyst says](https://www.marketwatch.com/story/oracles-stock-is-ridiculously-cheap-even-under-the-most-gloomy-scenarios-analyst-says-630d30ec?mod=mw_rss_topstories) · MarketWatch
+- [Nvidia’s booming demand is ‘hard to ignore,’ but these four questions loom over the stock](https://www.marketwatch.com/story/what-wall-street-analysts-are-now-saying-after-nvidias-beat-and-raise-quarter-9311c85d?mod=mw_rss_topstories) · MarketWatch
+- [Fed’s Waller says interest-rate hikes may be needed to ‘shock’ inflation out of the system](https://www.marketwatch.com/story/how-high-must-interest-rates-go-to-cool-inflation-possibly-100-basis-points-or-more-feds-waller-says-e7b41cf6?mod=mw_rss_topstories) · MarketWatch
+- [Only two ‘Magnificent Seven’ stocks have managed to beat the S&P 500 since the start of 2025](https://www.marketwatch.com/story/only-two-magnificent-seven-stocks-have-managed-to-beat-the-s-p-500-since-the-start-of-2025-a3daa0f8?mod=mw_rss_topstories) · MarketWatch
 - [Costco is benefiting from ‘apocalyptic concerns’ as customers stock up on goods, analysts say](https://www.marketwatch.com/story/costco-is-benefiting-from-apocalyptic-concerns-as-customers-stock-up-on-goods-analysts-say-24f611ab?mod=mw_rss_topstories) · MarketWatch
-- [‘It’s downright dirty’: My brother took over our ailing mother’s life and finances. What can I do?](https://www.marketwatch.com/story/it-is-heartbreaking-exhausting-and-downright-dirty-my-brother-took-over-our-ailing-mothers-life-and-finances-what-can-i-do-b4d48817?mod=mw_rss_topstories) · MarketWatch
-- [‘Nvidia’s turmoil has me spooked’: Has the time come to sell my stocks?](https://www.marketwatch.com/story/nvidia-spooked-me-should-i-sell-my-stocks-or-ride-out-the-market-turmoil-560583c6?mod=mw_rss_topstories) · MarketWatch
+- ['세계 2위' 中콘텐츠 시장 열린다…최혜국대우에 공동제작 확대(종합2보)](https://www.yna.co.kr/view/AKR20261118156252005) · 연합뉴스 경제
+- [황종우 해수장관 "연락 두절 '해광호' 수색·구조에 총력"](https://www.yna.co.kr/view/AKR20261118178500030) · 연합뉴스 경제
+- [李대통령, 中 'K콘텐츠 최혜국대우'에 "새로운 한중관계 토대"](https://www.yna.co.kr/view/AKR20261118177100001) · 연합뉴스 경제
+- [경제계 "한중 FTA 서비스·투자협상 타결 환영…새로운 기회"(종합2보)](https://www.yna.co.kr/view/AKR20261118156552003) · 연합뉴스 경제
+- [K-콘텐츠 중국 진출 탄력받는다…최혜국대우에 공동제작도 확대(종합)](https://www.yna.co.kr/view/AKR20261118156251005) · 연합뉴스 경제
+- ['곰표 밀맥주' 세븐브로이, 법원서 회생계획 인가](https://www.yna.co.kr/view/AKR20261118173900030) · 연합뉴스 경제
+- [소프트캠프 "넥스트페이즈 주식 20억원어치 취득…지분율 100%"](https://www.yna.co.kr/view/AKR20261118170200008) · 연합뉴스 경제
+- [삼성웰스토리 개발 카페 '잎샘가베', 내년 초 서울에 첫 매장](https://www.yna.co.kr/view/AKR20261118172800030) · 연합뉴스 경제
+- [[연합뉴스 이 시각 헤드라인] - 18:00](https://www.yna.co.kr/view/AKR20261118163900011) · 연합뉴스 경제
 
 ---
 _뉴스 소스 상태: 연합뉴스 경제 12, 한국경제 증권 12, 매일경제 증권 12, 매일경제 경제 12, Yahoo Finance 실패 HTTPError, Investing.com 10, CNBC Markets 12, MarketWatch 10_
-_평일 08~17시(KST) 매시 자동 갱신 · AI 호출 (AI 재시도, Gemini gemini-3.7-flash) · 투자 권유가 아닌 참고 정보입니다._
+_평일 08~17시(KST) 매시 자동 갱신 · AI AI 실패 → 규칙 다이제스트 · 투자 권유가 아닌 참고 정보입니다._

@@ -1,19 +1,20 @@
 # 🧠 시황두뇌
 
-**2026-11-19 15:58 KST** · 레짐 🔴 위험회피 · 작성: rule-digest
+**2026-11-20 01:29 KST** · 레짐 🔴 위험회피 · 작성: rule-digest
 
-> ⚠️ AI 해석 실패 (규칙 요약으로 대체): `Gemini 실패: RuntimeError gemini-4-neon: HTTPError HTTP Error 429: Too Many Requests { "error": { "code": 429, "message": "You exceeded your current quota, please check your plan and billing details. For more information on t | gemini-4-hydrogen: JSONDecodeError Expecting val`
+> ⚠️ AI 해석 실패 (규칙 요약으로 대체): `Gemini 실패: RuntimeError gemini-4-neon: HTTPError HTTP Error 429: Too Many Requests { "error": { "code": 429, "message": "You exceeded your current quota, please check your plan and billing details. For more information on t | gemini-4-hydrogen: TimeoutError The read operati`
 
-## [위험회피] 뉴스 테마: 반도체·AI(10건), 증시 전반(7건), 금리·연준(6건)
+## [위험회피] 뉴스 테마: 증시 전반(9건), 반도체·AI(7건), 금리·연준(5건)
 
-오늘 뉴스의 중심은 반도체·AI(10건), 증시 전반(7건), 금리·연준(6건)입니다. 코스피는 하루 0.81%, 5일 -4.39%, S&P500은 하루 0.0%, 나스닥은 0.0% 움직였고 VIX는 24.56, 원달러는 20일간 0.28% 변했습니다. 추세·변동성·환율 신호를 합치면 현재 레짐은 '위험회피'이며, 규칙 신호는 S&P500 하락추세(20/60일선 아래); NASDAQ 하락추세(20/60일선 아래); KOSPI 하락추세(20/60일선 아래)입니다. (AI 해석이 비활성화되어 규칙 기반으로 작성됨)
+오늘 뉴스의 중심은 증시 전반(9건), 반도체·AI(7건), 금리·연준(5건)입니다. 코스피는 하루 0.0%, 5일 -5.15%, S&P500은 하루 -0.17%, 나스닥은 0.4% 움직였고 VIX는 25.36, 원달러는 20일간 0.6% 변했습니다. 추세·변동성·환율 신호를 합치면 현재 레짐은 '위험회피'이며, 규칙 신호는 S&P500 하락추세(20/60일선 아래); NASDAQ 하락추세(20/60일선 아래); KOSPI 하락추세(20/60일선 아래); VIX 25 공포 구간입니다. (AI 해석이 비활성화되어 규칙 기반으로 작성됨)
 
 ## 핵심 이슈
 
-- 🟡 **반도체·AI** — 삼전 늘리고, 없던 하이닉스 담고…ETF마다 갈린 '반도체 셈법' / Asian stocks fail to get a lift from Anthropic’s IPO pricing
-- 🟡 **증시 전반** — [오후시황] 코스피 낙폭 만회하며 보합권...엔터·여행주 강세 지속 / 수능날이면 들썩인다는 교육주…올해는 입시주보다 학습지주가 더 올랐다
-- 🟡 **금리·연준** — 부동산 전략, 금리가 모든 것 결정…‘고급자산’ 저가매수기회 왔다 [GAII 2026 Live] / Dollar hits fresh 19-mth peak on hawkish Fed; Aussie slides 
-- 🟡 **환율·외국인** — 한국, 내년에도 ‘수출 1조달러 클럽’ 전망…“반도체 랠리 지속될것” / “해외 안가는데 환율 뭔 상관?”…생활비 16만원 절약효과 있다는데
+- 🟡 **증시 전반** — '특수 정밀화학 소재 제조사' 피지티, 코스닥 상장예심 통과 / 앤트로픽 드디어 나스닥 데뷔…외인 K증시 돌아올까 [분석+]
+- 🟡 **반도체·AI** — 앤트로픽 상장·텍사스 규제 완화…AI 반도체주, 시간외거래 동반 상승 [월가 업&다운] / 땀으로 엮은 가발, 집념으로 쌓은 반도체…K수출 마침내 1조弗
+- 🟡 **금리·연준** — 금감원 "고금리 퇴직연금상품, 대기업 몰아주기 안돼" / Record diesel prices drive UK inflation to 1-year high of 3.
+- 🟡 **환율·외국인** — [표] 외국환율고시표 / "87% 오를 수 있다"…월가, 앤트로픽 목표가 최고 155달러 [월가 업&다운]
+- 🟡 **실적·기업** — TEN Q3 2026 slides: record earnings, fleet renewal drive val / Earnings call transcript: Helmerich & Payne tops Q4 2026 est
 
 ## 포트폴리오와 그 이유
 
@@ -29,7 +30,7 @@
 
 ## 앞으로 지켜볼 것
 
-- 가장 많이 언급된 테마 '반도체·AI'의 후속 뉴스
+- 가장 많이 언급된 테마 '증시 전반'의 후속 뉴스
 - VIX 25 상회/16 하회 여부
 - 코스피·S&P500의 20일선 회복 여부
 
@@ -37,62 +38,63 @@
 
 | 지표 | 현재 | 1일 | 5일 | 20일 |
 |---|---:|---:|---:|---:|
-| KOSPI | 5108.4 | +0.81% | -4.39% | -7.69% |
-| KOSDAQ | 676.18 | +2.02% | -2.92% | -11.51% |
-| USD/KRW | 1329.27 | -0.28% | -0.52% | +0.28% |
-| S&P 500 | 7323.63 | 0.0% | -3.54% | -4.43% |
-| NASDAQ | 24429.88 | 0.0% | -3.69% | -6.07% |
-| VIX | 24.56 | 0.0% | +31.34% | +29.06% |
-| US 10Y | 5.07 | 0.0% | -0.73% | +2.28% |
-| WTI 유가 | 82.37 | -1.07% | -7.18% | -17.19% |
-| 금 | 341.19 | 0.0% | -3.86% | -7.54% |
-| 미국 장기채 | 80.22 | 0.0% | +0.63% | -1.45% |
-| KODEX 200 | 80200.0 | +1.01% | -4.8% | -7.18% |
-| KODEX 코스닥150 | 11065.0 | +2.22% | -3.11% | -13.05% |
-| KODEX 반도체 | 91660.0 | +2.12% | -7.74% | -15.37% |
-| KODEX 2차전지 | 11850.0 | -1.25% | -7.85% | -16.31% |
-| 美 Tech | 163.81 | 0.0% | -5.73% | -10.16% |
-| 美 금융 | 56.42 | 0.0% | -3.08% | -0.41% |
-| 美 에너지 | 61.29 | 0.0% | -4.73% | -9.29% |
+| KOSPI | 5067.44 | 0.0% | -5.15% | -8.43% |
+| KOSDAQ | 662.81 | 0.0% | -4.84% | -13.26% |
+| USD/KRW | 1333.48 | +0.04% | -0.21% | +0.6% |
+| S&P 500 | 7311.45 | -0.17% | -3.7% | -4.59% |
+| NASDAQ | 24527.46 | +0.4% | -3.31% | -5.7% |
+| VIX | 25.36 | +3.26% | +35.61% | +33.26% |
+| US 10Y | 5.07 | +0.12% | -0.61% | +2.4% |
+| WTI 유가 | 83.39 | +0.16% | -6.03% | -16.17% |
+| 금 | 337.0 | -1.23% | -5.04% | -8.67% |
+| 미국 장기채 | 80.07 | -0.18% | +0.45% | -1.62% |
+| KODEX 200 | 80630.0 | +1.55% | -4.29% | -6.68% |
+| KODEX 코스닥150 | 11320.0 | +4.57% | -0.88% | -11.04% |
+| KODEX 반도체 | 93500.0 | +4.17% | -5.89% | -13.67% |
+| KODEX 2차전지 | 11825.0 | -1.46% | -8.05% | -16.49% |
+| 美 Tech | 165.75 | +1.18% | -4.62% | -9.1% |
+| 美 금융 | 55.83 | -1.05% | -4.1% | -1.46% |
+| 美 에너지 | 61.24 | -0.07% | -4.8% | -9.36% |
 
 ## 규칙 신호
 
 - S&P500 하락추세(20/60일선 아래)
 - NASDAQ 하락추세(20/60일선 아래)
 - KOSPI 하락추세(20/60일선 아래)
+- VIX 25 공포 구간
 
 ## 참고한 뉴스 (45건)
 
-- [[오후시황] 코스피 낙폭 만회하며 보합권...엔터·여행주 강세 지속](https://www.hankyung.com/article/202611197380i) · 한국경제 증권
-- [삼전 늘리고, 없던 하이닉스 담고…ETF마다 갈린 '반도체 셈법'](https://www.hankyung.com/article/202611196862i) · 한국경제 증권
-- [부동산 전략, 금리가 모든 것 결정…‘고급자산’ 저가매수기회 왔다 [GAII 2026 Live]](https://www.mk.co.kr/news/stock/12213494) · 매일경제 증권
-- [수능날이면 들썩인다는 교육주…올해는 입시주보다 학습지주가 더 올랐다](https://www.mk.co.kr/news/stock/12213392) · 매일경제 증권
-- [한국, 내년에도 ‘수출 1조달러 클럽’ 전망…“반도체 랠리 지속될것”](https://www.mk.co.kr/news/economy/12213562) · 매일경제 경제
-- [“해외 안가는데 환율 뭔 상관?”…생활비 16만원 절약효과 있다는데](https://www.mk.co.kr/news/economy/12213429) · 매일경제 경제
-- [Asian stocks fail to get a lift from Anthropic’s IPO pricing](https://www.investing.com/news/economy-news/stocks-rise-after-anthropic-ipo-pricing-sets-stage-for-blockbuster-debut-5037540) · Investing.com
-- [Taiwan stocks plunge 4.6% as AI rout deepens; chip and PCB shares hit limit-down](https://www.investing.com/news/stock-market-news/taiwan-stocks-plunge-46-as-ai-rout-deepens-chip-and-pcb-shares-hit-limitdown-5037869) · Investing.com
-- [Dollar hits fresh 19-mth peak on hawkish Fed; Aussie slides after weak jobs data](https://www.investing.com/news/forex-news/dollar-hits-fresh-19mth-peak-on-hawkish-fed-aussie-slides-after-weak-jobs-data-5037703) · Investing.com
-- [Why is Lenovo stock tumbling today?](https://www.investing.com/news/stock-market-news/why-is-lenovo-stock-tumbling-today-93CH-5037866) · Investing.com
-- [Bernstein downgrades Michelin stock rating on pricing concerns](https://www.investing.com/news/analyst-ratings/bernstein-downgrades-michelin-stock-rating-on-pricing-concerns-93CH-5037862) · Investing.com
-- [Australia’s jobless rate hits 5-year high, markets ramp up rate-cut bets for 2027](https://www.investing.com/news/economy-news/australias-jobless-rate-hits-5year-high-markets-ramp-up-ratecut-bets-for-2027-5037860) · Investing.com
+- ['특수 정밀화학 소재 제조사' 피지티, 코스닥 상장예심 통과](https://www.yna.co.kr/view/AKR20261119166100008) · 연합뉴스 경제
+- [앤트로픽 상장·텍사스 규제 완화…AI 반도체주, 시간외거래 동반 상승 [월가 업&다운]](https://www.hankyung.com/article/202611198661i) · 한국경제 증권
+- [앤트로픽 드디어 나스닥 데뷔…외인 K증시 돌아올까 [분석+]](https://www.hankyung.com/article/2026111978236) · 한국경제 증권
+- [코스피200·코스닥150 리밸런싱…대한광통신에 685억 유입될 듯](https://www.hankyung.com/article/2026111981641) · 한국경제 증권
+- [주가 40% 폭락했는데 쓸어담았다…외인 매수 1위 '이 종목'](https://www.hankyung.com/article/2026111981651) · 한국경제 증권
+- [금감원 "고금리 퇴직연금상품, 대기업 몰아주기 안돼"](https://www.mk.co.kr/news/stock/12213803) · 매일경제 증권
+- [코스피, 앤트로픽 상장 앞두고 1.4% 상승 마감…5100선 회복](https://www.mk.co.kr/news/stock/12213722) · 매일경제 증권
+- [[표] 외국환율고시표](https://www.mk.co.kr/news/economy/12213827) · 매일경제 경제
+- [땀으로 엮은 가발, 집념으로 쌓은 반도체…K수출 마침내 1조弗](https://www.mk.co.kr/news/economy/12213798) · 매일경제 경제
+- [Parabolic Technologies to execute 1-for-100 reverse stock split](https://www.investing.com/news/company-news/parabolic-technologies-to-execute-1for100-reverse-stock-split-93CH-5039554) · Investing.com
+- [TEN Q3 2026 slides: record earnings, fleet renewal drive value](https://www.investing.com/news/company-news/ten-q3-2026-slides-record-earnings-fleet-renewal-drive-value-93CH-5039550) · Investing.com
+- [Earnings call transcript: Helmerich & Payne tops Q4 2026 estimates, shares fall](https://www.investing.com/news/transcripts/earnings-call-transcript-helmerich--payne-tops-q4-2026-estimates-shares-fall-93CH-5039548) · Investing.com
+- [Sunpower Inc earnings missed by $0.70, revenue fell short of estimates](https://www.investing.com/news/earnings/sunpower-inc-earnings-missed-by-070-revenue-fell-short-of-estimates-5039540) · Investing.com
 - [Record diesel prices drive UK inflation to 1-year high of 3.6%](https://www.cnbc.com/2026/11/18/uk-inflation-cpi-fuel-prices.html) · CNBC Markets
 - [St. Louis Fed's Musalem says four more rate hikes may be needed in coming months](https://www.cnbc.com/2026/11/17/alberto-musalem-fed-interest-rates.html) · CNBC Markets
 - [Analysis: The Fed's chairman sees an AI revolution coming. Now he has to figure out what it means](https://www.cnbc.com/2026/11/16/kevin-warsh-fed-ai-jobs-productivity-interest-rateshtml.html) · CNBC Markets
 - [AI risks are the biggest threat to the financial system, Fed survey finds](https://www.cnbc.com/2026/11/13/ai-risks-financial-system-federal-reserve.html) · CNBC Markets
 - [Wholesale prices rose 0.3% in October, putting annual rate at 6.5%, the highest in nearly four years](https://www.cnbc.com/2026/11/13/ppi-inflation-report-october-2026.html) · CNBC Markets
-- [‘It’s downright dirty’: My brother took over our ailing mother’s life and finances. What can I do?](https://www.marketwatch.com/story/it-is-heartbreaking-exhausting-and-downright-dirty-my-brother-took-over-our-ailing-mothers-life-and-finances-what-can-i-do-b4d48817?mod=mw_rss_topstories) · MarketWatch
-- [Palo Alto Networks’ stock gets a fresh AI-fueled boost from earnings](https://www.marketwatch.com/story/palo-alto-networks-stock-soars-as-earnings-show-ai-has-upped-the-stakes-for-cybersecurity-308e34b8?mod=mw_rss_topstories) · MarketWatch
-- [‘Nvidia’s turmoil has me spooked’: Should I sell my stocks and buy real estate — or ride out the storm?](https://www.marketwatch.com/story/nvidia-spooked-me-should-i-sell-my-stocks-or-ride-out-the-market-turmoil-560583c6?mod=mw_rss_topstories) · MarketWatch
-- [What the ‘death cross’ in small-cap stocks means for the rest of the market](https://www.marketwatch.com/story/what-the-death-cross-in-small-cap-stocks-means-for-the-rest-of-the-stock-market-edd8e86e?mod=mw_rss_topstories) · MarketWatch
-- [The stock market is being rocked by the biggest shake-up in a generation as tech falls behind](https://www.marketwatch.com/story/the-stock-market-is-being-rocked-by-the-biggest-shake-up-in-a-generation-as-tech-falls-behind-66c1f281?mod=mw_rss_topstories) · MarketWatch
-- [Nvidia’s booming demand is ‘hard to ignore,’ but these four questions loom over the stock](https://www.marketwatch.com/story/what-wall-street-analysts-are-now-saying-after-nvidias-beat-and-raise-quarter-9311c85d?mod=mw_rss_topstories) · MarketWatch
-- ['이천 신둔역세권 개발사업' 국토부 심의 통과…2천585세대 건립](https://www.yna.co.kr/view/AKR20261119127000061) · 연합뉴스 경제
-- [타임X AI, 44억원 유상증자…휴먼데이타에 제3자배정](https://www.yna.co.kr/view/AKR20261119129200008) · 연합뉴스 경제
-- [익산시, 장애인일자리 90명 모집…30일까지 접수](https://www.yna.co.kr/view/AKR20261119126200055) · 연합뉴스 경제
-- [경북도, 미국 메릴랜드주와 양자·모듈 원자로 산업 협력 확대](https://www.yna.co.kr/view/AKR20261119123900053) · 연합뉴스 경제
-- [[게시판] 코이카, '채용문화 우수기업 어워즈' 재정경제부 장관상](https://www.yna.co.kr/view/AKR20261119124900371) · 연합뉴스 경제
-- [평택시, 대형 건설사 6곳과 '비산먼지 저감 공동 대응' 협약](https://www.yna.co.kr/view/AKR20261119120700061) · 연합뉴스 경제
-- [대한석유협회 "최고가격제 손실 5조∼6조원…출구전략 찾아야"](https://www.yna.co.kr/view/AKR20261119122700003) · 연합뉴스 경제
+- [We’re in our 50s and terrified of a market crash. Should we put $400,000 of our $1 million retirement savings into an an](https://www.marketwatch.com/story/were-in-our-50s-and-terrified-of-a-market-crash-should-we-put-400-000-of-our-1-million-retirement-savings-into-an-annuity-1943f240?mod=mw_rss_topstories) · MarketWatch
+- [Tech outages are rattling Americans so much that they’re stockpiling cash and supplies](https://www.marketwatch.com/story/why-are-these-tech-outages-rattling-americans-so-much-that-theyre-stockpiling-cash-and-supplies-07516bdd?mod=mw_rss_topstories) · MarketWatch
+- [Can Anthropic’s IPO do for the stock market what Nvidia’s earnings couldn’t?](https://www.marketwatch.com/story/can-anthropics-ipo-do-for-the-stock-market-what-nvidias-earnings-couldnt-be67a434?mod=mw_rss_topstories) · MarketWatch
+- [Why Micron, Intel and other AI stocks are getting a lift on Thursday](https://www.marketwatch.com/story/why-micron-intel-and-other-ai-stocks-are-getting-a-lift-on-thursday-cf6f59f8?mod=mw_rss_topstories) · MarketWatch
+- [Sandisk’s stock split is almost here. This is what investors need to know.](https://www.marketwatch.com/story/sandisks-stock-split-is-almost-here-this-is-what-investors-need-to-know-e0a18461?mod=mw_rss_topstories) · MarketWatch
+- [[재산공개] 권민수 한국은행 부총재 16억8천만원](https://www.yna.co.kr/view/AKR20261119128900002) · 연합뉴스 경제
+- [서초구, 재초환 부과기한 국토부 해석에 유감…"제도 폐지해야"](https://www.yna.co.kr/view/AKR20261119168400004) · 연합뉴스 경제
+- [황종우 해수장관 "해광호 수색에 가용 자원 최대한 동원"](https://www.yna.co.kr/view/AKR20261119167700030) · 연합뉴스 경제
+- [풀무원식품, 美법인에 532억원 출자…나소야 운영자금 지원(종합)](https://www.yna.co.kr/view/AKR20261119161151008) · 연합뉴스 경제
+- [한양디지텍 "싱가포르 종속회사 주식 319억원에 추가취득"](https://www.yna.co.kr/view/AKR20261119163600008) · 연합뉴스 경제
+- [부산 천마산 전망대 정식 개관 연기…모노레일 공사 지연 탓(종합)](https://www.yna.co.kr/view/AKR20261119108251051) · 연합뉴스 경제
+- [광주역-송정역 철도노선 2㎞구간 지하화 추진](https://www.yna.co.kr/view/AKR20261119150300054) · 연합뉴스 경제
 
 ---
 _뉴스 소스 상태: 연합뉴스 경제 12, 한국경제 증권 12, 매일경제 증권 12, 매일경제 경제 12, Yahoo Finance 실패 HTTPError, Investing.com 10, CNBC Markets 12, MarketWatch 10_

@@ -1,20 +1,19 @@
 # 🧠 시황두뇌
 
-**2026-11-23 12:31 KST** · 레짐 🔴 위험회피 · 작성: rule-digest
+**2026-11-23 16:05 KST** · 레짐 🔴 위험회피 · 작성: rule-digest
 
 > ⚠️ AI 해석 실패 (규칙 요약으로 대체): `Gemini 실패: RuntimeError gemini-4-neon: HTTPError HTTP Error 429: Too Many Requests { "error": { "code": 429, "message": "You exceeded your current quota, please check your plan and billing details. For more information on t | gemini-4-hydrogen: JSONDecodeError Expecting val`
 
-## [위험회피] 뉴스 테마: 증시 전반(20건), 금리·연준(7건), 반도체·AI(6건)
+## [위험회피] 뉴스 테마: 증시 전반(15건), 반도체·AI(10건), 금리·연준(5건)
 
-오늘 뉴스의 중심은 증시 전반(20건), 금리·연준(7건), 반도체·AI(6건)입니다. 코스피는 하루 -5.08%, 5일 -6.96%, S&P500은 하루 0.0%, 나스닥은 0.0% 움직였고 VIX는 35.89, 원달러는 20일간 1.6% 변했습니다. 추세·변동성·환율 신호를 합치면 현재 레짐은 '위험회피'이며, 규칙 신호는 S&P500 하락추세(20/60일선 아래); NASDAQ 하락추세(20/60일선 아래); KOSPI 하락추세(20/60일선 아래); VIX 36 공포 구간입니다. (AI 해석이 비활성화되어 규칙 기반으로 작성됨)
+오늘 뉴스의 중심은 증시 전반(15건), 반도체·AI(10건), 금리·연준(5건)입니다. 코스피는 하루 -3.31%, 5일 -7.68%, S&P500은 하루 0.0%, 나스닥은 0.0% 움직였고 VIX는 35.89, 원달러는 20일간 1.68% 변했습니다. 추세·변동성·환율 신호를 합치면 현재 레짐은 '위험회피'이며, 규칙 신호는 S&P500 하락추세(20/60일선 아래); NASDAQ 하락추세(20/60일선 아래); KOSPI 하락추세(20/60일선 아래); VIX 36 공포 구간입니다. (AI 해석이 비활성화되어 규칙 기반으로 작성됨)
 
 ## 핵심 이슈
 
-- 🟡 **증시 전반** — 코스피 5%대 급락, 4,600선도 내줘…매도 사이드카 / [속보] 코스피 5%대 급락…매도 사이드카 발동
-- 🟡 **금리·연준** — 국고채 금리, 위험회피 속 하락세…3년물 장중 연 3.621% / ﻿P가 끌어올린 한국 경제, 그리고 최종 기준금리
-- 🟡 **반도체·AI** — 이형일 "반도체 호황 내년에도 지속…올해 4% 성장 가능 범위" / +63%, +62%, +43%: The boring stocks beating the AI crash
-- 🟡 **환율·외국인** — [표] 외국환율고시표 / 부산 관광업 매출 4년 새 37.3% 증가…외국인 관광객 대만 최다
-- 🟡 **유가·원자재·금** — 이형일 "석유 최고가격제 내년에도 필요…유가 개선 땐 해제"
+- 🟡 **증시 전반** — "코스피 많이 빠졌고, 너무 싸다…미국보다 먼저 반등할 것" [긴급 시장 진단] / [오후 시황] 기관 매수에 코스피 4700선 회복…화장품주 강세
+- 🟡 **반도체·AI** — 블룸버그 "반도체 값 10% 떨어지면 韓 전체 수출액 4.3% 감소" / 전남광주 반도체산단 등 개발이익 환원 조례안 상임위 통과
+- 🟡 **금리·연준** — Japan core inflation soars to highest this year as energy su / Record diesel prices drive UK inflation to 1-year high of 3.
+- 🟡 **환율·외국인** — 환율, 글로벌 위험회피 심리에 상승…2주만에 장중 1,350원대 / 내년 수출 14% 늘어 1조3000억달러…반도체 빼면 1.5% 증가에 그쳐
 
 ## 포트폴리오와 그 이유
 
@@ -38,23 +37,22 @@
 
 | 지표 | 현재 | 1일 | 5일 | 20일 |
 |---|---:|---:|---:|---:|
-| KOSPI | 4622.57 | -5.08% | -6.96% | -18.02% |
-| KOSDAQ | 625.85 | -3.07% | -3.72% | -15.86% |
-| USD/KRW | 1345.98 | +0.84% | +0.77% | +1.6% |
-| S&P 500 | 6910.39 | 0.0% | -5.86% | -10.52% |
-| NASDAQ | 22617.73 | 0.0% | -7.03% | -14.58% |
-| VIX | 35.89 | 0.0% | +40.97% | +104.85% |
-| US 10Y | 4.91 | 0.0% | -3.74% | -1.62% |
-| WTI 유가 | 83.15 | 0.0% | -3.33% | -16.77% |
-| 금 | 322.87 | 0.0% | -8.4% | -13.27% |
-| 미국 장기채 | 81.45 | 0.0% | +2.39% | +0.2% |
-| KODEX 200 | 72380.0 | -5.03% | -6.94% | -18.47% |
-| KODEX 코스닥150 | 10255.0 | -2.43% | -2.89% | -16.35% |
-| KODEX 반도체 | 81380.0 | -3.81% | -7.1% | -24.78% |
-| KODEX 2차전지 | 10940.0 | -4.16% | -8.53% | -20.15% |
-| 美 Tech | 149.01 | 0.0% | -8.73% | -21.36% |
-| 美 금융 | 54.57 | 0.0% | -4.38% | -2.34% |
-| 美 에너지 | 60.51 | 0.0% | -4.5% | -11.29% |
+| KOSPI | 4708.54 | -3.31% | -7.68% | -13.91% |
+| USD/KRW | 1343.9 | +0.68% | +0.8% | +1.68% |
+| S&P 500 | 6910.39 | 0.0% | -6.83% | -9.98% |
+| NASDAQ | 22617.73 | 0.0% | -7.72% | -13.57% |
+| VIX | 35.89 | 0.0% | +56.66% | +95.16% |
+| US 10Y | 4.91 | 0.0% | -4.08% | -1.48% |
+| WTI 유가 | 83.28 | -0.83% | -2.85% | -18.16% |
+| 금 | 322.87 | 0.0% | -8.52% | -12.22% |
+| 미국 장기채 | 81.45 | 0.0% | +2.61% | +0.14% |
+| KODEX 200 | 73770.0 | -3.2% | -7.67% | -14.09% |
+| KODEX 코스닥150 | 10365.0 | -1.38% | -4.03% | -13.66% |
+| KODEX 반도체 | 83355.0 | -1.47% | -7.07% | -19.14% |
+| KODEX 2차전지 | 11040.0 | -3.29% | -11.25% | -16.65% |
+| 美 Tech | 149.01 | 0.0% | -9.56% | -20.02% |
+| 美 금융 | 54.57 | 0.0% | -6.2% | -2.59% |
+| 美 에너지 | 60.51 | 0.0% | -4.99% | -13.11% |
 
 ## 규칙 신호
 
@@ -65,36 +63,36 @@
 
 ## 참고한 뉴스 (45건)
 
-- [국고채 금리, 위험회피 속 하락세…3년물 장중 연 3.621%](https://www.yna.co.kr/view/AKR20261123085000008) · 연합뉴스 경제
-- [코스피 5%대 급락, 4,600선도 내줘…매도 사이드카](https://www.yna.co.kr/view/AKR20261123085400008) · 연합뉴스 경제
-- [이형일 "석유 최고가격제 내년에도 필요…유가 개선 땐 해제"](https://www.yna.co.kr/view/AKR20261123082300002) · 연합뉴스 경제
-- [이형일 "반도체 호황 내년에도 지속…올해 4% 성장 가능 범위"](https://www.yna.co.kr/view/AKR20261123082900002) · 연합뉴스 경제
-- [[속보] 코스피 5%대 급락…매도 사이드카 발동](https://www.yna.co.kr/view/AKR20261123083700008) · 연합뉴스 경제
+- [환율, 글로벌 위험회피 심리에 상승…2주만에 장중 1,350원대](https://www.yna.co.kr/view/AKR20261123133900002) · 연합뉴스 경제
+- [블룸버그 "반도체 값 10% 떨어지면 韓 전체 수출액 4.3% 감소"](https://www.yna.co.kr/view/AKR20261123130900008) · 연합뉴스 경제
+- [전남광주 반도체산단 등 개발이익 환원 조례안 상임위 통과](https://www.yna.co.kr/view/AKR20261123131200054) · 연합뉴스 경제
+- ["코스피 많이 빠졌고, 너무 싸다…미국보다 먼저 반등할 것" [긴급 시장 진단]](https://www.hankyung.com/article/202611234338i) · 한국경제 증권
+- [[오후 시황] 기관 매수에 코스피 4700선 회복…화장품주 강세](https://www.hankyung.com/article/202611234249i) · 한국경제 증권
+- ["증시 저평가 맞지만 바닥 단정 일러…골치 아픈 횡보장 온다" [긴급 시장 진단]](https://www.hankyung.com/article/202611234270i) · 한국경제 증권
+- [코스피 하락장에도 질주하는 '이 종목'… 한중 관계 훈풍 덕?](https://www.hankyung.com/article/202611234130i) · 한국경제 증권
+- [반토막난 코스피, 언제 반등할까…과거 사례 분석해보니](https://www.hankyung.com/article/202611233918i) · 한국경제 증권
+- [서학 초고수들, 32% 폭락한 반도체 레버리지 ETF 상품 긁어모은 이유는](https://www.hankyung.com/article/202611233991i) · 한국경제 증권
+- [코스피 급락에 국고채 가격 상승세…3년물 연 3.621%](https://www.hankyung.com/article/2026112340367) · 한국경제 증권
 - [코스피 2거래일 연속 매도 사이드카…장중 4600선도 무너졌다](https://www.hankyung.com/article/202611233972i) · 한국경제 증권
-- [[오전 시황] 10개월 만에 4600선으로 주저앉은 코스피...매도 사이드카 발동](https://www.hankyung.com/article/202611233705i) · 한국경제 증권
-- [백약무효 코스피…6년 전 '10조 증안펀드' 효과 논란](https://www.hankyung.com/article/202611233792i) · 한국경제 증권
-- [﻿P가 끌어올린 한국 경제, 그리고 최종 기준금리](https://www.hankyung.com/article/202611200161i) · 한국경제 증권
-- [코스피, 장중 3%대 하락 흐름…코스닥은 연중 최저치 추락](https://www.hankyung.com/article/2026112337206) · 한국경제 증권
-- [증시 무너져도 끄떡없네…미국서 대박 나더니 '급등'](https://www.hankyung.com/article/202611233655i) · 한국경제 증권
-- [골드만삭스 "美 증시 패닉지수 극단 수준…저가 매수 기회"](https://www.hankyung.com/article/2026112334847) · 한국경제 증권
-- [월가 대표 낙관론자마저 눈높이 낮췄다…“S&P500 더 떨어질것”](https://www.mk.co.kr/news/stock/12215912) · 매일경제 증권
-- [국민연금 때문에 꼬인 증시 수급 ... “증안펀드 10조론 역부족”](https://www.mk.co.kr/news/stock/12215898) · 매일경제 증권
-- [靑재정보좌관 “증시 충격 일시적일 수 있어…비관적으로 안 봐”](https://www.mk.co.kr/news/stock/12215890) · 매일경제 증권
-- [SM 14% ‘껑충’ JYP 8% ‘쑥’ … 공연허가 전 주가가 먼저 신난 이유는](https://www.mk.co.kr/news/stock/12215562) · 매일경제 증권
-- [[표] 외국환율고시표](https://www.mk.co.kr/news/economy/12215700) · 매일경제 경제
-- [Why is ALS stock plunging today?](https://www.investing.com/news/stock-market-news/why-is-als-stock-plunging-today-93CH-5044260) · Investing.com
-- [Why is Peter Warren Automotive stock sliding today?](https://www.investing.com/news/stock-market-news/why-is-peter-warren-automotive-stock-sliding-today-93CH-5044259) · Investing.com
-- [Why is Downer EDI stock rallying today?](https://www.investing.com/news/stock-market-news/why-is-downer-edi-stock-rallying-today-93CH-5044258) · Investing.com
-- [+63%, +62%, +43%: The boring stocks beating the AI crash](https://www.investing.com/news/stock-market-news/63-62-43-the-boring-stocks-beating-the-ai-crash-5044257) · Investing.com
-- [Asia stocks slide as AI rout deepens despite rebound in U.S. futures](https://www.investing.com/news/stock-market-news/asia-stocks-slide-as-ai-rout-deepens-despite-rebound-in-us-futures-5044254) · Investing.com
-- [Sonos director Joseph Kennedy buys $1.87M in SONO stock](https://www.investing.com/news/insider-trading-news/sonos-director-joseph-kennedy-buys-187m-in-sono-stock-93CH-5044253) · Investing.com
-- [Target Hospitality CCO Troy Schrenk buys $250,005 in stock](https://www.investing.com/news/insider-trading-news/target-hospitality-cco-troy-schrenk-buys-250005-in-stock-93CH-5044252) · Investing.com
+- [“어디까지 떨어지나” 코스피 장중 5.8% 급락 후 4700선 턱걸이…이틀 연속 매도 사이드카](https://www.mk.co.kr/news/stock/12216188) · 매일경제 증권
+- [“연말 증시, 당신의 예상은?”…한양증권 ‘하이 시그널’ 이벤트](https://www.mk.co.kr/news/stock/12216033) · 매일경제 증권
+- [[속보] 코스피 5%대 급락…매도 사이드카 발동](https://www.mk.co.kr/news/stock/12215988) · 매일경제 증권
+- [내년 수출 14% 늘어 1조3000억달러…반도체 빼면 1.5% 증가에 그쳐](https://www.mk.co.kr/news/economy/12216162) · 매일경제 경제
+- [Jefferies initiates SpaceX stock coverage with buy rating on launch dominance](https://www.investing.com/news/analyst-ratings/jefferies-initiates-spacex-stock-coverage-with-buy-rating-on-launch-dominance-93CH-5044443) · Investing.com
+- [+153%, +54%, +47%: Asia’s AI rout deepens. 3 AI-picked stocks still well ahead](https://www.investing.com/news/stock-market-news/153-54-47-asias-ai-rout-deepens-3-aipicked-stocks-still-well-ahead-5044440) · Investing.com
 - [Japan core inflation soars to highest this year as energy subsidy expiry pushes up consumer prices](https://www.cnbc.com/2026/11/20/japan-inflation-cpi-october.html) · CNBC Markets
 - [Record diesel prices drive UK inflation to 1-year high of 3.6%](https://www.cnbc.com/2026/11/18/uk-inflation-cpi-fuel-prices.html) · CNBC Markets
 - [St. Louis Fed's Musalem says four more rate hikes may be needed in coming months](https://www.cnbc.com/2026/11/17/alberto-musalem-fed-interest-rates.html) · CNBC Markets
 - [Peterson: The Fed's chairman sees an AI revolution coming. Now he has to figure out what it means](https://www.cnbc.com/2026/11/16/kevin-warsh-fed-ai-jobs-productivity-interest-rateshtml.html) · CNBC Markets
 - [AI risks are the biggest threat to the financial system, Fed survey finds](https://www.cnbc.com/2026/11/13/ai-risks-financial-system-federal-reserve.html) · CNBC Markets
 - [Wholesale prices rose 0.3% in October, putting annual rate at 6.5%, the highest in nearly four years](https://www.cnbc.com/2026/11/13/ppi-inflation-report-october-2026.html) · CNBC Markets
+- [The number of 401(k) millionaires drops amid stock-market swings](https://www.marketwatch.com/story/the-number-of-401-k-millionaires-drops-amid-stock-market-swings-23939b94?mod=mw_rss_topstories) · MarketWatch
+- [Corporate America hunts for ‘generational’ growth in AI, trading cards and the L.A. airport](https://www.marketwatch.com/story/corporate-america-hunts-for-generational-growth-in-ai-trading-cards-and-the-l-a-airport-3072eb1a?mod=mw_rss_topstories) · MarketWatch
+- [Social Security should be shut down, this Republican senator says](https://www.marketwatch.com/story/social-security-should-be-shut-down-this-republican-senator-says-8f7fef81?mod=mw_rss_topstories) · MarketWatch
+- [‘Nvidia’s turmoil has me spooked’: Is it time to sell my stocks and buy real estate?](https://www.marketwatch.com/story/nvidia-spooked-me-should-i-sell-my-stocks-or-ride-out-the-market-turmoil-560583c6?mod=mw_rss_topstories) · MarketWatch
+- [I’m terrified of a market crash. Should I put $400,000 of my $1 million retirement savings into an annuity?](https://www.marketwatch.com/story/were-in-our-50s-and-terrified-of-a-market-crash-should-we-put-400-000-of-our-1-million-retirement-savings-into-an-annuity-1943f240?mod=mw_rss_topstories) · MarketWatch
+- ["중앙아시아 협력 확대하려면 언어·역사 아는 전문가 길러야"](https://www.yna.co.kr/view/AKR20261123064200371) · 연합뉴스 경제
+- [AI로 고독사 예방하는 한전…재경부, 혁신 현장 찾았다](https://www.yna.co.kr/view/AKR20261123126600002) · 연합뉴스 경제
 
 ---
 _뉴스 소스 상태: 연합뉴스 경제 12, 한국경제 증권 12, 매일경제 증권 12, 매일경제 경제 12, Yahoo Finance 실패 HTTPError, Investing.com 10, CNBC Markets 12, MarketWatch 10_

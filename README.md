@@ -1,20 +1,20 @@
 # 🧠 시황두뇌
 
-**2026-11-24 05:02 KST** · 레짐 🔴 위험회피 · 작성: rule-digest
+**2026-11-24 15:45 KST** · 레짐 🔴 위험회피 · 작성: rule-digest
 
 > ⚠️ AI 해석 실패 (규칙 요약으로 대체): `Gemini 실패: RuntimeError gemini-4-neon: HTTPError HTTP Error 429: Too Many Requests { "error": { "code": 429, "message": "You exceeded your current quota, please check your plan and billing details. For more information on t | gemini-4-hydrogen: HTTPError HTTP Error 503: Ser`
 
-## [위험회피] 뉴스 테마: 증시 전반(10건), 금리·연준(8건), 반도체·AI(7건)
+## [위험회피] 뉴스 테마: 반도체·AI(10건), 증시 전반(8건), 금리·연준(8건)
 
-오늘 뉴스의 중심은 증시 전반(10건), 금리·연준(8건), 반도체·AI(7건)입니다. 코스피는 하루 0.0%, 5일 -4.52%, S&P500은 하루 4.91%, 나스닥은 6.66% 움직였고 VIX는 27.48, 원달러는 20일간 1.52% 변했습니다. 추세·변동성·환율 신호를 합치면 현재 레짐은 '위험회피'이며, 규칙 신호는 S&P500 하락추세(20/60일선 아래); NASDAQ 하락추세(20/60일선 아래); KOSPI 하락추세(20/60일선 아래); VIX 27 공포 구간입니다. (AI 해석이 비활성화되어 규칙 기반으로 작성됨)
+오늘 뉴스의 중심은 반도체·AI(10건), 증시 전반(8건), 금리·연준(8건)입니다. 코스피는 하루 6.19%, 5일 0.64%, S&P500은 하루 0.0%, 나스닥은 0.0% 움직였고 VIX는 26.62, 원달러는 20일간 1.44% 변했습니다. 추세·변동성·환율 신호를 합치면 현재 레짐은 '위험회피'이며, 규칙 신호는 S&P500 하락추세(20/60일선 아래); NASDAQ 하락추세(20/60일선 아래); KOSPI 하락추세(20/60일선 아래); VIX 27 공포 구간입니다. (AI 해석이 비활성화되어 규칙 기반으로 작성됨)
 
 ## 핵심 이슈
 
-- 🟡 **증시 전반** — 브리즈바이오·인스페이스, 코스닥 상장예심 신청 / "최악의 경우 코스피 3000대까지 밀린다"…전문가의 경고 [분석+]
-- 🟡 **금리·연준** — 증시 급락에 국고채 금리 일제히↓…3년물 연 3.623%(종합) / 닷컴버블, 고점 회복까진 5년 6개월 … 美금리 향방이 반등 가늠자
-- 🟡 **반도체·AI** — 젠슨 황 돌아오자 반도체주 13% 급등…AI 투자심리 반전 [젠슨 황 CEO 복귀] / 젠슨 황, 엔비디아 CEO 복귀…주가 31% 급등·美 선물도 급등
-- 🟡 **환율·외국인** — 수출 1조달러 위업 이뤄낸 한국…코스피 우(憂) 범하지 않으려면 [기자24시] / [표] 외국환율고시표
-- 🟡 **정치·관세** — Trump is open to capping credit-card interest rates — but ho
+- 🟡 **반도체·AI** — [오전시황] 코스피 5000선 회복…반도체·로봇·MLCC株 줄줄이 급등 / 엔비디아 젠슨 황 귀환에 주가 +31% 축포…반토막 코스피도 살려낼까?
+- 🟡 **증시 전반** — 젠슨황 복귀에 6%대 급반등, '5천피' 회복…코스닥 4.8%↑ / [속보] 코스피, 6%대 급등 ‘5000피’ 탈환…코스닥 4%대↑
+- 🟡 **금리·연준** — 골드만삭스 “내년 한은 기준금리 3.5%가 상단…달러당 원화값은 1280원” / 모기지 금리 7%에 거래 16년래 최저 … 美  집값이 경제에 보내는 신호는?
+- 🟡 **환율·외국인** — [외환] 원/달러 환율 3.5원 내린 1,342.4원(15:30 기준가) / [오후시황] 코스피 5000선 안착 시도…외국인·기관 '사자'
+- 🟡 **정치·관세** — 정부, 내년 경제 양극화 완화에 중점…국민 삶의 질 지표 개발(종합) / 트럼프 엄포에 급락한 데이터센터株 반등…증권가 “우려 과도…저가매수 기회”
 
 ## 포트폴리오와 그 이유
 
@@ -30,7 +30,7 @@
 
 ## 앞으로 지켜볼 것
 
-- 가장 많이 언급된 테마 '증시 전반'의 후속 뉴스
+- 가장 많이 언급된 테마 '반도체·AI'의 후속 뉴스
 - VIX 25 상회/16 하회 여부
 - 코스피·S&P500의 20일선 회복 여부
 
@@ -38,23 +38,23 @@
 
 | 지표 | 현재 | 1일 | 5일 | 20일 |
 |---|---:|---:|---:|---:|
-| KOSPI | 4869.96 | 0.0% | -4.52% | -10.96% |
-| KOSDAQ | 645.68 | 0.0% | -3.0% | -11.21% |
-| USD/KRW | 1341.82 | +0.53% | +0.64% | +1.52% |
-| S&P 500 | 7249.49 | +4.91% | -2.25% | -5.57% |
-| NASDAQ | 24123.18 | +6.66% | -1.58% | -7.82% |
-| VIX | 27.48 | -23.43% | +19.95% | +49.43% |
-| US 10Y | 4.92 | +0.24% | -3.85% | -1.24% |
-| WTI 유가 | 80.06 | -4.67% | -6.6% | -21.32% |
-| 금 | 333.77 | +3.38% | -5.43% | -9.26% |
-| 미국 장기채 | 81.64 | +0.24% | +2.85% | +0.38% |
-| KODEX 200 | 73770.0 | -3.2% | -7.67% | -14.09% |
-| KODEX 코스닥150 | 10365.0 | -1.38% | -4.03% | -13.66% |
-| KODEX 반도체 | 83355.0 | -1.47% | -7.07% | -19.14% |
-| KODEX 2차전지 | 11040.0 | -3.29% | -11.25% | -16.65% |
-| 美 Tech | 162.34 | +8.95% | -1.47% | -12.87% |
-| 美 금융 | 55.75 | +2.16% | -4.18% | -0.48% |
-| 美 에너지 | 60.05 | -0.76% | -5.72% | -13.77% |
+| KOSPI | 5000.08 | +6.19% | +0.64% | -11.32% |
+| KOSDAQ | 665.0 | +4.65% | +2.3% | -10.6% |
+| USD/KRW | 1343.81 | -0.04% | +0.61% | +1.44% |
+| S&P 500 | 7237.17 | 0.0% | -1.41% | -6.29% |
+| NASDAQ | 24089.56 | 0.0% | -0.98% | -9.02% |
+| VIX | 26.62 | 0.0% | +4.56% | +51.94% |
+| US 10Y | 4.92 | 0.0% | -3.63% | -1.5% |
+| WTI 유가 | 79.71 | -0.57% | -7.32% | -20.21% |
+| 금 | 333.02 | 0.0% | -5.52% | -10.55% |
+| 미국 장기채 | 81.69 | 0.0% | +2.69% | +0.49% |
+| KODEX 200 | 78570.0 | +6.51% | +1.02% | -11.5% |
+| KODEX 코스닥150 | 10940.0 | +5.55% | +3.6% | -10.77% |
+| KODEX 반도체 | 88695.0 | +6.41% | +1.25% | -18.02% |
+| KODEX 2차전지 | 12035.0 | +9.01% | +0.63% | -12.15% |
+| 美 Tech | 162.38 | 0.0% | -0.54% | -14.31% |
+| 美 금융 | 55.65 | 0.0% | -2.49% | -0.41% |
+| 美 에너지 | 59.87 | 0.0% | -5.51% | -12.23% |
 
 ## 규칙 신호
 
@@ -65,36 +65,36 @@
 
 ## 참고한 뉴스 (45건)
 
-- [브리즈바이오·인스페이스, 코스닥 상장예심 신청](https://www.yna.co.kr/view/AKR20261123153800008) · 연합뉴스 경제
-- [증시 급락에 국고채 금리 일제히↓…3년물 연 3.623%(종합)](https://www.yna.co.kr/view/AKR20261123144651008) · 연합뉴스 경제
-- [젠슨 황 돌아오자 반도체주 13% 급등…AI 투자심리 반전 [젠슨 황 CEO 복귀]](https://www.hankyung.com/article/202611245389i) · 한국경제 증권
-- [젠슨 황, 엔비디아 CEO 복귀…주가 31% 급등·美 선물도 급등](https://www.hankyung.com/article/202611235352i) · 한국경제 증권
-- ["최악의 경우 코스피 3000대까지 밀린다"…전문가의 경고 [분석+]](https://www.hankyung.com/article/2026112346726) · 한국경제 증권
-- [닷컴버블 반토막 증시, 회복에 5년 6개월 걸려…개미들 ‘시간과의 싸움’](https://www.mk.co.kr/news/stock/12216561) · 매일경제 증권
-- [결국 고꾸라진 코스피…“바닥이 어디?”보다 중요한 질문은 [김학균의 이코노믹 인사이트]](https://www.mk.co.kr/news/stock/12216450) · 매일경제 증권
-- [코스피 반토막…외환위기 이후 네번째](https://www.mk.co.kr/news/stock/12216430) · 매일경제 증권
-- ['10조원 증안펀드' 실효성 있을까…대만은 20조 실탄에도 증시 흔들](https://www.mk.co.kr/news/stock/12216419) · 매일경제 증권
-- [닷컴버블, 고점 회복까진 5년 6개월 … 美금리 향방이 반등 가늠자](https://www.mk.co.kr/news/stock/12216407) · 매일경제 증권
-- [중국차 공세에 속수무책 … 현대차 올 주가 67% 뚝](https://www.mk.co.kr/news/stock/12216380) · 매일경제 증권
+- [젠슨황 복귀에 6%대 급반등, '5천피' 회복…코스닥 4.8%↑](https://www.yna.co.kr/view/AKR20261124138200008) · 연합뉴스 경제
+- [[외환] 원/달러 환율 3.5원 내린 1,342.4원(15:30 기준가)](https://www.yna.co.kr/view/AKR20261124136800002) · 연합뉴스 경제
+- [[오후시황] 코스피 5000선 안착 시도…외국인·기관 '사자'](https://www.hankyung.com/article/202611246885i) · 한국경제 증권
+- [[오전시황] 코스피 5000선 회복…반도체·로봇·MLCC株 줄줄이 급등](https://www.hankyung.com/article/202611246282i) · 한국경제 증권
+- [[속보] 코스피, 6%대 급등 ‘5000피’ 탈환…코스닥 4%대↑](https://www.mk.co.kr/news/stock/12217139) · 매일경제 증권
+- [골드만삭스 “내년 한은 기준금리 3.5%가 상단…달러당 원화값은 1280원”](https://www.mk.co.kr/news/stock/12217095) · 매일경제 증권
+- [‘롤러코스피’에 버팀목 될까…오늘부터 자사주 하루 주문 한도 완화](https://www.mk.co.kr/news/stock/12217089) · 매일경제 증권
+- [“증시 안전판 작동하는 거 맞나”…사이드카 올해만 101번 발동](https://www.mk.co.kr/news/stock/12216949) · 매일경제 증권
+- [엔비디아 젠슨 황 귀환에 주가 +31% 축포…반토막 코스피도 살려낼까?](https://www.mk.co.kr/news/stock/12216919) · 매일경제 증권
+- [주가 폭락 두고 엇갈린 처방…與 “주주 보호” 野 “종부세 폐지”](https://www.mk.co.kr/news/politics/12216715) · 매일경제 경제
 - [모기지 금리 7%에 거래 16년래 최저 … 美  집값이 경제에 보내는 신호는?](https://www.mk.co.kr/news/economy/12216095) · 매일경제 경제
-- [수출 1조달러 위업 이뤄낸 한국…코스피 우(憂) 범하지 않으려면 [기자24시]](https://www.mk.co.kr/news/economy/12216435) · 매일경제 경제
-- [[표] 외국환율고시표](https://www.mk.co.kr/news/economy/12216364) · 매일경제 경제
-- [US imposes sanctions on dozens linked to Iran’s shadow banking networks](https://www.investing.com/news/stock-market-news/us-imposes-sanctions-on-dozens-linked-to-irans-shadow-banking-networks-5046278) · Investing.com
-- [Bond market flattening and Wednesday’s PCE test for rate-hike pricing](https://www.investing.com/news/economy-news/bond-market-flattening-and-wednesdays-pce-test-for-ratehike-pricing-93CH-5046275) · Investing.com
+- [Dollar holds near 20-mth high amid AI rally, Fed tightening bets](https://www.investing.com/news/forex-news/asia-fx-subdued-as-dollar-holds-near-20mth-high-on-ai-rally-5046950) · Investing.com
+- [Europe’s earnings boom challenges Wall Street, but may prove fleeting](https://www.investing.com/news/stock-market-news/europes-earnings-boom-challengeswall-street-but-may-prove-fleeting-5047123) · Investing.com
+- [Newton golf director Hemphill buys $520 of common stock](https://www.investing.com/news/insider-trading-news/newton-golf-director-hemphill-buys-520-of-common-stock-93CH-5047133) · Investing.com
+- [Bitcoin hovers around $60k amid little relief from rate, regulatory jitters](https://www.investing.com/news/cryptocurrency-news/bitcoin-hovers-around-60k-amid-little-relief-from-rate-regulatory-jitters-5047126) · Investing.com
 - [Japan core inflation soars to highest this year as energy subsidy expiry pushes up consumer prices](https://www.cnbc.com/2026/11/20/japan-inflation-cpi-october.html) · CNBC Markets
 - [Record diesel prices drive UK inflation to 1-year high of 3.6%](https://www.cnbc.com/2026/11/18/uk-inflation-cpi-fuel-prices.html) · CNBC Markets
 - [St. Louis Fed's Musalem says four more rate hikes may be needed in coming months](https://www.cnbc.com/2026/11/17/alberto-musalem-fed-interest-rates.html) · CNBC Markets
 - [Peterson: The Fed's chairman sees an AI revolution coming. Now he has to figure out what it means](https://www.cnbc.com/2026/11/16/kevin-warsh-fed-ai-jobs-productivity-interest-rateshtml.html) · CNBC Markets
 - [AI risks are the biggest threat to the financial system, Fed survey finds](https://www.cnbc.com/2026/11/13/ai-risks-financial-system-federal-reserve.html) · CNBC Markets
 - [Wholesale prices rose 0.3% in October, putting annual rate at 6.5%, the highest in nearly four years](https://www.cnbc.com/2026/11/13/ppi-inflation-report-october-2026.html) · CNBC Markets
-- [Why Monday’s huge stock-market rally is actually a warning sign for bulls](https://www.marketwatch.com/story/why-mondays-huge-stock-market-rally-is-actually-a-warning-sign-for-bulls-49d227a8?mod=mw_rss_topstories) · MarketWatch
+- [HPE just posted its strongest growth ever — but its stock is sinking](https://www.marketwatch.com/story/hpe-just-posted-its-strongest-growth-ever-and-its-stock-is-tacking-on-more-big-gains-4421cebb?mod=mw_rss_topstories) · MarketWatch
+- [The newest addition to the S&P 500 is a maker of viral ice-cream machines](https://www.marketwatch.com/story/the-newest-addition-to-the-s-p-500-is-a-maker-of-viral-ice-cream-machines-5c6e209a?mod=mw_rss_topstories) · MarketWatch
+- [Nvidia’s stock is surging again. What to know before chasing the AI rally.](https://www.marketwatch.com/story/nvidias-stock-is-surging-again-what-to-know-before-chasing-the-ai-rally-226688d7?mod=mw_rss_topstories) · MarketWatch
+- [U.S. stocks see best day in more than a year, as return of Jensen Huang revives AI enthusiasm](https://www.marketwatch.com/story/u-s-stocks-see-best-day-in-more-than-a-year-as-return-of-jensen-huang-revives-ai-enthusiasm-c3b9d274?mod=mw_rss_topstories) · MarketWatch
+- [Consumer stocks, seen as safe bet amid cracks in AI trade, were among the S&P 500’s biggest losers Monday](https://www.marketwatch.com/story/consumer-stocks-seen-as-safe-bet-amid-cracks-in-ai-trade-are-among-the-s-p-500s-biggest-losers-monday-80cf8f81?mod=mw_rss_topstories) · MarketWatch
 - [These stocks are the biggest gainers after Jensen Huang’s return to Nvidia](https://www.marketwatch.com/story/these-stocks-are-the-biggest-gainers-after-jensen-huangs-return-to-nvidia-bb886140?mod=mw_rss_topstories) · MarketWatch
-- [Trump is open to capping credit-card interest rates — but holiday shoppers shouldn’t bank on it yet](https://www.marketwatch.com/story/trump-is-open-to-capping-credit-card-interest-rates-but-holiday-shoppers-shouldnt-bank-on-it-yet-34260705?mod=mw_rss_topstories) · MarketWatch
-- [Consumer stocks, seen as safe bet amid cracks in AI trade, are among the S&P 500’s biggest losers Monday](https://www.marketwatch.com/story/consumer-stocks-seen-as-safe-bet-amid-cracks-in-ai-trade-are-among-the-s-p-500s-biggest-losers-monday-80cf8f81?mod=mw_rss_topstories) · MarketWatch
-- [미래에셋증권, 'IB 총괄' 사업부 폐지…도입 1년만](https://www.yna.co.kr/view/AKR20261123163400008) · 연합뉴스 경제
-- [LH, 공공주택 4천232가구 공모 연기…연내 선정 차질 우려](https://www.yna.co.kr/view/AKR20261123157200003) · 연합뉴스 경제
-- [인스피언 "라온시큐리티 주식 30억원어치 취득…지분율 100%"](https://www.yna.co.kr/view/AKR20261123162100008) · 연합뉴스 경제
-- [[연합뉴스 이 시각 헤드라인] - 18:00](https://www.yna.co.kr/view/AKR20261123150300011) · 연합뉴스 경제
+- [Oracle and CoreWeave stocks stage big gains as investors bet the AI cash will keep flowing](https://www.marketwatch.com/story/oracle-and-coreweave-stocks-stage-big-gains-as-investors-bet-the-ai-cash-will-keep-flowing-eeb1aa85?mod=mw_rss_topstories) · MarketWatch
+- [Short sellers get smoked as Nvidia tallies biggest one-day gain in stock-market history](https://www.marketwatch.com/story/short-sellers-get-smoked-as-nvidia-tallies-biggest-one-day-gain-in-stock-market-history-e9dc6e9c?mod=mw_rss_topstories) · MarketWatch
+- [[동정] 이병권 중기차관, '모두의창업 토크콘서트'서 창업 확대 논의](https://www.yna.co.kr/view/AKR20261124128300030) · 연합뉴스 경제
 
 ---
 _뉴스 소스 상태: 연합뉴스 경제 12, 한국경제 증권 12, 매일경제 증권 12, 매일경제 경제 12, Yahoo Finance 실패 HTTPError, Investing.com 10, CNBC Markets 12, MarketWatch 10_

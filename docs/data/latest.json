@@ -1,5 +1,5 @@
 {
- "as_of": "2026-11-24 15:45 KST",
+ "as_of": "2026-11-24 18:29 KST",
  "regime": "risk_off",
  "score": -5,
  "reasons": [
@@ -19,26 +19,26 @@
  },
  "headline_ind": {
   "KOSPI": {
-   "last": 5000.08,
-   "d1": 6.19,
-   "d5": 0.64,
-   "d20": -11.32,
-   "vs_ma20": -6.04,
-   "vs_ma60": -18.39
+   "last": 5006.03,
+   "d1": 6.32,
+   "d5": 0.76,
+   "d20": -11.21,
+   "vs_ma20": -5.94,
+   "vs_ma60": -18.29
   },
   "KOSDAQ": {
-   "last": 665.0,
-   "d1": 4.65,
-   "d5": 2.3,
-   "d20": -10.6,
-   "vs_ma20": -3.22,
-   "vs_ma60": -14.8
+   "last": 665.88,
+   "d1": 4.79,
+   "d5": 2.43,
+   "d20": -10.48,
+   "vs_ma20": -3.1,
+   "vs_ma60": -14.69
   },
   "USD/KRW": {
-   "last": 1343.81,
+   "last": 1343.78,
    "d1": -0.04,
    "d5": 0.61,
-   "d20": 1.44,
+   "d20": 1.43,
    "vs_ma20": 0.33,
    "vs_ma60": -0.1
   },
@@ -59,12 +59,12 @@
    "vs_ma60": -7.63
   },
   "VIX": {
-   "last": 26.62,
-   "d1": 0.0,
-   "d5": 4.56,
-   "d20": 51.94,
-   "vs_ma20": 17.97,
-   "vs_ma60": 45.17
+   "last": 27.46,
+   "d1": 3.16,
+   "d5": 7.86,
+   "d20": 56.74,
+   "vs_ma20": 21.46,
+   "vs_ma60": 49.64
   },
   "US 10Y": {
    "last": 4.92,
@@ -75,12 +75,12 @@
    "vs_ma60": -2.41
   },
   "WTI 유가": {
-   "last": 79.71,
-   "d1": -0.57,
-   "d5": -7.32,
-   "d20": -20.21,
-   "vs_ma20": -10.92,
-   "vs_ma60": -14.96
+   "last": 79.78,
+   "d1": -0.49,
+   "d5": -7.24,
+   "d20": -20.14,
+   "vs_ma20": -10.85,
+   "vs_ma60": -14.89
   },
   "금": {
    "last": 333.02,
@@ -99,36 +99,36 @@
    "vs_ma60": 2.12
   },
   "KODEX 200": {
-   "last": 78570.0,
-   "d1": 6.51,
-   "d5": 1.02,
-   "d20": -11.5,
-   "vs_ma20": -6.19,
-   "vs_ma60": -18.84
+   "last": 78660.0,
+   "d1": 6.63,
+   "d5": 1.13,
+   "d20": -11.4,
+   "vs_ma20": -6.08,
+   "vs_ma60": -18.75
   },
   "KODEX 코스닥150": {
-   "last": 10940.0,
-   "d1": 5.55,
-   "d5": 3.6,
-   "d20": -10.77,
-   "vs_ma20": -2.81,
-   "vs_ma60": -16.2
+   "last": 10955.0,
+   "d1": 5.69,
+   "d5": 3.74,
+   "d20": -10.64,
+   "vs_ma20": -2.68,
+   "vs_ma60": -16.09
   },
   "KODEX 반도체": {
-   "last": 88695.0,
-   "d1": 6.41,
-   "d5": 1.25,
-   "d20": -18.02,
-   "vs_ma20": -8.02,
-   "vs_ma60": -25.41
+   "last": 88650.0,
+   "d1": 6.35,
+   "d5": 1.2,
+   "d20": -18.06,
+   "vs_ma20": -8.07,
+   "vs_ma60": -25.44
   },
   "KODEX 2차전지": {
-   "last": 12035.0,
-   "d1": 9.01,
-   "d5": 0.63,
-   "d20": -12.15,
-   "vs_ma20": -4.61,
-   "vs_ma60": -14.55
+   "last": 12025.0,
+   "d1": 8.92,
+   "d5": 0.54,
+   "d20": -12.23,
+   "vs_ma20": -4.68,
+   "vs_ma60": -14.62
   },
   "美 Tech": {
    "last": 162.38,
@@ -158,78 +158,73 @@
  "news": [
   {
    "src": "연합뉴스 경제",
-   "title": "젠슨황 복귀에 6%대 급반등, '5천피' 회복…코스닥 4.8%↑",
-   "link": "https://www.yna.co.kr/view/AKR20261124138200008"
-  },
-  {
-   "src": "연합뉴스 경제",
-   "title": "[외환] 원/달러 환율 3.5원 내린 1,342.4원(15:30 기준가)",
-   "link": "https://www.yna.co.kr/view/AKR20261124136800002"
+   "title": "국고채 금리 혼조세…코스피 상승 속 외인 선물 매수(종합)",
+   "link": "https://www.yna.co.kr/view/AKR20261124153751008"
   },
   {
    "src": "한국경제 증권",
-   "title": "[오후시황] 코스피 5000선 안착 시도…외국인·기관 '사자'",
-   "link": "https://www.hankyung.com/article/202611246885i"
-  },
-  {
-   "src": "한국경제 증권",
-   "title": "[오전시황] 코스피 5000선 회복…반도체·로봇·MLCC株 줄줄이 급등",
-   "link": "https://www.hankyung.com/article/202611246282i"
+   "title": "CJ ENM '들썩'…실적 뛰고 한한령 해제 수혜",
+   "link": "https://www.hankyung.com/article/2026112476491"
   },
   {
    "src": "매일경제 증권",
-   "title": "[속보] 코스피, 6%대 급등 ‘5000피’ 탈환…코스닥 4%대↑",
-   "link": "https://www.mk.co.kr/news/stock/12217139"
+   "title": "국민연금 때문에 꼬인 증시 수급...“증안펀드 10조론 역부족” [최재원의 마켓워치]",
+   "link": "https://www.mk.co.kr/news/stock/12217441"
   },
   {
    "src": "매일경제 증권",
-   "title": "골드만삭스 “내년 한은 기준금리 3.5%가 상단…달러당 원화값은 1280원”",
-   "link": "https://www.mk.co.kr/news/stock/12217095"
+   "title": "\"생큐, 젠슨\"… 황 복귀하자마자 '깐부 동맹' 주가 동반급등",
+   "link": "https://www.mk.co.kr/news/stock/12217380"
   },
   {
    "src": "매일경제 증권",
-   "title": "‘롤러코스피’에 버팀목 될까…오늘부터 자사주 하루 주문 한도 완화",
-   "link": "https://www.mk.co.kr/news/stock/12217089"
-  },
-  {
-   "src": "매일경제 증권",
-   "title": "“증시 안전판 작동하는 거 맞나”…사이드카 올해만 101번 발동",
-   "link": "https://www.mk.co.kr/news/stock/12216949"
-  },
-  {
-   "src": "매일경제 증권",
-   "title": "엔비디아 젠슨 황 귀환에 주가 +31% 축포…반토막 코스피도 살려낼까?",
-   "link": "https://www.mk.co.kr/news/stock/12216919"
+   "title": "\"韓 내년 3%대 성장하겠지만 … 반도체만 뜨겁고 내수 냉랭\"",
+   "link": "https://www.mk.co.kr/news/stock/12217367"
   },
   {
    "src": "매일경제 경제",
-   "title": "주가 폭락 두고 엇갈린 처방…與 “주주 보호” 野 “종부세 폐지”",
-   "link": "https://www.mk.co.kr/news/politics/12216715"
-  },
-  {
-   "src": "매일경제 경제",
-   "title": "모기지 금리 7%에 거래 16년래 최저 … 美  집값이 경제에 보내는 신호는?",
-   "link": "https://www.mk.co.kr/news/economy/12216095"
+   "title": "[표] 외국환율고시표",
+   "link": "https://www.mk.co.kr/news/economy/12217401"
   },
   {
    "src": "Investing.com",
-   "title": "Dollar holds near 20-mth high amid AI rally, Fed tightening bets",
-   "link": "https://www.investing.com/news/forex-news/asia-fx-subdued-as-dollar-holds-near-20mth-high-on-ai-rally-5046950"
+   "title": "Why is Hewlett Packard Enterprise stock tumbling today?",
+   "link": "https://www.investing.com/news/stock-market-news/why-is-hewlett-packard-enterprise-stock-tumbling-today-93CH-5047400"
   },
   {
    "src": "Investing.com",
-   "title": "Europe’s earnings boom challenges Wall Street, but may prove fleeting",
-   "link": "https://www.investing.com/news/stock-market-news/europes-earnings-boom-challengeswall-street-but-may-prove-fleeting-5047123"
+   "title": "Why is Clariant stock sliding today?",
+   "link": "https://www.investing.com/news/stock-market-news/why-is-clariant-stock-sliding-today-93CH-5047398"
   },
   {
    "src": "Investing.com",
-   "title": "Newton golf director Hemphill buys $520 of common stock",
-   "link": "https://www.investing.com/news/insider-trading-news/newton-golf-director-hemphill-buys-520-of-common-stock-93CH-5047133"
+   "title": "DB flags increasingly hawkish Fed tone as officials signal further rate hikes",
+   "link": "https://www.investing.com/news/economy-news/db-flags-increasingly-hawkish-fed-tone-as-officials-signal-further-rate-hikes-5047396"
   },
   {
    "src": "Investing.com",
-   "title": "Bitcoin hovers around $60k amid little relief from rate, regulatory jitters",
-   "link": "https://www.investing.com/news/cryptocurrency-news/bitcoin-hovers-around-60k-amid-little-relief-from-rate-regulatory-jitters-5047126"
+   "title": "Why is Insmed stock surging today?",
+   "link": "https://www.investing.com/news/stock-market-news/why-is-insmed-stock-surging-today-93CH-5047394"
+  },
+  {
+   "src": "Investing.com",
+   "title": "Why is Balfour Beatty stock surging today?",
+   "link": "https://www.investing.com/news/stock-market-news/why-is-balfour-beatty-stock-surging-today-93CH-5047393"
+  },
+  {
+   "src": "Investing.com",
+   "title": "Why is Ao World stock sliding today?",
+   "link": "https://www.investing.com/news/stock-market-news/why-is-ao-world-stock-sliding-today-93CH-5047392"
+  },
+  {
+   "src": "Investing.com",
+   "title": "Why is Clariane stock surging today?",
+   "link": "https://www.investing.com/news/stock-market-news/why-is-clariane-stock-surging-today-93CH-5047391"
+  },
+  {
+   "src": "Investing.com",
+   "title": "Needham reiterates Nvidia stock rating after CEO reinstatement",
+   "link": "https://www.investing.com/news/analyst-ratings/needham-reiterates-nvidia-stock-rating-after-ceo-reinstatement-93CH-5047390"
   },
   {
    "src": "CNBC Markets",
@@ -297,89 +292,94 @@
    "link": "https://www.marketwatch.com/story/oracle-and-coreweave-stocks-stage-big-gains-as-investors-bet-the-ai-cash-will-keep-flowing-eeb1aa85?mod=mw_rss_topstories"
   },
   {
-   "src": "MarketWatch",
-   "title": "Short sellers get smoked as Nvidia tallies biggest one-day gain in stock-market history",
-   "link": "https://www.marketwatch.com/story/short-sellers-get-smoked-as-nvidia-tallies-biggest-one-day-gain-in-stock-market-history-e9dc6e9c?mod=mw_rss_topstories"
+   "src": "연합뉴스 경제",
+   "title": "[연합뉴스 이 시각 헤드라인] - 18:00",
+   "link": "https://www.yna.co.kr/view/AKR20261124160700011"
   },
   {
    "src": "연합뉴스 경제",
-   "title": "[동정] 이병권 중기차관, '모두의창업 토크콘서트'서 창업 확대 논의",
-   "link": "https://www.yna.co.kr/view/AKR20261124128300030"
+   "title": "디지털자산법 정부안 공개…민병덕 \"회기 내 제도적 틀 마련\"",
+   "link": "https://www.yna.co.kr/view/AKR20261124167000002"
   },
   {
    "src": "연합뉴스 경제",
-   "title": "금융소비자 38%, 생성형AI 금융에 활용…절반은 의사결정에 영향",
-   "link": "https://www.yna.co.kr/view/AKR20261124130500008"
+   "title": "AI 시대 공인회계사 선발 문 좁아진다…내년 최소 1천100명",
+   "link": "https://www.yna.co.kr/view/AKR20261124165100002"
   },
   {
    "src": "연합뉴스 경제",
-   "title": "인천본부세관, 인천시 등 3개 기관과 'K-제조업' 보호 업무협약",
-   "link": "https://www.yna.co.kr/view/AKR20261124136500065"
+   "title": "전남광주시, 공무원시험 AI 부정행위 방지 장비 도입 검토",
+   "link": "https://www.yna.co.kr/view/AKR20261124162900054"
   },
   {
    "src": "연합뉴스 경제",
-   "title": "경기도, 한국수목원정원관리원과 '토종종자 보존' 맞손",
-   "link": "https://www.yna.co.kr/view/AKR20261124136400061"
+   "title": "2035년까지 신규 택시 100% 전기차로…정부·택시업계 맞손",
+   "link": "https://www.yna.co.kr/view/AKR20261124153300003"
   },
   {
    "src": "연합뉴스 경제",
-   "title": "한화에어로 \"사족보행 로봇기업 라이온로보틱스에 투자 안해\"",
-   "link": "https://www.yna.co.kr/view/AKR20261124135600003"
+   "title": "노사정, 초광역특구 기간제 4년 연장 논의…노사 입장차만 확인",
+   "link": "https://www.yna.co.kr/view/AKR20261124162000530"
   },
   {
    "src": "연합뉴스 경제",
-   "title": "\"상생배달앱, 계속 이용 비율 43%…재주문 이어지게 지원해야\"",
-   "link": "https://www.yna.co.kr/view/AKR20261124127800030"
+   "title": "'납 배출 약 복용 의혹' 광주 납축전지 근로자, 약물성분 불검출",
+   "link": "https://www.yna.co.kr/view/AKR20261124160500054"
   },
   {
    "src": "연합뉴스 경제",
-   "title": "부산 생산자 서비스업 성장률 주춤…\"동남권 공동 대응해야\"",
-   "link": "https://www.yna.co.kr/view/AKR20261124135200051"
+   "title": "상상인증권, 신안건설산업 정상화에 480억원 DIP 금융 주선",
+   "link": "https://www.yna.co.kr/view/AKR20261124159200008"
   },
   {
    "src": "연합뉴스 경제",
-   "title": "[게시판] 신한카드, 아디다스 첫 글로벌 제휴카드 출시",
-   "link": "https://www.yna.co.kr/view/AKR20261124132800002"
+   "title": "에코프로비엠 \"종속회사 에코프로글로벌 주식 6천222억원에 추가취득\"",
+   "link": "https://www.yna.co.kr/view/AKR20261124158000008"
   },
   {
    "src": "연합뉴스 경제",
-   "title": "정부, 내년 경제 양극화 완화에 중점…국민 삶의 질 지표 개발(종합)",
-   "link": "https://www.yna.co.kr/view/AKR20261124091951002"
+   "title": "전주·창원에 기업·인재 모이는 산업·주거 복합단지 조성",
+   "link": "https://www.yna.co.kr/view/AKR20261124132700003"
   },
   {
    "src": "연합뉴스 경제",
-   "title": "금감원 \"랩어카운트 과도한 투자손실…내부통제 강화해야\"",
-   "link": "https://www.yna.co.kr/view/AKR20261124131600002"
+   "title": "농업단체협의회 \"명분·실리 없는 농협중앙회 지방 이전 반대\"",
+   "link": "https://www.yna.co.kr/view/AKR20261124152400030"
   },
   {
    "src": "한국경제 증권",
-   "title": "트럼프 엄포에 급락한 데이터센터株 반등…증권가 “우려 과도…저가매수 기회”",
-   "link": "https://www.hankyung.com/article/202611247024i"
+   "title": "오천피 되찾았지만…\"AI 랠리 재개\" vs \"2~3일 더 지켜봐야\"",
+   "link": "https://www.hankyung.com/article/2026112476941"
   },
   {
    "src": "한국경제 증권",
-   "title": "\"불법 공매도 감시 강화\"…금감원·거래소 합동 TF 가동",
-   "link": "https://www.hankyung.com/article/2026112469336"
+   "title": "'한방' 먹은 공매도…하루새 16조원 날려",
+   "link": "https://www.hankyung.com/article/2026112476961"
   },
   {
    "src": "한국경제 증권",
-   "title": "KODEX 미국AI에이전트액티브, 美앤트로픽 19.4% 비중 편입",
-   "link": "https://www.hankyung.com/article/202611246855i"
+   "title": "국민연금 '첫달 납부금'의 비밀 [한경 프리미엄9 TODAY]",
+   "link": "https://www.hankyung.com/article/2026112477701"
   },
   {
    "src": "한국경제 증권",
-   "title": "엑셀세라퓨틱스 40억 유상증자…대표 회사·서연씨엠씨 13억씩 인수",
-   "link": "https://www.hankyung.com/article/2026112468806"
+   "title": "[단독] 다올證 인수전, DB·유진·LF 참전하나",
+   "link": "https://www.hankyung.com/article/2026112476371"
   },
   {
    "src": "한국경제 증권",
-   "title": "“효율성의 시대, 사모시장에선 네트워크가 어느 때보다 중요”···브라운 어드바이저리",
-   "link": "https://www.hankyung.com/article/202611246598i"
+   "title": "[단독] 'IB 특화' 다올투자증권 경영권 판다",
+   "link": "https://www.hankyung.com/article/2026112477551"
   },
   {
    "src": "한국경제 증권",
-   "title": "올해 남은 한달… 주식 투자자들에게 중요한 것은 '이것'",
-   "link": "https://www.hankyung.com/article/202611234417i"
+   "title": "'왜 결혼 안 해요?' 물었더니…30대 여성들이 털어놓은 속내",
+   "link": "https://www.hankyung.com/article/2026112476681"
+  },
+  {
+   "src": "한국경제 증권",
+   "title": "한달 새 53% 급등한 제주항공",
+   "link": "https://www.hankyung.com/article/2026112476481"
   }
  ],
  "news_status": {
@@ -393,32 +393,32 @@
   "MarketWatch": 10
  },
  "ai_error": "Gemini 실패: RuntimeError gemini-4-neon: HTTPError HTTP Error 429: Too Many Requests { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on t | gemini-4-hydrogen: HTTPError HTTP Error 503: Ser",
- "headline_title": "[위험회피] 뉴스 테마: 반도체·AI(10건), 증시 전반(8건), 금리·연준(8건)",
- "summary": "오늘 뉴스의 중심은 반도체·AI(10건), 증시 전반(8건), 금리·연준(8건)입니다. 코스피는 하루 6.19%, 5일 0.64%, S&P500은 하루 0.0%, 나스닥은 0.0% 움직였고 VIX는 26.62, 원달러는 20일간 1.44% 변했습니다. 추세·변동성·환율 신호를 합치면 현재 레짐은 '위험회피'이며, 규칙 신호는 S&P500 하락추세(20/60일선 아래); NASDAQ 하락추세(20/60일선 아래); KOSPI 하락추세(20/60일선 아래); VIX 27 공포 구간입니다. (AI 해석이 비활성화되어 규칙 기반으로 작성됨)",
+ "headline_title": "[위험회피] 뉴스 테마: 증시 전반(11건), 반도체·AI(10건), 금리·연준(7건)",
+ "summary": "오늘 뉴스의 중심은 증시 전반(11건), 반도체·AI(10건), 금리·연준(7건)입니다. 코스피는 하루 6.32%, 5일 0.76%, S&P500은 하루 0.0%, 나스닥은 0.0% 움직였고 VIX는 27.46, 원달러는 20일간 1.43% 변했습니다. 추세·변동성·환율 신호를 합치면 현재 레짐은 '위험회피'이며, 규칙 신호는 S&P500 하락추세(20/60일선 아래); NASDAQ 하락추세(20/60일선 아래); KOSPI 하락추세(20/60일선 아래); VIX 27 공포 구간입니다. (AI 해석이 비활성화되어 규칙 기반으로 작성됨)",
  "issues": [
   {
-   "title": "반도체·AI",
-   "detail": "[오전시황] 코스피 5000선 회복…반도체·로봇·MLCC株 줄줄이 급등 / 엔비디아 젠슨 황 귀환에 주가 +31% 축포…반토막 코스피도 살려낼까?",
+   "title": "증시 전반",
+   "detail": "국민연금 때문에 꼬인 증시 수급...“증안펀드 10조론 역부족” [최재원의 마켓워치] / \"생큐, 젠슨\"… 황 복귀하자마자 '깐부 동맹' 주가 동반급등",
    "impact": "혼재"
   },
   {
-   "title": "증시 전반",
-   "detail": "젠슨황 복귀에 6%대 급반등, '5천피' 회복…코스닥 4.8%↑ / [속보] 코스피, 6%대 급등 ‘5000피’ 탈환…코스닥 4%대↑",
+   "title": "반도체·AI",
+   "detail": "\"韓 내년 3%대 성장하겠지만 … 반도체만 뜨겁고 내수 냉랭\" / Needham reiterates Nvidia stock rating after CEO reinstateme",
    "impact": "혼재"
   },
   {
    "title": "금리·연준",
-   "detail": "골드만삭스 “내년 한은 기준금리 3.5%가 상단…달러당 원화값은 1280원” / 모기지 금리 7%에 거래 16년래 최저 … 美  집값이 경제에 보내는 신호는?",
-   "impact": "혼재"
-  },
-  {
-   "title": "환율·외국인",
-   "detail": "[외환] 원/달러 환율 3.5원 내린 1,342.4원(15:30 기준가) / [오후시황] 코스피 5000선 안착 시도…외국인·기관 '사자'",
+   "detail": "국고채 금리 혼조세…코스피 상승 속 외인 선물 매수(종합) / DB flags increasingly hawkish Fed tone as officials signal f",
    "impact": "혼재"
   },
   {
    "title": "정치·관세",
-   "detail": "정부, 내년 경제 양극화 완화에 중점…국민 삶의 질 지표 개발(종합) / 트럼프 엄포에 급락한 데이터센터株 반등…증권가 “우려 과도…저가매수 기회”",
+   "detail": "디지털자산법 정부안 공개…민병덕 \"회기 내 제도적 틀 마련\" / 2035년까지 신규 택시 100% 전기차로…정부·택시업계 맞손",
+   "impact": "혼재"
+  },
+  {
+   "title": "실적·기업",
+   "detail": "CJ ENM '들썩'…실적 뛰고 한한령 해제 수혜",
    "impact": "혼재"
   }
  ],
@@ -432,7 +432,7 @@
   "현금": "반등 시 재진입 여력 확보"
  },
  "watch": [
-  "가장 많이 언급된 테마 '반도체·AI'의 후속 뉴스",
+  "가장 많이 언급된 테마 '증시 전반'의 후속 뉴스",
   "VIX 25 상회/16 하회 여부",
   "코스피·S&P500의 20일선 회복 여부"
  ],

@@ -1,47 +1,47 @@
 # 🧠 시황두뇌
 
-**2026-11-26 17:04 KST** · 레짐 🔴 위험회피 · 작성: gemini-3.1-flash-lite
+**2026-11-27 03:22 KST** · 레짐 🔴 위험회피 · 작성: gemini-3.1-flash-lite
 
-## 인플레이션 경계감과 금리 상승이 지배하는 시장, 방어적 포트폴리오 유지
+## 금리 인상과 관세 리스크 속, 자본시장 개혁 기대감과 방어적 포트폴리오의 공존
 
-미국 10월 물가 지표가 3.8%로 가속화되며 연준의 긴축 기조가 강화될 것이라는 우려가 시장을 짓누르고 있습니다. 한국 역시 국고채 금리 상승과 외국인의 지속적인 매도세가 코스피 4700선 방어에 부담을 주고 있습니다. 반도체 등 핵심 기술주가 변동성을 보이는 가운데, 투자자들은 위험 자산보다는 우량 회사채나 현금성 자산으로 눈을 돌리는 모습입니다. 특히 인플레이션 압력이 글로벌 전역에서 확인되면서 금리 민감도가 높은 성장주보다는 실적 기반의 방어적 섹터가 주목받고 있습니다. 시장은 당분간 금리 변동성에 따른 하방 압력을 견뎌내야 하는 국면입니다.
+미국 물가 지표가 3.8%로 가속화되며 금리 인상 압박이 커진 가운데, 관세 리스크와 AI 수익성 우려가 시장의 변동성을 키우고 있습니다. 한국은 자본시장 개혁기구 출범과 민간 주도의 체질 개선 기대감이 하락장에서의 방어 기제로 작용하고 있습니다. 반면, 미국은 블랙프라이데이 기대감과 무역 협상 압박이 혼재된 상황입니다. 시장은 공격적인 성장주 추격보다는 자본 보존을 우선시하는 헤지펀드 전략을 따르고 있습니다. 금리 인상 기조가 재확인된 만큼, 현금 비중을 유지하며 변동성 완화를 기다리는 전략이 유효합니다.
 
 ## 핵심 이슈
 
-- 🔴 **미국 인플레이션 가속화** — 연준 선호 물가 지표가 3.8%로 상승하며 고금리 장기화 우려가 재점화되었습니다.
-- 🔴 **국내외 금리 상승 압력** — 기준금리 인상 기조와 매파적 점도표가 채권 시장의 변동성을 키우고 있습니다.
-- 🟡 **기술주 변동성 확대** — 엔비디아 등 주요 기술주의 차익 실현 매물과 AI 관련 규제 리스크가 시장을 흔들고 있습니다.
+- 🔴 **미국 인플레이션 가속화** — 미국 10월 물가 지표가 3.8%로 상승하며 2027년 금리 인상 가능성을 높여 시장의 할인율 부담을 가중시킴.
+- 🟢 **한국 자본시장 개혁기구 출범** — 메리츠 김용범 부회장을 수장으로 한 민간 주도 개혁기구가 대통령 직보 체제로 출범하며 증시 체질 개선 기대감 형성.
+- 🟡 **글로벌 관세 및 무역 리스크** — 미국의 관세 위협이 무역 파트너들에게 협상 압박으로 작용하며 글로벌 공급망과 기업 이익에 불확실성 증대.
 
 ## 포트폴리오와 그 이유
 
 | 자산 | 비중 | 왜 이 비중인가 |
 |---|---:|---|
-| KODEX 200 | 5% | 외국인 매도세와 코스피 하락 추세를 고려하여 기본 비중에서 축소하였습니다. |
-| KODEX 코스닥150 | 0% | 변동성이 극심한 중소형주 비중을 0으로 유지하여 리스크를 관리합니다. |
-| S&P 500 | 10% | 지수 하락 추세가 뚜렷하여 방어적 관점에서 비중을 소폭 하향 조정하였습니다. |
-| NASDAQ | 5% | 기술주 중심의 변동성 확대로 인해 최소한의 노출도만 유지합니다. |
-| 채권 | 40% | 금리 상승기이나 안전자산 선호 심리를 반영하여 비중을 확대하였습니다. |
-| 금 | 15% | 인플레이션 헤지 수단으로서의 가치를 고려해 기존 비중을 유지합니다. |
-| 현금 | 25% | 시장 불확실성이 해소될 때까지 대기 자금을 확보하기 위해 높은 수준을 유지합니다. |
+| KODEX 200 | 15% | 자본시장 개혁기구 출범에 따른 정책적 하방 지지 기대감을 반영하여 기본 비중 대비 소폭 상향 조정함. |
+| KODEX 코스닥150 | 0% | 금리 인상기에는 중소형주와 성장주 중심의 코스닥 시장이 높은 변동성에 노출되므로 비중을 0으로 유지함. |
+| S&P 500 | 10% | 미국 물가 지표 상승과 관세 리스크로 인한 지수 하락 추세를 고려하여 기본 비중 대비 축소함. |
+| NASDAQ | 5% | AI 수익성 우려와 기술주 변동성 확대에 따라 최소한의 노출도만 유지함. |
+| 채권 | 35% | 금리 인상 기조 속에서도 안전자산 선호 심리가 강해지며 포트폴리오 방어력을 위해 비중을 확대함. |
+| 금 | 15% | 지정학적 리스크와 인플레이션 헤지 수단으로서의 가치를 고려하여 기존 비중을 유지함. |
+| 현금 | 20% | VIX가 공포 구간에 진입한 만큼, 시장 변동성이 진정될 때까지 유동성을 확보하여 대응력을 높임. |
 
 ## 앞으로 지켜볼 것
 
-- 미국 10년물 국채 금리의 4.8%대 안착 여부
-- 외국인의 코스피 순매도 전환 시점
-- 엔비디아를 포함한 주요 기술주의 기술적 지지선 방어 여부
+- 미국 2027년 금리 인상 경로 및 연준 위원 발언
+- 한국 자본시장 개혁기구의 구체적인 정책 로드맵
+- 글로벌 관세 협상 관련 무역 파트너들의 대응
 
 ## 주요 지표
 
 | 지표 | 현재 | 1일 | 5일 | 20일 |
 |---|---:|---:|---:|---:|
-| KOSPI | 4711.21 | +0.29% | -8.3% | -20.66% |
-| KOSDAQ | 655.71 | +0.78% | -4.25% | -12.95% |
-| USD/KRW | 1343.95 | +0.1% | +1.02% | +0.27% |
+| KOSPI | 4697.51 | 0.0% | -8.57% | -20.89% |
+| KOSDAQ | 650.64 | 0.0% | -4.99% | -13.62% |
+| USD/KRW | 1343.33 | +0.05% | +0.97% | +0.22% |
 | S&P 500 | 7182.78 | 0.0% | +0.1% | -6.96% |
 | NASDAQ | 23585.8 | 0.0% | -1.23% | -9.93% |
-| VIX | 28.29 | 0.0% | -0.53% | +64.48% |
+| VIX | 26.8 | -5.27% | -5.77% | +55.81% |
 | US 10Y | 4.85 | 0.0% | -4.04% | -2.83% |
-| WTI 유가 | 83.82 | +0.17% | +0.73% | -17.82% |
+| WTI 유가 | 84.77 | +1.3% | +1.87% | -16.89% |
 | 금 | 327.45 | 0.0% | -2.31% | -11.16% |
 | 미국 장기채 | 82.24 | 0.0% | +2.35% | +1.35% |
 | KODEX 200 | 73395.0 | +0.35% | -8.97% | -22.3% |
@@ -57,41 +57,41 @@
 - S&P500 하락추세(20/60일선 아래)
 - NASDAQ 하락추세(20/60일선 아래)
 - KOSPI 하락추세(20/60일선 아래)
-- VIX 28 공포 구간
+- VIX 27 공포 구간
 
 ## 참고한 뉴스 (45건)
 
-- [국고채 금리, 기준금리 인상·매파적 점도표에 상승(종합)](https://www.yna.co.kr/view/AKR20261126162551008) · 연합뉴스 경제
-- [국고채 금리 대체로 상승…3년물 연 3.622%](https://www.yna.co.kr/view/AKR20261126162500008) · 연합뉴스 경제
 - [[마감시황] 장 막판 상승폭 반납한 코스피…0.29% 오른 4711.21 마감](https://www.hankyung.com/article/202611262700i) · 한국경제 증권
-- [증권주 주가 두자릿수 하락할 때...NH투자증권은 선방한 이유](https://www.hankyung.com/article/202611260989i) · 한국경제 증권
-- ['전강후약' 코스피, 4700선 가까스로 사수…외국인 또 '팔자'](https://www.hankyung.com/article/2026112626626) · 한국경제 증권
-- [스페이스X 주가에 울고 웃는다…하루 만에 21% 치솟은 종목](https://www.hankyung.com/article/202611262428i) · 한국경제 증권
-- [초고수, 기준금리 인상에 금융주 손 떼고 대한항공 담았다[주식 초고수는 지금]](https://www.mk.co.kr/news/stock/12219395) · 매일경제 증권
-- [“출렁이는 증시, 연말 절세 어떻게?”…우리투자증권, 30일 투자 웨비나 개최](https://www.mk.co.kr/news/stock/12219286) · 매일경제 증권
-- [한국은행 “반도체 악재 겹쳐도 내년 3%대 중반 성장”](https://www.mk.co.kr/news/economy/12219284) · 매일경제 경제
-- [CMC Markets first-half profit more than doubles as B2B growth drives margins](https://www.investing.com/news/stock-market-news/cmc-markets-firsthalf-profit-more-than-doubles-as-b2b-growth-drives-margins-5052162) · Investing.com
-- [Halfords raises FY profit outlook to up to £65 mln as hot summer lifts H1 earnings](https://www.investing.com/news/earnings/halfords-raises-fy-profit-outlook-to-up-to-65-mln-as-hot-summer-lifts-h1-earnings-5052157) · Investing.com
-- [Safestore expects full-year earnings in line as new stores offset weaker trading](https://www.investing.com/news/stock-market-news/safestore-expects-fullyear-earnings-in-line-as-new-stores-offset-weaker-trading-5052155) · Investing.com
-- [Exclusive-US chip curbs, distillation crackdown threaten Chinese AI model development, sources say](https://www.investing.com/news/stock-market-news/exclusiveus-chip-curbs-distillation-crackdown-threaten-chinese-ai-model-development-sources-say-5052154) · Investing.com
-- [UBS names its top European luxury stock picks for 2027](https://www.investing.com/news/stock-market-news/ubs-names-its-top-european-luxury-stock-picks-for-2027-5052152) · Investing.com
-- [Integra LifeSciences officer sells $27,040 in common stock](https://www.investing.com/news/insider-trading-news/integra-lifesciences-officer-sells-27040-in-common-stock-93CH-5052144) · Investing.com
+- [금리 올렸는데 은행주 왜 파래요…한발 먼저 가는 주식 ‘선반영’ 해석](https://www.mk.co.kr/news/stock/12219785) · 매일경제 증권
+- [제 역할 전혀 못하는 ETF…AI·반도체만 담고 투자자는 단타 친다](https://www.mk.co.kr/news/stock/12219765) · 매일경제 증권
+- [금리·AI 수익성 우려에 관세까지…여의도 족집게 “반등 시그널 이때 나온다” [머니닥터 시장진단]](https://www.mk.co.kr/news/stock/12219730) · 매일경제 증권
+- ["증시 안정 위해 반드시 증액" vs "지수 방어 효과 제한적"](https://www.mk.co.kr/news/stock/12219691) · 매일경제 증권
+- [“월급날 은행이 다 털어갑니다”…기준금리 인상 폭탄맞은 영끌족들](https://www.mk.co.kr/news/economy/12219738) · 매일경제 경제
+- [신현송 "내년 4.1% 성장 자신"… 기준금리 인상 재시동](https://www.mk.co.kr/news/economy/12219713) · 매일경제 경제
+- [신현송 "반도체기업 시총 2천조, 영업이익의 3배밖에 안돼"](https://www.mk.co.kr/news/economy/12219694) · 매일경제 경제
+- [민간위 논의 결과 李대통령에 직보 … 증시 체질개선 주도권 쥔다](https://www.mk.co.kr/news/economy/12219690) · 매일경제 경제
+- [Imperial stock sees best day since 1999 on Altria, Japan Tobacco takeover interest](https://www.investing.com/news/stock-market-news/imperial-shares-jump-to-highest-since-2017-on-japan-tobacco-deal-report-5052501) · Investing.com
+- [European stocks end higher on easing tariff fears, ECB leadership continuity](https://www.investing.com/news/economy-news/european-stocks-rally-as-tech-and-banks-rebound-tariff-fears-ease-5052228) · Investing.com
+- [Mueller Industries director sells $103,020 in common stock](https://www.investing.com/news/insider-trading-news/mueller-industries-director-sells-103020-in-common-stock-93CH-5052657) · Investing.com
+- [European stocks end higher as benign U.S. tariffs, Thanksgiving lull offer relief](https://www.investing.com/news/stock-market-news/european-shares-as-benign-us-tariffs-and-thanksgiving-lull-offer-relief-5052089) · Investing.com
+- [Mexico urges Asian trade partners to crack down on tariff dodging](https://www.investing.com/news/stock-market-news/mexico-urges-asian-trade-partners-to-crack-down-on-tariff-dodging-5052646) · Investing.com
+- [U.K. stocks higher at close of trade; Investing.com United Kingdom 100 up 1.88%](https://www.investing.com/news/stock-market-news/uk-stocks-higher-at-close-of-trade-investingcom-united-kingdom-100-up-188-5052644) · Investing.com
+- [Spain stocks higher at close of trade; IBEX 35 up 2.35%](https://www.investing.com/news/stock-market-news/spain-stocks-higher-at-close-of-trade-ibex-35-up-235-5052643) · Investing.com
+- [U.S. tariff-hike threats pile pressure on partners to sign trade deals](https://www.cnbc.com/2026/11/26/us-tariffs-hike-trade-agreement.html) · CNBC Markets
 - [Fed’s preferred inflation gauge accelerated to 3.8% in October, raising the 2027 stakes for the central bank](https://www.cnbc.com/2026/11/25/pce-inflation-report-october-2026.html) · CNBC Markets
 - [Consumer confidence shoots up after Democrats' midterm victories — though inflation worries persist](https://www.cnbc.com/2026/11/24/consumer-confidence-november-election-midterm.html) · CNBC Markets
 - [Japan core inflation soars to highest this year as energy subsidy expiry pushes up consumer prices](https://www.cnbc.com/2026/11/20/japan-inflation-cpi-october.html) · CNBC Markets
-- [Record diesel prices drive UK inflation to 1-year high of 3.6%](https://www.cnbc.com/2026/11/18/uk-inflation-cpi-fuel-prices.html) · CNBC Markets
-- [Is the stock market open for Thanksgiving? The answer might surprise you.](https://www.marketwatch.com/story/is-the-stock-market-open-for-thanksgiving-the-answer-might-surprise-you-e68114d4?mod=mw_rss_topstories) · MarketWatch
-- [Why this stock-market selloff is probably going to get worse before it gets better](https://www.marketwatch.com/story/why-this-stock-market-selloff-is-probably-going-to-get-worse-before-it-gets-better-fce63a89?mod=mw_rss_topstories) · MarketWatch
-- [A 66-year-old nurse is facing down retirement with just $500 saved. Who’s to blame?](https://www.marketwatch.com/story/a-66-year-old-nurse-faces-retirement-with-just-500-saved-whos-to-blame-4249a0fd?mod=mw_rss_topstories) · MarketWatch
-- [Oracle, CoreWeave and other tech stocks bounce back after selloff](https://www.marketwatch.com/story/oracles-stock-sinks-toward-a-3-year-low-as-the-ai-trade-continues-to-unravel-d4698d77?mod=mw_rss_topstories) · MarketWatch
-- [Nvidia’s stock has given back a big chunk of Monday’s rally as dip buyers cash in](https://www.marketwatch.com/story/nvidias-stock-is-giving-back-more-than-half-of-mondays-rally-as-dip-buyers-cash-in-ee4fa52c?mod=mw_rss_topstories) · MarketWatch
-- [외교차관, 온두라스·과테말라 차관과 투자·개발협력 등 논의](https://www.yna.co.kr/view/AKR20261126166500504) · 연합뉴스 경제
-- [삼성화재 부사장에 조번형·황상민 선임](https://www.yna.co.kr/view/AKR20261126163100002) · 연합뉴스 경제
-- [한-에콰도르 전략적경제협력협정 비준동의안, 외통위 통과](https://www.yna.co.kr/view/AKR20261126152900001) · 연합뉴스 경제
-- [공사 멈춘 광주대표도서관에 지방채 90억 편성](https://www.yna.co.kr/view/AKR20261126161900054) · 연합뉴스 경제
-- [에이피알 "브랜드501 주식 700억원어치 추가취득…지분율 87.3%"](https://www.yna.co.kr/view/AKR20261126162600008) · 연합뉴스 경제
-- [與유동수, 소비자 보호·사업자 책임 강화한 디지털자산법 발의](https://www.yna.co.kr/view/AKR20261126157900001) · 연합뉴스 경제
+- [Futures point to Black Friday gains on Wall Street as global markets welcome U.S. resilience](https://www.marketwatch.com/story/futures-point-to-black-friday-gains-for-wall-street-as-global-markets-welcome-u-s-resilience-ad6bcef2?mod=mw_rss_topstories) · MarketWatch
+- [Capital preservation rather than chasing the market is how hedge funds are negotiating this volatility](https://www.marketwatch.com/story/capital-preservation-rather-than-chasing-the-market-higher-is-how-hedge-funds-are-negotiating-market-volatility-f4288b71?mod=mw_rss_topstories) · MarketWatch
+- [KS인더스트리, 50억원 유상증자…프라임라이트투자조합1호에 제3자배정](https://www.yna.co.kr/view/AKR20261126185200008) · 연합뉴스 경제
+- [자본시장개혁기구 수장에 메리츠 김용범…민간에 전권 부여(종합)](https://www.yna.co.kr/view/AKR20261126171651002) · 연합뉴스 경제
+- [오세훈·김은혜, 부동산 정책 공조…내달 1일 세미나 공동 개최(종합)](https://www.yna.co.kr/view/AKR20261126122651001) · 연합뉴스 경제
+- ['국세外 걷으면 간판 바꿔야' 지적에 안덕수 "고민해보겠다"(종합2보)](https://www.yna.co.kr/view/AKR20261126091352002) · 연합뉴스 경제
+- [李대통령 "정부지원으로 성공한 기업, 이익 독차지 말고 재투자"](https://www.yna.co.kr/view/AKR20261126176100001) · 연합뉴스 경제
+- [무디스 "AI확산에 동일 산업 내 기업 간 신용도 격차 확대될 것"](https://www.yna.co.kr/view/AKR20261126182500008) · 연합뉴스 경제
+- [[인사] 현대해상](https://www.yna.co.kr/view/AKR20261126180100002) · 연합뉴스 경제
+- [천호성 전북교육감, 지방교육재정교부금 개편 관련 가정통신문](https://www.yna.co.kr/view/AKR20261126174300055) · 연합뉴스 경제
 
 ---
 _뉴스 소스 상태: 연합뉴스 경제 12, 한국경제 증권 12, 매일경제 증권 12, 매일경제 경제 12, Yahoo Finance 실패 HTTPError, Investing.com 10, CNBC Markets 12, MarketWatch 10_
-_평일 08~17시(KST) 매시 자동 갱신 · AI 호출 (새 뉴스 37건, Gemini gemini-3.1-flash-lite) · 투자 권유가 아닌 참고 정보입니다._
+_평일 08~17시(KST) 매시 자동 갱신 · AI 호출 (새 뉴스 36건, Gemini gemini-3.1-flash-lite) · 투자 권유가 아닌 참고 정보입니다._

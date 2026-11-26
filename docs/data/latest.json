@@ -1,46 +1,46 @@
 {
- "as_of": "2026-11-26 17:04 KST",
+ "as_of": "2026-11-27 03:22 KST",
  "regime": "risk_off",
  "score": -5,
  "reasons": [
   "S&P500 하락추세(20/60일선 아래)",
   "NASDAQ 하락추세(20/60일선 아래)",
   "KOSPI 하락추세(20/60일선 아래)",
-  "VIX 28 공포 구간"
+  "VIX 27 공포 구간"
  ],
  "weights": {
-  "KODEX 200": 5,
+  "KODEX 200": 15,
   "KODEX 코스닥150": 0,
   "S&P 500": 10,
   "NASDAQ": 5,
-  "채권": 40,
+  "채권": 35,
   "금": 15,
-  "현금": 25
+  "현금": 20
  },
  "headline_ind": {
   "KOSPI": {
-   "last": 4711.21,
-   "d1": 0.29,
-   "d5": -8.3,
-   "d20": -20.66,
-   "vs_ma20": -9.31,
-   "vs_ma60": -22.31
+   "last": 4697.51,
+   "d1": 0.0,
+   "d5": -8.57,
+   "d20": -20.89,
+   "vs_ma20": -9.56,
+   "vs_ma60": -22.54
   },
   "KOSDAQ": {
-   "last": 655.71,
-   "d1": 0.78,
-   "d5": -4.25,
-   "d20": -12.95,
-   "vs_ma20": -3.04,
-   "vs_ma60": -15.48
+   "last": 650.64,
+   "d1": 0.0,
+   "d5": -4.99,
+   "d20": -13.62,
+   "vs_ma20": -3.75,
+   "vs_ma60": -16.12
   },
   "USD/KRW": {
-   "last": 1343.95,
-   "d1": 0.1,
-   "d5": 1.02,
-   "d20": 0.27,
-   "vs_ma20": 0.28,
-   "vs_ma60": -0.03
+   "last": 1343.33,
+   "d1": 0.05,
+   "d5": 0.97,
+   "d20": 0.22,
+   "vs_ma20": 0.23,
+   "vs_ma60": -0.08
   },
   "S&P 500": {
    "last": 7182.78,
@@ -59,12 +59,12 @@
    "vs_ma60": -9.21
   },
   "VIX": {
-   "last": 28.29,
-   "d1": 0.0,
-   "d5": -0.53,
-   "d20": 64.48,
-   "vs_ma20": 19.49,
-   "vs_ma60": 50.61
+   "last": 26.8,
+   "d1": -5.27,
+   "d5": -5.77,
+   "d20": 55.81,
+   "vs_ma20": 13.55,
+   "vs_ma60": 42.87
   },
   "US 10Y": {
    "last": 4.85,
@@ -75,12 +75,12 @@
    "vs_ma60": -3.84
   },
   "WTI 유가": {
-   "last": 83.82,
-   "d1": 0.17,
-   "d5": 0.73,
-   "d20": -17.82,
-   "vs_ma20": -4.47,
-   "vs_ma60": -10.38
+   "last": 84.77,
+   "d1": 1.3,
+   "d5": 1.87,
+   "d20": -16.89,
+   "vs_ma20": -3.44,
+   "vs_ma60": -9.38
   },
   "금": {
    "last": 327.45,
@@ -157,79 +157,89 @@
  },
  "news": [
   {
-   "src": "연합뉴스 경제",
-   "title": "국고채 금리, 기준금리 인상·매파적 점도표에 상승(종합)",
-   "link": "https://www.yna.co.kr/view/AKR20261126162551008"
-  },
-  {
-   "src": "연합뉴스 경제",
-   "title": "국고채 금리 대체로 상승…3년물 연 3.622%",
-   "link": "https://www.yna.co.kr/view/AKR20261126162500008"
-  },
-  {
    "src": "한국경제 증권",
    "title": "[마감시황] 장 막판 상승폭 반납한 코스피…0.29% 오른 4711.21 마감",
    "link": "https://www.hankyung.com/article/202611262700i"
   },
   {
-   "src": "한국경제 증권",
-   "title": "증권주 주가 두자릿수 하락할 때...NH투자증권은 선방한 이유",
-   "link": "https://www.hankyung.com/article/202611260989i"
-  },
-  {
-   "src": "한국경제 증권",
-   "title": "'전강후약' 코스피, 4700선 가까스로 사수…외국인 또 '팔자'",
-   "link": "https://www.hankyung.com/article/2026112626626"
-  },
-  {
-   "src": "한국경제 증권",
-   "title": "스페이스X 주가에 울고 웃는다…하루 만에 21% 치솟은 종목",
-   "link": "https://www.hankyung.com/article/202611262428i"
+   "src": "매일경제 증권",
+   "title": "금리 올렸는데 은행주 왜 파래요…한발 먼저 가는 주식 ‘선반영’ 해석",
+   "link": "https://www.mk.co.kr/news/stock/12219785"
   },
   {
    "src": "매일경제 증권",
-   "title": "초고수, 기준금리 인상에 금융주 손 떼고 대한항공 담았다[주식 초고수는 지금]",
-   "link": "https://www.mk.co.kr/news/stock/12219395"
+   "title": "제 역할 전혀 못하는 ETF…AI·반도체만 담고 투자자는 단타 친다",
+   "link": "https://www.mk.co.kr/news/stock/12219765"
   },
   {
    "src": "매일경제 증권",
-   "title": "“출렁이는 증시, 연말 절세 어떻게?”…우리투자증권, 30일 투자 웨비나 개최",
-   "link": "https://www.mk.co.kr/news/stock/12219286"
+   "title": "금리·AI 수익성 우려에 관세까지…여의도 족집게 “반등 시그널 이때 나온다” [머니닥터 시장진단]",
+   "link": "https://www.mk.co.kr/news/stock/12219730"
+  },
+  {
+   "src": "매일경제 증권",
+   "title": "\"증시 안정 위해 반드시 증액\" vs \"지수 방어 효과 제한적\"",
+   "link": "https://www.mk.co.kr/news/stock/12219691"
   },
   {
    "src": "매일경제 경제",
-   "title": "한국은행 “반도체 악재 겹쳐도 내년 3%대 중반 성장”",
-   "link": "https://www.mk.co.kr/news/economy/12219284"
+   "title": "“월급날 은행이 다 털어갑니다”…기준금리 인상 폭탄맞은 영끌족들",
+   "link": "https://www.mk.co.kr/news/economy/12219738"
+  },
+  {
+   "src": "매일경제 경제",
+   "title": "신현송 \"내년 4.1% 성장 자신\"… 기준금리 인상 재시동",
+   "link": "https://www.mk.co.kr/news/economy/12219713"
+  },
+  {
+   "src": "매일경제 경제",
+   "title": "신현송 \"반도체기업 시총 2천조, 영업이익의 3배밖에 안돼\"",
+   "link": "https://www.mk.co.kr/news/economy/12219694"
+  },
+  {
+   "src": "매일경제 경제",
+   "title": "민간위 논의 결과 李대통령에 직보 … 증시 체질개선 주도권 쥔다",
+   "link": "https://www.mk.co.kr/news/economy/12219690"
   },
   {
    "src": "Investing.com",
-   "title": "CMC Markets first-half profit more than doubles as B2B growth drives margins",
-   "link": "https://www.investing.com/news/stock-market-news/cmc-markets-firsthalf-profit-more-than-doubles-as-b2b-growth-drives-margins-5052162"
+   "title": "Imperial stock sees best day since 1999 on Altria, Japan Tobacco takeover interest",
+   "link": "https://www.investing.com/news/stock-market-news/imperial-shares-jump-to-highest-since-2017-on-japan-tobacco-deal-report-5052501"
   },
   {
    "src": "Investing.com",
-   "title": "Halfords raises FY profit outlook to up to £65 mln as hot summer lifts H1 earnings",
-   "link": "https://www.investing.com/news/earnings/halfords-raises-fy-profit-outlook-to-up-to-65-mln-as-hot-summer-lifts-h1-earnings-5052157"
+   "title": "European stocks end higher on easing tariff fears, ECB leadership continuity",
+   "link": "https://www.investing.com/news/economy-news/european-stocks-rally-as-tech-and-banks-rebound-tariff-fears-ease-5052228"
   },
   {
    "src": "Investing.com",
-   "title": "Safestore expects full-year earnings in line as new stores offset weaker trading",
-   "link": "https://www.investing.com/news/stock-market-news/safestore-expects-fullyear-earnings-in-line-as-new-stores-offset-weaker-trading-5052155"
+   "title": "Mueller Industries director sells $103,020 in common stock",
+   "link": "https://www.investing.com/news/insider-trading-news/mueller-industries-director-sells-103020-in-common-stock-93CH-5052657"
   },
   {
    "src": "Investing.com",
-   "title": "Exclusive-US chip curbs, distillation crackdown threaten Chinese AI model development, sources say",
-   "link": "https://www.investing.com/news/stock-market-news/exclusiveus-chip-curbs-distillation-crackdown-threaten-chinese-ai-model-development-sources-say-5052154"
+   "title": "European stocks end higher as benign U.S. tariffs, Thanksgiving lull offer relief",
+   "link": "https://www.investing.com/news/stock-market-news/european-shares-as-benign-us-tariffs-and-thanksgiving-lull-offer-relief-5052089"
   },
   {
    "src": "Investing.com",
-   "title": "UBS names its top European luxury stock picks for 2027",
-   "link": "https://www.investing.com/news/stock-market-news/ubs-names-its-top-european-luxury-stock-picks-for-2027-5052152"
+   "title": "Mexico urges Asian trade partners to crack down on tariff dodging",
+   "link": "https://www.investing.com/news/stock-market-news/mexico-urges-asian-trade-partners-to-crack-down-on-tariff-dodging-5052646"
   },
   {
    "src": "Investing.com",
-   "title": "Integra LifeSciences officer sells $27,040 in common stock",
-   "link": "https://www.investing.com/news/insider-trading-news/integra-lifesciences-officer-sells-27040-in-common-stock-93CH-5052144"
+   "title": "U.K. stocks higher at close of trade; Investing.com United Kingdom 100 up 1.88%",
+   "link": "https://www.investing.com/news/stock-market-news/uk-stocks-higher-at-close-of-trade-investingcom-united-kingdom-100-up-188-5052644"
+  },
+  {
+   "src": "Investing.com",
+   "title": "Spain stocks higher at close of trade; IBEX 35 up 2.35%",
+   "link": "https://www.investing.com/news/stock-market-news/spain-stocks-higher-at-close-of-trade-ibex-35-up-235-5052643"
+  },
+  {
+   "src": "CNBC Markets",
+   "title": "U.S. tariff-hike threats pile pressure on partners to sign trade deals",
+   "link": "https://www.cnbc.com/2026/11/26/us-tariffs-hike-trade-agreement.html"
   },
   {
    "src": "CNBC Markets",
@@ -247,84 +257,104 @@
    "link": "https://www.cnbc.com/2026/11/20/japan-inflation-cpi-october.html"
   },
   {
-   "src": "CNBC Markets",
-   "title": "Record diesel prices drive UK inflation to 1-year high of 3.6%",
-   "link": "https://www.cnbc.com/2026/11/18/uk-inflation-cpi-fuel-prices.html"
+   "src": "MarketWatch",
+   "title": "Futures point to Black Friday gains on Wall Street as global markets welcome U.S. resilience",
+   "link": "https://www.marketwatch.com/story/futures-point-to-black-friday-gains-for-wall-street-as-global-markets-welcome-u-s-resilience-ad6bcef2?mod=mw_rss_topstories"
   },
   {
    "src": "MarketWatch",
-   "title": "Is the stock market open for Thanksgiving? The answer might surprise you.",
-   "link": "https://www.marketwatch.com/story/is-the-stock-market-open-for-thanksgiving-the-answer-might-surprise-you-e68114d4?mod=mw_rss_topstories"
-  },
-  {
-   "src": "MarketWatch",
-   "title": "Why this stock-market selloff is probably going to get worse before it gets better",
-   "link": "https://www.marketwatch.com/story/why-this-stock-market-selloff-is-probably-going-to-get-worse-before-it-gets-better-fce63a89?mod=mw_rss_topstories"
-  },
-  {
-   "src": "MarketWatch",
-   "title": "A 66-year-old nurse is facing down retirement with just $500 saved. Who’s to blame?",
-   "link": "https://www.marketwatch.com/story/a-66-year-old-nurse-faces-retirement-with-just-500-saved-whos-to-blame-4249a0fd?mod=mw_rss_topstories"
-  },
-  {
-   "src": "MarketWatch",
-   "title": "Oracle, CoreWeave and other tech stocks bounce back after selloff",
-   "link": "https://www.marketwatch.com/story/oracles-stock-sinks-toward-a-3-year-low-as-the-ai-trade-continues-to-unravel-d4698d77?mod=mw_rss_topstories"
-  },
-  {
-   "src": "MarketWatch",
-   "title": "Nvidia’s stock has given back a big chunk of Monday’s rally as dip buyers cash in",
-   "link": "https://www.marketwatch.com/story/nvidias-stock-is-giving-back-more-than-half-of-mondays-rally-as-dip-buyers-cash-in-ee4fa52c?mod=mw_rss_topstories"
+   "title": "Capital preservation rather than chasing the market is how hedge funds are negotiating this volatility",
+   "link": "https://www.marketwatch.com/story/capital-preservation-rather-than-chasing-the-market-higher-is-how-hedge-funds-are-negotiating-market-volatility-f4288b71?mod=mw_rss_topstories"
   },
   {
    "src": "연합뉴스 경제",
-   "title": "외교차관, 온두라스·과테말라 차관과 투자·개발협력 등 논의",
-   "link": "https://www.yna.co.kr/view/AKR20261126166500504"
+   "title": "KS인더스트리, 50억원 유상증자…프라임라이트투자조합1호에 제3자배정",
+   "link": "https://www.yna.co.kr/view/AKR20261126185200008"
   },
   {
    "src": "연합뉴스 경제",
-   "title": "삼성화재 부사장에 조번형·황상민 선임",
-   "link": "https://www.yna.co.kr/view/AKR20261126163100002"
+   "title": "자본시장개혁기구 수장에 메리츠 김용범…민간에 전권 부여(종합)",
+   "link": "https://www.yna.co.kr/view/AKR20261126171651002"
   },
   {
    "src": "연합뉴스 경제",
-   "title": "한-에콰도르 전략적경제협력협정 비준동의안, 외통위 통과",
-   "link": "https://www.yna.co.kr/view/AKR20261126152900001"
+   "title": "오세훈·김은혜, 부동산 정책 공조…내달 1일 세미나 공동 개최(종합)",
+   "link": "https://www.yna.co.kr/view/AKR20261126122651001"
   },
   {
    "src": "연합뉴스 경제",
-   "title": "공사 멈춘 광주대표도서관에 지방채 90억 편성",
-   "link": "https://www.yna.co.kr/view/AKR20261126161900054"
+   "title": "'국세外 걷으면 간판 바꿔야' 지적에 안덕수 \"고민해보겠다\"(종합2보)",
+   "link": "https://www.yna.co.kr/view/AKR20261126091352002"
   },
   {
    "src": "연합뉴스 경제",
-   "title": "에이피알 \"브랜드501 주식 700억원어치 추가취득…지분율 87.3%\"",
-   "link": "https://www.yna.co.kr/view/AKR20261126162600008"
+   "title": "李대통령 \"정부지원으로 성공한 기업, 이익 독차지 말고 재투자\"",
+   "link": "https://www.yna.co.kr/view/AKR20261126176100001"
   },
   {
    "src": "연합뉴스 경제",
-   "title": "與유동수, 소비자 보호·사업자 책임 강화한 디지털자산법 발의",
-   "link": "https://www.yna.co.kr/view/AKR20261126157900001"
+   "title": "무디스 \"AI확산에 동일 산업 내 기업 간 신용도 격차 확대될 것\"",
+   "link": "https://www.yna.co.kr/view/AKR20261126182500008"
   },
   {
    "src": "연합뉴스 경제",
-   "title": "대전세종충남 교육당국, 학교비정규직 총파업 불편 최소화 총력(종합)",
-   "link": "https://www.yna.co.kr/view/AKR20261126161500063"
+   "title": "[인사] 현대해상",
+   "link": "https://www.yna.co.kr/view/AKR20261126180100002"
   },
   {
    "src": "연합뉴스 경제",
-   "title": "LH, 공공임대 단지 과학교육 프로그램 확대 운영",
-   "link": "https://www.yna.co.kr/view/AKR20261126157300003"
+   "title": "천호성 전북교육감, 지방교육재정교부금 개편 관련 가정통신문",
+   "link": "https://www.yna.co.kr/view/AKR20261126174300055"
   },
   {
    "src": "연합뉴스 경제",
-   "title": "공정위원장 \"기술탈취 행위에 무관용…과징금 5배 상향 계획\"(종합)",
-   "link": "https://www.yna.co.kr/view/AKR20261126090551002"
+   "title": "[연합뉴스 이 시각 헤드라인] - 18:00",
+   "link": "https://www.yna.co.kr/view/AKR20261126171000011"
   },
   {
    "src": "연합뉴스 경제",
-   "title": "이소영 중기장관, \"비대면진료에 과도한 규제 있다면 조정할 것\"(종합)",
-   "link": "https://www.yna.co.kr/view/AKR20261126087751030"
+   "title": "원주시의회 산업경제위, 기업·인공지능 교육 현장 점검",
+   "link": "https://www.yna.co.kr/view/AKR20261126176000062"
+  },
+  {
+   "src": "연합뉴스 경제",
+   "title": "한은, 12월 최대 5.7조원 규모 통화안정증권 발행",
+   "link": "https://www.yna.co.kr/view/AKR20261126175000002"
+  },
+  {
+   "src": "연합뉴스 경제",
+   "title": "송미령 장관 \"토마토 바이러스 농가 보상…휴경 자금도 지원\"",
+   "link": "https://www.yna.co.kr/view/AKR20261126132800030"
+  },
+  {
+   "src": "한국경제 증권",
+   "title": "\"주식으로 와이프 가방 사줬습니다\"…사진 보니 '눈물'",
+   "link": "https://www.hankyung.com/article/2026112633497"
+  },
+  {
+   "src": "한국경제 증권",
+   "title": "트럼프, 젠슨 황 복귀 바란 까닭 [한경 프리미엄9 TODAY]",
+   "link": "https://www.hankyung.com/article/2026112632371"
+  },
+  {
+   "src": "한국경제 증권",
+   "title": "혼돈의 시대…2027 대예측",
+   "link": "https://www.hankyung.com/article/2026112631341"
+  },
+  {
+   "src": "한국경제 증권",
+   "title": "단기채 늘린 NH증권, 증권주 줄하락에도 '선방'",
+   "link": "https://www.hankyung.com/article/2026112632111"
+  },
+  {
+   "src": "한국경제 증권",
+   "title": "\"엔비디아 아직 팔 때 아니다\"…'빅쇼트' 주인공의 반전 베팅",
+   "link": "https://www.hankyung.com/article/2026112632041"
+  },
+  {
+   "src": "한국경제 증권",
+   "title": "'대통령 직보' 자본시장 개혁기구 출범…위원장에 김용범 메리츠 부회장",
+   "link": "https://www.hankyung.com/article/202611262896i"
   },
   {
    "src": "한국경제 증권",
@@ -350,36 +380,6 @@
    "src": "한국경제 증권",
    "title": "\"버티자\" 다독이던 전문가…삼전 레버리지 차트 보자 눈물",
    "link": "https://www.hankyung.com/article/2026112626167"
-  },
-  {
-   "src": "한국경제 증권",
-   "title": "NH투자증권, 이노씨에스알과 네팔 벽돌 탄소감축 MOU",
-   "link": "https://www.hankyung.com/article/2026112626336"
-  },
-  {
-   "src": "한국경제 증권",
-   "title": "\"주식보다 낫네\"…'年 6%' 우량회사채, JP모간도 주목",
-   "link": "https://www.hankyung.com/article/202611262331i"
-  },
-  {
-   "src": "한국경제 증권",
-   "title": "美, 스페이스X 위성 100만기 배치 승인…우주항공株 '들썩'",
-   "link": "https://www.hankyung.com/article/202611262510i"
-  },
-  {
-   "src": "매일경제 증권",
-   "title": "제일기획, 2027년 정기 임원인사 단행...권현정·홍상우 부사장 승진",
-   "link": "https://www.mk.co.kr/news/stock/12219525"
-  },
-  {
-   "src": "매일경제 증권",
-   "title": "IMM컨소, 12년 보유 끝 현대LNG해운 매각 마무리",
-   "link": "https://www.mk.co.kr/news/stock/12219459"
-  },
-  {
-   "src": "매일경제 증권",
-   "title": "日 키옥시아, 엔비디아와 SSD 실증···韓 HBM 일부 대체 노려",
-   "link": "https://www.mk.co.kr/news/world/12219457"
   }
  ],
  "news_status": {
@@ -392,43 +392,43 @@
   "CNBC Markets": 12,
   "MarketWatch": 10
  },
- "headline_title": "인플레이션 경계감과 금리 상승이 지배하는 시장, 방어적 포트폴리오 유지",
- "summary": "미국 10월 물가 지표가 3.8%로 가속화되며 연준의 긴축 기조가 강화될 것이라는 우려가 시장을 짓누르고 있습니다. 한국 역시 국고채 금리 상승과 외국인의 지속적인 매도세가 코스피 4700선 방어에 부담을 주고 있습니다. 반도체 등 핵심 기술주가 변동성을 보이는 가운데, 투자자들은 위험 자산보다는 우량 회사채나 현금성 자산으로 눈을 돌리는 모습입니다. 특히 인플레이션 압력이 글로벌 전역에서 확인되면서 금리 민감도가 높은 성장주보다는 실적 기반의 방어적 섹터가 주목받고 있습니다. 시장은 당분간 금리 변동성에 따른 하방 압력을 견뎌내야 하는 국면입니다.",
+ "headline_title": "금리 인상과 관세 리스크 속, 자본시장 개혁 기대감과 방어적 포트폴리오의 공존",
+ "summary": "미국 물가 지표가 3.8%로 가속화되며 금리 인상 압박이 커진 가운데, 관세 리스크와 AI 수익성 우려가 시장의 변동성을 키우고 있습니다. 한국은 자본시장 개혁기구 출범과 민간 주도의 체질 개선 기대감이 하락장에서의 방어 기제로 작용하고 있습니다. 반면, 미국은 블랙프라이데이 기대감과 무역 협상 압박이 혼재된 상황입니다. 시장은 공격적인 성장주 추격보다는 자본 보존을 우선시하는 헤지펀드 전략을 따르고 있습니다. 금리 인상 기조가 재확인된 만큼, 현금 비중을 유지하며 변동성 완화를 기다리는 전략이 유효합니다.",
  "issues": [
   {
    "title": "미국 인플레이션 가속화",
-   "detail": "연준 선호 물가 지표가 3.8%로 상승하며 고금리 장기화 우려가 재점화되었습니다.",
+   "detail": "미국 10월 물가 지표가 3.8%로 상승하며 2027년 금리 인상 가능성을 높여 시장의 할인율 부담을 가중시킴.",
    "impact": "부정"
   },
   {
-   "title": "국내외 금리 상승 압력",
-   "detail": "기준금리 인상 기조와 매파적 점도표가 채권 시장의 변동성을 키우고 있습니다.",
-   "impact": "부정"
+   "title": "한국 자본시장 개혁기구 출범",
+   "detail": "메리츠 김용범 부회장을 수장으로 한 민간 주도 개혁기구가 대통령 직보 체제로 출범하며 증시 체질 개선 기대감 형성.",
+   "impact": "긍정"
   },
   {
-   "title": "기술주 변동성 확대",
-   "detail": "엔비디아 등 주요 기술주의 차익 실현 매물과 AI 관련 규제 리스크가 시장을 흔들고 있습니다.",
+   "title": "글로벌 관세 및 무역 리스크",
+   "detail": "미국의 관세 위협이 무역 파트너들에게 협상 압박으로 작용하며 글로벌 공급망과 기업 이익에 불확실성 증대.",
    "impact": "혼재"
   }
  ],
  "rationale": {
-  "KODEX 200": "외국인 매도세와 코스피 하락 추세를 고려하여 기본 비중에서 축소하였습니다.",
-  "KODEX 코스닥150": "변동성이 극심한 중소형주 비중을 0으로 유지하여 리스크를 관리합니다.",
-  "S&P 500": "지수 하락 추세가 뚜렷하여 방어적 관점에서 비중을 소폭 하향 조정하였습니다.",
-  "NASDAQ": "기술주 중심의 변동성 확대로 인해 최소한의 노출도만 유지합니다.",
-  "채권": "금리 상승기이나 안전자산 선호 심리를 반영하여 비중을 확대하였습니다.",
-  "금": "인플레이션 헤지 수단으로서의 가치를 고려해 기존 비중을 유지합니다.",
-  "현금": "시장 불확실성이 해소될 때까지 대기 자금을 확보하기 위해 높은 수준을 유지합니다."
+  "KODEX 200": "자본시장 개혁기구 출범에 따른 정책적 하방 지지 기대감을 반영하여 기본 비중 대비 소폭 상향 조정함.",
+  "KODEX 코스닥150": "금리 인상기에는 중소형주와 성장주 중심의 코스닥 시장이 높은 변동성에 노출되므로 비중을 0으로 유지함.",
+  "S&P 500": "미국 물가 지표 상승과 관세 리스크로 인한 지수 하락 추세를 고려하여 기본 비중 대비 축소함.",
+  "NASDAQ": "AI 수익성 우려와 기술주 변동성 확대에 따라 최소한의 노출도만 유지함.",
+  "채권": "금리 인상 기조 속에서도 안전자산 선호 심리가 강해지며 포트폴리오 방어력을 위해 비중을 확대함.",
+  "금": "지정학적 리스크와 인플레이션 헤지 수단으로서의 가치를 고려하여 기존 비중을 유지함.",
+  "현금": "VIX가 공포 구간에 진입한 만큼, 시장 변동성이 진정될 때까지 유동성을 확보하여 대응력을 높임."
  },
  "watch": [
-  "미국 10년물 국채 금리의 4.8%대 안착 여부",
-  "외국인의 코스피 순매도 전환 시점",
-  "엔비디아를 포함한 주요 기술주의 기술적 지지선 방어 여부"
+  "미국 2027년 금리 인상 경로 및 연준 위원 발언",
+  "한국 자본시장 개혁기구의 구체적인 정책 로드맵",
+  "글로벌 관세 협상 관련 무역 파트너들의 대응"
  ],
  "usage": {
-  "in": 2688,
-  "out": 814,
+  "in": 2679,
+  "out": 903,
   "model": "gemini-3.1-flash-lite"
  },
- "llm_reason": "호출 (새 뉴스 37건, Gemini gemini-3.1-flash-lite)"
+ "llm_reason": "호출 (새 뉴스 36건, Gemini gemini-3.1-flash-lite)"
 }

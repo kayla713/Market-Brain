@@ -1,5 +1,5 @@
 {
- "as_of": "2026-11-27 13:57 KST",
+ "as_of": "2026-11-27 17:12 KST",
  "regime": "risk_off",
  "score": -5,
  "reasons": [
@@ -11,36 +11,36 @@
  "weights": {
   "KODEX 200": 15,
   "KODEX 코스닥150": 5,
-  "S&P 500": 15,
+  "S&P 500": 10,
   "NASDAQ": 5,
-  "채권": 25,
+  "채권": 30,
   "금": 15,
   "현금": 20
  },
  "headline_ind": {
   "KOSPI": {
-   "last": 4898.17,
-   "d1": 3.97,
-   "d5": 0.58,
-   "d20": -14.53,
-   "vs_ma20": -4.95,
-   "vs_ma60": -18.83
+   "last": 4915.68,
+   "d1": 4.34,
+   "d5": 0.94,
+   "d20": -14.22,
+   "vs_ma20": -4.63,
+   "vs_ma60": -18.55
   },
   "KOSDAQ": {
-   "last": 700.72,
-   "d1": 6.86,
-   "d5": 8.52,
-   "d20": -3.27,
-   "vs_ma20": 3.8,
-   "vs_ma60": -9.45
+   "last": 655.71,
+   "d1": 0.0,
+   "d5": 1.55,
+   "d20": -9.48,
+   "vs_ma20": -2.54,
+   "vs_ma60": -15.19
   },
   "USD/KRW": {
-   "last": 1339.98,
-   "d1": -0.22,
-   "d5": 0.39,
-   "d20": 0.15,
-   "vs_ma20": -0.02,
-   "vs_ma60": -0.31
+   "last": 1334.68,
+   "d1": -0.62,
+   "d5": -0.01,
+   "d20": -0.25,
+   "vs_ma20": -0.4,
+   "vs_ma60": -0.69
   },
   "S&P 500": {
    "last": 7182.78,
@@ -75,12 +75,12 @@
    "vs_ma60": -3.86
   },
   "WTI 유가": {
-   "last": 85.76,
-   "d1": 0.0,
-   "d5": 2.12,
-   "d20": -17.63,
-   "vs_ma20": -1.33,
-   "vs_ma60": -8.24
+   "last": 86.08,
+   "d1": 2.87,
+   "d5": 2.5,
+   "d20": -17.33,
+   "vs_ma20": -0.86,
+   "vs_ma60": -7.87
   },
   "금": {
    "last": 327.45,
@@ -99,36 +99,36 @@
    "vs_ma60": 2.75
   },
   "KODEX 200": {
-   "last": 76585.0,
-   "d1": 4.35,
-   "d5": 0.49,
-   "d20": -15.66,
-   "vs_ma20": -5.3,
-   "vs_ma60": -19.66
+   "last": 76705.0,
+   "d1": 4.51,
+   "d5": 0.65,
+   "d20": -15.52,
+   "vs_ma20": -5.16,
+   "vs_ma60": -19.54
   },
   "KODEX 코스닥150": {
-   "last": 11730.0,
-   "d1": 8.11,
-   "d5": 11.61,
-   "d20": -1.51,
-   "vs_ma20": 6.0,
-   "vs_ma60": -9.29
+   "last": 11925.0,
+   "d1": 9.91,
+   "d5": 13.46,
+   "d20": 0.13,
+   "vs_ma20": 7.67,
+   "vs_ma60": -7.81
   },
   "KODEX 반도체": {
-   "last": 86660.0,
-   "d1": 6.72,
-   "d5": 2.43,
-   "d20": -18.82,
-   "vs_ma20": -5.75,
-   "vs_ma60": -25.92
+   "last": 87585.0,
+   "d1": 7.86,
+   "d5": 3.53,
+   "d20": -17.96,
+   "vs_ma20": -4.79,
+   "vs_ma60": -25.13
   },
   "KODEX 2차전지": {
-   "last": 12225.0,
-   "d1": 7.05,
-   "d5": 7.1,
-   "d20": -8.97,
-   "vs_ma20": -0.86,
-   "vs_ma60": -12.27
+   "last": 12320.0,
+   "d1": 7.88,
+   "d5": 7.93,
+   "d20": -8.27,
+   "vs_ma20": -0.13,
+   "vs_ma60": -11.6
   },
   "美 Tech": {
    "last": 155.79,
@@ -158,48 +158,48 @@
  "news": [
   {
    "src": "연합뉴스 경제",
-   "title": "코스피 장중 상승폭 커져 4,900선 탈환 시도…코스닥 6%대 급등",
-   "link": "https://www.yna.co.kr/view/AKR20261127090700008"
+   "title": "국고채 금리 대체로 상승…3년물 연 3.685%",
+   "link": "https://www.yna.co.kr/view/AKR20261127135100008"
   },
   {
    "src": "연합뉴스 경제",
-   "title": "엔비디아발 'AI 조정' 잦아드나…코스피·코스닥 일제히 급등",
-   "link": "https://www.yna.co.kr/view/AKR20261127078300008"
+   "title": "엔비디아발 'AI 조정' 잦아드나…코스피·코스닥, 급등 마감(종합)",
+   "link": "https://www.yna.co.kr/view/AKR20261127078351008"
   },
   {
    "src": "한국경제 증권",
-   "title": "[오전시황] 증안펀드 기대에 코스닥 5%대 급등...코스피도 4800선 회복",
-   "link": "https://www.hankyung.com/article/202611274438i"
+   "title": "외국인·기관 쌍끌이 매수에 코스피 4.3% 급등…4900선 탈환",
+   "link": "https://www.hankyung.com/article/2026112751366"
   },
   {
    "src": "한국경제 증권",
-   "title": "10조원 풀지도 않았는데…외국인 돌변에 코스닥 5%대 급등",
-   "link": "https://www.hankyung.com/article/2026112743026"
+   "title": "[마감시황] 외국인 1조원 넘게 샀다…코스피 4900선 회복·코스닥 8% 급등 마감",
+   "link": "https://www.hankyung.com/article/202611275045i"
   },
   {
    "src": "한국경제 증권",
+   "title": "\"강남 아파트 4번 불탄 셈\"…증시 급락에 전문가 쓴소리",
+   "link": "https://www.hankyung.com/article/202611274846H"
+  },
+  {
+   "src": "한국경제 증권",
+   "title": "코스피 4.3% 상승 4900 회복…코스닥 8%대 올라 700 탈환",
+   "link": "https://www.hankyung.com/article/2026112750106"
+  },
+  {
+   "src": "매일경제 증권",
+   "title": "증시 ‘들었다 놨다’ 외국인 “하루 만에 1조 넘게 샀다”…코스피 4900선 회복",
+   "link": "https://www.mk.co.kr/news/stock/12220228"
+  },
+  {
+   "src": "매일경제 증권",
+   "title": "한은 기준금리 올린 날 무슨 일이?…국고채 만기별로 희비 엇갈린 이유",
+   "link": "https://www.mk.co.kr/news/stock/12220173"
+  },
+  {
+   "src": "매일경제 증권",
    "title": "[속보] 코스닥 5%대 급등에 매수 사이드카 발동",
-   "link": "https://www.hankyung.com/article/2026112742596"
-  },
-  {
-   "src": "한국경제 증권",
-   "title": "\"외국인이 샀는데 14% 빠졌다\"…올해 증시서 달라진 '수급의 법칙'",
-   "link": "https://www.hankyung.com/article/202611273913i"
-  },
-  {
-   "src": "한국경제 증권",
-   "title": "[개장시황] 코스피 소폭 상승·코스닥 2%대 강세…로봇·바이오 약진",
-   "link": "https://www.hankyung.com/article/202611273949i"
-  },
-  {
-   "src": "매일경제 증권",
-   "title": "[MK시그널] 에스엘, 전동화 부품 성장 및 로봇 사업 확장 기대감 등에 주가 상승세... MK시그널 추천 후 상승률 12.82% 기록",
-   "link": "https://www.mk.co.kr/news/stock/12219932"
-  },
-  {
-   "src": "매일경제 증권",
-   "title": "[MK 골든크로스 돌파종목 : 아이티엠반도체(084850) & 인바디(041830)]",
-   "link": "https://www.mk.co.kr/news/stock/12219929"
+   "link": "https://www.mk.co.kr/news/stock/12219974"
   },
   {
    "src": "매일경제 경제",
@@ -207,29 +207,14 @@
    "link": "https://www.mk.co.kr/news/economy/12220080"
   },
   {
-   "src": "매일경제 경제",
-   "title": "中대사 “한미동맹 현대화, 中겨냥해선 안돼…관세전쟁 끝까지 응전”",
-   "link": "https://www.mk.co.kr/news/world/12219976"
+   "src": "Investing.com",
+   "title": "French preliminary inflation at 3.2% in November",
+   "link": "https://www.investing.com/news/economy-news/french-preliminary-inflation-at-32-in-november-5053065"
   },
   {
    "src": "Investing.com",
-   "title": "Aclarion earnings beat by $0.11, revenue fell short of estimates",
-   "link": "https://www.investing.com/news/earnings/aclarion-earnings-beat-by-011-revenue-fell-short-of-estimates-5052851"
-  },
-  {
-   "src": "Investing.com",
-   "title": "Claritev CEO Travis Dalton acquires $49,944 in company stock",
-   "link": "https://www.investing.com/news/insider-trading-news/claritev-ceo-travis-dalton-acquires-49944-in-company-stock-93CH-5052847"
-  },
-  {
-   "src": "Investing.com",
-   "title": "Donegal Mutual buys $332,212 in Donegal Group stock",
-   "link": "https://www.investing.com/news/insider-trading-news/donegal-mutual-buys-332212-in-donegal-group-stock-93CH-5052846"
-  },
-  {
-   "src": "Investing.com",
-   "title": "IMF urges RBA to maintain rate hike bias as inflation risks persist",
-   "link": "https://www.investing.com/news/economy-news/imf-urges-rba-to-maintain-rate-hike-bias-as-inflation-risks-persist-5052841"
+   "title": "Earnings call transcript: Dellia Q3 2026 profit falls as Kirirom deal closes",
+   "link": "https://www.investing.com/news/transcripts/earnings-call-transcript-dellia-q3-2026-profit-falls-as-kirirom-deal-closes-93CH-5053062"
   },
   {
    "src": "CNBC Markets",
@@ -253,6 +238,11 @@
   },
   {
    "src": "MarketWatch",
+   "title": "Is the stock market open on Black Friday?",
+   "link": "https://www.marketwatch.com/story/is-the-stock-market-open-on-black-friday-0a735c45?mod=mw_rss_topstories"
+  },
+  {
+   "src": "MarketWatch",
    "title": "I’m terrified of a market crash. Should I put $400,000 of my $1 million retirement savings into an annuity?",
    "link": "https://www.marketwatch.com/story/were-in-our-50s-and-terrified-of-a-market-crash-should-we-put-400-000-of-our-1-million-retirement-savings-into-an-annuity-1943f240?mod=mw_rss_topstories"
   },
@@ -263,88 +253,108 @@
   },
   {
    "src": "연합뉴스 경제",
-   "title": "[인사] HDC그룹",
-   "link": "https://www.yna.co.kr/view/AKR20261127091300003"
+   "title": "iM금융지주, 차기 회장 후보군 황병우 등 3명으로 압축",
+   "link": "https://www.yna.co.kr/view/AKR20261127136500053"
   },
   {
    "src": "연합뉴스 경제",
-   "title": "IPARK현대산업개발 신임 대표이사에 강민석 부사장",
-   "link": "https://www.yna.co.kr/view/AKR20261127088700003"
+   "title": "韓총리 \"올해 주택공급 목표 달성 총력…내년 준비도 서둘러야\"",
+   "link": "https://www.yna.co.kr/view/AKR20261127133800001"
   },
   {
    "src": "연합뉴스 경제",
-   "title": "산청군, 부리지구 대지조성사업 12월 마무리…42가구 분양",
-   "link": "https://www.yna.co.kr/view/AKR20261127089700052"
+   "title": "충북지사, 지방시대위원장에 시장형 공기업 등 배치 건의(종합)",
+   "link": "https://www.yna.co.kr/view/AKR20261127039551064"
   },
   {
    "src": "연합뉴스 경제",
-   "title": "송미령 농식품장관 \"청년농 협업 경영 모델 지원\"",
-   "link": "https://www.yna.co.kr/view/AKR20261127063200030"
+   "title": "[게시판] 한국거래소, 부산 여성가장 지원 키트 제작 봉사활동",
+   "link": "https://www.yna.co.kr/view/AKR20261127133300008"
   },
   {
    "src": "연합뉴스 경제",
-   "title": "농진청장 \"K-라이스벨트 사업 후 아프리카 농가 생산 두배 증가\"",
-   "link": "https://www.yna.co.kr/view/AKR20261127079400030"
+   "title": "경남제약, 40억원 유상증자…㈜엑스에 제3자배정",
+   "link": "https://www.yna.co.kr/view/AKR20261127130900008"
   },
   {
    "src": "연합뉴스 경제",
-   "title": "與정년연장특위 노사합의 불발…10개월만 회동에도 접점 못찾아(종합)",
-   "link": "https://www.yna.co.kr/view/AKR20261127069251001"
+   "title": "씨티 \"증안펀드 20∼40조 확대 가능…이르면 12월 1∼2조 투입\"",
+   "link": "https://www.yna.co.kr/view/AKR20261127130600008"
   },
   {
    "src": "연합뉴스 경제",
-   "title": "한국창업학회·중기중앙회, AI 시대 중기·벤처 성장 전략 모색",
-   "link": "https://www.yna.co.kr/view/AKR20261127074200030"
+   "title": "공공부문 비정규직 80만명 추산…차별해소·처우개선 논의 본격화",
+   "link": "https://www.yna.co.kr/view/AKR20261127078600530"
   },
   {
    "src": "연합뉴스 경제",
-   "title": "\"OTT 공유 계정 단속에 이용 중단 속출…소비자 상담 급증\"",
-   "link": "https://www.yna.co.kr/view/AKR20261126142100030"
+   "title": "[게시판] 농식품부, 27∼29일 '대한민국 과일 산업대전' 개최",
+   "link": "https://www.yna.co.kr/view/AKR20261127095100030"
   },
   {
    "src": "연합뉴스 경제",
-   "title": "3분기 카드 해외사용액 66억달러 역대 최대…여행 지출 증가",
-   "link": "https://www.yna.co.kr/view/AKR20261127064200002"
+   "title": "박홍근 \"미래기금, 연기금투자풀에 일정 기간 맡기는 방향 검토\"",
+   "link": "https://www.yna.co.kr/view/AKR20261127115900002"
   },
   {
    "src": "연합뉴스 경제",
-   "title": "소비자연맹 \"배달 매장 68.9% 이중가격…포장에도 배달가 적용\"",
-   "link": "https://www.yna.co.kr/view/AKR20261127072000030"
+   "title": "[영상] 금융시장 불안·대형 산불에 반역 사건까지…인니 괜찮나",
+   "link": "https://www.yna.co.kr/view/AKR20261125160000797"
   },
   {
    "src": "한국경제 증권",
-   "title": "개미 다 죽겠다는데…정부는 \"준비·대기·긴급·소집·임박·논의\" [분석+]",
-   "link": "https://www.hankyung.com/article/2026112743736"
+   "title": "오늘의 프리미엄9 콘텐츠 다이제스트(11월 27일)",
+   "link": "https://www.hankyung.com/article/202611275074i"
   },
   {
    "src": "한국경제 증권",
-   "title": "하루 만에 SK하이닉스 매수한 초고수들…바이오·로봇 '팔자'",
-   "link": "https://www.hankyung.com/article/202611274339i"
+   "title": "이달 들어 '목표가 하향' 리포트 1000건 돌파…그 속에서 오른 86곳은?",
+   "link": "https://www.hankyung.com/article/202611274992i"
   },
   {
    "src": "한국경제 증권",
-   "title": "SK증권, 차기 각자 대표이사 후보에 박삼규·최창훈 추천",
-   "link": "https://www.hankyung.com/article/2026112743146"
+   "title": "정부는 왜 김용범 메리츠금융지주 부회장에게 자본시장 개혁을 맡겼을까?",
+   "link": "https://www.hankyung.com/article/202611274619i"
   },
   {
    "src": "한국경제 증권",
-   "title": "\"많이 떨어졌으니 사세요\"…조언 들었다가 수익률 -10%",
-   "link": "https://www.hankyung.com/article/202611274135i"
+   "title": "\"삼전·닉스 비중 줄였다\"…액티브 ETF, 수익률 방어에 '분주'",
+   "link": "https://www.hankyung.com/article/202611274818i"
   },
   {
    "src": "한국경제 증권",
-   "title": "큐리언트, 유증 초과 청약에 '급등'…\"다음은 지수편입\" [종목+]",
-   "link": "https://www.hankyung.com/article/2026112740386"
+   "title": "\"발표 직전 살걸\"…기업들 '자사주 소각' 한 방에 '개미 환호'",
+   "link": "https://www.hankyung.com/article/202611274923i"
   },
   {
    "src": "한국경제 증권",
-   "title": "중동 긴장 고조에 방산주 강세…한화시스템 10% 급등",
-   "link": "https://www.hankyung.com/article/2026112740496"
+   "title": "비수기 뚫고 영업익 51% 껑충…\"한국가스공사, 상승 여력 있다\"",
+   "link": "https://www.hankyung.com/article/202611274975i"
   },
   {
    "src": "한국경제 증권",
-   "title": "\"현대차가 밀어준다\"…현대오토에버 8% 급등, AI·로봇 쌍끌이",
-   "link": "https://www.hankyung.com/article/2026112739926"
+   "title": "한국거래소, 희귀질환 아동에 치료비 1억2000만원 지원",
+   "link": "https://www.hankyung.com/article/202611274823i"
+  },
+  {
+   "src": "한국경제 증권",
+   "title": "삼성SDS, 자사주 2만7614주 소각 결정…시가 기준 약 53억원",
+   "link": "https://www.hankyung.com/article/2026112748556"
+  },
+  {
+   "src": "매일경제 증권",
+   "title": "뿔난 카카오엔터 연예인 주주들…“카카오 분할 막아달라”",
+   "link": "https://www.mk.co.kr/news/stock/12220295"
+  },
+  {
+   "src": "매일경제 증권",
+   "title": "5% 뛴 SK하이닉스 담고 4.7% 오른 삼성전자 던졌다…초고수, 삼전닉스 정반대 매매[주식 초고수는 지금]",
+   "link": "https://www.mk.co.kr/news/stock/12220218"
+  },
+  {
+   "src": "매일경제 증권",
+   "title": "F4 “공매도 특이동향 현재로선 없어...위법 혐의 엄중 대응”",
+   "link": "https://www.mk.co.kr/news/stock/12220186"
   },
   {
    "src": "매일경제 증권",
@@ -370,16 +380,6 @@
    "src": "매일경제 증권",
    "title": "무신사, 3분기 누적 매출 역대 최대…영업익 67% 급증",
    "link": "https://www.mk.co.kr/news/business/12219980"
-  },
-  {
-   "src": "매일경제 증권",
-   "title": "삼성전자 로봇에 힘주자 관련주 줄줄이 급등…제닉스로보틱스 상한가",
-   "link": "https://www.mk.co.kr/news/stock/12219958"
-  },
-  {
-   "src": "매일경제 증권",
-   "title": "“상급지 갈아타기 직전, 주식 폭망해 포기”…내 집 마련의 꿈도 ‘흔들’",
-   "link": "https://www.mk.co.kr/news/economy/12219955"
   }
  ],
  "news_status": {
@@ -392,43 +392,43 @@
   "CNBC Markets": 12,
   "MarketWatch": 10
  },
- "headline_title": "국내 증시 급반등 속 '기술적 반등'과 '정책 기대감'의 공존",
- "summary": "최근 급락에 따른 저가 매수세와 증안펀드 등 정책 기대감이 맞물리며 코스피와 코스닥이 강한 기술적 반등을 보이고 있습니다. 특히 외국인의 수급 변화와 로봇·바이오 등 테마주 중심의 투심 회복이 지수 상승을 견인하는 모습입니다. 다만, 미국의 인플레이션 압력 지속과 무역 갈등 우려가 여전히 시장의 상단을 제한하고 있습니다. 국내 증시의 변동성이 극심한 가운데, 단기 급등에 따른 피로감과 불확실성을 고려한 대응이 필요합니다. 전반적인 위험 선호 심리는 개선되고 있으나, 추세 전환을 확신하기엔 대외 변수가 여전히 무겁습니다.",
+ "headline_title": "코스피 4900선 탈환과 글로벌 인플레이션 경계감의 공존",
+ "summary": "국내 증시는 외국인과 기관의 대규모 순매수에 힘입어 코스피 4900선을 회복하며 기술적 반등에 성공했습니다. 반면, 미국은 10월 개인소비지출(PCE) 물가지수가 3.8%로 가속화되면서 연준의 긴축 우려가 재점화되는 모습입니다. 국내외 시장 모두 변동성이 극심한 가운데, 한국은 반도체 중심의 저가 매수세가 유입되며 낙폭을 만회하고 있습니다. 미국은 관세 인상 위협과 인플레이션 압력이 맞물려 투자 심리가 여전히 위축된 상태입니다. 단기 급등에 따른 기술적 반등은 반갑지만, 거시경제 지표의 불확실성이 해소되지 않아 보수적인 접근이 필요합니다.",
  "issues": [
   {
-   "title": "국내 증시 기술적 급반등",
-   "detail": "과도한 낙폭에 따른 저가 매수세 유입과 증안펀드 기대감이 코스닥 사이드카 발동을 이끌었습니다.",
+   "title": "국내 증시 급반등",
+   "detail": "외국인의 1조 원대 순매수로 코스피 4900선 회복 및 코스닥 급등세 시현.",
    "impact": "긍정"
   },
   {
-   "title": "미국 인플레이션 압력",
-   "detail": "미국 10월 선호 물가지표가 3.8%로 가속화되며 금리 인하 기대감을 약화시키고 있습니다.",
+   "title": "미국 PCE 물가 가속화",
+   "detail": "10월 PCE 물가가 3.8%로 상승하며 2027년 연준의 금리 정책 불확실성 증대.",
    "impact": "부정"
   },
   {
-   "title": "지정학적 및 무역 갈등",
-   "detail": "중국의 관세 응전 예고와 미-중 무역 갈등 심화가 글로벌 공급망 불확실성을 높이고 있습니다.",
+   "title": "글로벌 관세 및 무역 갈등",
+   "detail": "미국의 관세 인상 위협이 글로벌 공급망과 파트너 국가들의 무역 환경에 압박으로 작용.",
    "impact": "부정"
   }
  ],
  "rationale": {
-  "KODEX 200": "지수 반등세가 뚜렷하고 외국인 수급이 개선되는 점을 반영해 기본 비중에서 소폭 상향했습니다.",
-  "KODEX 코스닥150": "사이드카 발동 등 투심 회복이 강해 단기 트레이딩 관점에서 비중을 0%에서 5%로 조정했습니다.",
-  "S&P 500": "미국 시장의 하락 추세가 지속되고 있어 기본 비중을 유지하며 방어적인 태도를 취합니다.",
-  "NASDAQ": "기술주 중심의 변동성이 여전히 커 최소 비중을 유지하며 관망합니다.",
-  "채권": "인플레이션 우려로 금리 하락이 제한적일 것으로 보여 기본 비중에서 소폭 축소했습니다.",
-  "금": "지정학적 리스크와 인플레이션 헤지 수단으로서의 가치를 고려해 기존 비중을 유지합니다.",
-  "현금": "시장 변동성이 여전히 높아 급락 시 대응할 수 있는 유동성을 확보합니다."
+  "KODEX 200": "기술적 반등과 외국인 수급 유입을 반영해 비중을 소폭 상향했으나, 여전히 하락 추세임을 고려해 신중을 기함.",
+  "KODEX 코스닥150": "낙폭 과대에 따른 기술적 반등이 강하게 나타났으나 변동성이 매우 커 최소한의 비중만 유지.",
+  "S&P 500": "미국 인플레이션 우려와 하락 추세 지속으로 인해 기본 비중보다 낮게 유지.",
+  "NASDAQ": "기술주 중심의 변동성이 크고 금리 인상 압박에 취약해 비중을 축소 유지.",
+  "채권": "시장 변동성 확대에 대비한 안전자산으로서의 역할을 위해 기존 비중 유지.",
+  "금": "지정학적 리스크와 인플레이션 헤지 수단으로 안정적인 비중 유지.",
+  "현금": "시장 방향성이 불확실한 상황에서 기회비용 확보를 위해 높은 수준의 현금 비중 유지."
  },
  "watch": [
-  "외국인의 연속 순매수 여부",
+  "외국인 순매수 기조 지속 여부",
   "미국 10년물 국채 금리 추이",
-  "국내 증안펀드 관련 구체적 정책 발표"
+  "주요 기업들의 자사주 소각 및 주주환원 정책 효과"
  ],
  "usage": {
-  "in": 2812,
-  "out": 826,
+  "in": 2835,
+  "out": 698,
   "model": "gemini-3.1-flash-lite"
  },
- "llm_reason": "호출 (새 뉴스 41건, Gemini gemini-3.1-flash-lite)"
+ "llm_reason": "호출 (새 뉴스 32건, Gemini gemini-3.1-flash-lite)"
 }

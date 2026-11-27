@@ -1,97 +1,96 @@
 # 🧠 시황두뇌
 
-**2026-11-27 17:12 KST** · 레짐 🔴 위험회피 · 작성: gemini-3.1-flash-lite
+**2026-11-28 03:26 KST** · 레짐 🔴 위험회피 · 작성: gemini-3.1-flash-lite
 
-## 코스피 4900선 탈환과 글로벌 인플레이션 경계감의 공존
+## 글로벌 증시 기술적 반등과 국내 증안펀드 기대감의 공존
 
-국내 증시는 외국인과 기관의 대규모 순매수에 힘입어 코스피 4900선을 회복하며 기술적 반등에 성공했습니다. 반면, 미국은 10월 개인소비지출(PCE) 물가지수가 3.8%로 가속화되면서 연준의 긴축 우려가 재점화되는 모습입니다. 국내외 시장 모두 변동성이 극심한 가운데, 한국은 반도체 중심의 저가 매수세가 유입되며 낙폭을 만회하고 있습니다. 미국은 관세 인상 위협과 인플레이션 압력이 맞물려 투자 심리가 여전히 위축된 상태입니다. 단기 급등에 따른 기술적 반등은 반갑지만, 거시경제 지표의 불확실성이 해소되지 않아 보수적인 접근이 필요합니다.
+미국 증시는 AI 관련주들의 낙폭 과대 인식에 따른 기술적 반등이 나타나며 나스닥 중심의 상승세를 보였습니다. 한국 증시는 외국인의 대규모 순매수와 증안펀드 증액 기대감이 맞물리며 코스닥을 중심으로 강한 회복력을 보였습니다. 다만, 미국 물가 지표가 3.8%로 가속화되면서 연준의 긴축 우려가 여전히 시장의 상단을 제한하고 있습니다. 한국은 한은의 금리 인상 기조와 맞물려 내수 부양책과 주주환원 정책이 수급의 핵심 변수로 떠올랐습니다. 전반적인 위험자산 선호 심리가 개선되고 있으나, 인플레이션 압력과 금리 불확실성은 여전히 하방 리스크로 작용하고 있습니다.
 
 ## 핵심 이슈
 
-- 🟢 **국내 증시 급반등** — 외국인의 1조 원대 순매수로 코스피 4900선 회복 및 코스닥 급등세 시현.
-- 🔴 **미국 PCE 물가 가속화** — 10월 PCE 물가가 3.8%로 상승하며 2027년 연준의 금리 정책 불확실성 증대.
-- 🔴 **글로벌 관세 및 무역 갈등** — 미국의 관세 인상 위협이 글로벌 공급망과 파트너 국가들의 무역 환경에 압박으로 작용.
+- 🔴 **미국 물가 가속화** — 연준 선호 물가 지표가 3.8%로 상승하며 2027년 금리 정책에 대한 불확실성을 증폭시켰습니다.
+- 🟢 **국내 증안펀드 기대감** — 코스피 급락에 따른 정부의 증안펀드 증액 논의가 시장의 하방 경직성을 확보하고 있습니다.
+- 🟢 **AI 및 기술주 반등** — 엔비디아 등 주요 기술주의 낙폭 과대 인식에 따른 저가 매수세가 유입되며 시장 분위기를 반전시켰습니다.
 
 ## 포트폴리오와 그 이유
 
 | 자산 | 비중 | 왜 이 비중인가 |
 |---|---:|---|
-| KODEX 200 | 15% | 기술적 반등과 외국인 수급 유입을 반영해 비중을 소폭 상향했으나, 여전히 하락 추세임을 고려해 신중을 기함. |
-| KODEX 코스닥150 | 5% | 낙폭 과대에 따른 기술적 반등이 강하게 나타났으나 변동성이 매우 커 최소한의 비중만 유지. |
-| S&P 500 | 10% | 미국 인플레이션 우려와 하락 추세 지속으로 인해 기본 비중보다 낮게 유지. |
-| NASDAQ | 5% | 기술주 중심의 변동성이 크고 금리 인상 압박에 취약해 비중을 축소 유지. |
-| 채권 | 30% | 시장 변동성 확대에 대비한 안전자산으로서의 역할을 위해 기존 비중 유지. |
-| 금 | 15% | 지정학적 리스크와 인플레이션 헤지 수단으로 안정적인 비중 유지. |
-| 현금 | 20% | 시장 방향성이 불확실한 상황에서 기회비용 확보를 위해 높은 수준의 현금 비중 유지. |
+| KODEX 200 | 15% | 외국인 수급 유입과 증안펀드 기대감을 반영하여 기본 비중 대비 상향 조정했습니다. |
+| KODEX 코스닥150 | 5% | 낙폭 과대에 따른 기술적 반등 탄력이 강해 소폭 비중을 추가했습니다. |
+| S&P 500 | 20% | 미국 기술주 반등 흐름에 동참하기 위해 비중을 확대했습니다. |
+| NASDAQ | 10% | AI 관련주 중심의 변동성 매매를 고려해 기본 비중을 두 배로 늘렸습니다. |
+| 채권 | 25% | 물가 상승 압력으로 인한 금리 변동성을 고려해 비중을 다소 축소했습니다. |
+| 금 | 10% | 최근 급락에 따른 바닥론이 제기되나, 위험자산 선호 전환을 고려해 비중을 줄였습니다. |
+| 현금 | 15% | 물가 지표와 금리 불확실성이 상존하므로 일정 수준의 방어적 현금은 유지합니다. |
 
 ## 앞으로 지켜볼 것
 
-- 외국인 순매수 기조 지속 여부
 - 미국 10년물 국채 금리 추이
-- 주요 기업들의 자사주 소각 및 주주환원 정책 효과
+- 국내 증안펀드 구체적 증액 규모 발표
+- 주요 기술주 실적 가이던스 및 인플레이션 데이터
 
 ## 주요 지표
 
 | 지표 | 현재 | 1일 | 5일 | 20일 |
 |---|---:|---:|---:|---:|
-| KOSPI | 4915.68 | +4.34% | +0.94% | -14.22% |
+| KOSPI | 4711.21 | 0.0% | -3.26% | -17.79% |
 | KOSDAQ | 655.71 | 0.0% | +1.55% | -9.48% |
-| USD/KRW | 1334.68 | -0.62% | -0.01% | -0.25% |
-| S&P 500 | 7182.78 | 0.0% | +3.94% | -5.24% |
-| NASDAQ | 23585.8 | 0.0% | +4.28% | -7.28% |
-| VIX | 26.8 | 0.0% | -25.33% | +38.0% |
-| US 10Y | 4.85 | 0.0% | -1.3% | -1.64% |
-| WTI 유가 | 86.08 | +2.87% | +2.5% | -17.33% |
-| 금 | 327.45 | 0.0% | +1.42% | -7.96% |
-| 미국 장기채 | 82.24 | 0.0% | +0.97% | +0.91% |
+| USD/KRW | 1333.71 | -0.69% | -0.08% | -0.32% |
+| S&P 500 | 7297.49 | +1.6% | +5.6% | -3.73% |
+| NASDAQ | 24129.5 | +2.31% | +6.68% | -5.14% |
+| VIX | 24.07 | -10.19% | -32.93% | +23.94% |
+| US 10Y | 4.94 | +1.86% | +0.53% | +0.18% |
+| WTI 유가 | 83.04 | -0.76% | -1.12% | -20.25% |
+| 금 | 334.4 | +2.12% | +3.57% | -6.01% |
+| 미국 장기채 | 81.27 | -1.18% | -0.22% | -0.28% |
 | KODEX 200 | 76705.0 | +4.51% | +0.65% | -15.52% |
 | KODEX 코스닥150 | 11925.0 | +9.91% | +13.46% | +0.13% |
 | KODEX 반도체 | 87585.0 | +7.86% | +3.53% | -17.96% |
 | KODEX 2차전지 | 12320.0 | +7.88% | +7.93% | -8.27% |
-| 美 Tech | 155.79 | 0.0% | +4.55% | -13.21% |
-| 美 금융 | 56.51 | 0.0% | +3.56% | 0.0% |
-| 美 에너지 | 60.9 | 0.0% | +0.64% | -13.02% |
+| 美 Tech | 158.69 | +1.86% | +6.5% | -11.6% |
+| 美 금융 | 57.12 | +1.09% | +4.68% | +1.09% |
+| 美 에너지 | 61.67 | +1.26% | +1.92% | -11.93% |
 
 ## 규칙 신호
 
 - S&P500 하락추세(20/60일선 아래)
 - NASDAQ 하락추세(20/60일선 아래)
 - KOSPI 하락추세(20/60일선 아래)
-- VIX 27 공포 구간
 
 ## 참고한 뉴스 (45건)
 
-- [국고채 금리 대체로 상승…3년물 연 3.685%](https://www.yna.co.kr/view/AKR20261127135100008) · 연합뉴스 경제
-- [엔비디아발 'AI 조정' 잦아드나…코스피·코스닥, 급등 마감(종합)](https://www.yna.co.kr/view/AKR20261127078351008) · 연합뉴스 경제
-- [외국인·기관 쌍끌이 매수에 코스피 4.3% 급등…4900선 탈환](https://www.hankyung.com/article/2026112751366) · 한국경제 증권
-- [[마감시황] 외국인 1조원 넘게 샀다…코스피 4900선 회복·코스닥 8% 급등 마감](https://www.hankyung.com/article/202611275045i) · 한국경제 증권
-- ["강남 아파트 4번 불탄 셈"…증시 급락에 전문가 쓴소리](https://www.hankyung.com/article/202611274846H) · 한국경제 증권
-- [코스피 4.3% 상승 4900 회복…코스닥 8%대 올라 700 탈환](https://www.hankyung.com/article/2026112750106) · 한국경제 증권
+- ["눈물 쏟고 고개 숙이고"…코스피 반토막에 전문가들도 '충격'](https://www.hankyung.com/article/202611274867H) · 한국경제 증권
+- [바이오·로봇·배터리 급등…코스닥 간만에 웃었다](https://www.hankyung.com/article/2026112753921) · 한국경제 증권
+- ['증안펀드 증액' 기대에 코스닥 급등](https://www.hankyung.com/article/2026112754441) · 한국경제 증권
+- [석유 왕좌 탈취한 반도체…50년 만에 뒤집힌 '돈줄 공식'](https://www.hankyung.com/article/2026112753531) · 한국경제 증권
+- ['증안펀드 증액 기대감'… 하루 8% 튀어 오른 코스닥](https://www.mk.co.kr/news/stock/12220396) · 매일경제 증권
+- ['외국인 쇼핑' 효과 본 무신사 … 매출 34% 증가하며 실적 잔치](https://www.mk.co.kr/news/stock/12220354) · 매일경제 증권
 - [증시 ‘들었다 놨다’ 외국인 “하루 만에 1조 넘게 샀다”…코스피 4900선 회복](https://www.mk.co.kr/news/stock/12220228) · 매일경제 증권
 - [한은 기준금리 올린 날 무슨 일이?…국고채 만기별로 희비 엇갈린 이유](https://www.mk.co.kr/news/stock/12220173) · 매일경제 증권
-- [[속보] 코스닥 5%대 급등에 매수 사이드카 발동](https://www.mk.co.kr/news/stock/12219974) · 매일경제 증권
-- [산업연 “반도체 호황으로 더 걷힌 법인세, 비반도체 산업에 투자해야”](https://www.mk.co.kr/news/economy/12220080) · 매일경제 경제
-- [French preliminary inflation at 3.2% in November](https://www.investing.com/news/economy-news/french-preliminary-inflation-at-32-in-november-5053065) · Investing.com
-- [Earnings call transcript: Dellia Q3 2026 profit falls as Kirirom deal closes](https://www.investing.com/news/transcripts/earnings-call-transcript-dellia-q3-2026-profit-falls-as-kirirom-deal-closes-93CH-5053062) · Investing.com
+- [환율, 물가가 먼저…한은 총재 통화정책에 ‘주가’는 후순위였다 [BOK WATCHER]](https://www.mk.co.kr/news/economy/12220459) · 매일경제 경제
+- [[표] 외국환율고시표](https://www.mk.co.kr/news/economy/12220436) · 매일경제 경제
+- [Metagenomi Therapeutics receives Nasdaq notice for minimum bid price deficiency](https://www.investing.com/news/sec-filings/metagenomi-therapeutics-receives-nasdaq-notice-for-minimum-bid-price-deficiency-93CH-5053780) · Investing.com
+- [Wall Street ends higher as AI stocks rebound, Nasdaq leads gains](https://www.investing.com/news/stock-market-news/us-stock-futures-rise-in-holidaythinned-trade-tech-rebound-in-focus-5052775) · Investing.com
+- [Carnival Corp amends CEO Weinstein’s 2022 stock grant, adjusts vesting terms](https://www.investing.com/news/sec-filings/carnival-corp-amends-ceo-weinsteins-2022-stock-grant-adjusts-vesting-terms-93CH-5053774) · Investing.com
+- [Wall Street ends higher as battered AI stocks gain in volatile week](https://www.investing.com/news/stock-market-news/wall-st-futures-surge-as-investors-return-from-holiday-5053052) · Investing.com
+- [Investing.com’s stocks of the week](https://www.investing.com/news/stock-market-news/investingcoms-stocks-of-the-week-5053762) · Investing.com
+- [Agnc Investment Corp ADR D stock hits 52-week low at 23.4 USD](https://www.investing.com/news/company-news/agnc-investment-corp-adr-d-stock-hits-52week-low-at-234-usd-93CH-5053761) · Investing.com
 - [U.S. tariff-hike threats pile pressure on partners to sign trade deals](https://www.cnbc.com/2026/11/26/us-tariffs-hike-trade-agreement.html) · CNBC Markets
 - [Fed’s preferred inflation gauge accelerated to 3.8% in October, raising the 2027 stakes for the central bank](https://www.cnbc.com/2026/11/25/pce-inflation-report-october-2026.html) · CNBC Markets
 - [Consumer confidence shoots up after Democrats' midterm victories — though inflation worries persist](https://www.cnbc.com/2026/11/24/consumer-confidence-november-election-midterm.html) · CNBC Markets
 - [Japan core inflation soars to highest this year as energy subsidy expiry pushes up consumer prices](https://www.cnbc.com/2026/11/20/japan-inflation-cpi-october.html) · CNBC Markets
-- [Is the stock market open on Black Friday?](https://www.marketwatch.com/story/is-the-stock-market-open-on-black-friday-0a735c45?mod=mw_rss_topstories) · MarketWatch
-- [I’m terrified of a market crash. Should I put $400,000 of my $1 million retirement savings into an annuity?](https://www.marketwatch.com/story/were-in-our-50s-and-terrified-of-a-market-crash-should-we-put-400-000-of-our-1-million-retirement-savings-into-an-annuity-1943f240?mod=mw_rss_topstories) · MarketWatch
+- [Clearing out my parents’ house was a legal nightmare. How can I downsize without putting my kids through the same ordeal](https://www.marketwatch.com/story/clearing-out-my-parents-house-was-a-legal-nightmare-how-can-i-downsize-without-putting-my-children-through-the-same-ordeal-6537d804?mod=mw_rss_topstories) · MarketWatch
 - [A 66-year-old nurse is facing down retirement with just $500 saved. Who’s to blame?](https://www.marketwatch.com/story/a-66-year-old-nurse-faces-retirement-with-just-500-saved-whos-to-blame-4249a0fd?mod=mw_rss_topstories) · MarketWatch
-- [iM금융지주, 차기 회장 후보군 황병우 등 3명으로 압축](https://www.yna.co.kr/view/AKR20261127136500053) · 연합뉴스 경제
-- [韓총리 "올해 주택공급 목표 달성 총력…내년 준비도 서둘러야"](https://www.yna.co.kr/view/AKR20261127133800001) · 연합뉴스 경제
-- [충북지사, 지방시대위원장에 시장형 공기업 등 배치 건의(종합)](https://www.yna.co.kr/view/AKR20261127039551064) · 연합뉴스 경제
-- [[게시판] 한국거래소, 부산 여성가장 지원 키트 제작 봉사활동](https://www.yna.co.kr/view/AKR20261127133300008) · 연합뉴스 경제
-- [경남제약, 40억원 유상증자…㈜엑스에 제3자배정](https://www.yna.co.kr/view/AKR20261127130900008) · 연합뉴스 경제
-- [씨티 "증안펀드 20∼40조 확대 가능…이르면 12월 1∼2조 투입"](https://www.yna.co.kr/view/AKR20261127130600008) · 연합뉴스 경제
-- [공공부문 비정규직 80만명 추산…차별해소·처우개선 논의 본격화](https://www.yna.co.kr/view/AKR20261127078600530) · 연합뉴스 경제
-- [[게시판] 농식품부, 27∼29일 '대한민국 과일 산업대전' 개최](https://www.yna.co.kr/view/AKR20261127095100030) · 연합뉴스 경제
-- [박홍근 "미래기금, 연기금투자풀에 일정 기간 맡기는 방향 검토"](https://www.yna.co.kr/view/AKR20261127115900002) · 연합뉴스 경제
-- [[영상] 금융시장 불안·대형 산불에 반역 사건까지…인니 괜찮나](https://www.yna.co.kr/view/AKR20261125160000797) · 연합뉴스 경제
-- [오늘의 프리미엄9 콘텐츠 다이제스트(11월 27일)](https://www.hankyung.com/article/202611275074i) · 한국경제 증권
+- [These stocks soared the most during a wild week highlighted by Huang’s return to Nvidia](https://www.marketwatch.com/story/these-stocks-soared-the-most-during-a-wild-week-highlighted-by-huangs-return-to-nvidia-578b3f9a?mod=mw_rss_topstories) · MarketWatch
+- [Nvidia’s stock has tumbled 28% over one chaotic month. The next big test lies in the week ahead](https://www.marketwatch.com/story/nvidias-stock-has-tumbled-27-over-one-chaotic-month-the-next-big-test-lies-in-the-week-ahead-06449777?mod=mw_rss_topstories) · MarketWatch
+- ['AI 시대' 미래준비 최고 도시는 샌프란시스코…서울 8위로 상승](https://www.yna.co.kr/view/AKR20261127169800371) · 연합뉴스 경제
+- [정부, '연속 야간근로 3일 이하 제한' 추진…초심야 별도 관리](https://www.yna.co.kr/view/AKR20261127166100530) · 연합뉴스 경제
+- [국내 송금업체 해킹으로 25억원 피해…금감원 현장점검 착수](https://www.yna.co.kr/view/AKR20261127162500002) · 연합뉴스 경제
+- [피노, 188억5천만원 유상증자…이케이케이알파제이호사모투자합자회사에 제3자배정](https://www.yna.co.kr/view/AKR20261127159500008) · 연합뉴스 경제
+- [노사정, 초광역특구 기간제 논의 매듭…다음 의제 '노사관계'](https://www.yna.co.kr/view/AKR20261127161700530) · 연합뉴스 경제
+- [AI 보안기업 에임인텔리전스, K-디지털 챔피언십 대상](https://www.yna.co.kr/view/AKR20261127156800017) · 연합뉴스 경제
 
 ---
 _뉴스 소스 상태: 연합뉴스 경제 12, 한국경제 증권 12, 매일경제 증권 12, 매일경제 경제 12, Yahoo Finance 실패 HTTPError, Investing.com 10, CNBC Markets 12, MarketWatch 10_
-_평일 08~17시(KST) 매시 자동 갱신 · AI 호출 (새 뉴스 32건, Gemini gemini-3.1-flash-lite) · 투자 권유가 아닌 참고 정보입니다._
+_평일 08~17시(KST) 매시 자동 갱신 · AI 호출 (새 뉴스 38건, Gemini gemini-3.1-flash-lite) · 투자 권유가 아닌 참고 정보입니다._
